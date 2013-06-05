@@ -9,9 +9,10 @@ import javax.persistence.*;
 
 import java.util.*;
  
+
 @Entity
 public class User extends Model {
- 		
+
 	@Email
 	@Required
 	public String email;
@@ -23,9 +24,35 @@ public class User extends Model {
 	public String motDePasse;
 	public int nbFoyer;
 	public String preference;
-    public Date dateDeNaissance;
 
-	 public String toString() {
+	@Temporal(TemporalType.DATE)
+	public Date dateDeNaissance;
+
+	@ManyToMany
+	public Collection<EtatFrigo> etatsFrigo;
+	@OneToMany
+	public Collection<ListeCourses> listesCourses;
+	
+	@ElementCollection 
+	@ManyToMany
+	public Collection<Recette> recettesFavorites;
+	
+
+	public User(long id, String email, String nom, String prenom,
+			String motDePasse, int nbFoyer, String preference,
+			Date dateDeNaissance) {
+		super();
+		this.id = id;
+		this.email = email;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.motDePasse = motDePasse;
+		this.nbFoyer = nbFoyer;
+		this.preference = preference;
+		this.dateDeNaissance = dateDeNaissance;
+	}
+
+	public String toString() {
 	        return email;
 	    }
 	 
