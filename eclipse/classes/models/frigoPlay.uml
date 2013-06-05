@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Persistency="http:///schemas/Persistency/NS/0" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/Persistency/NS/0 pathmap://PERSISTENCY_PROFILES/Persistency.profile.uml#Persistency_2-Annotation-Persistency http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_EWREoM39EeK4_47q9hap4Q" name="frigoPlay">
+    <eAnnotations xmi:id="_EmU54M39EeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_EmU54c39EeK4_47q9hap4Q" source="codegen">
+        <details xmi:id="_EmVg8M39EeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app"/>
+        <details xmi:id="_UkIBEM4CEeK4_47q9hap4Q" key="AssociatedSourceCode" value="/frigoPlay/app/models/User.java;758680963/1;/frigoPlay/app/models/ListeDeCourse.java;2661291689/1;/frigoPlay/app/models/EtatFrigo.java;150504626/1;/frigoPlay/app/models/Aliment.java;858579099/1;/frigoPlay/app/models/Recette.java;1084437539/1;/frigoPlay/app/models/Type.java;211687146/1;/frigoPlay/app/models/Courante.java;4276046542/1;/frigoPlay/app/models/Archive.java;1183085457/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_ceezEM4DEeK4_47q9hap4Q" source="dangling-refs">
+        <contents xmi:type="change:ChangeDescription" xmi:id="_ceezEc4DEeK4_47q9hap4Q">
+          <objectChanges xmi:id="_ceezEs4DEeK4_47q9hap4Q" key="_YpEdMM4CEeK4_47q9hap4Q">
+            <value xmi:id="_ceezE84DEeK4_47q9hap4Q" featureName="packagedElement">
+              <listChanges xmi:id="_cefaIM4DEeK4_47q9hap4Q" index="8" referenceValues="_Iae5Qs4DEeK4_47q9hap4Q"/>
+              <listChanges xmi:id="_cefaIc4DEeK4_47q9hap4Q" index="8" referenceValues="_IadrIM4DEeK4_47q9hap4Q"/>
+              <listChanges xmi:id="_cefaIs4DEeK4_47q9hap4Q" index="8" referenceValues="_IaVIQM4DEeK4_47q9hap4Q"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaI84DEeK4_47q9hap4Q" key="_IaVIQM4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaJM4DEeK4_47q9hap4Q" featureName="name" dataValue="User"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaJc4DEeK4_47q9hap4Q" key="_IaZZsM4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaJs4DEeK4_47q9hap4Q" featureName="base_Element" referenceValue="_IaVIQM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaJ84DEeK4_47q9hap4Q" key="_YpFEQM4CEeK4_47q9hap4Q">
+            <value xmi:id="_cefaKM4DEeK4_47q9hap4Q" featureName="ownedAttribute">
+              <listChanges xmi:id="_cefaKc4DEeK4_47q9hap4Q" index="0" referenceValues="_Iaan0M4DEeK4_47q9hap4Q _Iab18M4DEeK4_47q9hap4Q _IacdAM4DEeK4_47q9hap4Q"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaKs4DEeK4_47q9hap4Q" key="_Iaan0M4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaK84DEeK4_47q9hap4Q" featureName="name" dataValue="nom"/>
+            <value xmi:id="_cefaLM4DEeK4_47q9hap4Q" featureName="type">
+              <referenceValue xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaLc4DEeK4_47q9hap4Q" key="_IabO4M4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaLs4DEeK4_47q9hap4Q" featureName="base_Property" referenceValue="_Iaan0M4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaL84DEeK4_47q9hap4Q" key="_IabO4c4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaMM4DEeK4_47q9hap4Q" featureName="base_Property" referenceValue="_Iaan0M4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaMc4DEeK4_47q9hap4Q" key="_Iab18M4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaMs4DEeK4_47q9hap4Q" featureName="name" dataValue="user"/>
+            <value xmi:id="_cefaM84DEeK4_47q9hap4Q" featureName="type" referenceValue="_IaVIQM4DEeK4_47q9hap4Q"/>
+            <value xmi:id="_cefaNM4DEeK4_47q9hap4Q" featureName="association" referenceValue="_Iae5Qs4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaNc4DEeK4_47q9hap4Q" key="_IacdAM4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaNs4DEeK4_47q9hap4Q" featureName="name" dataValue="article"/>
+            <value xmi:id="_cefaN84DEeK4_47q9hap4Q" featureName="type" referenceValue="_mRzjwM4CEeK4_47q9hap4Q"/>
+            <value xmi:id="_cefaOM4DEeK4_47q9hap4Q" featureName="upperValue" referenceValue="_IadEEM4DEeK4_47q9hap4Q"/>
+            <value xmi:id="_cefaOc4DEeK4_47q9hap4Q" featureName="association" referenceValue="_IadrIM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaOs4DEeK4_47q9hap4Q" key="_IadEEM4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaO84DEeK4_47q9hap4Q" featureName="value" dataValue="*"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaPM4DEeK4_47q9hap4Q" key="_mSDbYM4CEeK4_47q9hap4Q">
+            <value xmi:id="_cefaPc4DEeK4_47q9hap4Q" featureName="association" referenceValue="_IadrIM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaPs4DEeK4_47q9hap4Q" key="_IadrIM4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaP84DEeK4_47q9hap4Q" featureName="name" dataValue=""/>
+            <value xmi:id="_cefaQM4DEeK4_47q9hap4Q" featureName="memberEnd">
+              <listChanges xmi:id="_cefaQc4DEeK4_47q9hap4Q" kind="MOVE" index="1"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaQs4DEeK4_47q9hap4Q" key="_Iae5QM4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaQ84DEeK4_47q9hap4Q" featureName="name" dataValue=""/>
+            <value xmi:id="_cefaRM4DEeK4_47q9hap4Q" featureName="type" referenceValue="_YpFEQM4CEeK4_47q9hap4Q"/>
+            <value xmi:id="_cefaRc4DEeK4_47q9hap4Q" featureName="upperValue" referenceValue="_Iae5Qc4DEeK4_47q9hap4Q"/>
+            <value xmi:id="_cefaRs4DEeK4_47q9hap4Q" featureName="association" referenceValue="_Iae5Qs4DEeK4_47q9hap4Q"/>
+            <value xmi:id="_cefaR84DEeK4_47q9hap4Q" featureName="owningAssociation" referenceValue="_Iae5Qs4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaSM4DEeK4_47q9hap4Q" key="_Iae5Qc4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaSc4DEeK4_47q9hap4Q" featureName="value" dataValue="*"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cefaSs4DEeK4_47q9hap4Q" key="_Iae5Qs4DEeK4_47q9hap4Q">
+            <value xmi:id="_cefaS84DEeK4_47q9hap4Q" featureName="ownedEnd">
+              <listChanges xmi:id="_cefaTM4DEeK4_47q9hap4Q" index="0" referenceValues="_Iae5QM4DEeK4_47q9hap4Q"/>
+            </value>
+            <value xmi:id="_cefaTc4DEeK4_47q9hap4Q" featureName="name" dataValue=""/>
+          </objectChanges>
+          <objectsToAttach xmi:type="uml:Class" xmi:id="_IaVIQM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Association" xmi:id="_IadrIM4DEeK4_47q9hap4Q" memberEnd="_IacdAM4DEeK4_47q9hap4Q _mSDbYM4CEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Association" xmi:id="_Iae5Qs4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_Iaan0M4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_Iab18M4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_IacdAM4DEeK4_47q9hap4Q" association="_IadrIM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IadEEM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Iae5Qc4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="UMLLabProfile:Reference" xmi:id="_IaZZsM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="Persistency:PrimaryKey" xmi:id="_IabO4M4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="Persistency:NotEmpty" xmi:id="_IabO4c4DEeK4_47q9hap4Q"/>
+          <resourceChanges xmi:id="_cefaTs4DEeK4_47q9hap4Q" resourceURI="platform:/resource/frigoPlay/app/models/frigoPlay.uml">
+            <listChanges xmi:id="_cefaT84DEeK4_47q9hap4Q" index="52" referenceValues="_IabO4c4DEeK4_47q9hap4Q"/>
+            <listChanges xmi:id="_cefaUM4DEeK4_47q9hap4Q" index="52" referenceValues="_IabO4M4DEeK4_47q9hap4Q"/>
+            <listChanges xmi:id="_cefaUc4DEeK4_47q9hap4Q" index="52" referenceValues="_IaZZsM4DEeK4_47q9hap4Q"/>
+          </resourceChanges>
+        </contents>
+        <contents xmi:type="change:ChangeDescription" xmi:id="_ceh2YM4DEeK4_47q9hap4Q">
+          <objectChanges xmi:id="_ceh2Yc4DEeK4_47q9hap4Q" key="_MrVDYM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2Ys4DEeK4_47q9hap4Q" featureName="packagedElement">
+              <listChanges xmi:id="_ceh2Y84DEeK4_47q9hap4Q" index="0" referenceValues="_MriewM4DEeK4_47q9hap4Q"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2ZM4DEeK4_47q9hap4Q" key="_MriewM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2Zc4DEeK4_47q9hap4Q" featureName="name" dataValue="URL"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2Zs4DEeK4_47q9hap4Q" key="_MrmJIM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2Z84DEeK4_47q9hap4Q" featureName="base_Element" referenceValue="_MriewM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2aM4DEeK4_47q9hap4Q" key="_YpJ8wM4CEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2ac4DEeK4_47q9hap4Q" featureName="ownedAttribute">
+              <listChanges xmi:id="_ceh2as4DEeK4_47q9hap4Q" index="0" referenceValues="_MrqakM4DEeK4_47q9hap4Q _MrrosM4DEeK4_47q9hap4Q _MrsPwc4DEeK4_47q9hap4Q _MrsPw84DEeK4_47q9hap4Q _Mrs20c4DEeK4_47q9hap4Q _Mrtd4M4DEeK4_47q9hap4Q"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2a84DEeK4_47q9hap4Q" key="_MrqakM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2bM4DEeK4_47q9hap4Q" featureName="name" dataValue="nom"/>
+            <value xmi:id="_ceh2bc4DEeK4_47q9hap4Q" featureName="type">
+              <referenceValue xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2bs4DEeK4_47q9hap4Q" key="_MrrBoM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2b84DEeK4_47q9hap4Q" featureName="base_Property" referenceValue="_MrqakM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2cM4DEeK4_47q9hap4Q" key="_MrrBoc4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2cc4DEeK4_47q9hap4Q" featureName="base_Property" referenceValue="_MrqakM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2cs4DEeK4_47q9hap4Q" key="_MrrosM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2c84DEeK4_47q9hap4Q" featureName="name" dataValue="difficulte"/>
+            <value xmi:id="_ceh2dM4DEeK4_47q9hap4Q" featureName="type">
+              <referenceValue xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2dc4DEeK4_47q9hap4Q" key="_MrsPwM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2ds4DEeK4_47q9hap4Q" featureName="base_Element" referenceValue="_MrrosM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2d84DEeK4_47q9hap4Q" key="_MrsPwc4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2eM4DEeK4_47q9hap4Q" featureName="name" dataValue="prix"/>
+            <value xmi:id="_ceh2ec4DEeK4_47q9hap4Q" featureName="type">
+              <referenceValue xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2es4DEeK4_47q9hap4Q" key="_MrsPws4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2e84DEeK4_47q9hap4Q" featureName="base_Element" referenceValue="_MrsPwc4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2fM4DEeK4_47q9hap4Q" key="_MrsPw84DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2fc4DEeK4_47q9hap4Q" featureName="name" dataValue="calories"/>
+            <value xmi:id="_ceh2fs4DEeK4_47q9hap4Q" featureName="type">
+              <referenceValue xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2f84DEeK4_47q9hap4Q" key="_Mrs20M4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2gM4DEeK4_47q9hap4Q" featureName="base_Element" referenceValue="_MrsPw84DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2gc4DEeK4_47q9hap4Q" key="_Mrs20c4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2gs4DEeK4_47q9hap4Q" featureName="name" dataValue="lien"/>
+            <value xmi:id="_ceh2g84DEeK4_47q9hap4Q" featureName="type" referenceValue="_MriewM4DEeK4_47q9hap4Q"/>
+            <value xmi:id="_ceh2hM4DEeK4_47q9hap4Q" featureName="association" referenceValue="_MrvTEM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2hc4DEeK4_47q9hap4Q" key="_Mrs20s4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2hs4DEeK4_47q9hap4Q" featureName="base_Element" referenceValue="_Mrs20c4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2h84DEeK4_47q9hap4Q" key="_Mrtd4M4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2iM4DEeK4_47q9hap4Q" featureName="name" dataValue="ingredient"/>
+            <value xmi:id="_ceh2ic4DEeK4_47q9hap4Q" featureName="type" referenceValue="_mRzjwM4CEeK4_47q9hap4Q"/>
+            <value xmi:id="_ceh2is4DEeK4_47q9hap4Q" featureName="upperValue" referenceValue="_Mrtd4c4DEeK4_47q9hap4Q"/>
+            <value xmi:id="_ceh2i84DEeK4_47q9hap4Q" featureName="association" referenceValue="_MrusAM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2jM4DEeK4_47q9hap4Q" key="_Mrtd4c4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2jc4DEeK4_47q9hap4Q" featureName="value" dataValue="*"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2js4DEeK4_47q9hap4Q" key="_mSEpgM4CEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2j84DEeK4_47q9hap4Q" featureName="association" referenceValue="_MrusAM4DEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2kM4DEeK4_47q9hap4Q" key="_YpEdMM4CEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2kc4DEeK4_47q9hap4Q" featureName="packagedElement">
+              <listChanges xmi:id="_ceh2ks4DEeK4_47q9hap4Q" index="8" referenceValues="_MrvTEM4DEeK4_47q9hap4Q"/>
+              <listChanges xmi:id="_ceh2k84DEeK4_47q9hap4Q" index="8" referenceValues="_MrusAM4DEeK4_47q9hap4Q"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2lM4DEeK4_47q9hap4Q" key="_MrusAM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2lc4DEeK4_47q9hap4Q" featureName="name" dataValue=""/>
+            <value xmi:id="_ceh2ls4DEeK4_47q9hap4Q" featureName="memberEnd">
+              <listChanges xmi:id="_ceh2l84DEeK4_47q9hap4Q" kind="MOVE" index="1"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_ceh2mM4DEeK4_47q9hap4Q" key="_MrvTEM4DEeK4_47q9hap4Q">
+            <value xmi:id="_ceh2mc4DEeK4_47q9hap4Q" featureName="ownedEnd">
+              <listChanges xmi:id="_ceh2ms4DEeK4_47q9hap4Q" index="0" referenceValues="_MrvTEc4DEeK4_47q9hap4Q"/>
+            </value>
+            <value xmi:id="_ceh2m84DEeK4_47q9hap4Q" featureName="name" dataValue=""/>
+          </objectChanges>
+          <objectsToAttach xmi:type="uml:Class" xmi:id="_MriewM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_MrqakM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_MrrosM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_MrsPwc4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_MrsPw84DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_Mrs20c4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_Mrtd4M4DEeK4_47q9hap4Q" association="_MrusAM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mrtd4c4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Association" xmi:id="_MrusAM4DEeK4_47q9hap4Q" memberEnd="_Mrtd4M4DEeK4_47q9hap4Q _mSEpgM4CEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Association" xmi:id="_MrvTEM4DEeK4_47q9hap4Q" memberEnd="_MrvTEc4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="uml:Property" xmi:id="_MrvTEc4DEeK4_47q9hap4Q" name="" type="_YpJ8wM4CEeK4_47q9hap4Q" association="_MrvTEM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="UMLLabProfile:Reference" xmi:id="_MrmJIM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="Persistency:PrimaryKey" xmi:id="_MrrBoM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="Persistency:NotEmpty" xmi:id="_MrrBoc4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="UMLLabProfile:StyledElement" xmi:id="_MrsPwM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="UMLLabProfile:StyledElement" xmi:id="_MrsPws4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="UMLLabProfile:StyledElement" xmi:id="_Mrs20M4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="UMLLabProfile:StyledElement" xmi:id="_Mrs20s4DEeK4_47q9hap4Q"/>
+          <resourceChanges xmi:id="_ceh2nM4DEeK4_47q9hap4Q" resourceURI="platform:/resource/frigoPlay/app/models/frigoPlay.uml">
+            <listChanges xmi:id="_ceh2nc4DEeK4_47q9hap4Q" index="52" referenceValues="_Mrs20s4DEeK4_47q9hap4Q"/>
+            <listChanges xmi:id="_ceh2ns4DEeK4_47q9hap4Q" index="52" referenceValues="_Mrs20M4DEeK4_47q9hap4Q"/>
+            <listChanges xmi:id="_ceh2n84DEeK4_47q9hap4Q" index="52" referenceValues="_MrsPws4DEeK4_47q9hap4Q"/>
+            <listChanges xmi:id="_ceh2oM4DEeK4_47q9hap4Q" index="52" referenceValues="_MrsPwM4DEeK4_47q9hap4Q"/>
+            <listChanges xmi:id="_ceh2oc4DEeK4_47q9hap4Q" index="52" referenceValues="_MrrBoc4DEeK4_47q9hap4Q"/>
+            <listChanges xmi:id="_ceh2os4DEeK4_47q9hap4Q" index="52" referenceValues="_MrrBoM4DEeK4_47q9hap4Q"/>
+            <listChanges xmi:id="_ceh2o84DEeK4_47q9hap4Q" index="52" referenceValues="_MrmJIM4DEeK4_47q9hap4Q"/>
+          </resourceChanges>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_Iae5QM4DEeK4_47q9hap4Q"/>
+        <contents xmi:type="change:ChangeDescription" xmi:id="_cejrkM4DEeK4_47q9hap4Q">
+          <objectChanges xmi:id="_cejrkc4DEeK4_47q9hap4Q" key="_YpQDYM4CEeK4_47q9hap4Q">
+            <value xmi:id="_cejrks4DEeK4_47q9hap4Q" featureName="base_Element" set="false"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cejrk84DEeK4_47q9hap4Q" key="_MrUcUM4DEeK4_47q9hap4Q">
+            <value xmi:id="_cejrlM4DEeK4_47q9hap4Q" featureName="base_Element" referenceValue="_YpJ8wM4CEeK4_47q9hap4Q"/>
+          </objectChanges>
+          <objectChanges xmi:id="_cejrlc4DEeK4_47q9hap4Q" key="_Ym0acM4CEeK4_47q9hap4Q">
+            <value xmi:id="_cejrls4DEeK4_47q9hap4Q" featureName="packagedElement">
+              <listChanges xmi:id="_cejrl84DEeK4_47q9hap4Q" index="1" referenceValues="_MrVDYM4DEeK4_47q9hap4Q"/>
+            </value>
+          </objectChanges>
+          <objectChanges xmi:id="_cejrmM4DEeK4_47q9hap4Q" key="_MrVDYM4DEeK4_47q9hap4Q">
+            <value xmi:id="_cejrmc4DEeK4_47q9hap4Q" featureName="name" dataValue="net"/>
+          </objectChanges>
+          <objectsToAttach xmi:type="uml:Package" xmi:id="_MrVDYM4DEeK4_47q9hap4Q"/>
+          <objectsToAttach xmi:type="Persistency:JPA1StyledElement" xmi:id="_MrUcUM4DEeK4_47q9hap4Q"/>
+          <resourceChanges xmi:id="_cejrms4DEeK4_47q9hap4Q" resourceURI="platform:/resource/frigoPlay/app/models/frigoPlay.uml">
+            <listChanges xmi:id="_cejrm84DEeK4_47q9hap4Q" kind="REMOVE" index="44"/>
+            <listChanges xmi:id="_cejrnM4DEeK4_47q9hap4Q" index="51" referenceValues="_MrUcUM4DEeK4_47q9hap4Q"/>
+          </resourceChanges>
+        </contents>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_F_qrYM39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_F_rScM39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_F_rScc39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_F_r5gM39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_F_r5gc39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_F_sgkM39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_F_sgkc39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_F_tHoM39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_F_vj4M39EeK4_47q9hap4Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FLn_UM39EeK4_47q9hap4Q" name="User">
+      <eAnnotations xmi:id="_LjOTMM4AEeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_LjPhUM4AEeK4_47q9hap4Q" source="codegen">
+          <details xmi:id="_LjQIYM4AEeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app/models"/>
+        </contents>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_GW-_MM39EeK4_47q9hap4Q" name="nom" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Gwtt0M39EeK4_47q9hap4Q" name="prenom" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_HpkBYM39EeK4_47q9hap4Q" name="motDePasse" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JvpkIM39EeK4_47q9hap4Q" name="dateDeNaissance" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KziqEM39EeK4_47q9hap4Q" name="nbFoyer" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Rw9LUM4BEeK4_47q9hap4Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Lv49kM39EeK4_47q9hap4Q" name="email" isID="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_M8FD4M39EeK4_47q9hap4Q" name="preference" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_SwWy0M4BEeK4_47q9hap4Q">
+          <body>nulle</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_cCissc39EeK4_47q9hap4Q" name="etatFrigo" type="_R9JKAM39EeK4_47q9hap4Q" association="_cCebQM39EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cCjTwM39EeK4_47q9hap4Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cCj60M39EeK4_47q9hap4Q" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_IufMoM3-EeK4_47q9hap4Q" name="listeDeCourse" type="_OX46kM39EeK4_47q9hap4Q" association="_IuelkM3-EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IufzsM3-EeK4_47q9hap4Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Iufzsc3-EeK4_47q9hap4Q" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_JvsAYM39EeK4_47q9hap4Q" name="Date"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OX46kM39EeK4_47q9hap4Q" name="ListeDeCourse">
+      <eAnnotations xmi:id="_OSD4AM4AEeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_OSD4Ac4AEeK4_47q9hap4Q" source="codegen">
+          <details xmi:id="_OSD4As4AEeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app/models"/>
+        </contents>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_QUzTMM39EeK4_47q9hap4Q" name="nom">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_IugawM3-EeK4_47q9hap4Q" name="user" type="_FLn_UM39EeK4_47q9hap4Q" association="_IuelkM3-EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Iugawc3-EeK4_47q9hap4Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IuhB0M3-EeK4_47q9hap4Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eIny8M3-EeK4_47q9hap4Q" name="article" type="_iV9LgM39EeK4_47q9hap4Q" aggregation="shared" association="_eIl9wM3-EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eIoaAM3-EeK4_47q9hap4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eIoaAc3-EeK4_47q9hap4Q" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9JKAM39EeK4_47q9hap4Q" name="EtatFrigo">
+      <eAnnotations xmi:id="_MpJZcM4AEeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_MpJZcc4AEeK4_47q9hap4Q" source="codegen">
+          <details xmi:id="_MpJZcs4AEeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app/models"/>
+        </contents>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_aKdwwM39EeK4_47q9hap4Q" name="date">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_cCfCUM39EeK4_47q9hap4Q" name="user" type="_FLn_UM39EeK4_47q9hap4Q" association="_cCebQM39EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cCiFoM39EeK4_47q9hap4Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cCissM39EeK4_47q9hap4Q" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yHxB8M3-EeK4_47q9hap4Q" name="image">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-PQ_Qc3-EeK4_47q9hap4Q" name="aliment" type="_iV9LgM39EeK4_47q9hap4Q" association="_-PQ_QM3-EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-PRmUM3-EeK4_47q9hap4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-PSNYM3-EeK4_47q9hap4Q" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cCebQM39EeK4_47q9hap4Q" name="est dans l'etat" memberEnd="_cCfCUM39EeK4_47q9hap4Q _cCissc39EeK4_47q9hap4Q"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iV9LgM39EeK4_47q9hap4Q" name="Aliment">
+      <eAnnotations xmi:id="_NZf4UM4AEeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_NZgfYM4AEeK4_47q9hap4Q" source="codegen">
+          <details xmi:id="_NZgfYc4AEeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app/models"/>
+        </contents>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_kbDPwM39EeK4_47q9hap4Q" name="nom">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lUFJgM39EeK4_47q9hap4Q" name="quantite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_mpv78M39EeK4_47q9hap4Q" name="calories">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oA3f4M39EeK4_47q9hap4Q" name="peremption" type="_YohDkM4CEeK4_47q9hap4Q" association="_YpYmQM4CEeK4_47q9hap4Q"/>
+      <ownedAttribute xmi:id="_eImk0M3-EeK4_47q9hap4Q" name="listeDeCourse" type="_YpFEQM4CEeK4_47q9hap4Q" association="_eIl9wM3-EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eInL4M3-EeK4_47q9hap4Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eInL4c3-EeK4_47q9hap4Q" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ieC7EM3-EeK4_47q9hap4Q" name="recette" type="_YpJ8wM4CEeK4_47q9hap4Q" association="_ieCUAM3-EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ieDiIM3-EeK4_47q9hap4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ieDiIc3-EeK4_47q9hap4Q" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-PSNYc3-EeK4_47q9hap4Q" name="etatFrigo" type="_YpRRgM4CEeK4_47q9hap4Q" association="_-PQ_QM3-EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-PS0cM3-EeK4_47q9hap4Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-PS0cc3-EeK4_47q9hap4Q" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_uftLkM39EeK4_47q9hap4Q" name="Recette">
+      <eAnnotations xmi:id="_PAmZAM4AEeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_PAmZAc4AEeK4_47q9hap4Q" source="codegen">
+          <details xmi:id="_PAmZAs4AEeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app/models"/>
+        </contents>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_wI4v4M39EeK4_47q9hap4Q" name="nom">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_xguskM39EeK4_47q9hap4Q" name="difficulte">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yCHiYM39EeK4_47q9hap4Q" name="prix">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yjM2MM39EeK4_47q9hap4Q" name="calories">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zBjmIM39EeK4_47q9hap4Q" name="lien">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ieDiIs3-EeK4_47q9hap4Q" name="ingredient" type="_iV9LgM39EeK4_47q9hap4Q" aggregation="shared" association="_ieCUAM3-EeK4_47q9hap4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ieEJMM3-EeK4_47q9hap4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ieEJMc3-EeK4_47q9hap4Q" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_zBkNMM39EeK4_47q9hap4Q" name="URL"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7Nd3oM39EeK4_47q9hap4Q" name="Type">
+      <eAnnotations xmi:id="_QBU2MM4AEeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_QBVdQM4AEeK4_47q9hap4Q" source="codegen">
+          <details xmi:id="_QBVdQc4AEeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app/models"/>
+        </contents>
+      </eAnnotations>
+      <generalization xmi:id="_BNb2AM3-EeK4_47q9hap4Q" general="_OX46kM39EeK4_47q9hap4Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-Wh6UM39EeK4_47q9hap4Q" name="Courante">
+      <eAnnotations xmi:id="_QvSIYM4AEeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_QvSIYc4AEeK4_47q9hap4Q" source="codegen">
+          <details xmi:id="_QvSIYs4AEeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app/models"/>
+        </contents>
+      </eAnnotations>
+      <generalization xmi:id="_AwWRYM3-EeK4_47q9hap4Q" general="_OX46kM39EeK4_47q9hap4Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__E2_8M39EeK4_47q9hap4Q" name="Archive">
+      <eAnnotations xmi:id="_RxRJ0M4AEeK4_47q9hap4Q" source="http://ns.yatta.de/umllab">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_RxRw4M4AEeK4_47q9hap4Q" source="codegen">
+          <details xmi:id="_RxRw4c4AEeK4_47q9hap4Q" key="codegenDirectory" value="/frigoPlay/app/models"/>
+        </contents>
+      </eAnnotations>
+      <generalization xmi:id="_AWQWYM3-EeK4_47q9hap4Q" general="_OX46kM39EeK4_47q9hap4Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IuelkM3-EeK4_47q9hap4Q" name="appartient" memberEnd="_IufMoM3-EeK4_47q9hap4Q _IugawM3-EeK4_47q9hap4Q"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eIl9wM3-EeK4_47q9hap4Q" name="est composée de" memberEnd="_eImk0M3-EeK4_47q9hap4Q _eIny8M3-EeK4_47q9hap4Q"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ieCUAM3-EeK4_47q9hap4Q" name="est composée de" memberEnd="_ieC7EM3-EeK4_47q9hap4Q _ieDiIs3-EeK4_47q9hap4Q"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-PQ_QM3-EeK4_47q9hap4Q" name="est contenu dans" memberEnd="_-PQ_Qc3-EeK4_47q9hap4Q _-PSNYc3-EeK4_47q9hap4Q"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ymx-MM4CEeK4_47q9hap4Q" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_YmylQM4CEeK4_47q9hap4Q" name="persistence">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_YoJ3MM4CEeK4_47q9hap4Q" name="Entity"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_YoRzAM4CEeK4_47q9hap4Q" name="Id"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_YowUIM4CEeK4_47q9hap4Q" name="ManyToMany"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Yo43AM4CEeK4_47q9hap4Q" name="ManyToOne"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TmDZ0M4DEeK4_47q9hap4Q" name="Temporal"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_TmHEMc4DEeK4_47q9hap4Q" name="TemporalType"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TmPnEM4DEeK4_47q9hap4Q" name="OneToMany"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YmzMUM4CEeK4_47q9hap4Q" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_YmzzYM4CEeK4_47q9hap4Q" name="hibernate">
+        <packagedElement xmi:type="uml:Package" xmi:id="_YmzzYc4CEeK4_47q9hap4Q" name="validator">
+          <packagedElement xmi:type="uml:Package" xmi:id="_YmzzYs4CEeK4_47q9hap4Q" name="constraints">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_YoZu0M4CEeK4_47q9hap4Q" name="NotEmpty"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_TmKukc4DEeK4_47q9hap4Q" name="Email"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ym0acM4CEeK4_47q9hap4Q" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Ym0acc4CEeK4_47q9hap4Q" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_YohDkM4CEeK4_47q9hap4Q" name="Date"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Yoo_YM4CEeK4_47q9hap4Q" name="Set"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YpEdMM4CEeK4_47q9hap4Q" name="models">
+      <packagedElement xmi:type="uml:Class" xmi:id="_YpFEQM4CEeK4_47q9hap4Q" name="ListeDeCourse">
+        <ownedAttribute xmi:id="_Tmp2wM4DEeK4_47q9hap4Q" name="user" type="_Tl1-cM4DEeK4_47q9hap4Q" association="_Tmqd0M4DEeK4_47q9hap4Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YpJ8wM4CEeK4_47q9hap4Q" name="Recette"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YpRRgM4CEeK4_47q9hap4Q" name="EtatFrigo">
+        <ownedAttribute xmi:id="_TmoBkM4DEeK4_47q9hap4Q" name="user" type="_Tl1-cM4DEeK4_47q9hap4Q" association="_TmoooM4DEeK4_47q9hap4Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TmoBkc4DEeK4_47q9hap4Q" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mRzjwM4CEeK4_47q9hap4Q" name="Aliment">
+        <ownedAttribute xmi:id="_mR970M4CEeK4_47q9hap4Q" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mSAYEM4CEeK4_47q9hap4Q" name="quantite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mSBmMM4CEeK4_47q9hap4Q" name="calories">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mSCNQc4CEeK4_47q9hap4Q" name="peremption" type="_YohDkM4CEeK4_47q9hap4Q" association="_mSIT4M4CEeK4_47q9hap4Q"/>
+        <ownedAttribute xmi:id="_mSDbYM4CEeK4_47q9hap4Q" name="listeDeCourse" type="_YpFEQM4CEeK4_47q9hap4Q" association="_IadrIM4DEeK4_47q9hap4Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSDbYc4CEeK4_47q9hap4Q" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mSEpgM4CEeK4_47q9hap4Q" name="recette" type="_YpJ8wM4CEeK4_47q9hap4Q" association="_MrusAM4DEeK4_47q9hap4Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSEpgc4CEeK4_47q9hap4Q" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mSF3oM4CEeK4_47q9hap4Q" name="etatFrigo" type="_YpRRgM4CEeK4_47q9hap4Q" association="_mSL-Qc4CEeK4_47q9hap4Q"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_haAnAM4FEeK4_47q9hap4Q" name="setNom" specification="_hZ6gYM4FEeK4_47q9hap4Q">
+          <ownedParameter xmi:id="_haAnAc4FEeK4_47q9hap4Q" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.nom = value;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_haCcMM4FEeK4_47q9hap4Q" name="getNom" specification="_hZvhQM4FEeK4_47q9hap4Q">
+          <ownedParameter xmi:id="_haCcMc4FEeK4_47q9hap4Q" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.nom;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_hZvhQM4FEeK4_47q9hap4Q" name="getNom" method="_haCcMM4FEeK4_47q9hap4Q">
+          <ownedParameter xmi:id="_hZ7ugM4FEeK4_47q9hap4Q" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_hZ6gYM4FEeK4_47q9hap4Q" name="setNom" method="_haAnAM4FEeK4_47q9hap4Q">
+          <ownedParameter xmi:id="_hZ6gYc4FEeK4_47q9hap4Q" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mSIT4M4CEeK4_47q9hap4Q" name="" memberEnd="_mSCNQc4CEeK4_47q9hap4Q _mSIT4c4CEeK4_47q9hap4Q">
+        <ownedEnd xmi:id="_mSIT4c4CEeK4_47q9hap4Q" name="" type="_mRzjwM4CEeK4_47q9hap4Q" association="_mSIT4M4CEeK4_47q9hap4Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mSJiAc4CEeK4_47q9hap4Q" name="" memberEnd="_mSI68M4CEeK4_47q9hap4Q">
+        <ownedEnd xmi:id="_mSI68M4CEeK4_47q9hap4Q" name="" type="_mRzjwM4CEeK4_47q9hap4Q" association="_mSJiAc4CEeK4_47q9hap4Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSJiAM4CEeK4_47q9hap4Q" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mSKwIc4CEeK4_47q9hap4Q" name="" memberEnd="_mSKJEM4CEeK4_47q9hap4Q">
+        <ownedEnd xmi:id="_mSKJEM4CEeK4_47q9hap4Q" name="" type="_mRzjwM4CEeK4_47q9hap4Q" association="_mSKwIc4CEeK4_47q9hap4Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSKwIM4CEeK4_47q9hap4Q" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mSL-Qc4CEeK4_47q9hap4Q" name="" memberEnd="_mSF3oM4CEeK4_47q9hap4Q _mSLXMM4CEeK4_47q9hap4Q">
+        <ownedEnd xmi:id="_mSLXMM4CEeK4_47q9hap4Q" name="" type="_mRzjwM4CEeK4_47q9hap4Q" association="_mSL-Qc4CEeK4_47q9hap4Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSL-QM4CEeK4_47q9hap4Q" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Tl1-cM4DEeK4_47q9hap4Q" name="User">
+        <ownedAttribute xmi:id="_Tmb0UM4DEeK4_47q9hap4Q" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_TmdpgM4DEeK4_47q9hap4Q" name="prenom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_TmgFwM4DEeK4_47q9hap4Q" name="motDePasse">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_TmhT4M4DEeK4_47q9hap4Q" name="dateDeNaissance" type="_YohDkM4CEeK4_47q9hap4Q"/>
+        <ownedAttribute xmi:id="_TmjJEM4DEeK4_47q9hap4Q" name="nbFoyer">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_TmjwIM4DEeK4_47q9hap4Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_TmkXMM4DEeK4_47q9hap4Q" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_TmmMYM4DEeK4_47q9hap4Q" name="preference">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_TmmMYc4DEeK4_47q9hap4Q" value="&quot;nulle&quot;"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Tmmzcc4DEeK4_47q9hap4Q" name="etatFrigo" type="_YpRRgM4CEeK4_47q9hap4Q" association="_TmoooM4DEeK4_47q9hap4Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tmmzcs4DEeK4_47q9hap4Q" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Tmoooc4DEeK4_47q9hap4Q" name="listeDeCourse" type="_YpFEQM4CEeK4_47q9hap4Q" association="_Tmqd0M4DEeK4_47q9hap4Q">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TmpPsM4DEeK4_47q9hap4Q" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_TmoooM4DEeK4_47q9hap4Q" name="" memberEnd="_TmoBkM4DEeK4_47q9hap4Q _Tmmzcc4DEeK4_47q9hap4Q"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Tmqd0M4DEeK4_47q9hap4Q" name="" memberEnd="_Tmoooc4DEeK4_47q9hap4Q _Tmp2wM4DEeK4_47q9hap4Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YpYmQM4CEeK4_47q9hap4Q" name="" memberEnd="_oA3f4M39EeK4_47q9hap4Q _YpYmQc4CEeK4_47q9hap4Q">
+      <ownedEnd xmi:id="_YpYmQc4CEeK4_47q9hap4Q" name="" type="_iV9LgM39EeK4_47q9hap4Q" association="_YpYmQM4CEeK4_47q9hap4Q"/>
+    </packagedElement>
+    <profileApplication xmi:id="_EmX9MM39EeK4_47q9hap4Q">
+      <eAnnotations xmi:id="_EmaZcM39EeK4_47q9hap4Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+    <profileApplication xmi:id="_0yH58M3_EeK4_47q9hap4Q">
+      <eAnnotations xmi:id="_0yH58c3_EeK4_47q9hap4Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PERSISTENCY_PROFILES/Persistency.profile.uml#Persistency_2-Annotation-Persistency"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://PERSISTENCY_PROFILES/Persistency.profile.uml#Persistency_2"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_EmggEM39EeK4_47q9hap4Q" base_Package="_EWREoM39EeK4_47q9hap4Q">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:UnresolvedElement xmi:id="_JvucoM39EeK4_47q9hap4Q" base_Element="_JvsAYM39EeK4_47q9hap4Q"/>
+  <UMLLabProfile:UnresolvedElement xmi:id="_zBmpcM39EeK4_47q9hap4Q" base_Element="_zBkNMM39EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_1znzMM3_EeK4_47q9hap4Q" base_Element="_FLn_UM39EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_2tsOwM3_EeK4_47q9hap4Q" base_Element="_iV9LgM39EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_3McAQM3_EeK4_47q9hap4Q" base_Element="_uftLkM39EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_3lh1sM3_EeK4_47q9hap4Q" base_Element="_R9JKAM39EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_4lVs4M3_EeK4_47q9hap4Q" base_Element="_OX46kM39EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_--9hYM3_EeK4_47q9hap4Q" base_Element="_ieCUAM3-EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="__bGq0M3_EeK4_47q9hap4Q" base_Element="_BNb2AM3-EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_AHAHgM4AEeK4_47q9hap4Q" base_Element="_AwWRYM3-EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_Agu2IM4AEeK4_47q9hap4Q" base_Element="_AWQWYM3-EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_DZDHEM4AEeK4_47q9hap4Q" base_Element="_-PQ_Qc3-EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_DZDuIM4AEeK4_47q9hap4Q" base_Element="_-PQ_QM3-EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_DZEVMM4AEeK4_47q9hap4Q" base_Element="_-PSNYc3-EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_Eh9P4M4AEeK4_47q9hap4Q" base_Element="_cCebQM39EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_FybZQM4AEeK4_47q9hap4Q" base_Element="_eIl9wM3-EeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_Hju-0M4AEeK4_47q9hap4Q" base_Element="_IuelkM3-EeK4_47q9hap4Q"/>
+  <Persistency:Email xmi:id="_jgK0gM4AEeK4_47q9hap4Q" base_Property="_Lv49kM39EeK4_47q9hap4Q"/>
+  <Persistency:PrimaryKey xmi:id="_tNB7YM4AEeK4_47q9hap4Q" base_Property="_Lv49kM39EeK4_47q9hap4Q"/>
+  <Persistency:Temporal xmi:id="_48GKkM4AEeK4_47q9hap4Q" base_Property="_JvpkIM39EeK4_47q9hap4Q"/>
+  <Persistency:PrimaryKey xmi:id="_-wgZMM4AEeK4_47q9hap4Q" base_Property="_kbDPwM39EeK4_47q9hap4Q"/>
+  <Persistency:PrimaryKey xmi:id="_BHb0UM4BEeK4_47q9hap4Q" base_Property="_wI4v4M39EeK4_47q9hap4Q"/>
+  <Persistency:PrimaryKey xmi:id="_Dlw38M4BEeK4_47q9hap4Q" base_Property="_QUzTMM39EeK4_47q9hap4Q"/>
+  <Persistency:PrimaryKey xmi:id="_FPM68M4BEeK4_47q9hap4Q" base_Property="_yHxB8M3-EeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_KSSaUM4BEeK4_47q9hap4Q" base_Property="_GW-_MM39EeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_LFy64M4BEeK4_47q9hap4Q" base_Property="_Gwtt0M39EeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_Lf1LgM4BEeK4_47q9hap4Q" base_Property="_HpkBYM39EeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_MKerAM4BEeK4_47q9hap4Q" base_Property="_Lv49kM39EeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_M1kPYM4BEeK4_47q9hap4Q" base_Property="_wI4v4M39EeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_Ntt_YM4BEeK4_47q9hap4Q" base_Property="_kbDPwM39EeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_OmQw8M4BEeK4_47q9hap4Q" base_Property="_QUzTMM39EeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_YnFgMM4CEeK4_47q9hap4Q" base_Element="_lUFJgM39EeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_YnFgMc4CEeK4_47q9hap4Q" base_Element="_mpv78M39EeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_YnGHQM4CEeK4_47q9hap4Q" base_Element="_oA3f4M39EeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_YoRL8M4CEeK4_47q9hap4Q" base_Element="_YoJ3MM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_YoZHwM4CEeK4_47q9hap4Q" base_Element="_YoRzAM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_YogcgM4CEeK4_47q9hap4Q" base_Element="_YoZu0M4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_YooYUM4CEeK4_47q9hap4Q" base_Element="_YohDkM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_YovtEM4CEeK4_47q9hap4Q" base_Element="_Yoo_YM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_Yo3o4M4CEeK4_47q9hap4Q" base_Element="_YowUIM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_Yo_ksM4CEeK4_47q9hap4Q" base_Element="_Yo43AM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_YpJVsM4CEeK4_47q9hap4Q" base_Element="_YpFEQM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_YpQDYM4CEeK4_47q9hap4Q" base_Element="_YpJ8wM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_YpWKAM4CEeK4_47q9hap4Q" base_Element="_YpRRgM4CEeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_mR0x4M4CEeK4_47q9hap4Q" base_Element="_mRzjwM4CEeK4_47q9hap4Q"/>
+  <Persistency:PrimaryKey xmi:id="_mR-i4M4CEeK4_47q9hap4Q" base_Property="_mR970M4CEeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_mR_J8M4CEeK4_47q9hap4Q" base_Property="_mR970M4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_mSC0UM4CEeK4_47q9hap4Q" base_Element="_mSCNQc4CEeK4_47q9hap4Q"/>
+  <Persistency:JPA1StyledElement xmi:id="_Tl3MkM4DEeK4_47q9hap4Q" base_Element="_Tl1-cM4DEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_TmHEMM4DEeK4_47q9hap4Q" base_Element="_TmDZ0M4DEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_TmKukM4DEeK4_47q9hap4Q" base_Element="_TmHEMc4DEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_TmPAAM4DEeK4_47q9hap4Q" base_Element="_TmKukc4DEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Reference xmi:id="_TmVtsM4DEeK4_47q9hap4Q" base_Element="_TmPnEM4DEeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_TmdCcM4DEeK4_47q9hap4Q" base_Property="_Tmb0UM4DEeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_Tme3oM4DEeK4_47q9hap4Q" base_Property="_TmdpgM4DEeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_Tmgs0M4DEeK4_47q9hap4Q" base_Property="_TmgFwM4DEeK4_47q9hap4Q"/>
+  <Persistency:Temporal xmi:id="_Tmh68M4DEeK4_47q9hap4Q" base_Property="_TmhT4M4DEeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_TmjwIc4DEeK4_47q9hap4Q" base_Element="_TmjJEM4DEeK4_47q9hap4Q"/>
+  <Persistency:PrimaryKey xmi:id="_TmkXMc4DEeK4_47q9hap4Q" base_Property="_TmkXMM4DEeK4_47q9hap4Q"/>
+  <Persistency:Email xmi:id="_Tmk-QM4DEeK4_47q9hap4Q" base_Property="_TmkXMM4DEeK4_47q9hap4Q"/>
+  <Persistency:NotEmpty xmi:id="_Tmk-Qc4DEeK4_47q9hap4Q" base_Property="_TmkXMM4DEeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_TmmzcM4DEeK4_47q9hap4Q" base_Element="_TmmMYM4DEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Annotations xmi:id="_AhCl4M4FEeK4_47q9hap4Q" base_Element="_mSAYEM4CEeK4_47q9hap4Q">
+    <annotations xmi:id="_AhCl4c4FEeK4_47q9hap4Q" name="Id"/>
+    <annotations xmi:id="_AhCl4s4FEeK4_47q9hap4Q" name="NotEmpty"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AhZLMM4FEeK4_47q9hap4Q" base_Element="_mR970M4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:Annotations xmi:id="_hZwIUM4FEeK4_47q9hap4Q" base_Element="_hZvhQM4FEeK4_47q9hap4Q">
+    <annotations xmi:id="_hZwvYM4FEeK4_47q9hap4Q" name="Id"/>
+    <annotations xmi:id="_hZwvYc4FEeK4_47q9hap4Q" name="NotEmpty"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hZ2O8M4FEeK4_47q9hap4Q" base_Element="_hZvhQM4FEeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_hZ22AM4FEeK4_47q9hap4Q" base_Element="_mSAYEM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_hZ4EIM4FEeK4_47q9hap4Q" base_Element="_mSBmMM4CEeK4_47q9hap4Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_hZ7HcM4FEeK4_47q9hap4Q" base_Element="_hZ6gYM4FEeK4_47q9hap4Q"/>
+</xmi:XMI>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_EYFCgM39EeK4_47q9hap4Q">
+  <modelElement href="frigoPlay.uml#_EWREoM39EeK4_47q9hap4Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_cDKXwM39EeK4_47q9hap4Q" sourceAnchor="71.0,167.0" targetAnchor="88.0,0.0" target="_R9JxEM39EeK4_47q9hap4Q" source="_FL328M39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_cCebQM39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_cDKXwc39EeK4_47q9hap4Q"/>
+    <stereotypes xmi:id="_Eh-eAM4AEeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_Eh9P4M4AEeK4_47q9hap4Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_cDKXws39EeK4_47q9hap4Q" text="est dans l'etat">
+      <visualProperties xmi:id="_cHFOcM39EeK4_47q9hap4Q" position="-92.0,-6.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_cDKXw839EeK4_47q9hap4Q" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="frigoPlay.uml#_cCfCUM39EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_cHEAUM39EeK4_47q9hap4Q" position="-1.0,3.0"/>
+      <visibility xmi:id="_cDKXxM39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_cDKXxc39EeK4_47q9hap4Q" label="1..*" max="-1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_cDKXxs39EeK4_47q9hap4Q" aggregationKind="NONE" name="etatFrigo" navigable="true">
+      <modelElement href="frigoPlay.uml#_cCissc39EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_cHFOcc39EeK4_47q9hap4Q" position="-2.0,-41.0"/>
+      <visibility xmi:id="_cDKXx839EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_cDKXyM39EeK4_47q9hap4Q" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_AWWdAM3-EeK4_47q9hap4Q" sourceAnchor="16.0,0.0" targetAnchor="81.0,66.0" superClass="_OX6IsM39EeK4_47q9hap4Q" subClass="__E4OEM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_AWQWYM3-EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_AWWdAc3-EeK4_47q9hap4Q"/>
+    <bendpoints xmi:id="_illRAM3_EeK4_47q9hap4Q" sourceY="-29" targetX="66" targetY="28"/>
+    <bendpoints xmi:id="_illRAc3_EeK4_47q9hap4Q" sourceX="-66" sourceY="-29" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_AwYGkM3-EeK4_47q9hap4Q" sourceAnchor="46.0,0.0" targetAnchor="81.0,66.0" superClass="_OX6IsM39EeK4_47q9hap4Q" subClass="_-WihYM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_AwWRYM3-EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_AwYGkc3-EeK4_47q9hap4Q"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_BNeSQM3-EeK4_47q9hap4Q" sourceAnchor="10.0,0.0" targetAnchor="81.0,66.0" superClass="_OX6IsM39EeK4_47q9hap4Q" subClass="_7NfFwM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_BNb2AM3-EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_BNeSQc3-EeK4_47q9hap4Q"/>
+    <bendpoints xmi:id="_ilkC4M3_EeK4_47q9hap4Q" sourceY="-30" targetX="-96" targetY="28"/>
+    <bendpoints xmi:id="_ilkC4c3_EeK4_47q9hap4Q" sourceX="96" sourceY="-30" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Iul6UM3-EeK4_47q9hap4Q" sourceAnchor="162.0,33.0" targetAnchor="190.0,31.0" target="_FL328M39EeK4_47q9hap4Q" source="_OX6IsM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_IuelkM3-EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_Iul6Uc3-EeK4_47q9hap4Q"/>
+    <bendpoints xmi:id="_ilhmoM3_EeK4_47q9hap4Q" sourceX="44" targetX="541" targetY="311"/>
+    <bendpoints xmi:id="_ilhmoc3_EeK4_47q9hap4Q" sourceX="44" sourceY="-311" targetX="541"/>
+    <stereotypes xmi:id="_Hjvl4M4AEeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_Hju-0M4AEeK4_47q9hap4Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Iul6Us3-EeK4_47q9hap4Q" text="appartient">
+      <visualProperties xmi:id="_IxCKUM3-EeK4_47q9hap4Q" position="-18.0,6.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Iul6U83-EeK4_47q9hap4Q" aggregationKind="NONE" name="listeDeCourse" navigable="true">
+      <modelElement href="frigoPlay.uml#_IufMoM3-EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_IxBjQM3-EeK4_47q9hap4Q" position="-45.0,-84.0"/>
+      <visibility xmi:id="_Iul6VM3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_Iul6Vc3-EeK4_47q9hap4Q" label="1..*" max="-1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Iul6Vs3-EeK4_47q9hap4Q" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="frigoPlay.uml#_IugawM3-EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_IxCxYM3-EeK4_47q9hap4Q" position="46.0,2.0"/>
+      <visibility xmi:id="_Iul6V83-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_Iul6WM3-EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_eIsrcM3-EeK4_47q9hap4Q" sourceAnchor="0.0,33.0" targetAnchor="87.0,118.0" target="_iV-ZoM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_eIl9wM3-EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_eItSgM3-EeK4_47q9hap4Q"/>
+    <bendpoints xmi:id="_ili0wM3_EeK4_47q9hap4Q" sourceX="-165" targetY="19"/>
+    <stereotypes xmi:id="_FycAUM4AEeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_FybZQM4AEeK4_47q9hap4Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_eItSgc3-EeK4_47q9hap4Q" text="est composée de">
+      <visualProperties xmi:id="_eLCNwM3-EeK4_47q9hap4Q" position="2.0,-16.999999999999943"/>
+    </nameVisual>
+    <sourceRole xmi:id="_eItSgs3-EeK4_47q9hap4Q" aggregationKind="NONE" name="listeDeCourse" navigable="true">
+      <modelElement href="frigoPlay.uml#_eImk0M3-EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_eLA_oM3-EeK4_47q9hap4Q" position="-114.0,2.0"/>
+      <visibility xmi:id="_eItSg83-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_eItShM3-EeK4_47q9hap4Q" label="1..*" max="-1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_eItShc3-EeK4_47q9hap4Q" aggregationKind="SHARED" name="article" navigable="true">
+      <modelElement href="frigoPlay.uml#_eIny8M3-EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_eLC00M3-EeK4_47q9hap4Q" position="88.0,-28.0"/>
+      <visibility xmi:id="_eItShs3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_eItSh83-EeK4_47q9hap4Q" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ieJowM3-EeK4_47q9hap4Q" sourceAnchor="78.0,135.0" targetAnchor="149.0,59.0" target="_iV-ZoM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_ieCUAM3-EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_ieJowc3-EeK4_47q9hap4Q"/>
+    <bendpoints xmi:id="_ilnGMM3_EeK4_47q9hap4Q" sourceY="56" targetX="157"/>
+    <stereotypes xmi:id="_---vgM3_EeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_--9hYM3_EeK4_47q9hap4Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ieJows3-EeK4_47q9hap4Q" text="est composée de">
+      <visualProperties xmi:id="_igi1cM3-EeK4_47q9hap4Q" position="-122.66666666666663,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ieJow83-EeK4_47q9hap4Q" aggregationKind="NONE" name="recette" navigable="true">
+      <modelElement href="frigoPlay.uml#_ieC7EM3-EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_ighnUM3-EeK4_47q9hap4Q" position="2.0,4.0"/>
+      <visibility xmi:id="_ieJoxM3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_ieJoxc3-EeK4_47q9hap4Q" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ieJoxs3-EeK4_47q9hap4Q" aggregationKind="SHARED" name="ingredient" navigable="true">
+      <modelElement href="frigoPlay.uml#_ieDiIs3-EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_igi1cc3-EeK4_47q9hap4Q" position="5.0,-38.0"/>
+      <visibility xmi:id="_ieJox83-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_ieJoyM3-EeK4_47q9hap4Q" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_-PXF4M3-EeK4_47q9hap4Q" sourceAnchor="0.0,103.0" targetAnchor="177.0,12.0" source="_iV-ZoM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_-PQ_QM3-EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_-PXF4c3-EeK4_47q9hap4Q"/>
+    <stereotypes xmi:id="_DZFjUM4AEeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_DZDuIM4AEeK4_47q9hap4Q"/>
+    </stereotypes>
+    <nameVisual xmi:id="_-PXF4s3-EeK4_47q9hap4Q" text="est contenu dans">
+      <visualProperties xmi:id="_-RwSkM3-EeK4_47q9hap4Q" position="-54.0,-20.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_-PXs8M3-EeK4_47q9hap4Q" aggregationKind="NONE" name="aliment" navigable="true">
+      <modelElement href="frigoPlay.uml#_-PQ_Qc3-EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_-RvrgM3-EeK4_47q9hap4Q" position="-42.0,4.0"/>
+      <stereotypes xmi:id="_DZOtQM4AEeK4_47q9hap4Q" name="JPA1StyledElement">
+        <modelElement href="frigoPlay.uml#_DZDHEM4AEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_-PXs8c3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_-PXs8s3-EeK4_47q9hap4Q" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_-PXs883-EeK4_47q9hap4Q" aggregationKind="NONE" name="etatFrigo" navigable="true">
+      <modelElement href="frigoPlay.uml#_-PSNYc3-EeK4_47q9hap4Q"/>
+      <visualProperties xmi:id="_-RwSkc3-EeK4_47q9hap4Q" position="0.0,5.0"/>
+      <stereotypes xmi:id="_DZH_kM4AEeK4_47q9hap4Q" name="JPA1StyledElement">
+        <modelElement href="frigoPlay.uml#_DZEVMM4AEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_-PXs9M3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_-PXs9c3-EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0RdDkM4EEeK4_47q9hap4Q" target="_iV-ZoM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_YpYmQM4CEeK4_47q9hap4Q"/>
+    <nameVisual xmi:id="_0Rgt8M4EEeK4_47q9hap4Q" text=""/>
+    <sourceRole xmi:id="_0RhVAM4EEeK4_47q9hap4Q" aggregationKind="NONE" name="peremption" navigable="true">
+      <modelElement href="frigoPlay.uml#_oA3f4M39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_0Rqe8M4EEeK4_47q9hap4Q" name="StyledElement">
+        <modelElement href="frigoPlay.uml#_YnGHQM4CEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_0Rh8Ec4EEeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_0Rh8EM4EEeK4_47q9hap4Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_0RhVAc4EEeK4_47q9hap4Q" aggregationKind="NONE" name="">
+      <modelElement href="frigoPlay.uml#_YpYmQc4CEeK4_47q9hap4Q"/>
+      <visibility xmi:id="_0Rh8FM4EEeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_0Rh8E84EEeK4_47q9hap4Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_7NfFwM39EeK4_47q9hap4Q" name="Type" generalizations="_BNeSQM3-EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_7Nd3oM39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_7NfFwc39EeK4_47q9hap4Q" position="608.0,521.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_7NfFws39EeK4_47q9hap4Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_-WihYM39EeK4_47q9hap4Q" name="Courante" generalizations="_AwYGkM3-EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_-Wh6UM39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_-WihYc39EeK4_47q9hap4Q" position="668.0,519.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_-WihYs39EeK4_47q9hap4Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="__E4OEM39EeK4_47q9hap4Q" name="Archive" generalizations="_AWWdAM3-EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#__E2_8M39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="__E4OEc39EeK4_47q9hap4Q" position="764.0,520.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="__E4OEs39EeK4_47q9hap4Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ufuZsM39EeK4_47q9hap4Q" name="Recette">
+    <modelElement href="frigoPlay.uml#_uftLkM39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_ufuZsc39EeK4_47q9hap4Q" position="609.0,161.0" size="156.0,135.0"/>
+    <stereotypes xmi:id="_3McnUM3_EeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_3McAQM3_EeK4_47q9hap4Q"/>
+    </stereotypes>
+    <visibility xmi:id="_ufuZss39EeK4_47q9hap4Q" label="+"/>
+    <attributes xmi:id="_wI6lEM39EeK4_47q9hap4Q" name="nom">
+      <modelElement href="frigoPlay.uml#_wI4v4M39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_BHdpgM4BEeK4_47q9hap4Q" name="PrimaryKey">
+        <modelElement href="frigoPlay.uml#_BHb0UM4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_M1ldgM4BEeK4_47q9hap4Q" name="NotEmpty">
+        <modelElement href="frigoPlay.uml#_M1kPYM4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_wI6lEc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_wI6lEs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_wI6lE839EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_xgwhwM39EeK4_47q9hap4Q" name="difficulte">
+      <modelElement href="frigoPlay.uml#_xguskM39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_xgwhwc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_xgwhws39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_xgwhw839EeK4_47q9hap4Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_yCJXkM39EeK4_47q9hap4Q" name="prix">
+      <modelElement href="frigoPlay.uml#_yCHiYM39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_yCJXkc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_yCJXks39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_yCJXk839EeK4_47q9hap4Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_yjOrYM39EeK4_47q9hap4Q" name="calories">
+      <modelElement href="frigoPlay.uml#_yjM2MM39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_yjOrYc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_yjOrYs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_yjOrY839EeK4_47q9hap4Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zBpswM39EeK4_47q9hap4Q" name="lien">
+      <modelElement href="frigoPlay.uml#_zBjmIM39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_zBpswc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_zBpsws39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_Q6WzIM4EEeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ieN6MM3-EeK4_47q9hap4Q" name="ingredient">
+      <modelElement href="frigoPlay.uml#_ieDiIs3-EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_ieN6Mc3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_ieN6Ms3-EeK4_47q9hap4Q" label="*" max="-1"/>
+      <type xmi:id="_ieN6M83-EeK4_47q9hap4Q" name="Aliment">
+        <modelElement href="frigoPlay.uml#_iV9LgM39EeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_iV-ZoM39EeK4_47q9hap4Q" name="Aliment" associationsIn="_eIsrcM3-EeK4_47q9hap4Q _ieJowM3-EeK4_47q9hap4Q _0RdDkM4EEeK4_47q9hap4Q" associationsOut="_-PXF4M3-EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_iV9LgM39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_iV-Zoc39EeK4_47q9hap4Q" position="381.0,293.0" size="149.0,118.0"/>
+    <stereotypes xmi:id="_2ttc4M3_EeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_2tsOwM3_EeK4_47q9hap4Q"/>
+    </stereotypes>
+    <visibility xmi:id="_iV-Zos39EeK4_47q9hap4Q" label="+"/>
+    <attributes xmi:id="_kbFsAM39EeK4_47q9hap4Q" name="nom">
+      <modelElement href="frigoPlay.uml#_kbDPwM39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_-whnUM4AEeK4_47q9hap4Q" name="PrimaryKey">
+        <modelElement href="frigoPlay.uml#_-wgZMM4AEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_NtvNgM4BEeK4_47q9hap4Q" name="NotEmpty">
+        <modelElement href="frigoPlay.uml#_Ntt_YM4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_kbFsAc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_kbFsAs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_kbFsA839EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_lUG-sM39EeK4_47q9hap4Q" name="quantite">
+      <modelElement href="frigoPlay.uml#_lUFJgM39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_Ypf7AM4CEeK4_47q9hap4Q" name="StyledElement">
+        <modelElement href="frigoPlay.uml#_YnFgMM4CEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_lUG-sc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_lUG-ss39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_lUG-s839EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_mpxxIM39EeK4_47q9hap4Q" name="calories">
+      <modelElement href="frigoPlay.uml#_mpv78M39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_YpgiEM4CEeK4_47q9hap4Q" name="StyledElement">
+        <modelElement href="frigoPlay.uml#_YnFgMc4CEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_mpxxIc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_mpxxIs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_mpxxI839EeK4_47q9hap4Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oA58IM39EeK4_47q9hap4Q" name="peremption">
+      <modelElement href="frigoPlay.uml#_oA3f4M39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_Ypi-UM4CEeK4_47q9hap4Q" name="StyledElement">
+        <modelElement href="frigoPlay.uml#_YnGHQM4CEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_oA58Ic39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_oA58Is39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_YphwMM4CEeK4_47q9hap4Q" name="Date">
+        <modelElement href="frigoPlay.uml#_YohDkM4CEeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_eIugoM3-EeK4_47q9hap4Q" name="listeDeCourse">
+      <modelElement href="frigoPlay.uml#_eImk0M3-EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_eIvHsM3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_eIvHsc3-EeK4_47q9hap4Q" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_YpkzgM4CEeK4_47q9hap4Q" name="ListeDeCourse">
+        <modelElement href="frigoPlay.uml#_YpFEQM4CEeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ieLd8M3-EeK4_47q9hap4Q" name="recette">
+      <modelElement href="frigoPlay.uml#_ieC7EM3-EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_ieLd8c3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_ieLd8s3-EeK4_47q9hap4Q" label="*" max="-1"/>
+      <type xmi:id="_YplakM4CEeK4_47q9hap4Q" name="Recette">
+        <modelElement href="frigoPlay.uml#_YpJ8wM4CEeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_-Pb-YM3-EeK4_47q9hap4Q" name="etatFrigo">
+      <modelElement href="frigoPlay.uml#_-PSNYc3-EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_0RoCsM4EEeK4_47q9hap4Q" name="JPA1StyledElement">
+        <modelElement href="frigoPlay.uml#_DZEVMM4AEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_-Pb-Yc3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_-Pb-Ys3-EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_YpmBoM4CEeK4_47q9hap4Q" name="EtatFrigo">
+        <modelElement href="frigoPlay.uml#_YpRRgM4CEeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_R9JxEM39EeK4_47q9hap4Q" name="EtatFrigo" associationsIn="_cDKXwM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_R9JKAM39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_R9JxEc39EeK4_47q9hap4Q" position="91.0,384.0" size="177.0,80.0"/>
+    <stereotypes xmi:id="_3ljD0M3_EeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_3lh1sM3_EeK4_47q9hap4Q"/>
+    </stereotypes>
+    <visibility xmi:id="_R9JxEs39EeK4_47q9hap4Q" label="+"/>
+    <attributes xmi:id="_aKg0EM39EeK4_47q9hap4Q" name="date">
+      <modelElement href="frigoPlay.uml#_aKdwwM39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_aKg0Ec39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_aKg0Es39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_PWiP8M4EEeK4_47q9hap4Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_cDM0AM39EeK4_47q9hap4Q" name="user">
+      <modelElement href="frigoPlay.uml#_cCfCUM39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_cDM0Ac39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_cDM0As39EeK4_47q9hap4Q" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_cDM0A839EeK4_47q9hap4Q" name="User">
+        <modelElement href="frigoPlay.uml#_FLn_UM39EeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_yHzeMM3-EeK4_47q9hap4Q" name="image">
+      <modelElement href="frigoPlay.uml#_yHxB8M3-EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_FPOJEM4BEeK4_47q9hap4Q" name="PrimaryKey">
+        <modelElement href="frigoPlay.uml#_FPM68M4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_yHzeMc3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_yHzeMs3-EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_QFuRMM4EEeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_-PZiIM3-EeK4_47q9hap4Q" name="aliment">
+      <modelElement href="frigoPlay.uml#_-PQ_Qc3-EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_0RmNgM4EEeK4_47q9hap4Q" name="JPA1StyledElement">
+        <modelElement href="frigoPlay.uml#_DZDHEM4AEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_-PZiIc3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_-PZiIs3-EeK4_47q9hap4Q" label="*" max="-1"/>
+      <type xmi:id="_-PZiI83-EeK4_47q9hap4Q" name="Aliment">
+        <modelElement href="frigoPlay.uml#_iV9LgM39EeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OX6IsM39EeK4_47q9hap4Q" name="ListeDeCourse" associationsOut="_Iul6UM3-EeK4_47q9hap4Q" subclassedBy="_AWWdAM3-EeK4_47q9hap4Q _AwYGkM3-EeK4_47q9hap4Q _BNeSQM3-EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_OX46kM39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_OX6Isc39EeK4_47q9hap4Q" position="633.0,397.0" size="162.0,66.0"/>
+    <stereotypes xmi:id="_4lXiEM3_EeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_4lVs4M3_EeK4_47q9hap4Q"/>
+    </stereotypes>
+    <visibility xmi:id="_OX6Iss39EeK4_47q9hap4Q" label="+"/>
+    <attributes xmi:id="_QU1IYM39EeK4_47q9hap4Q" name="nom">
+      <modelElement href="frigoPlay.uml#_QUzTMM39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_DlyGEM4BEeK4_47q9hap4Q" name="PrimaryKey">
+        <modelElement href="frigoPlay.uml#_Dlw38M4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OmR_EM4BEeK4_47q9hap4Q" name="NotEmpty">
+        <modelElement href="frigoPlay.uml#_OmQw8M4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_QU1IYc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_QU1IYs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_QU1vcM39EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IusA8M3-EeK4_47q9hap4Q" name="user">
+      <modelElement href="frigoPlay.uml#_IugawM3-EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_IusA8c3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_IusA8s3-EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_IusA883-EeK4_47q9hap4Q" name="User">
+        <modelElement href="frigoPlay.uml#_FLn_UM39EeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_eIw84M3-EeK4_47q9hap4Q" name="article">
+      <modelElement href="frigoPlay.uml#_eIny8M3-EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_eIw84c3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_eIw84s3-EeK4_47q9hap4Q" label="*" max="-1"/>
+      <type xmi:id="_eIw8483-EeK4_47q9hap4Q" name="Aliment">
+        <modelElement href="frigoPlay.uml#_iV9LgM39EeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FL328M39EeK4_47q9hap4Q" name="User" associationsIn="_Iul6UM3-EeK4_47q9hap4Q" associationsOut="_cDKXwM39EeK4_47q9hap4Q">
+    <modelElement href="frigoPlay.uml#_FLn_UM39EeK4_47q9hap4Q"/>
+    <visualProperties xmi:id="_FL4eAM39EeK4_47q9hap4Q" position="108.0,88.0" size="190.0,167.0"/>
+    <stereotypes xmi:id="_1zpBUM3_EeK4_47q9hap4Q" name="JPA1StyledElement">
+      <modelElement href="frigoPlay.uml#_1znzMM3_EeK4_47q9hap4Q"/>
+    </stereotypes>
+    <visibility xmi:id="_FL4eAc39EeK4_47q9hap4Q" label="+"/>
+    <attributes xmi:id="_GXIJIM39EeK4_47q9hap4Q" name="nom">
+      <modelElement href="frigoPlay.uml#_GW-_MM39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_KSTocM4BEeK4_47q9hap4Q" name="NotEmpty">
+        <modelElement href="frigoPlay.uml#_KSSaUM4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_GXIJIc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_GXIJIs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_GXIJI839EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_GwwxIM39EeK4_47q9hap4Q" name="prenom">
+      <modelElement href="frigoPlay.uml#_Gwtt0M39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_LF0JAM4BEeK4_47q9hap4Q" name="NotEmpty">
+        <modelElement href="frigoPlay.uml#_LFy64M4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_GwwxIc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_GwwxIs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_GwwxI839EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HpmdoM39EeK4_47q9hap4Q" name="motDePasse">
+      <modelElement href="frigoPlay.uml#_HpkBYM39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_Lf2ZoM4BEeK4_47q9hap4Q" name="NotEmpty">
+        <modelElement href="frigoPlay.uml#_Lf1LgM4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_Hpmdoc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_Hpmdos39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_Hpmdo839EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jvw44M39EeK4_47q9hap4Q" name="dateDeNaissance">
+      <modelElement href="frigoPlay.uml#_JvpkIM39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_48H_wM4AEeK4_47q9hap4Q" name="Temporal">
+        <modelElement href="frigoPlay.uml#_48GKkM4AEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_Jvw44c39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_Jvw44s39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_OFrsEM4EEeK4_47q9hap4Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_KzkfQM39EeK4_47q9hap4Q" defaultValue="1" name="nbFoyer">
+      <modelElement href="frigoPlay.uml#_KziqEM39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_KzkfQc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_KzkfQs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_KzkfQ839EeK4_47q9hap4Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Lv7Z0M39EeK4_47q9hap4Q" name="email">
+      <modelElement href="frigoPlay.uml#_Lv49kM39EeK4_47q9hap4Q"/>
+      <stereotypes xmi:id="_jgMpsM4AEeK4_47q9hap4Q" name="Email">
+        <modelElement href="frigoPlay.uml#_jgK0gM4AEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_tNDJgM4AEeK4_47q9hap4Q" name="PrimaryKey">
+        <modelElement href="frigoPlay.uml#_tNB7YM4AEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MKf5IM4BEeK4_47q9hap4Q" name="NotEmpty">
+        <modelElement href="frigoPlay.uml#_MKerAM4BEeK4_47q9hap4Q"/>
+      </stereotypes>
+      <visibility xmi:id="_Lv7Z0c39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_Lv7Z0s39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_Lv7Z0839EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_M8IuQM39EeK4_47q9hap4Q" defaultValue="nulle" name="preference">
+      <modelElement href="frigoPlay.uml#_M8FD4M39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_M8IuQc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_M8IuQs39EeK4_47q9hap4Q" label="1" max="1" min="1"/>
+      <type xmi:id="_M8IuQ839EeK4_47q9hap4Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_cDSTkM39EeK4_47q9hap4Q" name="etatFrigo">
+      <modelElement href="frigoPlay.uml#_cCissc39EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_cDSTkc39EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_cDSTks39EeK4_47q9hap4Q" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_cDSTk839EeK4_47q9hap4Q" name="EtatFrigo">
+        <modelElement href="frigoPlay.uml#_R9JKAM39EeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IuoWkM3-EeK4_47q9hap4Q" name="listeDeCourse">
+      <modelElement href="frigoPlay.uml#_IufMoM3-EeK4_47q9hap4Q"/>
+      <visibility xmi:id="_IuoWkc3-EeK4_47q9hap4Q" label="+"/>
+      <cardinality xmi:id="_IuoWks3-EeK4_47q9hap4Q" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Iuo9oM3-EeK4_47q9hap4Q" name="ListeDeCourse">
+        <modelElement href="frigoPlay.uml#_OX46kM39EeK4_47q9hap4Q"/>
+      </type>
+    </attributes>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
