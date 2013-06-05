@@ -86,11 +86,12 @@
     </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-<!-- #{get 'moreStyles' /} -->
 <!-- <link rel="shortcut icon" type="image/png" -->
 <!-- 	href="@{'/public/images/favicon.png'}"> -->
 <!-- <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" -->
 <!-- 	type="text/javascript" charset="${_response_encoding}"></script> -->
+
+	#{get 'moreStyles' /}
 
 	<script src="@{'/public/bootstrap/js/bootstrap.min.js'}"></script>
 	<script src="http://code.jquery.com/jquery.js"></script>
@@ -107,11 +108,11 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="#">Accueil</a></li>
-                <li><a href="historique/">Historique</a></li>
-                <li><a href="#">Mes recettes</a></li>
-                <li><a href="#">Mes listes de courses</a></li>
-                <li><a href="#">Mon profil</a></li>
+                <li class="#{get 'accueilActif' /}"><a href="#">Accueil</a></li>
+                <li class="#{get 'historiqueActif' /}"><a href="historique/">Historique</a></li>
+                <li class="#{get 'mesRecettesActif' /}"><a href="#">Mes recettes</a></li>
+                <li class="#{get 'listesActif' /}"><a href="#">Mes listes de courses</a></li>
+                <li class="#{get 'profilActif' /}"><a href="#">Mon profil</a></li>
               </ul>
             </div>
           </div>
