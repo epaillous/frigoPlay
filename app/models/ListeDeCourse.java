@@ -13,7 +13,7 @@ import javax.persistence.ManyToMany;
 @Entity
 public class ListeDeCourse extends Model {
 
-	@Id
+
 	@NotEmpty
 	public String nom;
 

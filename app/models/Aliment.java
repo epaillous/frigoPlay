@@ -1,7 +1,6 @@
 package models;
 
-import java.sql.Date;
-import java.util.Set;
+import java.util.*;
 
 import javax.persistence.*;
 
@@ -12,7 +11,7 @@ import play.db.jpa.Model;
 @Entity
 public class Aliment extends Model {
 
-	@Id
+
 	@NotEmpty
 	public String nom;
 
@@ -34,6 +33,9 @@ public class Aliment extends Model {
 	@ManyToOne(optional=false)
 	public EtatFrigo etatFrigo;
 
+	public String toString() {
+	    return nom;
+	}
 
    
    }

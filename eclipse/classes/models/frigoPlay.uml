@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_36cGAM4QEeKQjafdhR-xKw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_36cGAc4QEeKQjafdhR-xKw" source="codegen">
         <details xmi:id="_36cGAs4QEeKQjafdhR-xKw" key="codegenDirectory" value="/frigoPlay/app"/>
-        <details xmi:id="_4H7vcM4QEeKQjafdhR-xKw" key="AssociatedSourceCode" value="/frigoPlay/app/models/Aliment.java;3980621126/1;/frigoPlay/app/models/Archive.java;1183085457/1;/frigoPlay/app/models/Courante.java;3041638290/1;/frigoPlay/app/models/EtatFrigo.java;2479017093/1;/frigoPlay/app/models/ListeDeCourse.java;1272627751/1;/frigoPlay/app/models/Recette.java;3105302884/1;/frigoPlay/app/models/Type.java;283535523/1;/frigoPlay/app/models/User.java;671384502/1;"/>
+        <details xmi:id="_4H7vcM4QEeKQjafdhR-xKw" key="AssociatedSourceCode" value="/frigoPlay/app/models/Aliment.java;3980621126/1;/frigoPlay/app/models/Archive.java;1183085457/1;/frigoPlay/app/models/Courante.java;3041638290/1;/frigoPlay/app/models/EtatFrigo.java;2479017093/1;/frigoPlay/app/models/ListeDeCourse.java;1272627751/1;/frigoPlay/app/models/Recette.java;3105302884/1;/frigoPlay/app/models/Type.java;283535523/1;/frigoPlay/app/models/User.java;746423044/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_4Ad1gM4QEeKQjafdhR-xKw">
@@ -363,7 +363,6 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DR48M4QEeKQjafdhR-xKw" base_Element="_4DRR484QEeKQjafdhR-xKw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DSgAM4QEeKQjafdhR-xKw" base_Element="_4DR48c4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DSgAc4QEeKQjafdhR-xKw" base_Element="_4DR48c4QEeKQjafdhR-xKw">
-    <annotations xmi:id="_4DSgAs4QEeKQjafdhR-xKw" name="Id"/>
     <annotations xmi:id="_4DSgA84QEeKQjafdhR-xKw" name="NotEmpty"/>
     <annotations xmi:id="_4DSgBM4QEeKQjafdhR-xKw" name="Email"/>
   </UMLLabProfile:Annotations>

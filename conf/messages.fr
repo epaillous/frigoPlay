@@ -1,0 +1,6 @@
+nom = Nom
+prenom = Prenom
+motDePasse = Mot de passe
+dateDeNaissance = Date de Naissance
+nbFoyer = Nombre de personnes dans votre foyer
+preference = Preference diétetique 
