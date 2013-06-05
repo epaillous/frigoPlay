@@ -4,63 +4,30 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import org.hibernate.validator.constraints.NotEmpty;
 
+import play.db.jpa.Model;
+
 import java.net.URL;
 import java.util.Set;
 import javax.persistence.ManyToMany;
 
 @Entity
-public class Recette{
-   private String nom;
+public class Recette extends Model {
 
-public void setNom(String value) {
-    this.nom = value;
-}
-@Id
-@NotEmpty
-public String getNom() {
-    return this.nom;
-}
-private int difficulte;
+	@Id
+	@NotEmpty
+	public String nom;
 
-public void setDifficulte(int value) {
-    this.difficulte = value;
-}
-public int getDifficulte() {
-    return this.difficulte;
-}
-private int prix;
 
-public void setPrix(int value) {
-    this.prix = value;
-}
-public int getPrix() {
-    return this.prix;
-}
-private int calories;
+	public int difficulte;
 
-public void setCalories(int value) {
-    this.calories = value;
-}
-public int getCalories() {
-    return this.calories;
-}
-private URL lien;
+	public int prix;
 
-public void setLien(URL value) {
-    this.lien = value;
+	public int calories;
+
+	public URL lien;
+
+	@ManyToMany(mappedBy="recette" )
+	public Set<Aliment> ingredient;
+
+
 }
-public URL getLien() {
-    return this.lien;
-}
-   private Set<Aliment> ingredient;
-   
-   @ManyToMany(mappedBy="recette" )
-   public Set<Aliment> getIngredient() {
-      return this.ingredient;
-   }
-   
-   public void setIngredient(Set<Aliment> ingredients) {
-      this.ingredient = ingredients;
-   }
-   
-   }
