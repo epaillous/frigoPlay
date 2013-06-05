@@ -5,6 +5,10 @@
 # Home page
 GET     /                                       Application.index
 
+# Page historique
+
+GET 	/historique/								Application.historique
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

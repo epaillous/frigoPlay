@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_3xtn0M4QEeKQjafdhR-xKw">
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_3xtn0M4QEeKQjafdhR-xKw">
+  <eAnnotations xmi:id="_VGjzMM4XEeKQjafdhR-xKw" source="http://ns.yatta.de/umllab">
+    <contents xsi:type="ecore:EAnnotation" xmi:id="_VGkaQM4XEeKQjafdhR-xKw" source="dangling-refs">
+      <contents xsi:type="UMLLabProfile:Annotations" xmi:id="_4DIvAM4QEeKQjafdhR-xKw">
+        <base_Element xsi:type="uml:Property" href="models/frigoPlay.uml#_4DIH8c4QEeKQjafdhR-xKw"/>
+        <annotations xmi:id="_VGkaQc4XEeKQjafdhR-xKw" name="Required"/>
+      </contents>
+    </contents>
+  </eAnnotations>
   <modelElement href="models/frigoPlay.uml#_4AlxUM4QEeKQjafdhR-xKw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_4IVYEM4QEeKQjafdhR-xKw" sourceAnchor="41.0,73.0" targetAnchor="201.0,54.0" target="_4IYbac4QEeKQjafdhR-xKw" source="_4IskcM4QEeKQjafdhR-xKw">
     <modelElement href="models/frigoPlay.uml#_4DmCAM4QEeKQjafdhR-xKw"/>
@@ -8,17 +16,17 @@
       <modelElement href="models/frigoPlay.uml#_4DpFUM4QEeKQjafdhR-xKw"/>
     </stereotypes>
     <nameVisual xmi:id="_4IVYEs4QEeKQjafdhR-xKw" text="">
-      <visualProperties xmi:id="_4lhDUM4QEeKQjafdhR-xKw" position="-47.000000000000014,-22.0"/>
+      <visualProperties xmi:id="_4lhDUM4QEeKQjafdhR-xKw" position="-81.00000000000001,-51.0"/>
     </nameVisual>
     <sourceRole xmi:id="_4IV_IM4QEeKQjafdhR-xKw" aggregationKind="NONE" name="">
       <modelElement href="models/frigoPlay.uml#_4DmCAc4QEeKQjafdhR-xKw"/>
-      <visualProperties xmi:id="_4lgcQM4QEeKQjafdhR-xKw" position="-19.00000000000001,32.0"/>
+      <visualProperties xmi:id="_4lgcQM4QEeKQjafdhR-xKw" position="-18.00000000000001,2.0"/>
       <visibility xmi:id="_4IV_Ic4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4IV_Is4QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_4IV_I84QEeKQjafdhR-xKw" aggregationKind="NONE" name="user" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DHg4M4QEeKQjafdhR-xKw"/>
-      <visualProperties xmi:id="_4lhDUc4QEeKQjafdhR-xKw" position="73.99999999999997,-1.0"/>
+      <visualProperties xmi:id="_4lhDUc4QEeKQjafdhR-xKw" position="1.9999999999999716,-42.0"/>
       <stereotypes xmi:id="_4IV_JM4QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DHg4s4QEeKQjafdhR-xKw"/>
       </stereotypes>
@@ -43,7 +51,7 @@
       <modelElement href="models/frigoPlay.uml#_4D0EcM4QEeKQjafdhR-xKw"/>
     </stereotypes>
     <nameVisual xmi:id="_4IWmMs4QEeKQjafdhR-xKw" text="">
-      <visualProperties xmi:id="_4ljfkM4QEeKQjafdhR-xKw" position="-434.0,-249.0"/>
+      <visualProperties xmi:id="_4ljfkM4QEeKQjafdhR-xKw" position="8.0,-102.0"/>
     </nameVisual>
     <sourceRole xmi:id="_4IWmM84QEeKQjafdhR-xKw" aggregationKind="NONE" name="">
       <modelElement href="models/frigoPlay.uml#_4DvzAs4QEeKQjafdhR-xKw"/>
@@ -53,7 +61,7 @@
     </sourceRole>
     <targetRole xmi:id="_4IWmNs4QEeKQjafdhR-xKw" aggregationKind="NONE" name="user" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DKkMM4QEeKQjafdhR-xKw"/>
-      <visualProperties xmi:id="_4ljfkc4QEeKQjafdhR-xKw" position="261.0,-504.0"/>
+      <visualProperties xmi:id="_4ljfkc4QEeKQjafdhR-xKw" position="32.0,4.0"/>
       <stereotypes xmi:id="_4IWmN84QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DKkMc4QEeKQjafdhR-xKw"/>
       </stereotypes>
@@ -77,7 +85,7 @@
       <modelElement href="models/frigoPlay.uml#_4EEjIM4QEeKQjafdhR-xKw"/>
     </stereotypes>
     <nameVisual xmi:id="_4IXNQs4QEeKQjafdhR-xKw" text="">
-      <visualProperties xmi:id="_4lcx4M4QEeKQjafdhR-xKw" position="-92.99999999999999,-14.0"/>
+      <visualProperties xmi:id="_4lcx4M4QEeKQjafdhR-xKw" position="7.000000000000014,-13.0"/>
     </nameVisual>
     <sourceRole xmi:id="_4IXNQ84QEeKQjafdhR-xKw" aggregationKind="NONE" name="">
       <modelElement href="models/frigoPlay.uml#_4EA4ws4QEeKQjafdhR-xKw"/>
@@ -87,7 +95,13 @@
     </sourceRole>
     <targetRole xmi:id="_4IXNRs4QEeKQjafdhR-xKw" aggregationKind="NONE" name="etatFrigo" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DTHE84QEeKQjafdhR-xKw"/>
-      <visualProperties xmi:id="_4ldY8M4QEeKQjafdhR-xKw" position="-43.0,106.0"/>
+      <visualProperties xmi:id="_4ldY8M4QEeKQjafdhR-xKw" position="6.0,1.0"/>
+      <stereotypes xmi:id="_6ckc0M4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DTuIc4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6ckc0c4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DTuIs4QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4IXNR84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4IXNSM4QEeKQjafdhR-xKw" label="1..*" max="-1" min="1"/>
     </targetRole>
@@ -99,7 +113,7 @@
       <modelElement href="models/frigoPlay.uml#_4EINgM4QEeKQjafdhR-xKw"/>
     </stereotypes>
     <nameVisual xmi:id="_4IYbYs4QEeKQjafdhR-xKw" text="">
-      <visualProperties xmi:id="_4lenEM4QEeKQjafdhR-xKw" position="-45.0,299.0"/>
+      <visualProperties xmi:id="_4lenEM4QEeKQjafdhR-xKw" position="6.0,54.0"/>
     </nameVisual>
     <sourceRole xmi:id="_4IYbY84QEeKQjafdhR-xKw" aggregationKind="NONE" name="">
       <modelElement href="models/frigoPlay.uml#_4EEjIs4QEeKQjafdhR-xKw"/>
@@ -109,7 +123,13 @@
     </sourceRole>
     <targetRole xmi:id="_4IYbZs4QEeKQjafdhR-xKw" aggregationKind="NONE" name="listeDeCourse" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DUVMc4QEeKQjafdhR-xKw"/>
-      <visualProperties xmi:id="_4lenEc4QEeKQjafdhR-xKw" position="-227.0,276.0"/>
+      <visualProperties xmi:id="_4lenEc4QEeKQjafdhR-xKw" position="-94.0,-39.0"/>
+      <stereotypes xmi:id="_6clD4M4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DUVM84QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6clD4c4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DU8QM4QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4IYbZ84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4IYbaM4QEeKQjafdhR-xKw" label="1..*" max="-1" min="1"/>
     </targetRole>
@@ -161,6 +181,12 @@
     </sourceRole>
     <targetRole xmi:id="_4IhlVs4QEeKQjafdhR-xKw" aggregationKind="NONE" name="lien" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DNngc4QEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6cmSAM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DNngs4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6cmSAc4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#__LwlQM4VEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4IhlV84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4IhlWM4QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
     </targetRole>
@@ -172,17 +198,23 @@
       <modelElement href="models/frigoPlay.uml#_4EA4wM4QEeKQjafdhR-xKw"/>
     </stereotypes>
     <nameVisual xmi:id="_4IiMYs4QEeKQjafdhR-xKw" text="">
-      <visualProperties xmi:id="_4lf1MM4QEeKQjafdhR-xKw" position="66.0,-2.0"/>
+      <visualProperties xmi:id="_4lf1MM4QEeKQjafdhR-xKw" position="-8.0,2.0"/>
     </nameVisual>
     <sourceRole xmi:id="_4IiMY84QEeKQjafdhR-xKw" aggregationKind="NONE" name="">
       <modelElement href="models/frigoPlay.uml#_4D9OYc4QEeKQjafdhR-xKw"/>
-      <visualProperties xmi:id="_4lfOIM4QEeKQjafdhR-xKw" position="-63.0,-13.0"/>
+      <visualProperties xmi:id="_4lfOIM4QEeKQjafdhR-xKw" position="-15.0,3.0"/>
       <visibility xmi:id="_4IiMZM4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4IiMZc4QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_4IiMZs4QEeKQjafdhR-xKw" aggregationKind="NONE" name="ingredient" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DNng84QEeKQjafdhR-xKw"/>
-      <visualProperties xmi:id="_4lf1Mc4QEeKQjafdhR-xKw" position="90.0,108.0"/>
+      <visualProperties xmi:id="_4lf1Mc4QEeKQjafdhR-xKw" position="2.0,2.0"/>
+      <stereotypes xmi:id="_6cm5EM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DOOkc4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6cm5Ec4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DOOks4QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4IiMZ84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4IiMaM4QEeKQjafdhR-xKw" label="1..*" max="-1" min="1"/>
     </targetRole>
@@ -234,6 +266,10 @@
     </sourceRole>
     <targetRole xmi:id="_4IphIM4QEeKQjafdhR-xKw" aggregationKind="NONE" name="image" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DIH8c4QEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6coHMM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DIH8s4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6coHMc4WEeKQjafdhR-xKw" modelElement="_4DIvAM4QEeKQjafdhR-xKw" name="Annotations"/>
       <visibility xmi:id="_4IqvRM4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4IqvQ84QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
     </targetRole>
@@ -256,6 +292,12 @@
     <targetRole xmi:id="_4IphJM4QEeKQjafdhR-xKw" aggregationKind="NONE" name="aliment" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DIvAs4QEeKQjafdhR-xKw"/>
       <visualProperties xmi:id="_4liRcc4QEeKQjafdhR-xKw" position="-172.0,89.0"/>
+      <stereotypes xmi:id="_6couQM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DJWEM4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6cpVUM4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DJWEc4QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4IrWVM4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4IrWU84QEeKQjafdhR-xKw" label="1..*" max="-1" min="1"/>
     </targetRole>
@@ -275,7 +317,7 @@
       <modelElement href="models/frigoPlay.uml#_4DetQM4QEeKQjafdhR-xKw"/>
     </stereotypes>
     <nameVisual xmi:id="_4IyrEM4QEeKQjafdhR-xKw" text="">
-      <visualProperties xmi:id="_4ll70M4QEeKQjafdhR-xKw" position="110.0,-17.0"/>
+      <visualProperties xmi:id="_4ll70M4QEeKQjafdhR-xKw" position="-80.0,-29.0"/>
     </nameVisual>
     <sourceRole xmi:id="_4IyrEc4QEeKQjafdhR-xKw" aggregationKind="NONE" name="">
       <modelElement href="models/frigoPlay.uml#_4DbC4c4QEeKQjafdhR-xKw"/>
@@ -320,6 +362,12 @@
     <targetRole xmi:id="_4IzSJM4QEeKQjafdhR-xKw" aggregationKind="NONE" name="article" navigable="true">
       <modelElement href="models/frigoPlay.uml#_4DLLQM4QEeKQjafdhR-xKw"/>
       <visualProperties xmi:id="_4lktsc4QEeKQjafdhR-xKw" position="-147.0,-115.0"/>
+      <stereotypes xmi:id="_6cqjcM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DLLQs4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6cqjcc4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DLyUM4QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4I0gRc4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4I0gRM4QEeKQjafdhR-xKw" label="1..*" max="-1" min="1"/>
     </targetRole>
@@ -430,16 +478,16 @@
     </attributes>
     <attributes xmi:id="_4IYblc4QEeKQjafdhR-xKw" name="etatFrigo">
       <modelElement href="models/frigoPlay.uml#_4DTHE84QEeKQjafdhR-xKw"/>
-      <stereotypes xmi:id="_4IYbls4QEeKQjafdhR-xKw" name="LegacyStyledElement">
-        <modelElement href="models/frigoPlay.uml#_4DTuIc4QEeKQjafdhR-xKw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_4IYbl84QEeKQjafdhR-xKw" name="Annotations">
-        <modelElement href="models/frigoPlay.uml#_4DTuIs4QEeKQjafdhR-xKw"/>
-      </stereotypes>
       <stereotypes xmi:id="_4IYbmM4QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DTuIc4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <stereotypes xmi:id="_4IYbmc4QEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DTuIs4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dEMEM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DTuIc4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dEMEc4WEeKQjafdhR-xKw" name="Annotations">
         <modelElement href="models/frigoPlay.uml#_4DTuIs4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <visibility xmi:id="_4IYbms4QEeKQjafdhR-xKw" label="+"/>
@@ -450,16 +498,16 @@
     </attributes>
     <attributes xmi:id="_4IYbnc4QEeKQjafdhR-xKw" name="listeDeCourse">
       <modelElement href="models/frigoPlay.uml#_4DUVMc4QEeKQjafdhR-xKw"/>
-      <stereotypes xmi:id="_4IYbns4QEeKQjafdhR-xKw" name="LegacyStyledElement">
-        <modelElement href="models/frigoPlay.uml#_4DUVM84QEeKQjafdhR-xKw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_4IYbn84QEeKQjafdhR-xKw" name="Annotations">
-        <modelElement href="models/frigoPlay.uml#_4DU8QM4QEeKQjafdhR-xKw"/>
-      </stereotypes>
       <stereotypes xmi:id="_4IYboM4QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DUVM84QEeKQjafdhR-xKw"/>
       </stereotypes>
       <stereotypes xmi:id="_4IYboc4QEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DU8QM4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dGoUM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DUVM84QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dGoUc4WEeKQjafdhR-xKw" name="Annotations">
         <modelElement href="models/frigoPlay.uml#_4DU8QM4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <visibility xmi:id="_4IYbos4QEeKQjafdhR-xKw" label="+"/>
@@ -468,6 +516,19 @@
         <modelElement href="models/frigoPlay.uml#_4BX0cM4QEeKQjafdhR-xKw"/>
       </type>
     </attributes>
+    <operations xmi:id="_6crKgM4WEeKQjafdhR-xKw" name="toString">
+      <modelElement href="models/frigoPlay.uml#_K789MM4TEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6c7pMc4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_K7-LUM4TEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <visibility xmi:id="_6c7pMM4WEeKQjafdhR-xKw" label="+"/>
+      <outParameters xmi:id="_6c7CIM4WEeKQjafdhR-xKw">
+        <modelElement href="models/frigoPlay.uml#_K7_ZcM4TEeKQjafdhR-xKw"/>
+        <type xmi:id="_6c7CIc4WEeKQjafdhR-xKw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_4IizcM4QEeKQjafdhR-xKw" name="Recette" associationsIn="_4Ig-QM4QEeKQjafdhR-xKw" associationsOut="_4IhlUM4QEeKQjafdhR-xKw _4IiMYM4QEeKQjafdhR-xKw">
     <modelElement href="models/frigoPlay.uml#_4BaQsM4QEeKQjafdhR-xKw"/>
@@ -525,30 +586,33 @@
     </attributes>
     <attributes xmi:id="_4Iizic4QEeKQjafdhR-xKw" name="lien">
       <modelElement href="models/frigoPlay.uml#_4DNngc4QEeKQjafdhR-xKw"/>
-      <stereotypes xmi:id="_4Iizis4QEeKQjafdhR-xKw" name="LegacyStyledElement">
-        <modelElement href="models/frigoPlay.uml#_4DNngs4QEeKQjafdhR-xKw"/>
-      </stereotypes>
       <stereotypes xmi:id="_4Iizi84QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DNngs4QEeKQjafdhR-xKw"/>
       </stereotypes>
+      <stereotypes xmi:id="_6dKSsM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DNngs4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dK5wM4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#__LwlQM4VEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4IizjM4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4Iizjc4QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
-      <type xmi:id="_4Iizjs4QEeKQjafdhR-xKw" name="URL">
-        <modelElement href="models/frigoPlay.uml#_4CYhEM4QEeKQjafdhR-xKw"/>
+      <type xmi:id="_6cwDAM4WEeKQjafdhR-xKw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
     <attributes xmi:id="_4Iizj84QEeKQjafdhR-xKw" name="ingredient">
       <modelElement href="models/frigoPlay.uml#_4DNng84QEeKQjafdhR-xKw"/>
-      <stereotypes xmi:id="_4IizkM4QEeKQjafdhR-xKw" name="LegacyStyledElement">
-        <modelElement href="models/frigoPlay.uml#_4DOOkc4QEeKQjafdhR-xKw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_4Iizkc4QEeKQjafdhR-xKw" name="Annotations">
-        <modelElement href="models/frigoPlay.uml#_4DOOks4QEeKQjafdhR-xKw"/>
-      </stereotypes>
       <stereotypes xmi:id="_4Iizks4QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DOOkc4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <stereotypes xmi:id="_4Iizk84QEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DOOks4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dMH4M4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DOOkc4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dMu8M4WEeKQjafdhR-xKw" name="Annotations">
         <modelElement href="models/frigoPlay.uml#_4DOOks4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <visibility xmi:id="_4IizlM4QEeKQjafdhR-xKw" label="+"/>
@@ -557,6 +621,19 @@
         <modelElement href="models/frigoPlay.uml#_4BGusM4QEeKQjafdhR-xKw"/>
       </type>
     </attributes>
+    <operations xmi:id="_6cu04M4WEeKQjafdhR-xKw" name="toString">
+      <modelElement href="models/frigoPlay.uml#_8Dga4M4VEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6c8QQM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_8DhpAM4VEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <visibility xmi:id="_6c7pNM4WEeKQjafdhR-xKw" label="+"/>
+      <outParameters xmi:id="_6c7pMs4WEeKQjafdhR-xKw">
+        <modelElement href="models/frigoPlay.uml#_8DiQEM4VEeKQjafdhR-xKw"/>
+        <type xmi:id="_6c7pM84WEeKQjafdhR-xKw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_4IskcM4QEeKQjafdhR-xKw" name="EtatFrigo" associationsIn="_4IXNQM4QEeKQjafdhR-xKw _4Imd0M4QEeKQjafdhR-xKw" associationsOut="_4IVYEM4QEeKQjafdhR-xKw _4InE4M4QEeKQjafdhR-xKw _4Inr8M4QEeKQjafdhR-xKw">
     <modelElement href="models/frigoPlay.uml#_4BTjAM4QEeKQjafdhR-xKw"/>
@@ -572,12 +649,18 @@
       </stereotypes>
       <visibility xmi:id="_4Iskds4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4Iskd84QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
-      <type xmi:id="_4IskeM4QEeKQjafdhR-xKw" name="int">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      <type xmi:id="_6cyfQM4WEeKQjafdhR-xKw" name="Date">
+        <modelElement href="models/frigoPlay.uml#_4CB7wM4QEeKQjafdhR-xKw"/>
       </type>
     </attributes>
     <attributes xmi:id="_4Iskec4QEeKQjafdhR-xKw" name="user">
       <modelElement href="models/frigoPlay.uml#_4DHg4M4QEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6c_TkM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DHg4s4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6c_6oM4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DHg484QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4Iskes4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4Iske84QEeKQjafdhR-xKw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_4IskfM4QEeKQjafdhR-xKw" name="User">
@@ -586,18 +669,13 @@
     </attributes>
     <attributes xmi:id="_4Iskfc4QEeKQjafdhR-xKw" name="image">
       <modelElement href="models/frigoPlay.uml#_4DIH8c4QEeKQjafdhR-xKw"/>
-      <stereotypes xmi:id="_4Iskfs4QEeKQjafdhR-xKw" name="LegacyStyledElement">
-        <modelElement href="models/frigoPlay.uml#_4DIH8s4QEeKQjafdhR-xKw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_4Iskf84QEeKQjafdhR-xKw" name="Annotations">
-        <modelElement href="models/frigoPlay.uml#_4DIvAM4QEeKQjafdhR-xKw"/>
-      </stereotypes>
       <stereotypes xmi:id="_4IqvRc4QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DIH8s4QEeKQjafdhR-xKw"/>
       </stereotypes>
-      <stereotypes xmi:id="_4IrWUM4QEeKQjafdhR-xKw" name="Annotations">
-        <modelElement href="models/frigoPlay.uml#_4DIvAM4QEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6dPyQM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DIH8s4QEeKQjafdhR-xKw"/>
       </stereotypes>
+      <stereotypes xmi:id="_6dQZUM4WEeKQjafdhR-xKw" modelElement="_4DIvAM4QEeKQjafdhR-xKw" name="Annotations"/>
       <visibility xmi:id="_4IskgM4QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4Iskgc4QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
       <type xmi:id="_4Iskgs4QEeKQjafdhR-xKw" name="URL">
@@ -606,16 +684,16 @@
     </attributes>
     <attributes xmi:id="_4Iskg84QEeKQjafdhR-xKw" name="aliment">
       <modelElement href="models/frigoPlay.uml#_4DIvAs4QEeKQjafdhR-xKw"/>
-      <stereotypes xmi:id="_4IskhM4QEeKQjafdhR-xKw" name="LegacyStyledElement">
-        <modelElement href="models/frigoPlay.uml#_4DJWEM4QEeKQjafdhR-xKw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_4Iskhc4QEeKQjafdhR-xKw" name="Annotations">
-        <modelElement href="models/frigoPlay.uml#_4DJWEc4QEeKQjafdhR-xKw"/>
-      </stereotypes>
       <stereotypes xmi:id="_4IrWVc4QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DJWEM4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <stereotypes xmi:id="_4IrWVs4QEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DJWEc4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dRncM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DJWEM4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dRncc4WEeKQjafdhR-xKw" name="Annotations">
         <modelElement href="models/frigoPlay.uml#_4DJWEc4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <visibility xmi:id="_4Iskhs4QEeKQjafdhR-xKw" label="+"/>
@@ -648,6 +726,12 @@
     </attributes>
     <attributes xmi:id="_4I2Ves4QEeKQjafdhR-xKw" name="user">
       <modelElement href="models/frigoPlay.uml#_4DKkMM4QEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6dBv0M4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DKkMc4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dCW4M4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DKkMs4QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4I2Ve84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4I2VfM4QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
       <type xmi:id="_4I2Vfc4QEeKQjafdhR-xKw" name="User">
@@ -656,16 +740,16 @@
     </attributes>
     <attributes xmi:id="_4I2Vfs4QEeKQjafdhR-xKw" name="article">
       <modelElement href="models/frigoPlay.uml#_4DLLQM4QEeKQjafdhR-xKw"/>
-      <stereotypes xmi:id="_4I2Vf84QEeKQjafdhR-xKw" name="LegacyStyledElement">
-        <modelElement href="models/frigoPlay.uml#_4DLLQs4QEeKQjafdhR-xKw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_4I2VgM4QEeKQjafdhR-xKw" name="Annotations">
-        <modelElement href="models/frigoPlay.uml#_4DLyUM4QEeKQjafdhR-xKw"/>
-      </stereotypes>
       <stereotypes xmi:id="_4I1HUM4QEeKQjafdhR-xKw" name="LegacyStyledElement">
         <modelElement href="models/frigoPlay.uml#_4DLLQs4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <stereotypes xmi:id="_4I1HUc4QEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DLyUM4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dV44M4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DLLQs4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dV44c4WEeKQjafdhR-xKw" name="Annotations">
         <modelElement href="models/frigoPlay.uml#_4DLyUM4QEeKQjafdhR-xKw"/>
       </stereotypes>
       <visibility xmi:id="_4I2Vgc4QEeKQjafdhR-xKw" label="+"/>
@@ -725,12 +809,18 @@
       </stereotypes>
       <visibility xmi:id="_4I-RV84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4I-RWM4QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
-      <type xmi:id="_4I-RWc4QEeKQjafdhR-xKw" name="Date">
-        <modelElement href="models/frigoPlay.uml#_4CB7wM4QEeKQjafdhR-xKw"/>
+      <type xmi:id="_6c4l4M4WEeKQjafdhR-xKw" name="Date">
+        <modelElement href="models/frigoPlay.uml#_4CxioM4QEeKQjafdhR-xKw"/>
       </type>
     </attributes>
     <attributes xmi:id="_4I-RWs4QEeKQjafdhR-xKw" name="listeDeCourse">
       <modelElement href="models/frigoPlay.uml#_4DEdk84QEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6dTcoM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DFEoc4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dUDsM4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DFEos4QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4I-RW84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4I-RXM4QEeKQjafdhR-xKw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_4I-RXc4QEeKQjafdhR-xKw" name="ListeDeCourse">
@@ -739,6 +829,12 @@
     </attributes>
     <attributes xmi:id="_4I-RXs4QEeKQjafdhR-xKw" name="recette">
       <modelElement href="models/frigoPlay.uml#_4DFrsM4QEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6dIdgM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DFrss4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dJEkM4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DFrs84QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4I-RX84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4I-RYM4QEeKQjafdhR-xKw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_4I-RYc4QEeKQjafdhR-xKw" name="Recette">
@@ -747,12 +843,31 @@
     </attributes>
     <attributes xmi:id="_4I-RYs4QEeKQjafdhR-xKw" name="etatFrigo">
       <modelElement href="models/frigoPlay.uml#_4DGSwc4QEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6dN9EM4WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_4DGSws4QEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6dOkIM4WEeKQjafdhR-xKw" name="Annotations">
+        <modelElement href="models/frigoPlay.uml#_4DGSw84QEeKQjafdhR-xKw"/>
+      </stereotypes>
       <visibility xmi:id="_4I-RY84QEeKQjafdhR-xKw" label="+"/>
       <cardinality xmi:id="_4I-RZM4QEeKQjafdhR-xKw" label="1" max="1" min="1"/>
       <type xmi:id="_4I-RZc4QEeKQjafdhR-xKw" name="EtatFrigo">
         <modelElement href="models/frigoPlay.uml#_4BTjAM4QEeKQjafdhR-xKw"/>
       </type>
     </attributes>
+    <operations xmi:id="_6c2wsM4WEeKQjafdhR-xKw" name="toString">
+      <modelElement href="models/frigoPlay.uml#_fCxPkM4VEeKQjafdhR-xKw"/>
+      <stereotypes xmi:id="_6c83U84WEeKQjafdhR-xKw" name="LegacyStyledElement">
+        <modelElement href="models/frigoPlay.uml#_fCzr0M4VEeKQjafdhR-xKw"/>
+      </stereotypes>
+      <visibility xmi:id="_6c83Us4WEeKQjafdhR-xKw" label="+"/>
+      <outParameters xmi:id="_6c83UM4WEeKQjafdhR-xKw">
+        <modelElement href="models/frigoPlay.uml#_fC1hAM4VEeKQjafdhR-xKw"/>
+        <type xmi:id="_6c83Uc4WEeKQjafdhR-xKw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_4IQfkM4QEeKQjafdhR-xKw" name="Type" generalizations="_4Ixc8M4QEeKQjafdhR-xKw">
     <modelElement href="models/frigoPlay.uml#_4BdUAM4QEeKQjafdhR-xKw"/>

@@ -18,7 +18,7 @@ public class EtatFrigo extends Model {
 	@ManyToMany
 	public Set<User> user;
 
-	public URL image;
+	public String image;
 
 	@OneToMany(mappedBy="etatFrigo" )
 	public Set<Aliment> aliment;

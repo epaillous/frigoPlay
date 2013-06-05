@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_36cGAM4QEeKQjafdhR-xKw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_36cGAc4QEeKQjafdhR-xKw" source="codegen">
         <details xmi:id="_36cGAs4QEeKQjafdhR-xKw" key="codegenDirectory" value="/frigoPlay/app"/>
-        <details xmi:id="_4H7vcM4QEeKQjafdhR-xKw" key="AssociatedSourceCode" value="/frigoPlay/app/models/Aliment.java;3980621126/1;/frigoPlay/app/models/Archive.java;1183085457/1;/frigoPlay/app/models/Courante.java;3041638290/1;/frigoPlay/app/models/EtatFrigo.java;2479017093/1;/frigoPlay/app/models/ListeDeCourse.java;1272627751/1;/frigoPlay/app/models/Recette.java;3105302884/1;/frigoPlay/app/models/Type.java;283535523/1;/frigoPlay/app/models/User.java;746423044/1;"/>
+        <details xmi:id="_4H7vcM4QEeKQjafdhR-xKw" key="AssociatedSourceCode" value="/frigoPlay/app/models/Aliment.java;4268017896/1;/frigoPlay/app/models/Archive.java;1183085457/1;/frigoPlay/app/models/Courante.java;3041638290/1;/frigoPlay/app/models/EtatFrigo.java;4110896559/1;/frigoPlay/app/models/ListeDeCourse.java;722043970/1;/frigoPlay/app/models/Recette.java;3612402055/1;/frigoPlay/app/models/Type.java;283535523/1;/frigoPlay/app/models/User.java;3432685638/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_4Ad1gM4QEeKQjafdhR-xKw">
@@ -73,6 +73,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_4A2QAM4QEeKQjafdhR-xKw" name="data">
         <packagedElement xmi:type="uml:Package" xmi:id="_4A2QAc4QEeKQjafdhR-xKw" name="validation">
           <packagedElement xmi:type="uml:Interface" xmi:id="_4C1NAc4QEeKQjafdhR-xKw" name="Email"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_oSJ3oM4SEeKQjafdhR-xKw" name="Required"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -88,7 +89,7 @@
         <ownedAttribute xmi:id="_4DD2g84QEeKQjafdhR-xKw" name="calories">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4DEdkc4QEeKQjafdhR-xKw" name="peremption" type="_4CB7wM4QEeKQjafdhR-xKw"/>
+        <ownedAttribute xmi:id="_4DEdkc4QEeKQjafdhR-xKw" name="peremption" type="_4CxioM4QEeKQjafdhR-xKw"/>
         <ownedAttribute xmi:id="_4DEdk84QEeKQjafdhR-xKw" name="listeDeCourse" type="_4BX0cM4QEeKQjafdhR-xKw" association="_4DbC4M4QEeKQjafdhR-xKw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DFEoM4QEeKQjafdhR-xKw" value="*"/>
         </ownedAttribute>
@@ -96,6 +97,19 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DFrsc4QEeKQjafdhR-xKw" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_4DGSwc4QEeKQjafdhR-xKw" name="etatFrigo" type="_4BTjAM4QEeKQjafdhR-xKw" association="_4DiXoc4QEeKQjafdhR-xKw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fC39QM4VEeKQjafdhR-xKw" name="toString" specification="_fCxPkM4VEeKQjafdhR-xKw">
+          <ownedParameter xmi:id="_fC39Qc4VEeKQjafdhR-xKw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return nom;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_fCxPkM4VEeKQjafdhR-xKw" name="toString" method="_fC39QM4VEeKQjafdhR-xKw">
+          <ownedParameter xmi:id="_fC1hAM4VEeKQjafdhR-xKw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4BP4oM4QEeKQjafdhR-xKw" name="Archive">
         <generalization xmi:id="_4CUPoM4QEeKQjafdhR-xKw" general="_4BX0cM4QEeKQjafdhR-xKw"/>
@@ -105,9 +119,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4BTjAM4QEeKQjafdhR-xKw" name="EtatFrigo">
         <generalization xmi:id="_4C-W8M4QEeKQjafdhR-xKw" general="_4COwEc4QEeKQjafdhR-xKw"/>
-        <ownedAttribute xmi:id="_4DG50c4QEeKQjafdhR-xKw" name="date">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:id="_4DG50c4QEeKQjafdhR-xKw" name="date" type="_4CB7wM4QEeKQjafdhR-xKw"/>
         <ownedAttribute xmi:id="_4DHg4M4QEeKQjafdhR-xKw" name="user" type="_4Bd7EM4QEeKQjafdhR-xKw" association="_4DmCAM4QEeKQjafdhR-xKw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DHg4c4QEeKQjafdhR-xKw" value="*"/>
         </ownedAttribute>
@@ -140,10 +152,26 @@
         <ownedAttribute xmi:id="_4DNAc84QEeKQjafdhR-xKw" name="calories">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4DNngc4QEeKQjafdhR-xKw" name="lien" type="_4CYhEM4QEeKQjafdhR-xKw" association="_4D4V4c4QEeKQjafdhR-xKw"/>
+        <ownedAttribute xmi:id="_4DNngc4QEeKQjafdhR-xKw" name="lien" association="_4D4V4c4QEeKQjafdhR-xKw">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
         <ownedAttribute xmi:id="_4DNng84QEeKQjafdhR-xKw" name="ingredient" type="_4BGusM4QEeKQjafdhR-xKw" association="_4D9OYM4QEeKQjafdhR-xKw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DOOkM4QEeKQjafdhR-xKw" value="*"/>
         </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8Di3IM4VEeKQjafdhR-xKw" name="toString" specification="_8Dga4M4VEeKQjafdhR-xKw">
+          <ownedParameter xmi:id="_8Di3Ic4VEeKQjafdhR-xKw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return nom;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_8Dga4M4VEeKQjafdhR-xKw" name="toString" method="_8Di3IM4VEeKQjafdhR-xKw">
+          <ownedParameter xmi:id="_8DiQEM4VEeKQjafdhR-xKw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4BdUAM4QEeKQjafdhR-xKw" name="Type">
         <generalization xmi:id="_4Cw7kM4QEeKQjafdhR-xKw" general="_4BX0cM4QEeKQjafdhR-xKw"/>
@@ -177,6 +205,19 @@
         <ownedAttribute xmi:id="_4DUVMc4QEeKQjafdhR-xKw" name="listeDeCourse" type="_4BX0cM4QEeKQjafdhR-xKw" association="_4EEjIc4QEeKQjafdhR-xKw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DUVMs4QEeKQjafdhR-xKw" value="*"/>
         </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_K8AAgM4TEeKQjafdhR-xKw" name="toString" specification="_K789MM4TEeKQjafdhR-xKw">
+          <ownedParameter xmi:id="_K8AAgc4TEeKQjafdhR-xKw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return email;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_K789MM4TEeKQjafdhR-xKw" name="toString" method="_K8AAgM4TEeKQjafdhR-xKw">
+          <ownedParameter xmi:id="_K7_ZcM4TEeKQjafdhR-xKw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4DbC4M4QEeKQjafdhR-xKw" name="" memberEnd="_4DbC4c4QEeKQjafdhR-xKw _4DEdk84QEeKQjafdhR-xKw">
         <ownedEnd xmi:id="_4DbC4c4QEeKQjafdhR-xKw" name="" type="_4BGusM4QEeKQjafdhR-xKw" association="_4DbC4M4QEeKQjafdhR-xKw"/>
@@ -206,7 +247,10 @@
         <ownedEnd xmi:id="_4D4V4s4QEeKQjafdhR-xKw" name="" type="_4BaQsM4QEeKQjafdhR-xKw" association="_4D4V4c4QEeKQjafdhR-xKw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4D9OYM4QEeKQjafdhR-xKw" name="" memberEnd="_4D9OYc4QEeKQjafdhR-xKw _4DNng84QEeKQjafdhR-xKw">
-        <ownedEnd xmi:id="_4D9OYc4QEeKQjafdhR-xKw" name="" type="_4BaQsM4QEeKQjafdhR-xKw" association="_4D9OYM4QEeKQjafdhR-xKw"/>
+        <ownedEnd xmi:id="_4D9OYc4QEeKQjafdhR-xKw" name="" type="_4BaQsM4QEeKQjafdhR-xKw" association="_4D9OYM4QEeKQjafdhR-xKw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ic488M4XEeKQjafdhR-xKw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ic5kAM4XEeKQjafdhR-xKw" value="1"/>
+        </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4EA4wc4QEeKQjafdhR-xKw" name="" memberEnd="_4EA4ws4QEeKQjafdhR-xKw _4DTHE84QEeKQjafdhR-xKw">
         <ownedEnd xmi:id="_4EA4ws4QEeKQjafdhR-xKw" name="" type="_4Bd7EM4QEeKQjafdhR-xKw" association="_4EA4wc4QEeKQjafdhR-xKw"/>
@@ -263,7 +307,6 @@
   <UMLLabProfile:Reference xmi:id="_4C43YM4QEeKQjafdhR-xKw" base_Element="_4C1NAc4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DDPcM4QEeKQjafdhR-xKw" base_Element="_4DCoYM4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DDPcc4QEeKQjafdhR-xKw" base_Element="_4DCoYM4QEeKQjafdhR-xKw">
-    <annotations xmi:id="_4DDPcs4QEeKQjafdhR-xKw" name="Id"/>
     <annotations xmi:id="_4DD2gM4QEeKQjafdhR-xKw" name="NotEmpty"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DD2gs4QEeKQjafdhR-xKw" base_Element="_4DD2gc4QEeKQjafdhR-xKw"/>
@@ -291,9 +334,6 @@
     <annotations xmi:id="_4DIH8M4QEeKQjafdhR-xKw" name="ManyToMany"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DIH8s4QEeKQjafdhR-xKw" base_Element="_4DIH8c4QEeKQjafdhR-xKw"/>
-  <UMLLabProfile:Annotations xmi:id="_4DIvAM4QEeKQjafdhR-xKw" base_Element="_4DIH8c4QEeKQjafdhR-xKw">
-    <annotations xmi:id="_4DIvAc4QEeKQjafdhR-xKw" name="Id"/>
-  </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DJWEM4QEeKQjafdhR-xKw" base_Element="_4DIvAs4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DJWEc4QEeKQjafdhR-xKw" base_Element="_4DIvAs4QEeKQjafdhR-xKw">
     <annotations xmi:id="_4DJWEs4QEeKQjafdhR-xKw" name="OneToMany">
@@ -304,7 +344,6 @@
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DJ9IM4QEeKQjafdhR-xKw" base_Element="_4DJWFM4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DJ9Ic4QEeKQjafdhR-xKw" base_Element="_4DJWFM4QEeKQjafdhR-xKw">
-    <annotations xmi:id="_4DJ9Is4QEeKQjafdhR-xKw" name="Id"/>
     <annotations xmi:id="_4DJ9I84QEeKQjafdhR-xKw" name="NotEmpty"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DKkMc4QEeKQjafdhR-xKw" base_Element="_4DKkMM4QEeKQjafdhR-xKw"/>
@@ -325,8 +364,7 @@
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DLyVM4QEeKQjafdhR-xKw" base_Element="_4DLyU84QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DMZYM4QEeKQjafdhR-xKw" base_Element="_4DLyU84QEeKQjafdhR-xKw">
-    <annotations xmi:id="_4DMZYc4QEeKQjafdhR-xKw" name="Id"/>
-    <annotations xmi:id="_4DMZYs4QEeKQjafdhR-xKw" name="NotEmpty"/>
+    <annotations xmi:id="_8DfMwM4VEeKQjafdhR-xKw" name="Required"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DNAcM4QEeKQjafdhR-xKw" base_Element="_4DMZY84QEeKQjafdhR-xKw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DNAcs4QEeKQjafdhR-xKw" base_Element="_4DNAcc4QEeKQjafdhR-xKw"/>
@@ -343,14 +381,17 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DO1os4QEeKQjafdhR-xKw" base_Element="_4DO1oc4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DPcsM4QEeKQjafdhR-xKw" base_Element="_4DO1oc4QEeKQjafdhR-xKw">
     <annotations xmi:id="_4DPcsc4QEeKQjafdhR-xKw" name="NotEmpty"/>
+    <annotations xmi:id="_0V7LgM4SEeKQjafdhR-xKw" name="Required"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DPcs84QEeKQjafdhR-xKw" base_Element="_4DPcss4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DQDwM4QEeKQjafdhR-xKw" base_Element="_4DPcss4QEeKQjafdhR-xKw">
     <annotations xmi:id="_4DQDwc4QEeKQjafdhR-xKw" name="NotEmpty"/>
+    <annotations xmi:id="_0V7ykM4SEeKQjafdhR-xKw" name="Required"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DQDw84QEeKQjafdhR-xKw" base_Element="_4DQDws4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DQDxM4QEeKQjafdhR-xKw" base_Element="_4DQDws4QEeKQjafdhR-xKw">
     <annotations xmi:id="_4DQq0M4QEeKQjafdhR-xKw" name="NotEmpty"/>
+    <annotations xmi:id="_0V7ykc4SEeKQjafdhR-xKw" name="Required"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DQq0s4QEeKQjafdhR-xKw" base_Element="_4DQq0c4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Annotations xmi:id="_4DRR4M4QEeKQjafdhR-xKw" base_Element="_4DQq0c4QEeKQjafdhR-xKw">
@@ -365,6 +406,7 @@
   <UMLLabProfile:Annotations xmi:id="_4DSgAc4QEeKQjafdhR-xKw" base_Element="_4DR48c4QEeKQjafdhR-xKw">
     <annotations xmi:id="_4DSgA84QEeKQjafdhR-xKw" name="NotEmpty"/>
     <annotations xmi:id="_4DSgBM4QEeKQjafdhR-xKw" name="Email"/>
+    <annotations xmi:id="_1f7ggM4SEeKQjafdhR-xKw" name="Required"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DTHEs4QEeKQjafdhR-xKw" base_Element="_4DTHEM4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4DTuIc4QEeKQjafdhR-xKw" base_Element="_4DTHE84QEeKQjafdhR-xKw"/>
@@ -395,4 +437,11 @@
   <UMLLabProfile:Reference xmi:id="_4EA4wM4QEeKQjafdhR-xKw" base_Element="_4D9OYM4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Reference xmi:id="_4EEjIM4QEeKQjafdhR-xKw" base_Element="_4EA4wc4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Reference xmi:id="_4EINgM4QEeKQjafdhR-xKw" base_Element="_4EEjIc4QEeKQjafdhR-xKw"/>
+  <UMLLabProfile:Reference xmi:id="_oSP-QM4SEeKQjafdhR-xKw" base_Element="_oSJ3oM4SEeKQjafdhR-xKw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_K7-LUM4TEeKQjafdhR-xKw" base_Element="_K789MM4TEeKQjafdhR-xKw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_fCzr0M4VEeKQjafdhR-xKw" base_Element="_fCxPkM4VEeKQjafdhR-xKw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_8DhpAM4VEeKQjafdhR-xKw" base_Element="_8Dga4M4VEeKQjafdhR-xKw"/>
+  <UMLLabProfile:Annotations xmi:id="__LwlQM4VEeKQjafdhR-xKw" base_Element="_4DNngc4QEeKQjafdhR-xKw">
+    <annotations xmi:id="__LwlQc4VEeKQjafdhR-xKw" name="Required"/>
+  </UMLLabProfile:Annotations>
 </xmi:XMI>
