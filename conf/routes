@@ -6,8 +6,16 @@
 GET     /                                       Application.index
 
 # Page historique
+GET 	/historique/							Application.historique
 
-GET 	/historique/								Application.historique
+# Page recettes
+GET     /recettes/								Application.recettes
+
+# Page listes de courses
+GET		/listesCourses/							Application.listesCourses
+
+# Page profil
+GET 	/profil/								Application.profil
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

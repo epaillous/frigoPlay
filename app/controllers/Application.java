@@ -20,6 +20,19 @@ public class Application extends Controller {
     	render();
     }
     
+    public static void recettes() {
+    	render();
+    }
+    
+    public static void listesCourses() {
+    	render();
+    }
+    
+    public static void profil() {
+    	String test="coucou";
+    	render(test);
+    }
+    
     public static void upload() {
     	render();
     }
