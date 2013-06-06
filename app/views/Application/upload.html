@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+#{set 'moreScripts'}
+    #{get 'moreScripts' /}
+    #{script 'vendor/jquery.ui.widget.js'/}
+    #{script 'jquery.iframe-transport.js'/}
+    #{script 'jquery.fileupload.js'/}
+    #{script 'jquery.fileupload-fp.js'/}
+    #{script 'jquery.fileupload-ui.js'/}
+
+#{/set}
+#{set 'moreStyles'}
+    #{get 'moreStyles' /}
+    #{stylesheet 'jquery.fileupload-ui.css'/}
+#{/set}
+
+#{form @Application.upload() , id:'fileupload', enctype:'multipart/form-data'}
+#{/form}

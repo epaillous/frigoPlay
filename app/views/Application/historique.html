@@ -1,0 +1,44 @@
+#{extends 'main.html' /}
+#{set 'moreStyles'}
+        #{stylesheet 'sly/font-awesome.css' /}
+<!--         #{stylesheet 'sly/horizontal.css' /} -->
+        #{stylesheet 'sly/normalize.css' /}
+<!--         #{stylesheet 'sly/ospb.css' /} -->
+        
+#{/set}
+#{set 'moreScripts'}
+        #{script 'sly/vendor/modernizr.js' /}    
+#{/set}
+
+#{set historiqueActif:'active'/}
+
+<div class="wrap">
+			<h2>Votre historique </h2>
+
+			<div class="scrollbar">
+				<div class="handle">
+					<div class="mousearea"></div>
+				</div>
+			</div>
+
+			<div class="frame effects" id="effects">
+				<ul class="clearfix">
+					<img src="@{'/public/img/IMG_3614.jpg'}" height="352" width="470"></img>
+					<img src="@{'/public/img/IMG_3615.jpg'}" height="352" width="470"></img>
+					<img src="@{'/public/img/IMG_3616.jpg'}" height="352" width="470"></img>
+					<img src="@{'/public/img/IMG_3617.jpg'}" height="352" width="470"></img>
+					<img src="@{'/public/img/IMG_3618.jpg'}" height="352" width="470"></img>
+				</ul>
+			</div>
+
+			<div class="controls center">
+				<button class="btn prev"><i class="icon-chevron-left"></i> prev</button>
+				<button class="btn next">next <i class="icon-chevron-right"></i></button>
+			</div>
+		</div>
+		
+		<!-- Scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="@{'/public/javascripts/sly/vendor/plugins.js'}"></script>
+	<script src="@{'/public/javascripts/sly/sly.js'}"></script>
+	<script src="@{'/public/javascripts/sly/horizontal.js'}"></script>
