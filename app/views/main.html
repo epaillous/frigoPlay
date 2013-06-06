@@ -13,77 +13,10 @@
 
  <!-- Le styles -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-      }
+    
+    <!-- J'ai bougé tout ce qui était ici dans le main.css -->
+    <link href="../../../public/stylesheets/main.css" rel="stylesheet"/>
 
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 80px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 100px;
-        line-height: 1;
-      }
-      .jumbotron .lead {
-        font-size: 24px;
-        line-height: 1.25;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-
-
-      /* Customize the navbar links to be fill the entire space of the .navbar */
-      .navbar .navbar-inner {
-        padding: 0;
-      }
-      .navbar .nav {
-        margin: 0;
-        display: table;
-        width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
-        float: none;
-      }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
-    </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
 <!-- <link rel="shortcut icon" type="image/png" -->
@@ -95,6 +28,9 @@
 
 	<script src="@{'/public/bootstrap/js/bootstrap.min.js'}"></script>
 	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- Ajout script pour les sous-onglets -->
+	<script src="../../../public/javascript/sousOnglets.js"></script>
 	
 	#{get 'moreScripts' /} 
 
@@ -111,9 +47,24 @@
                 <li class="#{get 'accueilActif' /}"><a href="/">Accueil</a></li>
                 <li class="#{get 'historiqueActif' /}"><a href="/historique/">Historique</a></li>
                 <li class="#{get 'mesRecettesActif' /}"><a href="/recettes/">Mes recettes</a></li>
-                <li class="#{get 'listesActif' /}"><a href="/listesCourses/">Mes listes de courses</a></li>
+<!--    Initial :             <li class="#{get 'listesActif' /}"><a href="/listesCourses/">Mes listes de courses</a> -->
+<!--                 	<div class="sousOnglet">Mes Listes</div> -->
+<!--                 	<div class="sousOnglet">Archives</div> -->
+<!--                 </li> -->
+				<li class="#{get 'listesActif' /}">
+					<a href="/listesCourses/" 
+						onmouseover="mopen('m1')"
+						onmouseout="mclosetime()">Mes listes de courses</a>
+					<div id="m1"
+						onmouseover="mcancelclosetime()"
+						onmouseout="mclosetime()">
+						<a href="/listesCourses/">Mes listes</a>
+						<a href="#">Mes archives</a>
+					</div>
+				</li>			
                 <li class="#{get 'profilActif' /}"><a href="/profil/">Mon profil</a></li>
               </ul>
+			<div style="clear:both"></div>
             </div>
           </div>
         </div><!-- /.navbar -->

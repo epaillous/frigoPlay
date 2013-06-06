@@ -1,24 +1,18 @@
 #{extends 'main.html' /}
-#{set title:'Bienvenue dans votre Frigo' /}
-#{set accueilActif:'active'/}
+#{set 'moreStyles'}
+        #{stylesheet 'sly/font-awesome.css' /}
+#{/set}
+#{set 'moreScripts'}
+        #{script 'sly/vendor/modernizr.js' /}    
+#{/set}
 
+#{set listesActif :'active'/}
 
 <section>
+	<div class="wrap">
+		<h2>Vos listes de courses : </h2>
+	</div>
 
-	<article class="contenuFrigo">
-		<h2>Voici l'etat actuel de votre frigo : </h2>
-		<img  src="@{'/public/img/IMG_3614.jpg'}" height="352" width="470"></img>
-		<aside class="listeContenu">
-			<ul>
-				<li>Fruit et Legume</li>
-                <li>Viande</li>
-                <li>Laitage</li>
-                <li>Boisson</li>
-                <li>Autre</li>
-           	</ul>
-		</aside>
-	</article>
-	
 	<aside class="listeCour">
 		<h4> Liste de courses courante </h4>
 			<ul>
@@ -46,5 +40,7 @@
 </section>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    
+
+
+
 
