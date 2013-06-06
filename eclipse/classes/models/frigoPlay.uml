@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_36cGAM4QEeKQjafdhR-xKw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_36cGAc4QEeKQjafdhR-xKw" source="codegen">
         <details xmi:id="_36cGAs4QEeKQjafdhR-xKw" key="codegenDirectory" value="/frigoPlay/app"/>
-        <details xmi:id="_4H7vcM4QEeKQjafdhR-xKw" key="AssociatedSourceCode" value="/frigoPlay/app/models/Aliment.java;4268017896/1;/frigoPlay/app/models/Archive.java;1183085457/1;/frigoPlay/app/models/Courante.java;3041638290/1;/frigoPlay/app/models/EtatFrigo.java;4110896559/1;/frigoPlay/app/models/ListeDeCourse.java;722043970/1;/frigoPlay/app/models/Recette.java;3612402055/1;/frigoPlay/app/models/Type.java;283535523/1;/frigoPlay/app/models/User.java;3432685638/1;"/>
+        <details xmi:id="_4H7vcM4QEeKQjafdhR-xKw" key="AssociatedSourceCode" value="/frigoPlay/app/models/Aliment.java;4268017896/1;/frigoPlay/app/models/Archive.java;1183085457/1;/frigoPlay/app/models/Courante.java;3041638290/1;/frigoPlay/app/models/EtatFrigo.java;2826216738/1;/frigoPlay/app/models/ListeDeCourse.java;722043970/1;/frigoPlay/app/models/Recette.java;3612402055/1;/frigoPlay/app/models/Type.java;283535523/1;/frigoPlay/app/models/User.java;3432685638/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_flakcM4nEeKJ_JMRIAJ8YQ" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_flakcc4nEeKJ_JMRIAJ8YQ" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_flakcs4nEeKJ_JMRIAJ8YQ" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_flakc84nEeKJ_JMRIAJ8YQ" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+          <details xmi:id="_flakdM4nEeKJ_JMRIAJ8YQ" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_4Ad1gM4QEeKQjafdhR-xKw">
@@ -119,11 +126,13 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4BTjAM4QEeKQjafdhR-xKw" name="EtatFrigo">
         <generalization xmi:id="_4C-W8M4QEeKQjafdhR-xKw" general="_4COwEc4QEeKQjafdhR-xKw"/>
-        <ownedAttribute xmi:id="_4DG50c4QEeKQjafdhR-xKw" name="date" type="_4CB7wM4QEeKQjafdhR-xKw"/>
+        <ownedAttribute xmi:id="_4DG50c4QEeKQjafdhR-xKw" name="date" type="_4CxioM4QEeKQjafdhR-xKw"/>
         <ownedAttribute xmi:id="_4DHg4M4QEeKQjafdhR-xKw" name="user" type="_4Bd7EM4QEeKQjafdhR-xKw" association="_4DmCAM4QEeKQjafdhR-xKw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DHg4c4QEeKQjafdhR-xKw" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4DIH8c4QEeKQjafdhR-xKw" name="image" type="_4CYhEM4QEeKQjafdhR-xKw" association="_4DpFUc4QEeKQjafdhR-xKw"/>
+        <ownedAttribute xmi:id="_4DIH8c4QEeKQjafdhR-xKw" name="image" association="_4DpFUc4QEeKQjafdhR-xKw">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
         <ownedAttribute xmi:id="_4DIvAs4QEeKQjafdhR-xKw" name="aliment" type="_4BGusM4QEeKQjafdhR-xKw" association="_4Dsvsc4QEeKQjafdhR-xKw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DIvA84QEeKQjafdhR-xKw" value="*"/>
         </ownedAttribute>
