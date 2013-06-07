@@ -41,6 +41,6 @@ public class Application extends Controller {
     }
 
     public static void upload(File[] files) {
-
+    	render();
     }
 }
