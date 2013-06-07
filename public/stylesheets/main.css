@@ -76,12 +76,22 @@ body {
 	float: left;
 }
 .nav #m1
-{	position: absolute;
+{	
+	position: absolute;
 	visibility: hidden;
 }	
 .nav #m1 a
 {	
 	display: block;
+	
+	font-style: normal;
+	color: grey;
+	text-align: left;
+  	border: 1px solid rgba(0,0,0,.1);
+}
+.nav #m1 a:hover {
+	color: black;
+	text-decoration: none;
 }
 		
 /*Gestion de la liste courante*/

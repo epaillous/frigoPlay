@@ -28,6 +28,10 @@ public class Application extends Controller {
     	render();
     }
     
+    public static void archives() {
+    	render();
+    }
+    
     public static void profil() {
     	String test="coucou";
     	render(test);

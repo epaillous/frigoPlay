@@ -4,16 +4,14 @@
 
 # Home page
 GET     /                                       Application.index
-
 # Page historique
 GET 	/historique/							Application.historique
-
 # Page recettes
 GET     /recettes/								Application.recettes
-
 # Page listes de courses
 GET		/listesCourses/							Application.listesCourses
-
+# Page archives
+GET		/archives/								Application.archives
 # Page profil
 GET 	/profil/								Application.profil
 

@@ -15,7 +15,7 @@
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     
     <!-- J'ai bougé tout ce qui était ici dans le main.css -->
-    <link href="../../../public/stylesheets/main.css" rel="stylesheet"/>
+    <link href="@{'/public/stylesheets/main.css'}" rel="stylesheet"/>
 
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -30,7 +30,7 @@
 	<script src="http://code.jquery.com/jquery.js"></script>
 	
 	<!-- Ajout script pour les sous-onglets -->
-	<script src="../../../public/javascript/sousOnglets.js"></script>
+	<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
 	
 	#{get 'moreScripts' /} 
 
@@ -59,7 +59,7 @@
 						onmouseover="mcancelclosetime()"
 						onmouseout="mclosetime()">
 						<a href="/listesCourses/">Mes listes</a>
-						<a href="#">Mes archives</a>
+						<a href="/archives/">Mes archives</a>
 					</div>
 				</li>			
                 <li class="#{get 'profilActif' /}"><a href="/profil/">Mon profil</a></li>
