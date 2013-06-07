@@ -129,3 +129,11 @@ body {
 	color: grey;
 	padding: 10px;
 }
+/*Spécial historique*/
+#histo h2 {
+   margin-left: 400px;
+}
+#histo .controls_center {
+   margin-left: 400px;
+}
+
