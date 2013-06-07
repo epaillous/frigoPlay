@@ -33,8 +33,7 @@ public class Application extends Controller {
     }
     
     public static void profil() {
-    	String test="coucou";
-    	render(test);
+    	render();
     }
     
     public static void upload() {

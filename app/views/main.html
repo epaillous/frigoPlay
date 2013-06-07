@@ -3,12 +3,11 @@
 <html>
 <head>
 <title>#{get 'title' /}</title>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}"> -->
 <!-- Bootstrap -->
-
 <link href="@{'/public/stylesheets/bootstrap.min.css'}" rel="stylesheet" media="screen">
 
  <!-- Le styles -->
@@ -47,10 +46,6 @@
                 <li class="#{get 'accueilActif' /}"><a href="/">Accueil</a></li>
                 <li class="#{get 'historiqueActif' /}"><a href="/historique/">Historique</a></li>
                 <li class="#{get 'mesRecettesActif' /}"><a href="/recettes/">Mes recettes</a></li>
-<!--    Initial :             <li class="#{get 'listesActif' /}"><a href="/listesCourses/">Mes listes de courses</a> -->
-<!--                 	<div class="sousOnglet">Mes Listes</div> -->
-<!--                 	<div class="sousOnglet">Archives</div> -->
-<!--                 </li> -->
 				<li class="#{get 'listesActif' /}">
 					<a href="/listesCourses/" 
 						onmouseover="mopen('m1')"
