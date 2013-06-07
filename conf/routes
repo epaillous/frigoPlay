@@ -30,3 +30,6 @@ GET     /public/                                staticDir:public
 # Upload des photos
 POST    /upload                                 Application.upload
 GET 	/upload									Application.upload
+
+# Import Secure routes
+*       /                                       module:secure
