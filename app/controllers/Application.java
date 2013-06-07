@@ -1,10 +1,15 @@
 package controllers;
-
+import play.db.jpa.Model;
 import play.*;
 import play.mvc.*;
 import play.mvc.results.Result;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.*;
 
 
@@ -36,11 +41,37 @@ public class Application extends Controller {
     	render();
     }
     
+//    public static void upload() {
+//    	render();
+//    }
+//
+//    
     public static void upload() {
-    	render();
-    }
+    	InputStream inputStream = request.body;
 
-    public static void upload(File[] files) {
+    	// Save it somewhere..
+    	// String filePath = "C:\\Utilisateurs\\Lili\\image.jpg";
+    	try 
+    	{ 
+    	java.io.File fichier = new java.io.File("C:\\image2.jpg"); 
+
+    	fichier.createNewFile(); // Cette fonction doit être appelée au sein d'un bloc TRY 
+    	java.io.FileOutputStream monFluxFichier = new java.io.FileOutputStream(fichier); // Doit être utilisé dans un bloc TRY 
+    	
+
+			byte[] buf = new byte [1024] ;
+	    	int len;
+	    	while((len=inputStream.read(buf))>0) monFluxFichier.write(buf,0,len);
+	    	monFluxFichier.close();
+	    	inputStream.close();
+	    }catch (IOException e) 
+	    	{ 
+	    	System.out.println("Impossible de créer le fichier"); 
+	    	e.printStackTrace();
+	    	} 
+    	
+    	// Anything which is appensed to POST URL at client end maps to String name
+    	System.out.println("This Method Called");
     	render();
     }
 }
