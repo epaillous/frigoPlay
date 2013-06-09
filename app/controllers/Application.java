@@ -53,10 +53,12 @@ public class Application extends Controller {
     	// String filePath = "C:\\Utilisateurs\\Lili\\image.jpg";
     	try 
     	{ 
-    	java.io.File fichier = new java.io.File("C:\\image2.jpg"); 
-
-    	fichier.createNewFile(); // Cette fonction doit être appelée au sein d'un bloc TRY 
-    	java.io.FileOutputStream monFluxFichier = new java.io.FileOutputStream(fichier); // Doit être utilisé dans un bloc TRY 
+    	
+    		File fichier = new File("C:\\image2.jpg\\"); 
+    	
+    	fichier.setWritable(true);
+    	fichier.createNewFile(); // Cette fonction doit ï¿½tre appelï¿½e au sein d'un bloc TRY 
+    	java.io.FileOutputStream monFluxFichier = new java.io.FileOutputStream(fichier); // Doit ï¿½tre utilisï¿½ dans un bloc TRY 
     	
 
 			byte[] buf = new byte [1024] ;
@@ -66,7 +68,7 @@ public class Application extends Controller {
 	    	inputStream.close();
 	    }catch (IOException e) 
 	    	{ 
-	    	System.out.println("Impossible de créer le fichier"); 
+	    	System.out.println("Impossible de crï¿½er le fichier"); 
 	    	e.printStackTrace();
 	    	} 
     	
