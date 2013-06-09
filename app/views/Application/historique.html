@@ -7,14 +7,15 @@
         
 #{/set}
 #{set 'moreScripts'}
-        #{script 'sly/vendor/modernizr.js' /}    
+        #{script 'sly/vendor/modernizr.js' /}         
+        #{script 'reflex.js' /}   
 #{/set}
 
 #{set historiqueActif:'active'/}
 
 <meta charset="UTF-8">
 
-<div class="wrap">
+<div id="histo">
 			<h2>Votre historique : </h2>
 
 			<div class="scrollbar">
@@ -25,15 +26,15 @@
 
 			<div class="frame effects" id="effects">
 				<ul class="clearfix">
-					<img src="@{'/public/img/IMG_3614.jpg'}" height="352" width="470"></img>
-					<img src="@{'/public/img/IMG_3615.jpg'}" height="352" width="470"></img>
-					<img src="@{'/public/img/IMG_3616.jpg'}" height="352" width="470"></img>
-					<img src="@{'/public/img/IMG_3617.jpg'}" height="352" width="470"></img>
-					<img src="@{'/public/img/IMG_3618.jpg'}" height="352" width="470"></img>
+					<img class="reflex" src="@{'/public/img/IMG_3614.jpg'}" height="352" width="470"></img>
+					<img class="reflex" src="@{'/public/img/IMG_3615.jpg'}" height="352" width="470"></img>
+					<img class="reflex" src="@{'/public/img/IMG_3616.jpg'}" height="352" width="470"></img>
+					<img class="reflex" src="@{'/public/img/IMG_3617.jpg'}" height="352" width="470"></img>
+					<img class="reflex" src="@{'/public/img/IMG_3618.jpg'}" height="352" width="470"></img>
 				</ul>
 			</div>
 
-			<div class="controls center">
+			<div class="controls_center">
 				<button class="btn prev"><i class="icon-chevron-left"></i> prev</button>
 				<button class="btn next">next <i class="icon-chevron-right"></i></button>
 			</div>
