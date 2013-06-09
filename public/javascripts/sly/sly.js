@@ -1440,6 +1440,7 @@
 				// Calculate new handle position and sync SLIDEE to it
 				slideTo(handleToSlidee((o.horizontal ? event.pageX - $sb.offset().left : event.pageY - $sb.offset().top) - handleSize / 2));
 			}
+			// Pour remettre les inclinaisons à jour : reflex();
 		}
 
 		/**
@@ -1902,5 +1903,6 @@
 		draggedClass:  'dragged',  // Class for dragged elements (like SLIDEE or scrollbar handle).
 		activeClass:   'active',   // Class for active items and pages.
 		disabledClass: 'disabled'  // Class for disabled navigation elements.
+
 	};
 }(jQuery, window));

@@ -226,7 +226,7 @@ function addIEReflex() {
 			if(image.title!='') vml.title = image.title;
 			if(image.getAttribute('onclick')!='') vml.setAttribute('onclick',image.getAttribute('onclick'));
 			object.replaceChild(vml,image);
-			if(tilt=='r') {tilt='n';}else if(tilt=='n') {tilt='l';}else if(tilt=='l') {tilt='r';}
+			if(tilt=='r') {tilt='n';}else if(tilt=='n') {tilt='l';}else if(tilt=='l') {tilt='l';}
 			vml.style.visibility = 'visible';
 		}
 	}
@@ -407,7 +407,7 @@ function addReflex() {
 					}
 				}
 			}
-			if(tilt=='r') {tilt='n';}else if(tilt=='n') {tilt='l';}else if(tilt=='l') {tilt='r';}
+			if(tilt=='r') {tilt='n';}else if(tilt=='n') {tilt='l';}else if(tilt=='l') {tilt='l';}
 			context.save();
 			canvas.style.visibility = 'visible';
 		}

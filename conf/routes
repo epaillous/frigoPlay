@@ -8,12 +8,22 @@ GET     /                                       Application.index
 GET 	/historique/							Application.historique
 # Page recettes
 GET     /recettes/								Application.recettes
+<<<<<<< HEAD
+=======
+#recette donnees
+GET 	/carottesRapees/						Application.carottesRapees
+>>>>>>> 9dbe81bf3f134a7baedd10074c631b4baa712c1b
 # Page listes de courses
 GET		/listesCourses/							Application.listesCourses
 # Page archives
 GET		/archives/								Application.archives
 # Page profil
 GET 	/profil/								Application.profil
+<<<<<<< HEAD
+# Page photo
+GET 	/photo/								    Application.photo
+=======
+>>>>>>> 9dbe81bf3f134a7baedd10074c631b4baa712c1b
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
@@ -28,7 +38,11 @@ GET     /public/                                staticDir:public
 *      /admin              						module:crud
 
 # Upload des photos
+<<<<<<< HEAD
+POST    /upload/                                 Application.upload
+=======
 POST    /upload                                 Application.upload
+>>>>>>> 9dbe81bf3f134a7baedd10074c631b4baa712c1b
 GET 	/upload									Application.upload
 
 # Import Secure routes
