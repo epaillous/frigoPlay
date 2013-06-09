@@ -8,6 +8,8 @@ GET     /                                       Application.index
 GET 	/historique/							Application.historique
 # Page recettes
 GET     /recettes/								Application.recettes
+#recette donnees
+GET 	/carottesRapees/						Application.carottesRapees
 # Page listes de courses
 GET		/listesCourses/							Application.listesCourses
 # Page archives

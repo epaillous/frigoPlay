@@ -28,6 +28,9 @@ public class Application extends Controller {
     public static void recettes() {
     	render();
     }
+    public static void carottesRapees() {
+    	render();
+    }
     
     public static void listesCourses() {
     	render();

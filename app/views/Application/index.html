@@ -1,5 +1,9 @@
 #{extends 'main.html' /}
 #{set title:'Bienvenue dans votre Frigo' /}
+
+<!-- Ajout script pour les sous-onglets -->
+	<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
+
 #{set accueilActif:'active'/}
 
 <meta charset="UTF-8">
@@ -11,7 +15,17 @@
 		<img  src="@{'/public/img/IMG_3614.jpg'}" height="352" width="470"></img>
 		<aside class="listeContenu">
 			<ul>
-				<li>Fruit et Légume</li>
+				<li class="contenu1">
+					<a href="#"
+						onmouseover="mopen('frEtLeg')"
+						onmouseout="mclosetime()"> Fruit et Légume </a>
+					<div id="frEtLeg"
+						onmouseover="mcancelclosetime()"
+						onmouseout="mclosetime()">
+						<a href="/carottesRapees/"> 5 Carottes  -  Périmées le : 15/06/13</a>
+						<a href="#"> 3 Clémentines  -  Périmées le : 21/06/13 </a>
+					</div>
+				</li>
                 <li>Viande</li>
                 <li>Laitage</li>
                 <li>Boisson</li>

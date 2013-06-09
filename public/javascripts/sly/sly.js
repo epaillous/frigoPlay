@@ -1902,5 +1902,6 @@
 		draggedClass:  'dragged',  // Class for dragged elements (like SLIDEE or scrollbar handle).
 		activeClass:   'active',   // Class for active items and pages.
 		disabledClass: 'disabled'  // Class for disabled navigation elements.
+
 	};
 }(jQuery, window));

@@ -121,6 +121,7 @@ body {
 }
 .listeContenu {
 	position: fixed;
+	width: 500px;
 	top: 250px;
 	left: 1000px;
 }
@@ -137,3 +138,27 @@ body {
    margin-left: 400px;
 }
 
+/*Menu déroulant pour le contenu*/
+.contenu1 li {
+	float: left;
+}
+.contenu1:hover {
+	margin-bottom: 70px;
+}
+.contenu1 #frEtLeg
+{	
+	position: absolute;
+	visibility: hidden;
+}	
+.contenu1 #frEtLeg a
+{	
+	display: block;
+	padding-left: 20px;
+	font-style: normal;
+	color: grey;
+	text-align: left;
+}
+.contenu1 #frEtLeg a:hover {
+	color: black;
+	text-decoration: none;
+}
