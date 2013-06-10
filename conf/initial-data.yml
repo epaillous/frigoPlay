@@ -2,7 +2,7 @@
    nom: Paillous
    prenom: Emilie
    motDePasse: emilie
-   dateDeNaissance: 26051992
+   dateDeNaissance: 1992-05-26
    nbFoyer: 2
    email: emilie.paillous@gmail.com
    
@@ -10,7 +10,7 @@
    nom: Millour
    prenom: Alice
    motDePasse: alice
-   dateDeNaissance: 13091991
+   dateDeNaissance: 1991-09-13
    nbFoyer: 2
    email: alice.millour@gmail.com
 
@@ -18,7 +18,7 @@
    nom: Reneaume
    prenom: Mailys
    motDePasse: mailys
-   dateDeNaissance: 22071991
+   dateDeNaissance: 1991-07-22
    nbFoyer: 3
    email: mailys.reneaume@gmail.com
    
@@ -26,24 +26,26 @@
    nom: Sciau
    prenom: Alexis
    motDePasse: alexis
-   dateDeNaissance: 10021991
+   dateDeNaissance: 1991-02-10
    nbFoyer: 3
    email: alexis.sciau@gmail.com
   
  EtatFrigo(etatfrigo1):
-   date: 10062013
+   date: 2013-06-10
    user: mailys
    image: /public/img/IMG_3618.JPG
 
  EtatFrigo(etatfrigo2):
-   date: 09062013
+   date: 2013-06-10
    user: alexis
    image: /public/img/IMG_3614.JPG
  
  EtatFrigo(etatfrigo3):
-   date: 08062013
+   date: 2013-06-10
    user: emilie
    image: /public/img/IMG_3617.JPG
+
+
   
 
    
