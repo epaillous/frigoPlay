@@ -1,6 +1,7 @@
 package models;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -39,13 +40,17 @@ public class User extends Model {
 	public String preference = "nulle";
 
 	@ManyToMany(mappedBy="user")
-	public Set<EtatFrigo> etatFrigo;
+	public List<EtatFrigo> etatFrigo;
 
 	@OneToMany(mappedBy="user")
 	public Set<ListeDeCourse> listeDeCourse;
 	
 	public String toString() {
 	    return email;
+	}
+	
+	public static User connect(String email, String password) {
+	    return find("byEmailAndMotDePasse", email, password).first();
 	}
 
 

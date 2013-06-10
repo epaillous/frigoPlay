@@ -21,11 +21,29 @@
    dateDeNaissance: 22071991
    nbFoyer: 3
    email: mailys.reneaume@gmail.com
+   
+ User(alexis):
+   nom: Sciau
+   prenom: Alexis
+   motDePasse: alexis
+   dateDeNaissance: 10021991
+   nbFoyer: 3
+   email: alexis.sciau@gmail.com
   
-
-
  EtatFrigo(etatfrigo1):
    date: 10062013
-   user: emilie
+   user: mailys
    image: /public/img/IMG_3618.JPG
+
+ EtatFrigo(etatfrigo2):
+   date: 09062013
+   user: alexis
+   image: /public/img/IMG_3614.JPG
+ 
+ EtatFrigo(etatfrigo3):
+   date: 08062013
+   user: emilie
+   image: /public/img/IMG_3617.JPG
+  
+
    

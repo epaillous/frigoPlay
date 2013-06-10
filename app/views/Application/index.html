@@ -13,8 +13,8 @@
 	<article class="contenuFrigo">
 		<h2>Voici l'état actuel de votre frigo : </h2>
 		
-		
-		<img  src="${etatFrigo.image}" height="352" width="470"></img>
+		<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
+		<img  src="${user.etatFrigo[0].image}" height="352" width="470"></img>
 		<aside class="listeContenu">
 			<ul>
 				<li class="contenu1">
