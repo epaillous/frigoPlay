@@ -16,6 +16,10 @@
 
 	<p>Coucou</p>
 	
+	#{list items:utilisateurs, as:'utilisateur'}
+	<p>Nom : ${utilisateur.nom}<p>
+	<p>Prenom : ${utilisateur.prenom}<p>
+	#{/list}
 	
 </div>
 
