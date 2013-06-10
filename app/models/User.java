@@ -12,8 +12,8 @@ import play.db.jpa.Model;
 import net.sf.oval.constraint.NotEmpty;
 
 @Entity
-public class User extends Model {
 
+public class User extends Model {
 
 	@NotEmpty   
 	@Required

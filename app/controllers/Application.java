@@ -18,7 +18,8 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-        render();
+    	EtatFrigo etatFrigo = EtatFrigo.find("order by date desc").first();
+        render(etatFrigo);
     }
     
     public static void historique() {
@@ -41,7 +42,8 @@ public class Application extends Controller {
     }
     
     public static void profil() {
-    	render();
+    	List<User> utilisateurs = User.findAll();
+    	render(utilisateurs);
     }
     
 //    public static void upload() {
