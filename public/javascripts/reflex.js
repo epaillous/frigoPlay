@@ -226,7 +226,7 @@ function addIEReflex() {
 			if(image.title!='') vml.title = image.title;
 			if(image.getAttribute('onclick')!='') vml.setAttribute('onclick',image.getAttribute('onclick'));
 			object.replaceChild(vml,image);
-			if(tilt=='r') {tilt='n';}else if(tilt=='n') {tilt='l';}else if(tilt=='l') {tilt='l';}
+			if(tilt=='r') {tilt='r';}else if(tilt=='n') {tilt='n';}else if(tilt=='l') {tilt='l';}
 			vml.style.visibility = 'visible';
 		}
 	}
@@ -237,11 +237,13 @@ function addReflex() {
 	var image, object, canvas, context, classes, newClasses, resource, tmp;  
 	var i, j, dist, stl, iter, rest, radi, higt, divs, opac, colr, bord, wide, ih, iw;  
 	var itiltright, itiltnone, itiltleft, iheight, iopacity, idistance, iborder, icolor, iradius;
-	var children = document.getElementsByTagName('img'); var tilt = 'r';
+	var children = document.getElementsByTagName('img'); var tilt = 'l';
 	var tmp = navigator.userAgent.indexOf('WebKit')!=-1?true:false;
 	var isWK=(tmp==true?window.postMessage?false:window.external?false:true:false);
 	var isCR=(tmp==true&&window.external?true:false);
 	for(i=0;i<theimages.length;i++) {	
+		//Ajout Maï
+		//if(i==theimages.length-1) tilt = 'n';
 		image = theimages[i]; object = image.parentNode; tmp = 0;
 		itiltright = 0; itiltnone = 0; itiltleft = 0; 
 		iheight = 33; iopacity = 33; idistance = 0;
@@ -407,7 +409,7 @@ function addReflex() {
 					}
 				}
 			}
-			if(tilt=='r') {tilt='n';}else if(tilt=='n') {tilt='l';}else if(tilt=='l') {tilt='l';}
+			if(tilt=='r') {tilt='r';}else if(tilt=='n') {tilt='n';}else if(tilt=='l') {tilt='l';}
 			context.save();
 			canvas.style.visibility = 'visible';
 		}

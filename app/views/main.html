@@ -45,7 +45,17 @@
               <ul class="nav">
                 <li class="#{get 'accueilActif' /}"><a href="/">Accueil</a></li>
                 <li class="#{get 'historiqueActif' /}"><a href="/historique/">Historique</a></li>
-                <li class="#{get 'mesRecettesActif' /}"><a href="/recettes/">Mes recettes</a></li>
+                <li class="#{get 'mesRecettesActif' /}">
+                	<a href="/recettesProposees/"
+                		onmouseover="mopen('m2')"
+                		onmouseout="mclosetime()">Mes recettes</a>
+                	<div id="m2"
+                		onmouseover="mcancelclosetime()"
+                		onmouseout="mclosetime()">
+                		<a href="/recettesProposees/">Suggestions</a>
+                		<a href="/recettesFavorites/">Favorites</a>
+                	</div>
+                </li>
 				<li class="#{get 'listesActif' /}">
 					<a href="/listesCourses/" 
 						onmouseover="mopen('m1')"

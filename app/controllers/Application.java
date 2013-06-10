@@ -25,7 +25,10 @@ public class Application extends Controller {
     	render();
     }
     
-    public static void recettes() {
+    public static void recettesProposees() {
+    	render();
+    }
+    public static void recettesFavorites() {
     	render();
     }
     public static void carottesRapees() {

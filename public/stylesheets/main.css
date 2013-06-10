@@ -11,7 +11,6 @@ body {
 .container > hr {
   margin: 60px 0;
 }
-
 /* Main marketing message and sign up button */
 .jumbotron {
   margin: 80px 0;
@@ -75,7 +74,7 @@ body {
 .nav li {
 	float: left;
 }
-.nav #m1
+.nav #m1, #m2
 {	
 	position: absolute;
 	visibility: hidden;
@@ -83,17 +82,32 @@ body {
 .nav #m1 a
 {	
 	display: block;
-	
 	font-style: normal;
 	color: grey;
 	text-align: left;
   	border: 1px solid rgba(0,0,0,.1);
+  	padding-right: 10px;
+  	padding-left: 10px;
+}
+.nav #m2 a
+{	
+	display: block;
+	font-style: normal;
+	color: grey;
+	text-align: left;	
+ 	border: 1px solid rgba(0,0,0,.1);
+ 	padding-right: 10px;
+ 	padding-left: 10px;
 }
 .nav #m1 a:hover {
 	color: black;
 	text-decoration: none;
 }
-		
+.nav #m2 a:hover {
+	color: black;
+	text-decoration: none;
+}
+
 /*Gestion de la liste courante*/
 .listeCour, .contenuFrigo {
     display: inline-block;
