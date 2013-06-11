@@ -113,10 +113,35 @@
    
  Recette(recette1):
    nom: Gratin de tomates
-   difficulté : 2
+   difficulté : 3
    prix: 
    calories:
    lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
+   user: emilie
+
+
+ Recette(recette2):
+   nom: Gâteau aux noix et au citron
+   difficulté : 3
+   prix: 
+   calories:
+   lien: http://www.marmiton.org/recettes/recette_gateau-aux-noix-et-au-citron_231083.aspx
+   user: emilie
+
+ Recette(recette3):
+   nom: Spaghetti aux boulettes et à la ricotta
+   difficulté : 2
+   prix: 
+   calories:
+   lien: http://www.marmiton.org/recettes/recette_spaghetti-aux-boulettes-et-a-la-ricotta_71318.aspx
+   user: emilie
+
+ Recette(recette4):
+   nom: Salade de moules au melon
+   difficulté : 1
+   prix: 
+   calories:
+   lien: http://www.marmiton.org/recettes/recette_salade-de-moules-au-melon_14132.aspx
    user: emilie
 
  Aliment(cocacola):
