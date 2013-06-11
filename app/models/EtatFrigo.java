@@ -16,7 +16,7 @@ public class EtatFrigo extends Model {
 	public Date date;
 
 	@ManyToMany
-	public Set<User> user;
+	public List<User> user;
 
 	public String image;
 
