@@ -110,6 +110,14 @@
  
  Section(autre):
    nom: Autre     
+   
+ Recette(recette1):
+   nom: Gratin de tomates
+   difficulté : 2
+   prix: 
+   calories:
+   lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
+   user: emilie
 
  Aliment(cocacola):
    nom: Coca-Cola
@@ -124,6 +132,7 @@
    quantite: 250g
    calories: 
    peremption: 2013-06-17
+   recette: recette1
    etatFrigo: etatfrigo6
    section: fruitsetlegumes
    
@@ -174,6 +183,9 @@
    peremption: 2014-01-26
    etatFrigo: etatfrigo6
    section: autre
+   
+   
+   
 
 
    

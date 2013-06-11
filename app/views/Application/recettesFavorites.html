@@ -1,6 +1,7 @@
 #{extends 'Application/listeCour.html' /}
 #{set 'moreStyles'}
         #{stylesheet 'sly/font-awesome.css' /}
+         #{stylesheet 'recettes.css' /}
 #{/set}
 #{set 'moreScripts'}
         #{script 'sly/vendor/modernizr.js' /}    
@@ -13,5 +14,14 @@
 <section>
 	<div class="wrap">
 			<h2>Vos recettes favorites : </h2>
+</div>
+
+<div class="reperesRecettes">
+	<ul>
+	#{list items:user.recettesFavorites, as:'recette'}
+	<li><a href="${recette.lien}">${recette.nom}</a></li>
+	#{/list}
+	</ul>
 	</div>
 </section>
+

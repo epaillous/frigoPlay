@@ -8,6 +8,7 @@ import play.data.validation.Required;
 import play.db.jpa.Model;
 
 import java.net.URL;
+import java.util.List;
 import java.util.Set;
 import javax.persistence.ManyToMany;
 
@@ -29,6 +30,9 @@ public class Recette extends Model {
 
 	@ManyToMany(mappedBy="recette" )
 	public Set<Aliment> ingredient;
+	
+	@ManyToMany
+	public List<User> user;
 	
 	public String toString() {
 	    return nom;
