@@ -15,20 +15,16 @@
 
 <div id="histo">
 			<h2>Votre historique : </h2>
-
 			<div class="scrollbar">
 				<div class="handle">
 					<div class="mousearea"></div>
 				</div>
 			</div>
-
 			<div class="frame effects" id="effects">
 				<ul class="clearfix">
-					<img class="reflex" src="@{'/public/img/IMG_3614.jpg'}" height="352" width="470"></img>
-					<img class="reflex" src="@{'/public/img/IMG_3615.jpg'}" height="352" width="470"></img>
-					<img class="reflex" src="@{'/public/img/IMG_3616.jpg'}" height="352" width="470"></img>
-					<img class="reflex" src="@{'/public/img/IMG_3617.jpg'}" height="352" width="470"></img>
-					<img class="reflex" src="@{'/public/img/IMG_3618.jpg'}" height="352" width="470"></img>
+			#{list items:user.etatFrigo, as:'var'}					
+					<img src=${var.image} height="352" width="470"></img>
+	#{/list}
 				</ul>
 			</div>
 
