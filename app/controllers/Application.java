@@ -33,8 +33,7 @@ public class Application extends Controller {
 	public static void index() {
 		render();
 	}
-
-    
+ 
     public static void historique() {
     	render();
     }
@@ -64,28 +63,7 @@ public class Application extends Controller {
     
     public static void photo() {
     	render();
-    }      
-
-
-    
- 			 //Fonction qui devrait marcher parce que ça fonctionne quand le post est fait à partir d'un formulaire
-    public static void upload(File[] files) {
-    	if (files == null || files.length < 1){
-    		System.out.println("files null");
-    		return;
-    	}
-    	File file = files[0];
-    	File uploadDir = new File(Play.applicationPath, "/public/uploads/");
-    	if (!uploadDir.exists()){
-    		uploadDir.mkdirs();
-    	}
-    	try {
-    		FileUtils.moveFile(file, new File(uploadDir, file.getName()));
-    	} catch (IOException e) {
-    		e.printStackTrace();
-    	}
-    }
-    
+    }         
 //    
 //    public static void upload(){
 //    	FileInputStream stream = (FileInputStream) Http.Request.current().body;

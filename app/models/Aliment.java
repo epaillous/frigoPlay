@@ -24,10 +24,8 @@ public class Aliment extends Model {
 	@OneToMany
 	public Set<ListeDeCourse> listeDeCourse;
 
-
 	@OneToMany	
 	public Set<Recette> recette;
-
 
 
 	@ManyToOne(optional=false)

@@ -6,7 +6,7 @@
 GET     /                                       Application.index
 # Page historique
 GET 	/historique/							Application.historique
-# Page recettes proposées
+# Page recettes proposï¿½es
 GET     /recettesProposees/						Application.recettesProposees
 # Page recettes favorites
 GET     /recettesFavorites/						Application.recettesFavorites
@@ -35,7 +35,7 @@ GET     /public/                                staticDir:public
 *      /admin              						module:crud
 
 # Upload des photos										
-POST    /upload                                 Application.upload
+POST    /upload                                 Upload.upload
 
 # Import Secure routes
 *       /                                       module:secure
