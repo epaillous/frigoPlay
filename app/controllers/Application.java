@@ -1,12 +1,28 @@
 package controllers;
 import java.io.File;
-import java.util.Map;
+import java.util.*;
 
+import models.EtatFrigo;
+import models.User;
+
+import play.mvc.Before;
 import play.mvc.Controller;
+import play.mvc.With;
+
+@With(Secure.class)
 public class Application extends Controller {
+	
+	@Before
+    static void setConnectedUser() {
+        if(Security.isConnected()) {
+            User user = User.find("byEmail", Security.connected()).first();
+            renderArgs.put("user", user);
+        }
+    }
 
     public static void index() {
-        render();
+    	EtatFrigo etatFrigo = EtatFrigo.find("order by date desc").first();
+        render(etatFrigo);
     }
     
     public static void historique() {
@@ -29,7 +45,8 @@ public class Application extends Controller {
     }
     
     public static void profil() {
-    	render();
+    	List<User> utilisateurs = User.findAll();
+    	render(utilisateurs);
     }
     
     public static void photo() {

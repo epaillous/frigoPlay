@@ -19,6 +19,7 @@ GET 	/profil/								Application.profil
 # Page photo
 GET 	/photo/								    Application.photo
 
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
@@ -32,7 +33,11 @@ GET     /public/                                staticDir:public
 *      /admin              						module:crud
 
 # Upload des photos
+<<<<<<< HEAD
 POST    /upload/                                 Application.upload
+=======
+POST    /upload                                 Application.upload
+>>>>>>> db49138f49c5e3abc39809a1bf2183359b325c93
 GET 	/upload									Application.upload
 
 # Import Secure routes
