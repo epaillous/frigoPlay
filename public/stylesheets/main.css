@@ -254,3 +254,8 @@ body {
 .listeContenu .perime .datePeremption {
 	color: red;
 }
+/*Déconnexion*/
+#deconnexion {
+	float: right;
+	margin: 1px 6px 6px 1px;
+}
