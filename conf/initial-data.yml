@@ -1,0 +1,31 @@
+ User(emilie):
+   nom: Paillous
+   prenom: Emilie
+   motDePasse: emilie
+   dateDeNaissance: 26051992
+   nbFoyer: 2
+   email: emilie.paillous@gmail.com
+   
+ User(alice):
+   nom: Millour
+   prenom: Alice
+   motDePasse: alice
+   dateDeNaissance: 13091991
+   nbFoyer: 2
+   email: alice.millour@gmail.com
+
+ User(mailys):
+   nom: Reneaume
+   prenom: Mailys
+   motDePasse: mailys
+   dateDeNaissance: 22071991
+   nbFoyer: 3
+   email: mailys.reneaume@gmail.com
+  
+
+
+ EtatFrigo(etatfrigo1):
+   date: 10062013
+   user: emilie
+   image: /public/img/IMG_3618.JPG
+   
