@@ -67,7 +67,7 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
-	/*Ajouté par Maï*/
+	/*Ajoutï¿½ par Maï¿½*/
 .wrap {
 	margin-left: 400px;
 }
@@ -121,6 +121,7 @@ body {
 }
 .listeContenu {
 	position: fixed;
+	width: 500px;
 	top: 250px;
 	left: 1000px;
 }
@@ -129,7 +130,7 @@ body {
 	color: grey;
 	padding: 10px;
 }
-/*Spécial historique*/
+/*Spï¿½cial historique*/
 #histo h2 {
    margin-left: 400px;
 }
@@ -137,3 +138,34 @@ body {
    margin-left: 400px;
 }
 
+/*Menu dï¿½roulant pour le contenu*/
+.listeContenu li {
+	/*float: left;*/
+	/*list-style-type: none;*/
+}
+.listeContenu a {
+	color: black;
+}
+.contenu1:hover {
+	margin-bottom: 70px;
+}
+.contenu1 #frEtLeg
+{	
+	position: absolute;
+	visibility: hidden;
+}	
+.contenu1 #frEtLeg a
+{	
+	display: block;
+	padding-left: 20px;
+	font-style: normal;
+	color: grey;
+	text-align: left;
+}
+.contenu1 #frEtLeg a:hover {
+	color: black;
+	text-decoration: none;
+}
+.listeContenu .perime .datePeremption {
+	color: red;
+}

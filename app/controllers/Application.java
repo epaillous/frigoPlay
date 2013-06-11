@@ -1,31 +1,8 @@
 package controllers;
-import play.data.Upload;
-import javax.persistence.*;
-import play.db.jpa.Model;
-import play.*;
-import play.libs.Files;
-import play.mvc.*;
-import play.mvc.results.RenderBinary;
-import play.mvc.results.Result;
-
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.*;
+import java.util.Map;
 
-import javax.activation.MimetypesFileTypeMap;
-
-import org.apache.commons.io.FileUtils;
-import org.codehaus.groovy.tools.shell.commands.ShowCommand;
-
-import com.ning.http.multipart.MultipartBody;
-
-
-import models.*;
-import play.db.jpa.*;
+import play.mvc.Controller;
 public class Application extends Controller {
 
     public static void index() {
@@ -77,7 +54,9 @@ public class Application extends Controller {
 //    
  			// Fonction qui devrait marcher parce que ça fonctionne quand le post est fait à partir d'un formulaire
 //            public static void upload(File[] files) {
+//              System.out.println("sortie upload");
 //                if (files == null || files.length < 1){
+//                	System.out.println("files null");
 //                    return;
 //                }
 //                File file = files[0];
@@ -90,24 +69,25 @@ public class Application extends Controller {
 //                } catch (IOException e) {
 //                    e.printStackTrace();
 //                }
+//                render();
 //            }
 
             // fonction qui fait apparaître le .jpg temporaire à cause du pointeur null 
        public static void upload(File file) {
-            
-    	System.out.println("dans upload");
-    		//notFoundIfNull(file);
-    		File to = Play.getFile("data/" + file.getName());
-    		file.renameTo(to);
-    		try{
-    			Files.copy(file, to);
-    		} catch (RuntimeException e){
-    			Play.getFile("data").mkdir();
-    			Files.copy(file, to);
-    		   	e.printStackTrace();
-    		}
-    
-    	System.out.println("sortie upload");
+    	   final Map<String, String[]> entries = params.data;
+    	   System.out.println("val entree : " + entries.toString());
+//    		//notFoundIfNull(file);
+//    		File to = Play.getFile("data/" + file.getName());
+//    		file.renameTo(to);
+//    		try {
+//    			Files.copy(file, to);
+//    		} catch (RuntimeException e){
+//    			Play.getFile("data").mkdir();
+//    			Files.copy(file, to);
+//    		   	e.printStackTrace();
+//    		}
+    System.out.println("sortie upload");
+    	
     }
     
 }
