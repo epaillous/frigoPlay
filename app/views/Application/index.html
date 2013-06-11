@@ -40,7 +40,7 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:fruitsLegumes, as:'aliment'}
-	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 		</div>
 		</li>
@@ -49,7 +49,7 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:boissons, as:'aliment'}
-	 <a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	 <a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 	</div>
 	</li>
@@ -59,7 +59,7 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:viandes, as:'aliment'}
-	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 	</div>
 	</li>
@@ -69,7 +69,7 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:laitages, as:'aliment'}
-	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 	</div>
 	</li>
@@ -79,7 +79,7 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:autre, as:'aliment'}
-	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 	</div>
 	</li>
