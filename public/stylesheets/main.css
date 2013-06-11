@@ -67,7 +67,7 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
-	/*Ajouté par Maï*/
+	/*Ajoutï¿½ par Maï¿½*/
 .wrap {
 	margin-left: 400px;
 }
@@ -130,17 +130,20 @@ body {
 	color: grey;
 	padding: 10px;
 }
-/*Spécial historique*/
+/*Spï¿½cial historique*/
 #histo h2 {
    margin-left: 400px;
 }
 #histo .controls_center {
    margin-left: 400px;
 }
-
-/*Menu déroulant pour le contenu*/
-.contenu1 li {
-	float: left;
+/*Menu dï¿½roulant pour le contenu*/
+.listeContenu li {
+	/*float: left;*/
+	/*list-style-type: none;*/
+}
+.listeContenu a {
+	color: black;
 }
 .contenu1:hover {
 	margin-bottom: 70px;

@@ -1,8 +1,8 @@
 #{extends 'main.html' /}
 #{set title:'Bienvenue dans votre Frigo' /}
 
-<!-- Ajout script pour les sous-onglets -->
-	<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
+<!-- Ajout script pour les menu déroulants -->
+<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
 
 #{set accueilActif:'active'/}
 
@@ -14,9 +14,9 @@
 		<h2>Voici l'état actuel de votre frigo : </h2>
 		
 		<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
-		<img  src="${user.etatFrigo[0].image}" height="352" width="470"></img>
-		
+		<img  src="${user.etatFrigo[0].image}" height="352" width="470"></img>		
 		<p>Date de la prise : "${user.etatFrigo[0].date}"</p>
+
 		<aside class="listeContenu">
 			<ul>
 				<li class="contenu1">
@@ -38,7 +38,7 @@
 		</aside>
 	</article>
 	
-	<aside class="listeCour">
+<!--	<aside class="listeCour">
 		<h4> Liste de courses courante </h4>
 			<ul>
 				<li>Fruit et Légume</li>
@@ -61,7 +61,7 @@
            			<li>Emmental</li>
            		</ul>
            	</div>
-	</aside>
+	</aside>  -->
 </section>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
