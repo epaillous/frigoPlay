@@ -10,6 +10,7 @@ import org.apache.commons.io.FileUtils;
 import models.EtatFrigo;
 import models.User;
 
+
 import play.Play;
 import play.mvc.Before;
 import play.mvc.Controller;
@@ -32,12 +33,16 @@ public class Application extends Controller {
 	public static void index() {
 		render();
 	}
+
     
     public static void historique() {
     	render();
     }
     
-    public static void recettes() {
+    public static void recettesProposees() {
+    	render();
+    }
+    public static void recettesFavorites() {
     	render();
     }
     public static void carottesRapees() {
@@ -60,6 +65,7 @@ public class Application extends Controller {
     public static void photo() {
     	render();
     }      
+
 
     
  			 //Fonction qui devrait marcher parce que ça fonctionne quand le post est fait à partir d'un formulaire
@@ -90,4 +96,5 @@ public class Application extends Controller {
 //    	}
 //    }
     
+
 }

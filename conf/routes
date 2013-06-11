@@ -6,8 +6,10 @@
 GET     /                                       Application.index
 # Page historique
 GET 	/historique/							Application.historique
-# Page recettes
-GET     /recettes/								Application.recettes
+# Page recettes proposées
+GET     /recettesProposees/						Application.recettesProposees
+# Page recettes favorites
+GET     /recettesFavorites/						Application.recettesFavorites
 #recette donnees
 GET 	/carottesRapees/						Application.carottesRapees
 # Page listes de courses

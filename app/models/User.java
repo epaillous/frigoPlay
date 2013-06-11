@@ -1,8 +1,7 @@
 package models;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+
 
 import javax.persistence.*;
 
@@ -51,10 +50,6 @@ public class User extends Model {
 	
 	public static User connect(String email, String password) {
 	    return find("byEmailAndMotDePasse", email, password).first();
-	}
-
-
-
-   
+	}   
       
-   }
+}
