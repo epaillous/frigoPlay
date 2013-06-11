@@ -42,6 +42,9 @@ public class Application extends Controller {
     public static void listesCourses() {
     	render();
     }
+//    public static void listeCour() {
+//    	render();
+//    }
     
     public static void archives() {
     	render();
