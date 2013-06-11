@@ -96,4 +96,88 @@
    image: /public/img/Picture_11-06-2013-12.45.53.JPG   
 
 
+ Section(fruitsetlegumes):
+   nom: Fruits et Légumes 
+
+ Section(viandes):
+   nom: Viandes
+
+ Section(boissons):
+   nom: Boissons  
+
+ Section(laitages):
+   nom: Laitages  
+ 
+ Section(autre):
+   nom: Autre     
+
+ Aliment(cocacola):
+   nom: Coca-Cola
+   quantite: 1.5L
+   calories: 3000
+   peremption: 2013-09-20
+   etatFrigo: etatfrigo6
+   section: boissons
+   
+ Aliment(tomates):
+   nom: Tomates
+   quantite: 250g
+   calories: 
+   peremption: 2013-06-17
+   etatFrigo: etatfrigo6
+   section: fruitsetlegumes
+   
+ Aliment(cordonbleu):
+   nom: Cordon Bleu
+   quantite: 4
+   calories: 
+   peremption: 2013-06-21
+   etatFrigo: etatfrigo6
+   section: viandes
+
+ Aliment(yaourtfruits):
+   nom: Yaourts aux Fruits
+   quantite: 8
+   calories: 
+   peremption: 2013-06-24
+   etatFrigo: etatfrigo6
+   section: laitages
+
+ Aliment(emmental):
+   nom: Emmental
+   quantite: 500g
+   calories: 
+   peremption: 2013-08-02
+   etatFrigo: etatfrigo6
+   section: laitages
+
+ Aliment(compotes):
+   nom: Compotes
+   quantite: 8
+   calories: 
+   peremption: 2013-09-10
+   etatFrigo: etatfrigo6
+   section: autre
+ 
+ Aliment(oeufs):
+   nom: Oeufs
+   quantite: 12
+   calories: 
+   peremption: 2013-06-24
+   etatFrigo: etatfrigo6
+   section: laitages
+
+ Aliment(soupe):
+   nom: Soupe
+   quantite: 1L
+   calories: 
+   peremption: 2014-01
+   etatFrigo: etatfrigo6
+   section: autre
+
+
+   
+
+
+
 

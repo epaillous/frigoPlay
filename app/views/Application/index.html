@@ -19,21 +19,71 @@
 
 		<aside class="listeContenu">
 			<ul>
-				<li class="contenu1">
-					<a href="#"
-						onmouseover="mopen('frEtLeg')"
-						onmouseout="mclosetime()"> Fruit et Légume </a>
-					<div id="frEtLeg"
-						onmouseover="mcancelclosetime()"
-						onmouseout="mclosetime()">
-						<a href="/carottesRapees/"> 5 Carottes  -  Périmées le : 15/06/13</a>
-						<a class="perime" href="#"> 3 Clémentines  -  <em class="datePeremption">Périmées le : 05/05/13 </em></a>
-					</div>
-				</li>
-                <li>Viande</li>
-                <li>Laitage</li>
-                <li>Boisson</li>
-                <li>Autre</li>
+<!-- 				<li class="contenu1"> -->
+<!-- 					<a href="#" -->
+<!-- 						onmouseover="mopen('frEtLeg')" -->
+<!-- 						onmouseout="mclosetime()"> Fruit et Légume </a> -->
+<!-- 					<div id="frEtLeg" -->
+<!-- 						onmouseover="mcancelclosetime()" -->
+<!-- 						onmouseout="mclosetime()"> -->
+<!-- 						<a href="/carottesRapees/"> 5 Carottes  -  Périmées le : 15/06/13</a> -->
+<!-- 						<a class="perime" href="#"> 3 Clémentines  -  <em class="datePeremption">Périmées le : 05/05/13 </em></a> -->
+<!-- 					</div> -->
+<!-- 				</li> -->
+<!--                 <li>Viande</li> -->
+<!--                 <li>Laitage</li> -->
+<!--                 <li>Boisson</li> -->
+<!--                 <li>Autre</li> -->
+
+	<li class="contenu1"> <a href="#" onmouseover="mopen('frEtLeg')" onmouseout="mclosetime()"> Fruits et Légumes </a> 
+		<div id="frEtLeg"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:fruitsLegumes, as:'aliment'}
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	#{/list}
+		</div>
+		</li>
+	<li class="contenu1"> <a href="#" onmouseover="mopen('boissons')" onmouseout="mclosetime()"> Boissons </a> 
+			<div id="boissons"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:boissons, as:'aliment'}
+	 <a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	#{/list}
+	</div>
+	</li>
+	
+	<li class="contenu1"> <a href="#" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> Viandes </a> 	
+			<div id="viandes"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:viandes, as:'aliment'}
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	#{/list}
+	</div>
+	</li>
+	
+	<li class="contenu1"> <a href="#" onmouseover="mopen('laitages')" onmouseout="mclosetime()"> Laitages </a> 
+			<div id="laitages"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:laitages, as:'aliment'}
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	#{/list}
+	</div>
+	</li>
+	
+	<li class="contenu1"> <a href="#" onmouseover="mopen('autre')" onmouseout="mclosetime()"> Autre </a> 
+			<div id="autre"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:autre, as:'aliment'}
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption} </a>
+	#{/list}
+	</div>
+	</li>
+	
            	</ul>
 		</aside>
 	</article>

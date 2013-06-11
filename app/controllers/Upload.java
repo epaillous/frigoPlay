@@ -1,14 +1,23 @@
 package controllers;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.Vector;
 
 import org.apache.commons.io.FileUtils;
+
+import com.ning.http.client.Body;
 
 import play.Play;
 import play.mvc.Controller;
@@ -33,7 +42,6 @@ public class Upload extends Controller {
 //			e.printStackTrace();
 //		}
 //	}
-
 	public static void upload() throws IOException{
 
 		System.out.println("entrée dans upload");
@@ -61,7 +69,28 @@ public class Upload extends Controller {
 			// On ferme le fichier quoi qu'il arrive :
 			fos.close();
 			is.close();
+			Vector monVector = new Vector(); 
+	        File f = new File(Play.applicationPath, "/public/uploads/picture_test.jpg"); 
+	        BufferedReader B = new BufferedReader(new FileReader(f)); 
+	        String ligne = B.readLine(); 
+	        while (ligne != null){ 
+	            monVector.addElement(ligne); 
+	            ligne = B.readLine(); 
+	        } 
+	        // on enlève les 5 premieres lignes
+	        monVector.removeElementAt(0); 
+	        monVector.removeElementAt(0); 
+	        monVector.removeElementAt(0); 
+	        monVector.removeElementAt(0); 
+	        monVector.removeElementAt(0); 
+	        
+	        PrintWriter P = new PrintWriter (f, "UTF-8"); 
+	        for (int i = 0; i < monVector.size(); i++){ 
+	            P.println(monVector.get(i)); 
+	        } 
+	        P.close(); 
 			System.out.println("on sort de upload");
+			
 		}
 		
 //		FileInputStream stream = (FileInputStream) Http.Request.current().body;	

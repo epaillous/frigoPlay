@@ -28,8 +28,11 @@ public class Aliment extends Model {
 	public Set<Recette> recette;
 
 
+ 	@ManyToOne(optional=false)
+ 	public EtatFrigo etatFrigo;
+	
 	@ManyToOne(optional=false)
-	public EtatFrigo etatFrigo;
+	public Section section;
 
 	public String toString() {
 	    return nom;

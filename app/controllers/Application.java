@@ -7,6 +7,7 @@ import java.util.*;
 
 import org.apache.commons.io.FileUtils;
 
+import models.Aliment;
 import models.EtatFrigo;
 import models.User;
 
@@ -31,7 +32,41 @@ public class Application extends Controller {
 
 	
 	public static void index() {
-		render();
+		User user = User.find("byEmail", Security.connected()).first();
+		// Premier état frigo de la liste 
+		List<Aliment> aliments = user.etatFrigo.get(0).aliment;
+		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
+		List<Aliment> viandes = new ArrayList<Aliment>();
+		List<Aliment> laitages = new ArrayList<Aliment>();
+		List<Aliment> boissons= new ArrayList<Aliment>() ;
+		List<Aliment> autre = new ArrayList<Aliment>();
+		
+		Iterator iter = aliments.iterator();	
+		while (iter.hasNext()) {
+			Aliment cour = (Aliment) iter.next();
+			switch (cour.section.nom) {
+			case "Fruits et Légumes":
+				fruitsLegumes.add(cour);
+				break;
+			case "Laitages":
+				laitages.add(cour);
+				break;	
+			case "Viandes":
+				viandes.add(cour);
+				break;	
+			case "Boissons":
+				boissons.add(cour);
+				break;
+			case "Autre":
+				autre.add(cour);
+				break;	
+			default:
+				break;
+			}
+		}	
+		render(fruitsLegumes, viandes, laitages, boissons, autre);
+		
+		
 	}
  
     public static void historique() {
@@ -57,8 +92,7 @@ public class Application extends Controller {
     }
     
     public static void profil() {
-    	List<User> utilisateurs = User.findAll();
-    	render(utilisateurs);
+    	render();
     }
     
     public static void photo() {
