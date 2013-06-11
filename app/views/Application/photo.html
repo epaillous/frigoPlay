@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+#{set title:'Bienvenue dans votre Frigo' /}
+#{set accueilActif:'active'/}
+
+<meta charset="UTF-8">
+
+<section>
+	#{list items:models.Photo.findAll(), as:'photoCour'}
+	<img src="@{affichePhoto(photoCour.id)}">
+	#{/list}
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+
