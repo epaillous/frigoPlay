@@ -31,30 +31,69 @@
    email: alexis.sciau@gmail.com
   
  EtatFrigo(etatfrigo1):
-   date: 2013-05-25 08.52.20
-   user: mailys
-   image: /public/img/2013-05-25 08.52.20.JPG
+   date: 2013-05-25 08:52:20
+   user: [mailys,alexis]
+   image: /public/img/2013-05-25-08.52.20.JPG
 
  EtatFrigo(etatfrigo2):
-   date: 2013-05-25 08.52.24
-   user: alexis
-   image: /public/img/2013-05-25 08.52.24.JPG
+   date: 2013-05-25 08:52:24
+   user: [mailys, alexis]
+   image: /public/img/2013-05-25-08.52.24.JPG
  
  EtatFrigo(etatfrigo3):
-   date: 2013-05-25 12.59.50
-   user: emilie
-   image: /public/img/2013-05-25 12.59.50.JPG
+   date: 2013-05-25 12:59:50
+   user: [alexis, mailys]
+   image: /public/img/2013-05-25-12.59.50.JPG
 
  EtatFrigo(etatfrigo4):
-   date: 2013-05-25 12.59.59
-   user: emilie
-   image: /public/img/2013-05-25 12.59.59.JPG
+   date: 2013-05-25 12:59:59
+   user: [alexis, mailys]
+   image: /public/img/2013-05-25-12.59.59.JPG
    
  EtatFrigo(etatfrigo5):
-   date: 2013-05-27 16.26.57
-   user: emilie
-   image: /public/img/2013-05-25 16.26.57.JPG   
+   date: 2013-05-27 16:26:57
+   user: [alexis, mailys]
+   image: /public/img/2013-05-27-16.26.57.JPG   
 
+ EtatFrigo(etatfrigo6):
+   date: 2013-06-11 12:37:40
+   user: [emilie, alice]
+   image: /public/img/Picture_11-06-2013-12.37.40.JPG   
+
+ EtatFrigo(etatfrigo7):
+   date: 2013-06-11 12:38:02
+   user: [emilie, alice]
+   image: /public/img/Picture_11-06-2013-12.38.02.JPG   
+
+ EtatFrigo(etatfrigo8):
+   date: 2013-06-11 12:38:28
+   user: [emilie, alice]
+   image: /public/img/Picture_11-06-2013-12.38.28.JPG   
+
+ EtatFrigo(etatfrigo9):
+   date: 2013-06-11 12:43:18
+   user: [emilie, alice]
+   image: /public/img/Picture_11-06-2013-12.43.18.JPG   
+
+ EtatFrigo(etatfrigo10):
+   date: 2013-06-11 12:43:43
+   user:  [emilie, alice]
+   image: /public/img/Picture_11-06-2013-12.43.43.JPG   
+
+ EtatFrigo(etatfrigo11):
+   date: 2013-06-11 12:45:05
+   user: [emilie, alice]
+   image: /public/img/Picture_11-06-2013-12.45.05.JPG   
+
+ EtatFrigo(etatfrigo12):
+   date: 2013-06-11 12:45:21
+   user: [emilie, alice]
+   image: /public/img/Picture_11-06-2013-12.45.21.JPG   
+
+ EtatFrigo(etatfrigo13):
+   date: 2013-06-11 12:45:53
+   user:  [emilie, alice]
+   image: /public/img/Picture_11-06-2013-12.45.53.JPG   
 
   
 

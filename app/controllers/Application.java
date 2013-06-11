@@ -12,8 +12,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.*;
 
+import models.User;
 
-import models.*;
 
 @With(Secure.class)
 public class Application extends Controller {
@@ -27,8 +27,7 @@ public class Application extends Controller {
     }
 
     public static void index() {
-    	EtatFrigo etatFrigo = EtatFrigo.find("order by date desc").first();
-        render(etatFrigo);
+        render();
     }
     
     public static void historique() {
