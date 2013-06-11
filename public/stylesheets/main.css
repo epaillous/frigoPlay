@@ -11,6 +11,7 @@ body {
 .container > hr {
   margin: 60px 0;
 }
+
 /* Main marketing message and sign up button */
 .jumbotron {
   margin: 80px 0;
@@ -66,7 +67,7 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
-	/*Ajouté par Maï*/
+	/*Ajoutï¿½ par Maï¿½*/
 .wrap {
 	margin-left: 400px;
 }
@@ -74,7 +75,7 @@ body {
 .nav li {
 	float: left;
 }
-.nav #m1, #m2
+.nav #m1,#m2
 {	
 	position: absolute;
 	visibility: hidden;
@@ -82,22 +83,20 @@ body {
 .nav #m1 a
 {	
 	display: block;
+	
 	font-style: normal;
 	color: grey;
 	text-align: left;
   	border: 1px solid rgba(0,0,0,.1);
-  	padding-right: 10px;
-  	padding-left: 10px;
 }
 .nav #m2 a
 {	
 	display: block;
+	
 	font-style: normal;
 	color: grey;
-	text-align: left;	
- 	border: 1px solid rgba(0,0,0,.1);
- 	padding-right: 10px;
- 	padding-left: 10px;
+	text-align: left;
+  	border: 1px solid rgba(0,0,0,.1);
 }
 .nav #m1 a:hover {
 	color: black;
@@ -143,19 +142,21 @@ body {
 	background-color: white/*#FFFF66*/;
 	color: grey;
 	padding: 10px;
-	border: 3px solid rgba(0,0,0,.1);
 }
-/*Spécial historique*/
+/*Spï¿½cial historique*/
 #histo h2 {
    margin-left: 400px;
 }
 #histo .controls_center {
    margin-left: 400px;
 }
-
-/*Menu déroulant pour le contenu*/
-.contenu1 li {
-	float: left;
+/*Menu dï¿½roulant pour le contenu*/
+.listeContenu li {
+	/*float: left;*/
+	/*list-style-type: none;*/
+}
+.listeContenu a {
+	color: black;
 }
 .contenu1:hover {
 	margin-bottom: 70px;

@@ -14,10 +14,12 @@
 <div class="wrap">
 	<h2>Votre profil : </h2>
 	
-	#{list items:utilisateurs, as:'utilisateur'}
-		<p>Nom : ${utilisateur.nom}<p>
-		<p>Prenom : ${utilisateur.prenom}<p>
-	#{/list}
+	<p>Nom : ${user.nom}</p>
+	<p>Prenom : ${user.prenom}</p>
+	<p>Date de Naissance : ${user.dateDeNaissance}</p>
+	<p>Nombre de Personne dans le foyer : ${user.nbFoyer}</p>
+	<p>e-mail : ${user.email}</p>
+	<p>preference : ${user.preference}</p>
 	
 </div>
 

@@ -18,6 +18,9 @@ GET		/listesCourses/							Application.listesCourses
 GET		/archives/								Application.archives
 # Page profil
 GET 	/profil/								Application.profil
+# Page photo
+GET 	/photo/								    Application.photo
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
@@ -32,6 +35,7 @@ GET     /public/                                staticDir:public
 *      /admin              						module:crud
 
 # Upload des photos
+
 POST    /upload                                 Application.upload
 GET 	/upload									Application.upload
 
