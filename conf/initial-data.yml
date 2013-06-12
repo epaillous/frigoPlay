@@ -58,58 +58,7 @@
  EtatFrigo(etatfrigo6):
    date: 2013-06-11 12:37:40
    user: [emilie, alice]
-   image: /public/img/Picture_11-06-2013-12.37.40.JPG   
-
- EtatFrigo(etatfrigo7):
-   date: 2013-06-11 12:38:02
-   user: [emilie, alice]
-   image: /public/img/Picture_11-06-2013-12.38.02.JPG   
-
- EtatFrigo(etatfrigo8):
-   date: 2013-06-11 12:38:28
-   user: [emilie, alice]
-   image: /public/img/Picture_11-06-2013-12.38.28.JPG   
-
- EtatFrigo(etatfrigo9):
-   date: 2013-06-11 12:43:18
-   user: [emilie, alice]
-   image: /public/img/Picture_11-06-2013-12.43.18.JPG   
-
- EtatFrigo(etatfrigo10):
-   date: 2013-06-11 12:43:43
-   user:  [emilie, alice]
-   image: /public/img/Picture_11-06-2013-12.43.43.JPG   
-
- EtatFrigo(etatfrigo11):
-   date: 2013-06-11 12:45:05
-   user: [emilie, alice]
-   image: /public/img/Picture_11-06-2013-12.45.05.JPG   
-
- EtatFrigo(etatfrigo12):
-   date: 2013-06-11 12:45:21
-   user: [emilie, alice]
-   image: /public/img/Picture_11-06-2013-12.45.21.JPG   
-
- EtatFrigo(etatfrigo13):
-   date: 2013-06-11 12:45:53
-   user:  [emilie, alice]
-   image: /public/img/Picture_11-06-2013-12.45.53.JPG   
-
-
- Section(fruitsetlegumes):
-   nom: Fruits et Légumes 
-
- Section(viandes):
-   nom: Viandes
-
- Section(boissons):
-   nom: Boissons  
-
- Section(laitages):
-   nom: Laitages  
- 
- Section(autre):
-   nom: Autre     
+   image: /public/img/Picture_11-06-2013-12.37.40.JPG    
    
  Recette(recette1):
    nom: Gratin de tomates
@@ -149,66 +98,75 @@
    quantite: 1.5L
    calories: 3000
    peremption: 2013-09-20
+   entreeFrigo: 2013-06-11
    etatFrigo: etatfrigo6
-   section: boissons
+   section: Boissons
    
  Aliment(tomates):
    nom: Tomates
    quantite: 250g
    calories: 
    peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
    recette: recette1
    etatFrigo: etatfrigo6
-   section: fruitsetlegumes
+   section: FruitsLegumes
    
  Aliment(cordonbleu):
    nom: Cordon Bleu
    quantite: 4
    calories: 
+   entreeFrigo: 2013-06-11
    peremption: 2013-06-21
    etatFrigo: etatfrigo6
-   section: viandes
+   section: Viandes
 
  Aliment(yaourtfruits):
    nom: Yaourts aux Fruits
    quantite: 8
    calories: 
+   entreeFrigo: 2013-06-11
    peremption: 2013-06-24
    etatFrigo: etatfrigo6
-   section: laitages
+   section: Laitages
 
  Aliment(emmental):
    nom: Emmental
    quantite: 500g
    calories: 
+   entreeFrigo: 2013-06-11
    peremption: 2013-08-02
    etatFrigo: etatfrigo6
-   section: laitages
+   section: Laitages
 
  Aliment(compotes):
    nom: Compotes
    quantite: 8
    calories: 
+   entreeFrigo: 2013-06-11
    peremption: 2013-09-10
    etatFrigo: etatfrigo6
-   section: autre
+   section: Autre
  
  Aliment(oeufs):
    nom: Oeufs
    quantite: 12
    calories: 
+   entreeFrigo: 2013-06-11
    peremption: 2013-06-24
    etatFrigo: etatfrigo6
    section: laitages
    recette: recette2
 
+
  Aliment(soupe):
    nom: Soupe
    quantite: 1L
    calories: 
+   entreeFrigo: 2013-06-11
    peremption: 2014-01-26
    etatFrigo: etatfrigo6
-   section: autre
+   section: Autre
    
    
    

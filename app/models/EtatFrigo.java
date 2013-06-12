@@ -4,8 +4,10 @@ import javax.persistence.Entity;
 
 import java.net.URL;
 import java.util.*;
+
 import javax.persistence.ManyToMany;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import play.data.validation.Required;
@@ -15,13 +17,21 @@ import play.db.jpa.Model;
 public class EtatFrigo extends Model {
 	public Date date;
 
-	@ManyToMany
-	public List<User> user;
+	@ManyToOne
+	public User user;
 
 	public String image;
 
 	@OneToMany(mappedBy="etatFrigo" )
 	public List<Aliment> aliment;
 
+	public EtatFrigo(Date date, User user, String image,
+			List<Aliment> aliment) {
+		super();
+		this.date = date;
+		this.user = user;
+		this.image = image;
+		this.aliment = aliment;
+	}
 
 }

@@ -38,7 +38,7 @@ public class User extends Model {
 
 	public String preference = "nulle";
 
-	@ManyToMany(mappedBy="user")
+	@OneToMany(mappedBy="user")
 	public List<EtatFrigo> etatFrigo;
 
 	@OneToMany(mappedBy="user")

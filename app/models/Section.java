@@ -11,18 +11,23 @@ import net.sf.oval.constraint.NotEmpty;
 import play.data.validation.Required;
 import play.db.jpa.Model;
 
-@Entity
-public class Section extends Model {
-	
-	@NotEmpty
-	@Required
-	public String nom;
-	
-	@OneToMany(mappedBy="section")
-	public List<Aliment> aliments;
-	
-	public String toString() {
-	    return nom;
+
+public enum Section {
+	FruitsLegumes("Fruits et Légumes"), 
+	Boissons("Boissons"),
+	Laitages("Laitages"), 
+	Viandes("Viandes"),
+	Autre("Autre");
+
+	private String name = "";
+
+	//Constructeur
+	Section(String name){
+		this.name = name;
+	}
+
+	public String toString(){
+		return name;
 	}
 
 }

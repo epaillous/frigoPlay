@@ -36,18 +36,19 @@ public class Application extends Controller {
 	public static void index() {
 		User user = User.find("byEmail", Security.connected()).first();
 		// Premier état frigo de la liste 
-		List<Aliment> aliments = user.etatFrigo.get(0).aliment;
+		EtatFrigo dernierEtat = EtatFrigo.find("user like ? order by date desc", user).first();
+		List<Aliment> aliments = dernierEtat.aliment;
 		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
 		List<Aliment> viandes = new ArrayList<Aliment>();
 		List<Aliment> laitages = new ArrayList<Aliment>();
 		List<Aliment> boissons= new ArrayList<Aliment>() ;
 		List<Aliment> autre = new ArrayList<Aliment>();
-		
+
 		Iterator iter = aliments.iterator();	
 		while (iter.hasNext()) {
 			Aliment cour = (Aliment) iter.next();
-			switch (cour.section.nom) {
-			case "Fruits et Légumes":
+			switch (cour.section.name()) {
+			case "FruitsLegumes":
 				fruitsLegumes.add(cour);
 				break;
 			case "Laitages":
@@ -66,7 +67,7 @@ public class Application extends Controller {
 				break;
 			}
 		}	
-		render(fruitsLegumes, viandes, laitages, boissons, autre);
+		render(fruitsLegumes, viandes, laitages, boissons, autre, dernierEtat);
 	}
  
     public static void historique() {
@@ -77,11 +78,6 @@ public class Application extends Controller {
     	render();
     }
     public static void recettesFavorites() {
-    	render();
-    }
-    public static void recetteSelec() {
-//    	Recette recette;
-//    	render(recette);
     	render();
     }
     public static void carottesRapees() {

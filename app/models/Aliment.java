@@ -20,6 +20,20 @@ public class Aliment extends Model {
 	public int calories;
 
 	public Date peremption;
+	
+	public Date entreeFrigo;
+
+	public Aliment(String nom, String quantite, int calories, Date peremption, Date entreeFrigo, EtatFrigo etatFrigo, Section section) {
+		super();
+		this.nom = nom;
+		this.quantite = quantite;
+		this.calories = calories;
+		this.peremption = peremption;
+		this.entreeFrigo = entreeFrigo;
+		this.section = section;
+		this.etatFrigo = etatFrigo;
+	}
+	
 
 	@OneToMany
 	public Set<ListeDeCourse> listeDeCourse;
@@ -27,16 +41,19 @@ public class Aliment extends Model {
 	@OneToMany	
 	public Set<Recette> recette;
 
-
- 	@ManyToOne(optional=false)
+ 	@ManyToOne
  	public EtatFrigo etatFrigo;
 	
-	@ManyToOne(optional=false)
-	public Section section;
+ 	@Enumerated(EnumType.STRING)
+	public Section section ;
 
 	public String toString() {
 	    return nom;
 	}
 
+	public boolean equals(Aliment obj) {
+		// Vérification de l'égalité des références
+		return this.nom.equals(obj.nom);
+	}
    
    }
