@@ -98,15 +98,6 @@ public class Application extends Controller {
     public static void photo() {
     	render();
     }         
-//    
-//    public static void upload(){
-//    	FileInputStream stream = (FileInputStream) Http.Request.current().body;
-//    	
-//    	File uploadDir = new File(Play.applicationPath, "/public/uploads/");
-//    	if (!uploadDir.exists()){
-//   		uploadDir.mkdirs();
-//    	}
-//    }
     
 
 }
