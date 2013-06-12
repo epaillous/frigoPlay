@@ -19,11 +19,9 @@
 		<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
 		<img  src="${dernierEtat.image}" height="352" width="470"></img>		
 		<p>Date de la prise : "${dernierEtat.date.format('dd MMMM yyyy HH:mm')}"</p>
-
+		
 		<aside class="listeContenu">
-			<ul>
-
-
+		<ul>
 	<li class="contenu"> 
 	<a href="#" onmouseover="mopen('frEtLeg')" onmouseout="mclosetime()"> 
 	<img src="/public/images/carotte.svg" width=20px />Fruits et Légumes </a> 
@@ -48,9 +46,9 @@
 		onmouseout="mclosetime()">
 
 						#{list items:boissons, as:'aliment'}
-						<a href="#">${aliment.nom} </a> Date d'entrée dans le frigo :
-						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
-						${aliment.peremption.format('dd/MM/yy')} #{/list}
+						<a href="#">${aliment.nom} </a> 
+						Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} 
+						Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} #{/list}
 					</div>
 	</li>
 	
@@ -63,7 +61,7 @@
 	#{list items:viandes, as:'aliment'}
 
 <a href="#">${aliment.nom} </a>
-	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
+	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  <br/>
 		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
 	#{/list}
 	</div>
@@ -79,7 +77,7 @@
 
 <a href="#">${aliment.nom} </a>
 	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}
-		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')}
+		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} <br/>
 
 	#{/list}
 	</div>
@@ -95,7 +93,7 @@
 
 <a href="#">${aliment.nom} </a>
 	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
-		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
+		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} <br/>
 
 	#{/list}
 	</div>

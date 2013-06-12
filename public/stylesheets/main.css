@@ -140,8 +140,11 @@ body {
     color: white;
     font-size: 0.9em;
 }
+.sous {
+	list-style-type: none;
+}
 .listeCour img {
-	padding-left: 10px;
+	padding-right: 10px;
 }
 .listeContenu {
 	position: fixed;
