@@ -1,3 +1,33 @@
 .reperesRecettes {
 	padding-left: 400px;
 }
+.favorie {
+	font-weight: bold;
+	color: grey;
+}
+.favorie:hover {
+	color: black;
+	text-decoration: none;
+}
+.recettesFav {
+	margin: 20px;
+}
+.caract {
+	color: grey;
+	list-style-type: none;
+	padding: 5px;
+}
+/* #(cara+'${recette.nom}') { */
+/* 	position: absolute; */
+/* 	visibility: hidden; */
+/* } */
+/* .espace:hover { */
+/* 	padding-bottom: 75px; */
+/* } */
+.espace {
+	margin-left: 20px;
+}
+/* #(cara+'${recette.nom}') li { */
+/* 	float: left; */
+/* 	display: block; */
+/* } */

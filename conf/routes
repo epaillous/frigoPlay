@@ -10,8 +10,8 @@ GET 	/historique/							Application.historique
 GET     /recettesProposees/						Application.recettesProposees
 # Page recettes favorites
 GET     /recettesFavorites/						Application.recettesFavorites
-#recette donnees
-GET 	/carottesRapees/						Application.carottesRapees
+#recette selectionnee
+GET 	/recetteSelec/							Application.recetteSelec
 # Page listes de courses
 GET		/listesCourses/							Application.listesCourses
 # Page archives

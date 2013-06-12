@@ -19,10 +19,9 @@ public class Recette extends Model {
 	@Required
 	public String nom;
 	
+	//Les 3 indicateurs suivants ont une valeur comprise entre 0 et 4
 	public int difficulte;
-
 	public int prix;
-
 	public int calories;
 
 	@Required

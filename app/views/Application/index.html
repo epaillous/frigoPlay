@@ -24,7 +24,6 @@
 			<ul>
 
 
-<!--  Ce serait cool que quand on clique ca se stabilise sur la section cliquée non? -->
 	<li class="contenu"> 
 	<a href="#" onmouseover="mopen('frEtLeg')" onmouseout="mclosetime()"> 
 	<img src="/public/images/carotte.svg" width=20px />Fruits et Légumes </a> 
@@ -33,17 +32,21 @@
 		onmouseout="mclosetime()">
 	#{list items:fruitsLegumes, as:'aliment'}
 	<a href="#">${aliment.nom} </a>
-	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
+	<aside class="dates">
+	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} <br>
 		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
+		</aside>
 	#{/list}
 		</div>
 		</li>
+		
 	<li class="contenu"> 
 	<a href="#" onmouseover="mopen('boissons')" onmouseout="mclosetime()"> 
 	<img src="/public/images/boisson.svg" width=20px />Boissons </a> 
 			<div id="boissons"
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
+
 						#{list items:boissons, as:'aliment'}
 						<a href="#">${aliment.nom} </a> Date d'entrée dans le frigo :
 						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
@@ -52,12 +55,13 @@
 	</li>
 	
 	<li class="contenu"> 
-	<a href="#" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> 
+	<a href="/indexViande/" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> 
 	<img src="/public/images/steak.svg" width=20px />Viandes </a> 	
 			<div id="viandes"
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:viandes, as:'aliment'}
+
 <a href="#">${aliment.nom} </a>
 	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
 		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
@@ -72,9 +76,11 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:laitages, as:'aliment'}
+
 <a href="#">${aliment.nom} </a>
 	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}
 		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')}
+
 	#{/list}
 	</div>
 	</li>
@@ -86,9 +92,11 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:autre, as:'aliment'}
+
 <a href="#">${aliment.nom} </a>
 	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
 		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
+
 	#{/list}
 	</div>
 	</li>

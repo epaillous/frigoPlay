@@ -63,8 +63,8 @@
  Recette(recette1):
    nom: Gratin de tomates
    difficulté : 3
-   prix: 
-   calories:
+   prix: 1
+   calories: 2
    lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
    user: emilie
 
@@ -72,24 +72,24 @@
  Recette(recette2):
    nom: Gâteau aux noix et au citron
    difficulté : 3
-   prix: 
-   calories:
+   prix: 1
+   calories: 3
    lien: http://www.marmiton.org/recettes/recette_gateau-aux-noix-et-au-citron_231083.aspx
    user: emilie
 
  Recette(recette3):
    nom: Spaghetti aux boulettes et à la ricotta
    difficulté : 2
-   prix: 
-   calories:
+   prix: 2
+   calories: 2
    lien: http://www.marmiton.org/recettes/recette_spaghetti-aux-boulettes-et-a-la-ricotta_71318.aspx
    user: emilie
 
  Recette(recette4):
    nom: Salade de moules au melon
    difficulté : 1
-   prix: 
-   calories:
+   prix: 3
+   calories: 1
    lien: http://www.marmiton.org/recettes/recette_salade-de-moules-au-melon_14132.aspx
    user: emilie
 
@@ -154,8 +154,10 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-24
+   recette: recette2
    etatFrigo: etatfrigo6
    section: Laitages
+
 
  Aliment(soupe):
    nom: Soupe

@@ -10,6 +10,7 @@ import org.apache.commons.io.FileUtils;
 
 import models.Aliment;
 import models.EtatFrigo;
+import models.Recette;
 import models.User;
 
 
@@ -72,7 +73,6 @@ public class Application extends Controller {
 			}
 		}	
 		render(fruitsLegumes, viandes, laitages, boissons, autre, epicerie, dernierEtat);
-
 
 	}
  
