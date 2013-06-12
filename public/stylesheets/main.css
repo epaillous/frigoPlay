@@ -141,7 +141,7 @@ body {
 	position: fixed;
 	width: 500px;
 	top: 250px;
-	left: 1000px;
+	left: 900px;
 }
 .postit {
 	background-color: white/*#FFFF66*/;
@@ -179,6 +179,78 @@ body {
 	text-align: left;
 }
 .fruitsEtLegumes #frEtLeg a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.contenu1 #boissons
+{	
+	position: absolute;
+	visibility: hidden;
+}	
+.contenu1 #boissons a
+{	
+	display: block;
+	padding-left: 20px;
+	font-style: normal;
+	color: grey;
+	text-align: left;
+}
+.contenu1 #boissons a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.contenu1 #viandes
+{	
+	position: absolute;
+	visibility: hidden;
+}	
+.contenu1 #viandes a
+{	
+	display: block;
+	padding-left: 20px;
+	font-style: normal;
+	color: grey;
+	text-align: left;
+}
+.contenu1 #viandes a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.contenu1 #laitages
+{	
+	position: absolute;
+	visibility: hidden;
+}	
+.contenu1 #laitages a
+{	
+	display: block;
+	padding-left: 20px;
+	font-style: normal;
+	color: grey;
+	text-align: left;
+}
+.contenu1 #laitages a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.contenu1 #autre
+{	
+	position: absolute;
+	visibility: hidden;
+}	
+.contenu1 #autre a
+{	
+	display: block;
+	padding-left: 20px;
+	font-style: normal;
+	color: grey;
+	text-align: left;
+}
+.contenu1 #autre a:hover {
 	color: black;
 	text-decoration: none;
 }

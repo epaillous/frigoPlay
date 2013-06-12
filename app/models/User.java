@@ -44,6 +44,9 @@ public class User extends Model {
 	@OneToMany(mappedBy="user")
 	public Set<ListeDeCourse> listeDeCourse;
 	
+	@ManyToMany(mappedBy="user")
+	public List<Recette> recettesFavorites;
+	
 	public String toString() {
 	    return email;
 	}

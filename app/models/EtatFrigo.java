@@ -21,7 +21,7 @@ public class EtatFrigo extends Model {
 	public String image;
 
 	@OneToMany(mappedBy="etatFrigo" )
-	public Set<Aliment> aliment;
+	public List<Aliment> aliment;
 
 
 }

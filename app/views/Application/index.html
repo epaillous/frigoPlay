@@ -19,21 +19,63 @@
 
 		<aside class="listeContenu">
 			<ul>
-				<li class="fruitsEtLegumes">
-					<a href="#"
-						onmouseover="mopen('frEtLeg')"
-						onmouseout="mclosetime()"> Fruit et Légume </a>
-					<div id="frEtLeg"
-						onmouseover="mcancelclosetime()"
-						onmouseout="mclosetime()">
-						<a href="/carottesRapees/"> 5 Carottes  -  Périmées le : 15/06/13</a>
-						<a class="perime" href="#"> 3 Clémentines  -  <em class="datePeremption">Périmées le : 05/05/13 </em></a>
-					</div>
-				</li>
-                <li class="viande">Viande</li>
-                <li class="laitages">Laitage</li>
-                <li class="boissons">Boisson</li>
-                <li class="autres">Autre</li>
+
+
+<!--  Ce serait cool que quand on clique ca se stabilise sur la section cliquée non? -->
+	<li class="contenu1" id="contenuLegumes"> 
+	<a href="#" onmouseover="mopen('frEtLeg')" onmouseout="mclosetime()"> Fruits et Légumes </a> 
+		<div id="frEtLeg"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:fruitsLegumes, as:'aliment'}
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+	#{/list}
+		</div>
+		</li>
+	<li class="contenu1" id="contenuBoissons"> 
+	<a href="#" onmouseover="mopen('boissons')" onmouseout="mclosetime()"> Boissons </a> 
+			<div id="boissons"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:boissons, as:'aliment'}
+	 <a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+	#{/list}
+	</div>
+	</li>
+	
+	<li class="contenu1" id="contenuViande"> 
+	<a href="#" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> Viandes </a> 	
+			<div id="viandes"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:viandes, as:'aliment'}
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+	#{/list}
+	</div>
+	</li>
+	
+	<li class="contenu1" id="contenuLait"> 
+	<a href="#" onmouseover="mopen('laitages')" onmouseout="mclosetime()"> Laitages </a> 
+			<div id="laitages"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:laitages, as:'aliment'}
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+	#{/list}
+	</div>
+	</li>
+	
+	<li class="contenu1" id="contenuAutre"> 
+	<a href="#" onmouseover="mopen('autre')" onmouseout="mclosetime()"> Autre </a> 
+			<div id="autre"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:autre, as:'aliment'}
+	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+	#{/list}
+	</div>
+	</li>
+	
            	</ul>
 		</aside>
 	</article>
