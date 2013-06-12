@@ -1,5 +1,8 @@
 #{extends 'Application/listeCour.html' /}
 #{set title:'Bienvenue dans votre Frigo' /}
+#{set 'moreStyles'}
+        #{stylesheet '/index.css' /}
+#{/set}
 
 <!-- Ajout script pour les menu déroulants -->
 <script src="@{'/public/javascripts/sousOnglets.js'}"></script>
@@ -19,24 +22,12 @@
 
 		<aside class="listeContenu">
 			<ul>
-<!-- 				<li class="contenu1"> -->
-<!-- 					<a href="#" -->
-<!-- 						onmouseover="mopen('frEtLeg')" -->
-<!-- 						onmouseout="mclosetime()"> Fruit et Légume </a> -->
-<!-- 					<div id="frEtLeg" -->
-<!-- 						onmouseover="mcancelclosetime()" -->
-<!-- 						onmouseout="mclosetime()"> -->
-<!-- 						<a href="/carottesRapees/"> 5 Carottes  -  Périmées le : 15/06/13</a> -->
-<!-- 						<a class="perime" href="#"> 3 Clémentines  -  <em class="datePeremption">Périmées le : 05/05/13 </em></a> -->
-<!-- 					</div> -->
-<!-- 				</li> -->
-<!--                 <li>Viande</li> -->
-<!--                 <li>Laitage</li> -->
-<!--                 <li>Boisson</li> -->
-<!--                 <li>Autre</li> -->
+
 
 <!--  Ce serait cool que quand on clique ca se stabilise sur la section cliquée non? -->
-	<li class="contenu1"> <a href="#" onmouseover="mopen('frEtLeg')" onmouseout="mclosetime()"> Fruits et Légumes </a> 
+	<li class="contenu"> 
+	<a href="#" onmouseover="mopen('frEtLeg')" onmouseout="mclosetime()"> 
+	<img src="/public/images/carotte.svg" width=20px />Fruits et Légumes </a> 
 		<div id="frEtLeg"
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
@@ -47,7 +38,9 @@
 	#{/list}
 		</div>
 		</li>
-	<li class="contenu1"> <a href="#" onmouseover="mopen('boissons')" onmouseout="mclosetime()"> Boissons </a> 
+	<li class="contenu"> 
+	<a href="#" onmouseover="mopen('boissons')" onmouseout="mclosetime()"> 
+	<img src="/public/images/boisson.svg" width=20px />Boissons </a> 
 			<div id="boissons"
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
@@ -58,7 +51,9 @@
 					</div>
 	</li>
 	
-	<li class="contenu1"> <a href="#" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> Viandes </a> 	
+	<li class="contenu"> 
+	<a href="#" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> 
+	<img src="/public/images/steak.svg" width=20px />Viandes </a> 	
 			<div id="viandes"
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
@@ -70,7 +65,9 @@
 	</div>
 	</li>
 	
-	<li class="contenu1"> <a href="#" onmouseover="mopen('laitages')" onmouseout="mclosetime()"> Laitages </a> 
+	<li class="contenu"> 
+	<a href="#" onmouseover="mopen('laitages')" onmouseout="mclosetime()"> 
+	<img src="/public/images/lait.svg" width=20px />Laitages </a> 
 			<div id="laitages"
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
@@ -82,7 +79,9 @@
 	</div>
 	</li>
 	
-	<li class="contenu1"> <a href="#" onmouseover="mopen('autre')" onmouseout="mclosetime()"> Autre </a> 
+	<li class="contenu"> 
+	<a href="#" onmouseover="mopen('autre')" onmouseout="mclosetime()"> 
+	<img src="/public/images/confiture.svg" width=20px />Autre </a> 
 			<div id="autre"
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">

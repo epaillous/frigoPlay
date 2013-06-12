@@ -89,6 +89,8 @@ body {
 	color: grey;
 	text-align: left;
   	border: 1px solid rgba(0,0,0,.1);
+  	padding-left: 10px;
+  	padding-right: 20px;
 }
 .nav #m2 a
 {	
@@ -98,6 +100,8 @@ body {
 	color: grey;
 	text-align: left;
   	border: 1px solid rgba(0,0,0,.1);
+  	padding-left: 10px;
+  	padding-right: 20px;
 }
 .nav #m1 a:hover {
 	color: black;
@@ -109,6 +113,9 @@ body {
 }
 
 /*Gestion de la liste courante*/
+.liste {
+	padding-bottom: 20px;
+}
 .listeCour, .contenuFrigo {
     display: inline-block;
     vertical-align: top;
@@ -133,6 +140,9 @@ body {
     color: white;
     font-size: 0.9em;
 }
+.listeCour img {
+	padding-left: 10px;
+}
 .listeContenu {
 	position: fixed;
 	width: 500px;
@@ -151,109 +161,7 @@ body {
 #histo .controls_center {
    margin-left: 400px;
 }
-/*Menu dï¿½roulant pour le contenu*/
-.listeContenu li {
-	/*float: left;*/
-	/*list-style-type: none;*/
-}
-.listeContenu a {
-	color: black;
-}
-.contenu1:hover {
-	margin-bottom: 70px;
-}
-.contenu1 #frEtLeg
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #frEtLeg a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #frEtLeg a:hover {
-	color: black;
-	text-decoration: none;
-}
 
-.contenu1 #boissons
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #boissons a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #boissons a:hover {
-	color: black;
-	text-decoration: none;
-}
-
-.contenu1 #viandes
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #viandes a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #viandes a:hover {
-	color: black;
-	text-decoration: none;
-}
-
-.contenu1 #laitages
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #laitages a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #laitages a:hover {
-	color: black;
-	text-decoration: none;
-}
-
-.contenu1 #autre
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #autre a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #autre a:hover {
-	color: black;
-	text-decoration: none;
-}
-.listeContenu .perime .datePeremption {
-	color: red;
-}
 /*Déconnexion*/
 #deconnexion {
 	float: right;
