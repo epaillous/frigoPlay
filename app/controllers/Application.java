@@ -42,7 +42,8 @@ public class Application extends Controller {
 		List<Aliment> laitages = new ArrayList<Aliment>();
 		List<Aliment> boissons= new ArrayList<Aliment>() ;
 		List<Aliment> autre = new ArrayList<Aliment>();
-
+		List<Aliment> epicerie = new ArrayList<Aliment>();
+		
 		Iterator iter = aliments.iterator();	
 		while (iter.hasNext()) {
 			Aliment cour = (Aliment) iter.next();
@@ -62,11 +63,15 @@ public class Application extends Controller {
 			case "Autre":
 				autre.add(cour);
 				break;	
+			case "Epicerie":
+				epicerie.add(cour);
+				break;
+			
 			default:
 				break;
 			}
 		}	
-		render(fruitsLegumes, viandes, laitages, boissons, autre, dernierEtat);
+		render(fruitsLegumes, viandes, laitages, boissons, autre, epicerie, dernierEtat);
 
 
 	}
