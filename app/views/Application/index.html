@@ -32,8 +32,10 @@
 		onmouseout="mclosetime()">
 	#{list items:fruitsLegumes, as:'aliment'}
 	<a href="#">${aliment.nom} </a>
-	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
+	<aside class="dates">
+	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} <br>
 		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
+		</aside>
 	#{/list}
 		</div>
 		</li>
