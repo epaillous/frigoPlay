@@ -19,9 +19,36 @@
 <div class="reperesRecettes">
 	<ul>
 	#{list items:user.recettesFavorites, as:'recette'}
-	<li><a href="${recette.lien}">${recette.nom}</a></li>
+		<li class="recettesFav">
+		<a class="favorie" href="${recette.lien}"> ${recette.nom}</a>
+			
+			<div class="caract"
+			onmouseover="mopen('cara')" 
+			onmouseout="mclosetime()">
+			
+			<div class="espace">
+				<div id="cara"
+				onmouseover="mcancelclosetime()"
+				onmouseout="mclosetime()">
+					Difficulté : ${recette.difficulte} /4<br/>
+					Prix : ${recette.prix} /4<br/>
+					Calories : ${recette.calories} /4<br/>
+				</div>
+			</div>
+			
+			<div>Les aliments dont vous aurez besoin sont les suivants :
+				<ul>
+				#{list items:recette.ingredient, as:'aliment'}
+					<li>${aliment.nom} <img src="/public/images/icon-add-grey.png" /></li>
+				#{/list}
+				</ul>				
+				</div>
+			</div>
+		</li>
+
 	#{/list}
 	</ul>
 	</div>
 </section>
 
+<script src="@{'/public/javascripts/sousOnglets.js'}"></script>

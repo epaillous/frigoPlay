@@ -10,6 +10,7 @@ import org.apache.commons.io.FileUtils;
 
 import models.Aliment;
 import models.EtatFrigo;
+import models.Recette;
 import models.User;
 
 
@@ -66,8 +67,6 @@ public class Application extends Controller {
 			}
 		}	
 		render(fruitsLegumes, viandes, laitages, boissons, autre);
-		
-		
 	}
  
     public static void historique() {
@@ -78,6 +77,11 @@ public class Application extends Controller {
     	render();
     }
     public static void recettesFavorites() {
+    	render();
+    }
+    public static void recetteSelec() {
+//    	Recette recette;
+//    	render(recette);
     	render();
     }
     public static void carottesRapees() {

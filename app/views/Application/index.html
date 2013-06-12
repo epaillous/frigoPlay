@@ -24,7 +24,6 @@
 			<ul>
 
 
-<!--  Ce serait cool que quand on clique ca se stabilise sur la section cliquée non? -->
 	<li class="contenu"> 
 	<a href="#" onmouseover="mopen('frEtLeg')" onmouseout="mclosetime()"> 
 	<img src="/public/images/carotte.svg" width=20px />Fruits et Légumes </a> 
@@ -32,10 +31,11 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:fruitsLegumes, as:'aliment'}
-	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+		<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 		</div>
 		</li>
+		
 	<li class="contenu"> 
 	<a href="#" onmouseover="mopen('boissons')" onmouseout="mclosetime()"> 
 	<img src="/public/images/boisson.svg" width=20px />Boissons </a> 
@@ -43,19 +43,19 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:boissons, as:'aliment'}
-	 <a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+		<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 	</div>
 	</li>
 	
 	<li class="contenu"> 
-	<a href="#" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> 
+	<a href="/indexViande/" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> 
 	<img src="/public/images/steak.svg" width=20px />Viandes </a> 	
 			<div id="viandes"
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:viandes, as:'aliment'}
-	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+		<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 	</div>
 	</li>
@@ -67,7 +67,7 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:laitages, as:'aliment'}
-	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+		<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 	</div>
 	</li>
@@ -79,7 +79,7 @@
 		onmouseover="mcancelclosetime()"
 		onmouseout="mclosetime()">
 	#{list items:autre, as:'aliment'}
-	<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
+		<a href="#">${aliment.nom}  - Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} </a>
 	#{/list}
 	</div>
 	</li>

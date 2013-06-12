@@ -1,3 +1,30 @@
 .reperesRecettes {
 	padding-left: 400px;
 }
+.favorie {
+	font-weight: bold;
+	color: grey;
+}
+.favorie:hover {
+	color: black;
+	text-decoration: none;
+}
+.recettesFav {
+	margin: 20px;
+}
+.caract {
+	color: grey;
+	list-style-type: none;
+	padding: 5px;
+}
+#cara {
+	position: absolute;
+	visibility: hidden;
+}
+.espace:hover {
+	padding-bottom: 75px;
+}
+#cara li {
+	float: left;
+	display: block;
+}
