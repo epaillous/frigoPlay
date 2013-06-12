@@ -17,14 +17,17 @@
 	list-style-type: none;
 	padding: 5px;
 }
-#cara {
-	position: absolute;
-	visibility: hidden;
+/* #(cara+'${recette.nom}') { */
+/* 	position: absolute; */
+/* 	visibility: hidden; */
+/* } */
+/* .espace:hover { */
+/* 	padding-bottom: 75px; */
+/* } */
+.espace {
+	margin-left: 20px;
 }
-.espace:hover {
-	padding-bottom: 75px;
-}
-#cara li {
-	float: left;
-	display: block;
-}
+/* #(cara+'${recette.nom}') li { */
+/* 	float: left; */
+/* 	display: block; */
+/* } */

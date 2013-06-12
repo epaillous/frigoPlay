@@ -47,6 +47,7 @@ public class Application extends Controller {
 		Iterator iter = aliments.iterator();	
 		while (iter.hasNext()) {
 			Aliment cour = (Aliment) iter.next();
+			System.out.println(cour.nom);
 			switch (cour.section.name()) {
 			case "FruitsLegumes":
 				fruitsLegumes.add(cour);
