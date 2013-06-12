@@ -113,6 +113,9 @@ body {
 }
 
 /*Gestion de la liste courante*/
+.liste {
+	padding-bottom: 20px;
+}
 .listeCour, .contenuFrigo {
     display: inline-block;
     vertical-align: top;
@@ -137,6 +140,9 @@ body {
     color: white;
     font-size: 0.9em;
 }
+.listeCour img {
+	padding-left: 10px;
+}
 .listeContenu {
 	position: fixed;
 	width: 500px;
@@ -155,108 +161,7 @@ body {
 #histo .controls_center {
    margin-left: 400px;
 }
-/*Menu dï¿½roulant pour le contenu*/
-.listeContenu li {
-	/*float: left;*/
-}
-.listeContenu a {
-	color: black;
-}
-.fruitsEtLegumes:hover {
-	margin-bottom: 70px;
-}
-.fruitsEtLegumes #frEtLeg
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.fruitsEtLegumes #frEtLeg a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.fruitsEtLegumes #frEtLeg a:hover {
-	color: black;
-	text-decoration: none;
-}
 
-.contenu1 #boissons
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #boissons a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #boissons a:hover {
-	color: black;
-	text-decoration: none;
-}
-
-.contenu1 #viandes
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #viandes a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #viandes a:hover {
-	color: black;
-	text-decoration: none;
-}
-
-.contenu1 #laitages
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #laitages a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #laitages a:hover {
-	color: black;
-	text-decoration: none;
-}
-
-.contenu1 #autre
-{	
-	position: absolute;
-	visibility: hidden;
-}	
-.contenu1 #autre a
-{	
-	display: block;
-	padding-left: 20px;
-	font-style: normal;
-	color: grey;
-	text-align: left;
-}
-.contenu1 #autre a:hover {
-	color: black;
-	text-decoration: none;
-}
-.listeContenu .perime .datePeremption {
-	color: red;
-}
 /*Déconnexion*/
 #deconnexion {
 	float: right;
