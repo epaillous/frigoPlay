@@ -99,6 +99,21 @@
 	</div>
 	</li>
 	
+		<li class="contenu"> 
+	<a href="#" onmouseover="mopen('autre')" onmouseout="mclosetime()"> 
+	<img src="/public/images/confiture.svg" width=20px />Epicerie </a> 
+			<div id="epicerie"
+		onmouseover="mcancelclosetime()"
+		onmouseout="mclosetime()">
+	#{list items:epicerie, as:'aliment'}
+<a href="#">${aliment.nom} </a>
+	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
+		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
+	#{/list}
+	</div>
+	</li>
+	
+	
            	</ul>
 		</aside>
 	</article>

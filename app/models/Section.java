@@ -17,7 +17,8 @@ public enum Section {
 	Boissons("Boissons"),
 	Laitages("Laitages"), 
 	Viandes("Viandes"),
-	Autre("Autre");
+	Autre("Autre"),
+	Epicerie("Epicerie");
 
 	private String name = "";
 
