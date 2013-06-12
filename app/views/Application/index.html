@@ -1,8 +1,5 @@
-#{extends 'Application/listeCour.html' /}
-#{set title:'Bienvenue dans votre Frigo' /}
-#{set 'moreStyles'}
-        #{stylesheet '/index.css' /}
-#{/set}
+#{extends 'Application/listeCour.html' /} #{set title:'Bienvenue dans
+votre Frigo' /} #{set 'moreStyles'} #{stylesheet '/index.css' /} #{/set}
 
 <!-- Ajout script pour les menu déroulants -->
 <script src="@{'/public/javascripts/sousOnglets.js'}"></script>
@@ -14,109 +11,96 @@
 <section>
 
 	<article class="contenuFrigo">
-		<h2>Voici l'état actuel de votre frigo : </h2>
-		
+		<h2>Voici l'état actuel de votre frigo :</h2>
+
 		<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
-		<img  src="${dernierEtat.image}" height="352" width="470"></img>		
-		<p>Date de la prise : "${dernierEtat.date.format('dd MMMM yyyy HH:mm')}"</p>
+		<img src="${dernierEtat.image}" height="352" width="470"></img>
+		<p>Date de la prise : "${dernierEtat.date.format('dd MMMM yyyy
+			HH:mm')}"</p>
 
 		<aside class="listeContenu">
 			<ul>
 
 
-	<li class="contenu"> 
-	<a href="#" onmouseover="mopen('frEtLeg')" onmouseout="mclosetime()"> 
-	<img src="/public/images/carotte.svg" width=20px />Fruits et Légumes </a> 
-		<div id="frEtLeg"
-		onmouseover="mcancelclosetime()"
-		onmouseout="mclosetime()">
-	#{list items:fruitsLegumes, as:'aliment'}
-	<a href="#">${aliment.nom} </a>
-	<aside class="dates">
-	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} <br>
-		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
-		</aside>
-	#{/list}
-		</div>
-		</li>
-		
-	<li class="contenu"> 
-	<a href="#" onmouseover="mopen('boissons')" onmouseout="mclosetime()"> 
-	<img src="/public/images/boisson.svg" width=20px />Boissons </a> 
-			<div id="boissons"
-		onmouseover="mcancelclosetime()"
-		onmouseout="mclosetime()">
+				<li class="contenu"><a href="#" onmouseover="mopen('frEtLeg')"
+					onmouseout="mclosetime()"> <img
+						src="/public/images/carotte.svg" width=20px />Fruits et Légumes
+				</a>
+					<div id="frEtLeg" onmouseover="mcancelclosetime()"
+						onmouseout="mclosetime()">
+						#{list items:fruitsLegumes, as:'aliment'} <a href="#">${aliment.nom}
+						</a>
+						<aside class="dates">
+							Date d'entrée dans le frigo :
+							${aliment.entreeFrigo.format('dd/MM/yy')} <br> Date de
+							Peremption : ${aliment.peremption.format('dd/MM/yy')}
+						</aside>
+						#{/list}
+					</div></li>
 
-						#{list items:boissons, as:'aliment'}
-						<a href="#">${aliment.nom} </a> Date d'entrée dans le frigo :
+				<li class="contenu"><a href="#" onmouseover="mopen('boissons')"
+					onmouseout="mclosetime()"> <img
+						src="/public/images/boisson.svg" width=20px />Boissons
+				</a>
+					<div id="boissons" onmouseover="mcancelclosetime()"
+						onmouseout="mclosetime()">
+
+						#{list items:boissons, as:'aliment'} <a href="#">${aliment.nom}
+						</a> Date d'entrée dans le frigo :
 						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
 						${aliment.peremption.format('dd/MM/yy')} #{/list}
-					</div>
-	</li>
-	
-	<li class="contenu"> 
-	<a href="/indexViande/" onmouseover="mopen('viandes')" onmouseout="mclosetime()"> 
-	<img src="/public/images/steak.svg" width=20px />Viandes </a> 	
-			<div id="viandes"
-		onmouseover="mcancelclosetime()"
-		onmouseout="mclosetime()">
-	#{list items:viandes, as:'aliment'}
+					</div></li>
 
-<a href="#">${aliment.nom} </a>
-	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
-		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
-	#{/list}
-	</div>
-	</li>
-	
-	<li class="contenu"> 
-	<a href="#" onmouseover="mopen('laitages')" onmouseout="mclosetime()"> 
-	<img src="/public/images/lait.svg" width=20px />Laitages </a> 
-			<div id="laitages"
-		onmouseover="mcancelclosetime()"
-		onmouseout="mclosetime()">
-	#{list items:laitages, as:'aliment'}
+				<li class="contenu"><a href="/indexViande/"
+					onmouseover="mopen('viandes')" onmouseout="mclosetime()"> <img
+						src="/public/images/steak.svg" width=20px />Viandes
+				</a>
+					<div id="viandes" onmouseover="mcancelclosetime()"
+						onmouseout="mclosetime()">
+						#{list items:viandes, as:'aliment'} <a href="#">${aliment.nom}
+						</a> Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
+						${aliment.peremption.format('dd/MM/yy')} #{/list}
+					</div></li>
 
-<a href="#">${aliment.nom} </a>
-	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}
-		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')}
+				<li class="contenu"><a href="#" onmouseover="mopen('laitages')"
+					onmouseout="mclosetime()"> <img src="/public/images/lait.svg"
+						width=20px />Laitages
+				</a>
+					<div id="laitages" onmouseover="mcancelclosetime()"
+						onmouseout="mclosetime()">
+						#{list items:laitages, as:'aliment'} <a href="#">${aliment.nom}
+						</a> Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
+						${aliment.peremption.format('dd/MM/yy')} #{/list}
+					</div></li>
 
-	#{/list}
-	</div>
-	</li>
-	
-	<li class="contenu"> 
-	<a href="#" onmouseover="mopen('autre')" onmouseout="mclosetime()"> 
-	<img src="/public/images/confiture.svg" width=20px />Autre </a> 
-			<div id="autre"
-		onmouseover="mcancelclosetime()"
-		onmouseout="mclosetime()">
-	#{list items:autre, as:'aliment'}
+				<li class="contenu"><a href="#" onmouseover="mopen('autre')"
+					onmouseout="mclosetime()"> <img
+						src="/public/images/confiture.svg" width=20px />Autre
+				</a>
+					<div id="autre" onmouseover="mcancelclosetime()"
+						onmouseout="mclosetime()">
+						#{list items:autre, as:'aliment'} <a href="#">${aliment.nom} </a>
+						Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
+						${aliment.peremption.format('dd/MM/yy')} #{/list}
+					</div></li>
 
-<a href="#">${aliment.nom} </a>
-	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
-		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
+				<li class="contenu"><a href="#" onmouseover="mopen('autre')"
+					onmouseout="mclosetime()"> <img
+						src="/public/images/confiture.svg" width=20px />Epicerie
+				</a>
+					<div id="epicerie" onmouseover="mcancelclosetime()"
+						onmouseout="mclosetime()">
+						#{list items:epicerie, as:'aliment'} <a href="#">${aliment.nom}
+						</a> Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
+						${aliment.peremption.format('dd/MM/yy')} #{/list}
+					</div></li>
 
-	#{/list}
-	</div>
-	</li>
-	
-		<li class="contenu"> 
-	<a href="#" onmouseover="mopen('autre')" onmouseout="mclosetime()"> 
-	<img src="/public/images/confiture.svg" width=20px />Epicerie </a> 
-			<div id="epicerie"
-		onmouseover="mcancelclosetime()"
-		onmouseout="mclosetime()">
-	#{list items:epicerie, as:'aliment'}
-<a href="#">${aliment.nom} </a>
-	 	Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')}  
-		Date de Peremption : ${aliment.peremption.format('dd/MM/yy')} 
-	#{/list}
-	</div>
-	</li>
-	
-	
-           	</ul>
+
+			</ul>
 		</aside>
 	</article>
 </section>
