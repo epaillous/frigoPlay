@@ -233,8 +233,7 @@ public class Application extends Controller {
 			default:
 				break;
 			}
-		}	
-       
+		}	      
         renderArgs.put("artFruitsLegumes", artFruitsLegumes);
         renderArgs.put("artLaitages", artLaitages);
         renderArgs.put("artViandes", artViandes);
