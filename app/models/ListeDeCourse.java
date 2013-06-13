@@ -16,7 +16,6 @@ import javax.persistence.ManyToMany;
 @Entity
 public class ListeDeCourse extends Model {
 
-
 	@NotEmpty
 	public String nom;
 
