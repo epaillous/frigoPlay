@@ -54,4 +54,5 @@ public class ApplicationUtils {
 		return EtatFrigo.count("DAY(date) = ?1 AND MONTH(date) = ?2", jour.getDate(), jour.getMonth()+1);
 	}
 	
+	
 }
