@@ -127,7 +127,8 @@ public class Application extends Controller {
 	}
 
 	public static void profil() {
-		render();
+		long nbOuvertureJour = ApplicationUtils.nombreOuvertureFrigoParJour(new Date());
+		render(nbOuvertureJour);
 	}
 
 	public static void photo() {

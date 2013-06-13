@@ -1,12 +1,16 @@
 package utils;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
 
 import controllers.Security;
 
 import models.Aliment;
+import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.User;
 
@@ -43,6 +47,11 @@ public class ApplicationUtils {
 				break;
 			}
 		}
+	}
+	
+	public static long nombreOuvertureFrigoParJour(Date jour){
+		/* Bizarre, jour.getMonth renvoie 5 au lieu de 6 .. */
+		return EtatFrigo.count("DAY(date) = ?1 AND MONTH(date) = ?2", jour.getDate(), jour.getMonth()+1);
 	}
 	
 }

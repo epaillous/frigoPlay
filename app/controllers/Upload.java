@@ -45,7 +45,6 @@ public class Upload extends Controller {
 	/* Instance d'un nouvel etat frigo */
 	/* On récupère l'utilisateur connecté */
 	User user = User.find("byEmail", email).first();
-
 	EtatFrigo newFrigo = new EtatFrigo(new Date(), user, "/public/img/" + picture.getName(), null).save();	
 	/* Ajout en première position */
 	user.etatFrigo.add(newFrigo);
