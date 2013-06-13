@@ -4,19 +4,17 @@
 <!-- Ajout script pour les menu déroulants -->
 <script src="@{'/public/javascripts/sousOnglets.js'}"></script>
 
-#{set accueilActif:'active'/}
+#{set historiqueActif:'active'/}
 
 <meta charset="UTF-8">
 
 <section>
 
 	<article class="contenuFrigo">
-		<h2>Voici l'état actuel de votre frigo </h2>
+		<h2>Voici l'état de votre Frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h2>
 
-		<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
-
-		<img src="${dernierEtat.image}" height="352" width="470"></img>
-		<p>Date de la prise : ${dernierEtat.date.format('dd MMMM yyyy HH:mm')}</p>
+		<img src="${etatFrigo.image}" height="352" width="470"></img>
+		<p>Date de la prise : ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</p>
 
 		<aside class="listeContenu">
 			<ul>
@@ -44,13 +42,9 @@
 						onmouseout="mclosetime()">
 
 						#{list items:boissons, as:'aliment'} <a href="#">${aliment.nom}
-						</a> 
-						<aside class="dates">
-							Date d'entrée dans le frigo :
-							${aliment.entreeFrigo.format('dd/MM/yy')} <br> Date de
-							Peremption : ${aliment.peremption.format('dd/MM/yy')}
-						</aside>
-						#{/list}
+						</a> Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
+						${aliment.peremption.format('dd/MM/yy')} #{/list}
 					</div></li>
 
 				<li class="contenu"><a href="/indexViande/"
@@ -60,13 +54,9 @@
 					<div id="viandes" onmouseover="mcancelclosetime()"
 						onmouseout="mclosetime()">
 						#{list items:viandes, as:'aliment'} <a href="#">${aliment.nom}
-						</a>
-						 <aside class="dates">
-							Date d'entrée dans le frigo :
-							${aliment.entreeFrigo.format('dd/MM/yy')} <br> Date de
-							Peremption : ${aliment.peremption.format('dd/MM/yy')}
-						</aside>
-						#{/list}
+						</a> Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} <br /> Date de
+						Peremption : ${aliment.peremption.format('dd/MM/yy')} #{/list}
 					</div></li>
 
 				<li class="contenu"><a href="#" onmouseover="mopen('laitages')"
@@ -76,13 +66,9 @@
 					<div id="laitages" onmouseover="mcancelclosetime()"
 						onmouseout="mclosetime()">
 						#{list items:laitages, as:'aliment'} <a href="#">${aliment.nom}
-						</a> 
-						<aside class="dates">
-							Date d'entrée dans le frigo :
-							${aliment.entreeFrigo.format('dd/MM/yy')} <br> Date de
-							Peremption : ${aliment.peremption.format('dd/MM/yy')}
-						</aside>
-						#{/list}
+						</a> Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
+						${aliment.peremption.format('dd/MM/yy')} <br /> #{/list}
 					</div></li>
 
 				<li class="contenu"><a href="#" onmouseover="mopen('autre')"
@@ -91,14 +77,10 @@
 				</a>
 					<div id="autre" onmouseover="mcancelclosetime()"
 						onmouseout="mclosetime()">
-						#{list items:autre, as:'aliment'} <a href="#">${aliment.nom} 
-						</a>
-						<aside class="dates">
-							Date d'entrée dans le frigo :
-							${aliment.entreeFrigo.format('dd/MM/yy')} <br> Date de
-							Peremption : ${aliment.peremption.format('dd/MM/yy')}
-						</aside>
-						#{/list}
+						#{list items:autre, as:'aliment'} <a href="#">${aliment.nom} </a>
+						Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
+						${aliment.peremption.format('dd/MM/yy')} <br /> #{/list}
 					</div></li>
 
 				<li class="contenu"><a href="#" onmouseover="mopen('epicerie')"
@@ -108,13 +90,9 @@
 					<div id="epicerie" onmouseover="mcancelclosetime()"
 						onmouseout="mclosetime()">
 						#{list items:epicerie, as:'aliment'} <a href="#">${aliment.nom}
-						</a> 
-						<aside class="dates">
-							Date d'entrée dans le frigo :
-							${aliment.entreeFrigo.format('dd/MM/yy')} <br> Date de
-							Peremption : ${aliment.peremption.format('dd/MM/yy')}
-						</aside>
-						#{/list}
+						</a> Date d'entrée dans le frigo :
+						${aliment.entreeFrigo.format('dd/MM/yy')} Date de Peremption :
+						${aliment.peremption.format('dd/MM/yy')} #{/list}
 					</div></li>
 
 
@@ -125,4 +103,3 @@
 </section>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
