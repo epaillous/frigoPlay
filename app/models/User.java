@@ -42,7 +42,7 @@ public class User extends Model {
 	public List<EtatFrigo> etatFrigo;
 
 	@OneToMany(mappedBy="user")
-	public Set<ListeDeCourse> listeDeCourse;
+	public List<ListeDeCourse> listeDeCourse;
 	
 	@ManyToMany(mappedBy="user")
 	public List<Recette> recettesFavorites;

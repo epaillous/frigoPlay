@@ -7,6 +7,8 @@ import org.hibernate.validator.constraints.NotEmpty;
 import play.db.jpa.Model;
 
 import javax.persistence.ManyToOne;
+
+import java.util.List;
 import java.util.Set;
 import javax.persistence.ManyToMany;
 
@@ -21,7 +23,7 @@ public class ListeDeCourse extends Model {
 	public User user;
 
 	@ManyToMany(mappedBy="listeDeCourse" )
-	public Set<Aliment> article;
+	public List<Aliment> article;
 
 
 }
