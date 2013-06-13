@@ -168,6 +168,20 @@
    etatFrigo: etatfrigo6
    section: Autre
    
+ Aliment(cereales):
+   nom: Céréales
+   quantite: 1L
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   etatFrigo: 
+   section: Epicerie
+   
+   
+ Courante(liste1):
+   nom: Liste Courante
+   user: emilie
+   
    
    
 

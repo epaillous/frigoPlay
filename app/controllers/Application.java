@@ -104,6 +104,10 @@ public class Application extends Controller {
     
     public static void photo() {
     	render();
-    }         
+    }   
+    
+    public static void ajoutAlimentListe() {
+    	render();
+    }
     
 }
