@@ -4,6 +4,7 @@
 .favorie {
 	font-weight: bold;
 	color: grey;
+	font-size: medium;
 }
 .favorie:hover {
 	color: black;
@@ -24,8 +25,8 @@
 /* .espace:hover { */
 /* 	padding-bottom: 75px; */
 /* } */
-.espace {
-	margin-left: 20px;
+.lien {
+	margin-top: 7px;
 }
 /* #(cara+'${recette.nom}') li { */
 /* 	float: left; */
