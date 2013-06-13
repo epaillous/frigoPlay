@@ -36,7 +36,7 @@ public class User extends Model {
 	@Required
 	public String email;
 
-	public String preference = "Aucune";
+	public Preference preference = Preference.Aucune;
 
 	@OneToMany(mappedBy="user")
 	public List<EtatFrigo> etatFrigo;

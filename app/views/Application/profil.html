@@ -24,22 +24,22 @@
 	</div>
 
 	<aside id="imageProfil">
-		#{if user.preference=='Aucune'}
+		#{if user.preference.name=='Aucune'}
 			<img src="/public/images/profil/userNull.svg" alt="imageProfil" />
 		#{/if}
-		#{elseif user.preference=='Dietetique'}
+		#{elseif user.preference.name=='Dietetique'}
 			<img src="/public/images/profil/userDietetique.svg" alt="imageProfil" />
 		#{/elseif}
-		#{elseif user.preference=='Bio'}
+		#{elseif user.preference.name=='Bio'}
 			<img src="/public/images/profil/userBio.svg" alt="imageProfil" />
 		#{/elseif}
-		#{elseif user.preference=='Sport'}
+		#{elseif user.preference.name=='Sport'}
 			<img src="/public/images/profil/userSport.svg" alt="imageProfil" />
 		#{/elseif}
-		#{elseif user.preference=='Francais'}
+		#{elseif user.preference.name=='Francais'}
 			<img src="/public/images/profil/userFrance.svg" alt="imageProfil" />
 		#{/elseif}
-		#{elseif user.preference=='Exotique'}
+		#{elseif user.preference.name=='Exotique'}
 			<img src="/public/images/profil/userExotique.svg" alt="imageProfil" />
 		#{/elseif}
 	</aside>
