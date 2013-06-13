@@ -7,29 +7,56 @@
 <aside class="listeCour">
 		<h4> Liste de courses courante </h4>
 		<ul class="liste">
-			<li>Fruit et Légume</li>
+			<li>Fruits et Légumes</li>
 				<ul class="sous">
+				#{list items:artFruitsLegumes, as:'article'}
 					<li><a href='#'>
 						<img src="/public/images/round_delete.png" width=20px />
-						</a>Tomates</li>
+						</a>${article.nom}</li>
+						#{/list}
 				</ul>
-           	<li>Viande</li>
-            <li>Laitage</li>
-               	<ul class="sous">
+           	<li>Viandes</li>
+           	 	<ul class="sous">
+               	#{list items:artViandes, as:'article'}
                 	<li><a href='#'>
-                		<img src="/public/images/round_delete.png" width=20px /></a>Lait
+                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
                 	</li>
-                	<li>
-                		<a href='#'>
-                		<img src="/public/images/round_delete.png" width=20px /></a>Brie
+                	#{/list}
+                </ul>
+            <li>Laitages</li>
+               	<ul class="sous">
+               	#{list items:artLaitages, as:'article'}
+                	<li><a href='#'>
+                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
                 	</li>
-                	<li>
-                		<a href='#'>
-                		<img src="/public/images/round_delete.png" width=20px /></a>Danone
-                	</li>
+                	#{/list}
                 </ul>
             <li>Boisson</li>
+             	<ul class="sous">
+               	#{list items:artBoissons, as:'article'}
+                	<li><a href='#'>
+                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
+                	</li>
+                	#{/list}
+                </ul>
+                
+                <li>Epicerie</li>
+             	<ul class="sous">
+               	#{list items:artEpicerie, as:'article'}
+                	<li><a href='#'>
+                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
+                	</li>
+                	#{/list}
+                </ul>
             <li>Autre</li>
+             	<ul class="sous">
+               	#{list items:artAutre, as:'article'}
+                	<li><a href='#'>
+                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
+                	</li>
+                	#{/list}
+                </ul>
+                
        </ul>
        
        <form>
@@ -41,12 +68,6 @@
            	<h4>Avez-vous pensé à...?</h4>
            	<ul>
            		<li>Coca
-           		<a href='#'>
-					<img src="/public/images/icon-add-grey.png" width=20px /></a></li>
-           		<li>Emmental
-           		<a href='#'>
-					<img src="/public/images/icon-add-grey.png" width=20px /></a></li>
-           		<li>Lardons
            		<a href='#'>
 					<img src="/public/images/icon-add-grey.png" width=20px /></a></li>
            	</ul>
