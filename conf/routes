@@ -6,7 +6,7 @@
 GET     /                                       Application.index
 # Page historique
 GET 	/historique/							Application.historique
-# Page recettes propos�es
+# Page recettes proposï¿½es
 GET     /recettesProposees/						Application.recettesProposees
 # Page recettes favorites
 GET     /recettesFavorites/						Application.recettesFavorites
@@ -22,6 +22,8 @@ GET 	/profil/								Application.profil
 GET 	/photo/								    Application.photo
 # Page ancienEtat
 GET		/ancienEtat/							Application.ancienEtat
+# Page index2
+GET		/index2/							    Application.index2
 
 
 # Ignore favicon requests

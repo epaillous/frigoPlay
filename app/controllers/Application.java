@@ -125,6 +125,49 @@ public class Application extends Controller {
 
 	}
 	
+	public static void index2() {
+		User user = User.find("byEmail", Security.connected()).first();
+		// Premier état frigo de la liste 
+		EtatFrigo dernierEtat = EtatFrigo.find("user like ? order by date desc", user).first();
+		List<Aliment> aliments = dernierEtat.aliment;
+		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
+		List<Aliment> viandes = new ArrayList<Aliment>();
+		List<Aliment> laitages = new ArrayList<Aliment>();
+		List<Aliment> boissons= new ArrayList<Aliment>() ;
+		List<Aliment> autre = new ArrayList<Aliment>();
+		List<Aliment> epicerie = new ArrayList<Aliment>();
+		
+		Iterator iter = aliments.iterator();	
+		while (iter.hasNext()) {
+			Aliment cour = (Aliment) iter.next();
+			switch (cour.section.name()) {
+			case "FruitsLegumes":
+				fruitsLegumes.add(cour);
+				break;
+			case "Laitages":
+				laitages.add(cour);
+				break;	
+			case "Viandes":
+				viandes.add(cour);
+				break;	
+			case "Boissons":
+				boissons.add(cour);
+				break;
+			case "Autre":
+				autre.add(cour);
+				break;	
+			case "Epicerie":
+				epicerie.add(cour);
+				break;
+			
+			default:
+				break;
+			}
+		}	
+		render(fruitsLegumes, viandes, laitages, boissons, autre, epicerie, dernierEtat);
+
+	}
+	
 	public static void ancienEtat(Long id) {
 		EtatFrigo etatFrigo = EtatFrigo.findById(id);
 		List<Aliment> aliments = etatFrigo.aliment;
