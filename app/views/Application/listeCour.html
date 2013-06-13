@@ -10,7 +10,7 @@
 			<li>Fruits et Légumes</li>
 				<ul class="sous">
 				#{list items:artFruitsLegumes, as:'article'}
-					<li><a href='#'>
+					<li><a href='@{Application.supprimeAlimentListe(article.id)}'>
 						<img src="/public/images/round_delete.png" width=20px />
 						</a>${article.nom}</li>
 						#{/list}
@@ -18,7 +18,7 @@
            	<li>Viandes</li>
            	 	<ul class="sous">
                	#{list items:artViandes, as:'article'}
-                	<li><a href='#'>
+                	<li><a href='@{Application.supprimeAlimentListe(article.id)}'>
                 		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
                 	</li>
                 	#{/list}
@@ -26,7 +26,7 @@
             <li>Laitages</li>
                	<ul class="sous">
                	#{list items:artLaitages, as:'article'}
-                	<li><a href='#'>
+                	<li><a href='@{Application.supprimeAlimentListe(article.id)}'>
                 		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
                 	</li>
                 	#{/list}
@@ -34,7 +34,7 @@
             <li>Boisson</li>
              	<ul class="sous">
                	#{list items:artBoissons, as:'article'}
-                	<li><a href='#'>
+                	<li><a href='@{Application.supprimeAlimentListe(article.id)}'>
                 		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
                 	</li>
                 	#{/list}
@@ -43,7 +43,7 @@
                 <li>Epicerie</li>
              	<ul class="sous">
                	#{list items:artEpicerie, as:'article'}
-                	<li><a href='#'>
+                	<li><a href='@{Application.supprimeAlimentListe(article.id)}'>
                 		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
                 	</li>
                 	#{/list}
@@ -51,7 +51,7 @@
             <li>Autre</li>
              	<ul class="sous">
                	#{list items:artAutre, as:'article'}
-                	<li><a href='#'>
+                	<li><a href='@{Application.supprimeAlimentListe(article.id)}'>
                 		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
                 	</li>
                 	#{/list}
