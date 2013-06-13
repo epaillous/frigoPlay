@@ -45,10 +45,12 @@ public class Upload extends Controller {
 	/* Instance d'un nouvel etat frigo */
 	/* On récupère l'utilisateur connecté */
 	User user = User.find("byEmail", email).first();
-	/* On etablit la liste des aliments */ 
+
 	EtatFrigo newFrigo = new EtatFrigo(new Date(), user, "/public/img/" + picture.getName(), null).save();	
 	/* Ajout en première position */
 	user.etatFrigo.add(newFrigo);
+	
+	/* On etablit la liste des aliments */ 
 	List<Aliment> aliments = TraitementImage.imageToAliments(picture, user, newFrigo);
 	newFrigo.aliment = aliments;
 	newFrigo.save();
