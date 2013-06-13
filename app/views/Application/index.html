@@ -22,7 +22,14 @@
 	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item1" data-toggle="collapse"><img src="/public/images/carotte.svg" width=20px /> Fruits et Légumes</a> </div>
 	    <div id="item1" class="collapse">
 	      <div class="accordion-inner">
+<<<<<<< HEAD
+	      					<!-- def id  --> 
+	      					<div id="frEtLeg">
+							#{list items:fruitsLegumes, as:'aliment'} 
+							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+=======
 							#{list items:fruitsLegumes, as:'aliment'} <a href="#">${aliment.nom}</a>
+>>>>>>> c4712091051de318fbbe692d28c1c437d538d462
 							<aside class="dates">
 								Date d'entrée dans le frigo :${aliment.entreeFrigo.format('dd/MM/yy')} <br /> 
 								Date de péremption : ${aliment.peremption.format('dd/MM/yy')}
@@ -35,7 +42,13 @@
 	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item2" data-toggle="collapse"> <img src="/public/images/boisson.svg" width=20px /> Boissons </a> </div>
 	    <div id="item2" class="collapse">
 	      <div class="accordion-inner"> 
+<<<<<<< HEAD
+	      <div id="boissons">
+							#{list items:boissons, as:'aliment'} 
+							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+=======
 							#{list items:boissons, as:'aliment'} <a href="#">${aliment.nom}</a> 
+>>>>>>> c4712091051de318fbbe692d28c1c437d538d462
 							<aside class="dates">
 								Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} <br /> 
 								Date de péremption : ${aliment.peremption.format('dd/MM/yy')}
@@ -48,7 +61,13 @@
 	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item3" data-toggle="collapse"> <img src="/public/images/steak.svg" width=20px /> Viandes  </a> </div>
 	    <div id="item3" class="collapse">
 	      <div class="accordion-inner"> 
+<<<<<<< HEAD
+	      	<div id="viandes" >
+	      					#{list items:viandes, as:'aliment'} 
+	      					<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+=======
 	      					#{list items:viandes, as:'aliment'} <a href="#">${aliment.nom}</a> 
+>>>>>>> c4712091051de318fbbe692d28c1c437d538d462
 							<aside class="dates">
 								Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} <br /> 
 								Date de péremption : ${aliment.peremption.format('dd/MM/yy')}
@@ -60,8 +79,14 @@
 	     <!-- Laitages -->
 	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item4" data-toggle="collapse"><img src="/public/images/lait.svg" width=20px /> Laitages  </a> </div>
 	    <div id="item4" class="collapse">
+<<<<<<< HEAD
+	      <div class="accordion-inner"><div id="laitages" >
+							#{list items:laitages, as:'aliment'} 
+							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+=======
 	      <div class="accordion-inner">
 							#{list items:laitages, as:'aliment'} <a href="#">${aliment.nom}	</a> 
+>>>>>>> c4712091051de318fbbe692d28c1c437d538d462
 							<aside class="dates">
 								Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} <br /> 
 								Date de péremption : ${aliment.peremption.format('dd/MM/yy')}
@@ -73,8 +98,14 @@
 	     <!-- Epicerie -->
 	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item5" data-toggle="collapse"> <img src="/public/images/confiture.svg" width=20px /> Epicerie  </a> </div>
 	    <div id="item5" class="collapse">
+<<<<<<< HEAD
+	      <div class="accordion-inner"><div id="epicerie"> 
+							#{list items:epicerie, as:'aliment'} 
+							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+=======
 	      <div class="accordion-inner">
 							#{list items:epicerie, as:'aliment'} <a href="#">${aliment.nom} </a> 
+>>>>>>> c4712091051de318fbbe692d28c1c437d538d462
 							<aside class="dates">
 								Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} <br /> 
 								Date de péremption : ${aliment.peremption.format('dd/MM/yy')}
@@ -86,8 +117,14 @@
 	    <!-- Autres -->
 	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item6" data-toggle="collapse">  <img src="/public/images/confiture.svg" width=20px /> Autres </a> </div>
 	    <div id="item6" class="collapse">
+<<<<<<< HEAD
+	      <div class="accordion-inner"><div id="autre" >
+							#{list items:autre, as:'aliment'} 
+							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+=======
 	      <div class="accordion-inner">
 							#{list items:autre, as:'aliment'} <a href="#">${aliment.nom} </a>
+>>>>>>> c4712091051de318fbbe692d28c1c437d538d462
 							<aside class="dates">
 								Date d'entrée dans le frigo : ${aliment.entreeFrigo.format('dd/MM/yy')} <br /> 
 								Date de péremption : ${aliment.peremption.format('dd/MM/yy')}
