@@ -282,3 +282,12 @@
    etatFrigo: 
    section: Autre
    listeDeCourse: liste1
+
+ Aliment(icetea):
+   nom : Ice-Tea
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   etatFrigo: 
+   section: Boissons

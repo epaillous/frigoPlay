@@ -195,8 +195,53 @@ public class Application extends Controller {
     	render();
     }   
     
-    public static void ajoutAlimentListe() {
-    	render();
+    public static void ajoutAlimentListe(String aliment) {
+    	User user = User.find("byEmail", Security.connected()).first();
+    	ListeDeCourse listeCourante = user.listeDeCourse.get(0);
+    	listeCourante.addAliment(aliment);
+    	List<Aliment> articles = listeCourante.article;
+        List<Aliment> artFruitsLegumes = new ArrayList<Aliment>();
+		List<Aliment> artViandes = new ArrayList<Aliment>();
+		List<Aliment> artLaitages = new ArrayList<Aliment>();
+		List<Aliment> artBoissons= new ArrayList<Aliment>() ;
+		List<Aliment> artAutre = new ArrayList<Aliment>();
+		List<Aliment> artEpicerie = new ArrayList<Aliment>();
+		
+		Iterator iter = articles.iterator();	
+		while (iter.hasNext()) {
+			Aliment cour = (Aliment) iter.next();
+			switch (cour.section.name()) {
+			case "FruitsLegumes":
+				artFruitsLegumes.add(cour);
+				break;
+			case "Laitages":
+				artLaitages.add(cour);
+				break;	
+			case "Viandes":
+				artViandes.add(cour);
+				break;	
+			case "Boissons":
+				artBoissons.add(cour);
+				break;
+			case "Autre":
+				artAutre.add(cour);
+				break;	
+			case "Epicerie":
+				artEpicerie.add(cour);
+				break;
+			
+			default:
+				break;
+			}
+		}	
+       
+        renderArgs.put("artFruitsLegumes", artFruitsLegumes);
+        renderArgs.put("artLaitages", artLaitages);
+        renderArgs.put("artViandes", artViandes);
+        renderArgs.put("artBoissons", artBoissons);
+        renderArgs.put("artAutre", artAutre);
+        renderArgs.put("artEpicerie", artEpicerie);
+    	index();
     }
     
 }
