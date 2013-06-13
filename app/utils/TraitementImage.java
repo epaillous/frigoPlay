@@ -57,7 +57,8 @@ public class TraitementImage {
 	
 	/* Fonction ajoutant un aliment dans la DB et dans la liste des aliments du frigo */
 	public static void ajoutAliments(List<Aliment> aliments, String nom, String quantite, int calories,EtatFrigo dernierEtat, EtatFrigo newFrigo, Section section){
-		Aliment aliment = new Aliment(nom, quantite,calories, new Date(), new Date(), newFrigo, section);
+		Date peremption = new Date();
+		Aliment aliment = new Aliment(nom, quantite,calories, new Date(),peremption, newFrigo, section);
 		if ((dernierEtat.aliment != null) && (dernierEtat.aliment.contains(aliment))) {
 			/* Le frigo contenait déjà l'aliment */
 			Date entree = dernierEtat.aliment.get(dernierEtat.aliment.lastIndexOf(aliment)).entreeFrigo;

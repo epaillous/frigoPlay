@@ -62,36 +62,12 @@ public class Application extends Controller {
 		renderArgs.put("artEpicerie", artEpicerie);
 	}
 
-	public static void index() {
-		
+	public static void index() {	
 		/* On recupère l'utilisateur en session */
-		User user = User.find("byEmail", Security.connected()).first();
-
-		/* On recupère le dernier état de son frigo */
-		EtatFrigo dernierEtat = EtatFrigo.find("user like ? order by date desc", user).first();
-		List<Aliment> aliments = dernierEtat.aliment;
-		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
-		List<Aliment> viandes = new ArrayList<Aliment>();
-		List<Aliment> laitages = new ArrayList<Aliment>();
-		List<Aliment> boissons= new ArrayList<Aliment>() ;
-		List<Aliment> autre = new ArrayList<Aliment>();
-		List<Aliment> epicerie = new ArrayList<Aliment>();
-
-		/* tri par section */
-		ApplicationUtils.misAJourListes(aliments, fruitsLegumes, viandes, laitages, boissons, autre, epicerie);
-
-		render(fruitsLegumes, viandes, laitages, boissons, autre, epicerie, dernierEtat);
-
-	}
-
-
-	public static void ancienEtat(Long id) {
-
+		User user = User.find("byEmail", Security.connected()).first();	
 		
-		/* On recupère l'état frigo sur lequel on a cliqué */
-		EtatFrigo etatFrigo = EtatFrigo.findById(id);
-
-		/* On recupère sa liste d'aliment */
+		/* On recupère le dernier etat */
+		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
 		List<Aliment> aliments = etatFrigo.aliment;
 		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
 		List<Aliment> viandes = new ArrayList<Aliment>();
@@ -102,10 +78,15 @@ public class Application extends Controller {
 
 		/* tri par section */
 		ApplicationUtils.misAJourListes(aliments, fruitsLegumes, viandes, laitages, boissons, autre, epicerie);
-
 		render(fruitsLegumes, viandes, laitages, boissons, autre, epicerie, etatFrigo);
+
 	}
 
+	public static void ancienEtat(Long id) {
+		EtatFrigo etatFrigo = EtatFrigo.findById(id);
+		render(etatFrigo);
+	}
+	
 	public static void historique() {
 		render();
 	}
