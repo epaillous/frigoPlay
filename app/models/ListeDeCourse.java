@@ -34,7 +34,11 @@ public class ListeDeCourse extends Model {
 	    Aliment newAliment = new Aliment(aliment, listes, Section.Autre).save();
 	    this.article.add(newAliment);
 		} else {	
+<<<<<<< HEAD
+			Aliment newAliment = new Aliment(aliment, listes, present.section).save();
+=======
 			new Aliment(aliment, listes, present.section).save();
+>>>>>>> 8f77b8ef780bd215c22261eb3f32a0dbb2c9e7af
 		}
 	    this.save();
 	    return this;
