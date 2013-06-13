@@ -145,6 +145,8 @@ body {
 }
 .listeCour img {
 	padding-left: 5px;
+	margin-bottom: 3px;
+	float: right;
 }
 .listeContenu {
 	position: fixed;
