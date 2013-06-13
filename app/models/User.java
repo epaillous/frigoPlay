@@ -36,7 +36,7 @@ public class User extends Model {
 	@Required
 	public String email;
 
-	public String preference = "nulle";
+	public String preference = "Aucune";
 
 	@OneToMany(mappedBy="user")
 	public List<EtatFrigo> etatFrigo;
