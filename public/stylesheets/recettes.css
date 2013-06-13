@@ -1,14 +1,6 @@
-.reperesRecettes {
-	padding-left: 400px;
-}
 .favorie {
 	font-weight: bold;
-	color: grey;
 	font-size: medium;
-}
-.favorie:hover {
-	color: black;
-	text-decoration: none;
 }
 .recettesFav {
 	margin: 20px;
