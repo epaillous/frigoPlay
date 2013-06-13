@@ -59,8 +59,8 @@
                 
        </ul>
        
-       <form>
-       		<input type="text" value="Ajouter un aliment à votre liste" name="ajoutAliment"/>
+       <form method="post" action=@{Application.ajoutAlimentListe}>
+       		<input type="text" value="Ajouter un aliment à votre liste" name="aliment"/>
        		<input type="submit" value="Ajouter">
        </form>
        

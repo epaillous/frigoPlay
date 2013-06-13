@@ -34,9 +34,19 @@ public class Aliment extends Model {
 		this.etatFrigo = etatFrigo;
 	}
 	
+	
+	/* Constructeur pour les aliments ajoutés en liste de courses */
+	public Aliment(String nom, List<ListeDeCourse> listeDeCourse, Section section) {
+		super();
+		this.nom = nom;
+		this.listeDeCourse = listeDeCourse;
+		this.section = section;
+	}
+
+
 
 	@ManyToMany
-	public Set<ListeDeCourse> listeDeCourse;
+	public List<ListeDeCourse> listeDeCourse;
 
 	@OneToMany	
 	public Set<Recette> recette;
