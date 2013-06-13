@@ -64,11 +64,9 @@ public class TraitementImage {
 			aliment.entreeFrigo = entree;
 		} 
 		/* Si on ne connaît pas l'aliment on le rajoute dans les aliments connus */
-<<<<<<< HEAD
-		AlimentConnu present = AlimentConnu.find("ByNom", nom).first();
-=======
+
 		AlimentConnu present = AlimentConnu.find("byNom", nom).first();
->>>>>>> 8f77b8ef780bd215c22261eb3f32a0dbb2c9e7af
+
 		if (present == null) {
 			new AlimentConnu(nom, section).save();
 		}

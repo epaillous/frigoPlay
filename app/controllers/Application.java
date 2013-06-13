@@ -83,12 +83,10 @@ public class Application extends Controller {
 		render(fruitsLegumes, viandes, laitages, boissons, autre, epicerie, dernierEtat);
 
 	}
-<<<<<<< HEAD
-public static void ancienEtat(Long id) {
-=======
+
 
 	public static void ancienEtat(Long id) {
->>>>>>> 8f77b8ef780bd215c22261eb3f32a0dbb2c9e7af
+
 		
 		/* On recupère l'état frigo sur lequel on a cliqué */
 		EtatFrigo etatFrigo = EtatFrigo.findById(id);
@@ -131,12 +129,9 @@ public static void ancienEtat(Long id) {
 	}
 
 	public static void profil() {
-<<<<<<< HEAD
-		render();
-=======
 		long nbOuvertureJour = ApplicationUtils.nombreOuvertureFrigoParJour(new Date());
 		render(nbOuvertureJour);
->>>>>>> 8f77b8ef780bd215c22261eb3f32a0dbb2c9e7af
+
 	}
 
 	public static void photo() {
