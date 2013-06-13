@@ -81,12 +81,12 @@
    image: /public/img/2013-05-27-16.26.57.JPG  
     
  EtatFrigo(etatfrigo6):
-   date: 2013-06-11 16:26:57
+   date: 2013-06-13 23:08:07
    user: emilie
    image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
  
  EtatFrigo(etatfrigo7):
-   date: 2013-05-27 16:26:57
+   date: 2013-06-13 23:08:07
    user: alice
    image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
      
@@ -132,6 +132,10 @@
    etatFrigo: etatfrigo6
    section: Boissons
    
+ AlimentConnu(cocacola):
+   nom: Coca-Cola
+   section: Boissons
+   
  Aliment(tomates):
    nom: Tomates
    quantite: 250g
@@ -140,6 +144,10 @@
    entreeFrigo: 2013-06-11
    recette: recette1
    etatFrigo: etatfrigo6
+   section: FruitsLegumes
+  
+ AlimentConnu(tomates):
+   nom: Tomates
    section: FruitsLegumes
    
  Aliment(cordonbleu):
@@ -151,6 +159,10 @@
    etatFrigo: etatfrigo6
    section: Viandes
 
+ AlimentConnu(cordonbleu):
+   nom: Cordon Bleu
+   section: Viandes
+
  Aliment(yaourtfruits):
    nom: Yaourts aux Fruits
    quantite: 8
@@ -158,6 +170,10 @@
    entreeFrigo: 2013-06-11
    peremption: 2013-06-24
    etatFrigo: etatfrigo6
+   section: Laitages
+
+ AlimentConnu(yaourtfruits):
+   nom: Yaourts aux Fruits
    section: Laitages
 
  Aliment(emmental):
@@ -168,6 +184,10 @@
    peremption: 2013-08-02
    etatFrigo: etatfrigo6
    section: Laitages
+   
+ AlimentConnu(emmental):
+   nom: Emmental
+   section: Laitages
 
  Aliment(compotes):
    nom: Compotes
@@ -176,6 +196,10 @@
    entreeFrigo: 2013-06-11
    peremption: 2013-09-10
    etatFrigo: etatfrigo6
+   section: Autre
+
+ AlimentConnu(compotes):
+   nom: Compotes
    section: Autre
  
  Aliment(oeufs):
@@ -186,7 +210,11 @@
    peremption: 2013-06-24
    recette: recette2
    etatFrigo: etatfrigo6
-   section: Laitages
+   section: Autre
+
+ AlimentConnu(oeufs):
+   nom: Oeufs
+   section: Autre
 
  Aliment(soupe):
    nom: Soupe
@@ -195,6 +223,10 @@
    entreeFrigo: 2013-06-11
    peremption: 2014-01-26
    etatFrigo: etatfrigo6
+   section: Autre
+
+ AlimentConnu(soupe):
+   nom: Soupe
    section: Autre
    
  Courante(liste1):

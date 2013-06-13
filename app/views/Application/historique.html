@@ -24,7 +24,7 @@
 			<div class="frame effects" id="effects">
 				<ul class="clearfix">
 			#{list items:user.etatFrigo, as:'var'}		
-					<img src=${var.image} height="352" width="470"></img>
+					<a href='@{Application.ancienEtat(var.id)}'><img src=${var.image} height="352" width="470"></img></a>
 			#{/list}
 			</div>
 			

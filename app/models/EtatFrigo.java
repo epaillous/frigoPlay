@@ -3,6 +3,7 @@ package models;
 import javax.persistence.Entity;
 
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 import javax.persistence.ManyToMany;

@@ -9,6 +9,7 @@
 <meta charset="UTF-8">  
 
    	<!-- affichage de la photo de l'état actuel du frigo -->
+   	
     <div class="span12 offset4"><h2>Voici l'état actuel de votre frigo </h2> </div>
         
 
@@ -24,9 +25,9 @@
 	      <div class="accordion-inner">
 
 							#{list items:fruitsLegumes, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
+								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
 							</aside>
 							#{/list}
@@ -39,9 +40,11 @@
 	      <div class="accordion-inner"> 
 
 							#{list items:boissons, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste">
+							 <img src="/public/images/icon-add-grey.png" width=15px />
+							</a>
 							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
+								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
 							</aside>
 							#{/list}
@@ -54,9 +57,9 @@
 	      <div class="accordion-inner"> 
 
 	      					#{list items:viandes, as:'aliment'} 
-	      					<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+	      					<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
+								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
 							</aside>
 							#{/list}
@@ -68,10 +71,10 @@
 	    <div id="item4" class="collapse">
 	    <div class="accordion-inner">
 							#{list items:laitages, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 
 							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
+								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
 							</aside>
 							#{/list}
@@ -83,10 +86,10 @@
 	    <div id="item5" class="collapse">
 	      <div class="accordion-inner">
 							#{list items:epicerie, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 
 							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
+								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
 							</aside>
 							#{/list}
@@ -98,9 +101,9 @@
 	    <div id="item6" class="collapse">
 	      <div class="accordion-inner">
 							#{list items:autre, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
+								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
 							</aside>
 							#{/list} 
@@ -110,8 +113,8 @@
 		
 		<div class="span6">
 		<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
-		<img src="${dernierEtat.image}" height="352" width="470"></img>
-		<p>Date de la prise : ${dernierEtat.date.format('dd MMMM yyyy HH:mm')}</p>
+		<img src="${etatFrigo.image}" height="352" width="470"></img>
+		<p>Date de la prise : ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</p>
 
 	</article>
 </section>
