@@ -1,66 +1,62 @@
-#{extends 'Application/listeCour.html' /}
-#{set 'moreStyles'}
-        #{stylesheet 'sly/font-awesome.css' /}
-         #{stylesheet 'recettes.css' /}
-#{/set}
-#{set 'moreScripts'}
-        #{script 'sly/vendor/modernizr.js' /}    
-#{/set}
-
-#{set mesRecettesActif:'active'/}
+#{extends 'Application/listeCour.html' /} #{set 'moreStyles'}
+#{stylesheet 'sly/font-awesome.css' /} #{stylesheet 'recettes.css' /}
+#{/set} #{set 'moreScripts'} #{script 'sly/vendor/modernizr.js' /}
+#{/set} #{set mesRecettesActif:'active'/}
 
 <meta charset="UTF-8">
 
-<section>
-	<div class="wrap">
-		<h2>Vos recettes favorites </h2>
-	</div>
+<div class="span10 offset2">
+	<section>
 
-	<div class="repereRecette">
-		<ul>
-		#{list items:user.recettesFavorites, as:'recette'}
-			<li class="recettesFav">
-			<h5 class="favorie"> ${recette.nom}</h5>
-				
-				<div class="caract">
-	<!-- 			onmouseover="mopen('cara'+'${recette.nom}')"  -->
-	<!-- 			onmouseout="mclosetime()"> -->
-				
-				<div class="espace">
-	<!-- 				<div id=("cara"+'${recette.nom}') -->
-	<!-- 				onmouseover="mcancelclosetime()" -->
-	<!-- 				onmouseout="mclosetime()"> -->
-						Difficulté : 
-						#{list items:0..recette.difficulte, as:'i'}
-							<img src="/public/images/chapeau.svg" alt="dur" width=20px/>
-						#{/list} <br />
-						Prix : 
-						#{list items:0..recette.prix, as:'i'}
-							<img src="/public/images/monnaie.svg" alt="cher" width=20px/>
-						#{/list}<br/>
-						Calories : 
-						#{list items:0..recette.calories, as:'i'}
-							<img src="/public/images/balance.svg" alt="calorique" width=20px/>
-						#{/list}<br/>
+		<div>
+			<center>
+				<h3>Vos recettes favorites</h3>
+			</center>
+		</div>
+
+
+		<div class="repereRecette">
+			<ul>
+				#{list items:user.recettesFavorites, as:'recette'}
+				<li class="recettesFav">
+					<h5 class="favorie">${recette.nom}</h5>
+
+					<div class="caract">
+						<!-- 			onmouseover="mopen('cara'+'${recette.nom}')"  -->
+						<!-- 			onmouseout="mclosetime()"> -->
+
+						<div class="espace">
+							<!-- 				<div id=("cara"+'${recette.nom}') -->
+							<!-- 				onmouseover="mcancelclosetime()" -->
+							<!-- 				onmouseout="mclosetime()"> -->
+							Difficulté : #{list items:0..recette.difficulte, as:'i'} <img
+								src="/public/images/chapeau.svg" alt="dur" width=20px />
+							#{/list} <br /> Prix : #{list items:0..recette.prix, as:'i'} <img
+								src="/public/images/monnaie.svg" alt="cher" width=20px />
+							#{/list}<br /> Calories : #{list items:0..recette.calories,
+							as:'i'} <img src="/public/images/balance.svg" alt="calorique"
+								width=20px /> #{/list}<br />
+						</div>
 					</div>
-				</div>
-				
-				<div>Les aliments dont vous aurez besoin sont les suivants :
-					<ul>
-					#{list items:recette.ingredient, as:'aliment'}
-						<li>${aliment.nom} <a href="#"><img src="/public/images/icon-add-grey.png" /></a> </li>
-					#{/list}
-					</ul>				
-				</div>
-				
-				<div class="lien">
-					 <a href="${recette.lien}">Et voici la recette</a>
-				</div>
-			</li>
-	
-		#{/list}
-		</ul>
-	</div>
-</section>
+
+					<div>
+						Les aliments dont vous aurez besoin sont les suivants :
+						<ul>
+							#{list items:recette.ingredient, as:'aliment'}
+							<li>${aliment.nom} <a href="#"><img
+									src="/public/images/icon-add-grey.png" /></a>
+							</li> #{/list}
+						</ul>
+					</div>
+
+					<div class="lien">
+						<a href="${recette.lien}">Et voici la recette</a>
+					</div>
+				</li> #{/list}
+			</ul>
+		</div>
+	</section>
+</div>
+
 
 <script src="@{'/public/javascripts/sousOnglets.js'}"></script>

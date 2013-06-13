@@ -116,6 +116,46 @@ body {
 	text-decoration: none;
 }
 
+/* liste Aliments */
+.liste_aliments {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  border: 1px solid  #d4d4d4;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* liste Courses */
+.liste_courses  {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background-color: #fafafa;
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	top: 150px;
+	left: 40px;
+	width: 235px;
+	background-color: #706b64;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 15px;
+	color: white;
+	font-size: 0.9em;}
+
+
 /*Gestion de la liste courante*/
 .liste {
 	padding-bottom: 20px;

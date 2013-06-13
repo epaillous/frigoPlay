@@ -1,121 +1,185 @@
-#{extends 'main.html' /}
-#{extends 'Application/listeCour.html' /} 
+#{extends 'Application/listeCour.html' /}
 
-<script src="/public/javascripts/jquery-1.10.1.js"></script> 
+<script src="/public/javascripts/jquery-1.10.1.js"></script>
 <script src="/public/bootstrap/js/bootstrap.min.js"></script>
 
 #{set accueilActif:'active'/}
 
-<meta charset="UTF-8">  
+<meta charset="UTF-8">
 
-   	<!-- Titre -->
-    <div class="span12 offset4"><h3>Voici l'état actuel de votre frigo  </h3> </div>
-        
 
-	   	<!-- affichage des éléments présents dans le frigo -->
-		<section>	
-		<div class="span4 liste_aliments offset3"> <br>
-	    <h4> <center> Contenu de votre frigo </center></h4>
-	    </br>
-	    
-	    <!-- Fruits et légumes --> 	
-	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item1" data-toggle="collapse"><img src="/public/images/carotte.svg" width=20px /> Fruits et Légumes</a> </div>
-	    <div id="item1" class="collapse">
-	      <div class="accordion-inner">
+<!-- affichage des éléments présents dans le frigo -->
 
-							#{list items:fruitsLegumes, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
-							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
-								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
-							</aside>
-							#{/list}
+<div class="span10 offset2">
+	<!-- Titre -->
+	<div>
+		<center>
+			<h3>Etat actuel de votre frigo</h3>
+		</center>
+	</div>
+
+	<section>
+		<div class="span3 liste_aliments">
+			<h4>
+				<center>Contenu de votre frigo</center>
+			</h4>
+
+			<!-- Fruits et légumes -->
+			<div class="accordion-heading">
+				<a class="accordion-toggle" href="#item1" data-toggle="collapse"><img
+					src="/public/images/carotte.svg" width=20px /> Fruits et Légumes</a>
+			</div>
+			<div id="item1" class="collapse">
+				<div class="accordion-inner">
+
+					#{list items:fruitsLegumes, as:'aliment'} <strong>${aliment.nom}
+					</strong><img src="/public/images/icon-add-grey.png" width=15px />
+					<aside class="dates">
+						<h5>
+							<small>Dans le frigo depuis le
+								:${aliment.entreeFrigo.format('dd/MM/yy')} </small>
+						</h5>
+						<h5>
+							<small>Périme le :
+								${aliment.peremption.format('dd/MM/yy')}</small>
+						</h5>
+					</aside>
+					#{/list}
+				</div>
+			</div>
+
+			<!-- Boissons -->
+			<div class="accordion-heading">
+				<a class="accordion-toggle" href="#item2" data-toggle="collapse">
+					<img src="/public/images/boisson.svg" width=20px /> Boissons
+				</a>
+			</div>
+			<div id="item2" class="collapse">
+				<div class="accordion-inner">
+
+					#{list items:boissons, as:'aliment'} <strong>${aliment.nom}
+					</strong><img src="/public/images/icon-add-grey.png" width=15px />
+					<aside class="dates">
+						<h5>
+							<small>Dans le frigo depuis le
+								:${aliment.entreeFrigo.format('dd/MM/yy')} </small>
+						</h5>
+						<h5>
+							<small>Périme le :
+								${aliment.peremption.format('dd/MM/yy')}</small>
+						</h5>
+					</aside>
+					#{/list}
+				</div>
+			</div>
+
+			<!-- Viande & Poisson -->
+			<div class="accordion-heading">
+				<a class="accordion-toggle" href="#item3" data-toggle="collapse">
+					<img src="/public/images/steak.svg" width=20px /> Viandes
+				</a>
+			</div>
+			<div id="item3" class="collapse">
+				<div class="accordion-inner">
+
+					#{list items:viandes, as:'aliment'} <strong>${aliment.nom}
+					</strong><img src="/public/images/icon-add-grey.png" width=15px />
+					<aside class="dates">
+						<h5>
+							<small>Dans le frigo depuis le
+								:${aliment.entreeFrigo.format('dd/MM/yy')} </small>
+						</h5>
+						<h5>
+							<small>Périme le :
+								${aliment.peremption.format('dd/MM/yy')}</small>
+						</h5>
+					</aside>
+					#{/list}
+				</div>
+			</div>
+
+			<!-- Laitages -->
+			<div class="accordion-heading">
+				<a class="accordion-toggle" href="#item4" data-toggle="collapse"><img
+					src="/public/images/lait.svg" width=20px /> Laitages </a>
+			</div>
+			<div id="item4" class="collapse">
+				<div class="accordion-inner">
+					#{list items:laitages, as:'aliment'} <strong>${aliment.nom}
+					</strong><img src="/public/images/icon-add-grey.png" width=15px />
+
+					<aside class="dates">
+						<h5>
+							<small>Dans le frigo depuis le
+								:${aliment.entreeFrigo.format('dd/MM/yy')} </small>
+						</h5>
+						<h5>
+							<small>Périme le :
+								${aliment.peremption.format('dd/MM/yy')}</small>
+						</h5>
+					</aside>
+					#{/list}
+				</div>
+			</div>
+
+			<!-- Epicerie -->
+			<div class="accordion-heading">
+				<a class="accordion-toggle" href="#item5" data-toggle="collapse">
+					<img src="/public/images/confiture.svg" width=20px /> Epicerie
+				</a>
+			</div>
+			<div id="item5" class="collapse">
+				<div class="accordion-inner">
+					#{list items:epicerie, as:'aliment'} <strong>${aliment.nom}
+					</strong><img src="/public/images/icon-add-grey.png" width=15px />
+
+					<aside class="dates">
+						<h5>
+							<small>Dans le frigo depuis le
+								:${aliment.entreeFrigo.format('dd/MM/yy')} </small>
+						</h5>
+						<h5>
+							<small>Périme le :
+								${aliment.peremption.format('dd/MM/yy')}</small>
+						</h5>
+					</aside>
+					#{/list}
+				</div>
+			</div>
+
+			<!-- Autres -->
+			<div class="accordion-heading">
+				<a class="accordion-toggle" href="#item6" data-toggle="collapse">
+					<img src="/public/images/confiture.svg" width=20px /> Autres
+				</a>
+			</div>
+			<div id="item6" class="collapse">
+				<div class="accordion-inner">
+					#{list items:autre, as:'aliment'} <strong>${aliment.nom} </strong><img
+						src="/public/images/icon-add-grey.png" width=15px />
+					<aside class="dates">
+						<h5>
+							<small>Dans le frigo depuis le
+								:${aliment.entreeFrigo.format('dd/MM/yy')} </small>
+						</h5>
+						<h5>
+							<small>Périme le :
+								${aliment.peremption.format('dd/MM/yy')}</small>
+						</h5>
+					</aside>
+					#{/list}
+				</div>
+			</div>
 		</div>
-	    </div>
-	    
-	    <!-- Boissons -->
-	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item2" data-toggle="collapse"> <img src="/public/images/boisson.svg" width=20px /> Boissons </a> </div>
-	    <div id="item2" class="collapse">
-	      <div class="accordion-inner"> 
 
-							#{list items:boissons, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
-							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
-								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
-							</aside>
-							#{/list}
-	    </div>
-	    </div>
-	    
-	    <!-- Viande & Poisson -->
-	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item3" data-toggle="collapse"> <img src="/public/images/steak.svg" width=20px /> Viandes  </a> </div>
-	    <div id="item3" class="collapse">
-	      <div class="accordion-inner"> 
-
-	      					#{list items:viandes, as:'aliment'} 
-	      					<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
-							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
-								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
-							</aside>
-							#{/list}
-	    </div>
-	    </div>
-	    
-	     <!-- Laitages -->
-	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item4" data-toggle="collapse"><img src="/public/images/lait.svg" width=20px /> Laitages  </a> </div>
-	    <div id="item4" class="collapse">
-	    <div class="accordion-inner">
-							#{list items:laitages, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
-
-							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
-								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
-							</aside>
-							#{/list}
-	    </div>
-	    </div>
-	    
-	     <!-- Epicerie -->
-	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item5" data-toggle="collapse"> <img src="/public/images/confiture.svg" width=20px /> Epicerie  </a> </div>
-	    <div id="item5" class="collapse">
-	      <div class="accordion-inner">
-							#{list items:epicerie, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
-
-							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
-								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
-							</aside>
-							#{/list}
-	    </div>
-	    </div>
-	    
-	    <!-- Autres -->
-	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item6" data-toggle="collapse">  <img src="/public/images/confiture.svg" width=20px /> Autres </a> </div>
-	    <div id="item6" class="collapse">
-	      <div class="accordion-inner">
-							#{list items:autre, as:'aliment'} 
-							<strong>${aliment.nom} </strong><img src="/public/images/icon-add-grey.png" width=15px />
-							<aside class="dates">
-								<h5><small>Dans le frigo depuis le  :${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
-								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
-							</aside>
-							#{/list} 
-	    </div>
-	    </div>
-		</div>
-		
 		<div class="span6">
-		<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
-		<img src="${dernierEtat.image}" height="352" width="470"></img>
-		<p>Date de la prise : ${dernierEtat.date.format('dd MMMM yyyy HH:mm')}</p>
-
-	</article>
-</section>
+			<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
+			<img src="${dernierEtat.image}" height="352" width="470"></img>
+			<p>Date de la prise : ${dernierEtat.date.format('dd MMMM yyyy HH:mm')}</p>
+		</div>
+		</article>
+	</section>
 </div>
 
 
-    
+
