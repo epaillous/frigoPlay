@@ -10,32 +10,36 @@
 			<li>Fruits et Légumes</li>
 				<ul class="sous">
 				#{list items:artFruitsLegumes, as:'article'}
-					<li><a href='#'>
-						<img src="/public/images/round_delete.png" width=20px />
-						</a>${article.nom}</li>
+					<li>${article.nom}
+						<a href='#'>
+							<img src="/public/images/round_delete.png" width=15px />
+						</a></li>
 						#{/list}
 				</ul>
            	<li>Viandes</li>
            	 	<ul class="sous">
                	#{list items:artViandes, as:'article'}
-                	<li><a href='#'>
-                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
+                	<li>${article.nom}
+                		<a href='#'>
+                		<img src="/public/images/round_delete.png" width=15px /></a>
                 	</li>
                 	#{/list}
                 </ul>
             <li>Laitages</li>
                	<ul class="sous">
                	#{list items:artLaitages, as:'article'}
-                	<li><a href='#'>
-                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
+                	<li>${article.nom}
+                		<a href='#'>
+                			<img src="/public/images/round_delete.png" width=15px /></a>
                 	</li>
                 	#{/list}
                 </ul>
             <li>Boisson</li>
              	<ul class="sous">
                	#{list items:artBoissons, as:'article'}
-                	<li><a href='#'>
-                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
+                	<li>${article.nom}
+                		<a href='#'>
+                			<img src="/public/images/round_delete.png" width=15px /></a>
                 	</li>
                 	#{/list}
                 </ul>
@@ -43,16 +47,18 @@
                 <li>Epicerie</li>
              	<ul class="sous">
                	#{list items:artEpicerie, as:'article'}
-                	<li><a href='#'>
-                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
+                	<li>${article.nom}
+                		<a href='#'>
+                			<img src="/public/images/round_delete.png" width=15px /></a>
                 	</li>
                 	#{/list}
                 </ul>
             <li>Autre</li>
              	<ul class="sous">
                	#{list items:artAutre, as:'article'}
-                	<li><a href='#'>
-                		<img src="/public/images/round_delete.png" width=20px /></a>${article.nom}
+                	<li>${article.nom}
+                		<a href='#'>
+                			<img src="/public/images/round_delete.png" width=15px /></a>
                 	</li>
                 	#{/list}
                 </ul>
@@ -69,7 +75,7 @@
            	<ul>
            		<li>Coca
            		<a href='#'>
-					<img src="/public/images/icon-add-grey.png" width=20px /></a></li>
+					<img src="/public/images/icon-add-grey.png" width=15px /></a></li>
            	</ul>
        </div>
 </aside>
