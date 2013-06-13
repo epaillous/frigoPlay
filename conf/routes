@@ -23,7 +23,6 @@ GET 	/photo/								    Application.photo
 # Page ancienEtat
 GET		/ancienEtat/							Application.ancienEtat
 
-
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

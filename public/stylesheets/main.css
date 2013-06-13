@@ -169,4 +169,9 @@ body {
 #deconnexion {
 	float: right;
 	margin: 1px 6px 6px 1px;
+	padding: 2px;
+/* 	border-left: 1px solid rgba(255,255,255,.75); */
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 3px;
+	background: 
 }
