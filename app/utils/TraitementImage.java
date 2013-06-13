@@ -12,6 +12,7 @@ import controllers.Secure;
 import controllers.Security;
 
 import models.Aliment;
+import models.AlimentConnu;
 import models.EtatFrigo;
 import models.Section;
 import models.User;
@@ -71,6 +72,11 @@ public class TraitementImage {
 			Date entree = dernierEtat.aliment.get(dernierEtat.aliment.lastIndexOf(aliment)).entreeFrigo;
 			aliment.entreeFrigo = entree;
 		} 
+		/* Si on ne connaît pas l'aliment on le rajoute dans les aliments connus */
+		AlimentConnu present = AlimentConnu.find("ByNom", nom).first();
+		if (present == null) {
+			new AlimentConnu(nom, section).save();
+		}
 		/* On crée l'instance de la carotte */
 		aliment.save();
 		aliments.add(aliment);

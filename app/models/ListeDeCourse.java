@@ -27,16 +27,14 @@ public class ListeDeCourse extends Model {
 	public List<Aliment> article;
 	
 	public ListeDeCourse addAliment(String aliment) {
-		Aliment present = Aliment.find("byNom", aliment).first();
-		if (present == null) {	
+		AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
 		List<ListeDeCourse> listes = new ArrayList<ListeDeCourse>();
 		listes.add(this);
+		if (present == null) {			
 	    Aliment newAliment = new Aliment(aliment, listes, Section.Autre).save();
 	    this.article.add(newAliment);
-		} else {
-			this.article.add(present);
-			present.listeDeCourse.add(this);
-			present.save();
+		} else {	
+			Aliment newAliment = new Aliment(aliment, listes, present.section).save();
 		}
 	    this.save();
 	    return this;

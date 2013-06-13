@@ -16,7 +16,7 @@ public enum Section {
 	FruitsLegumes("Fruits et Légumes"), 
 	Boissons("Boissons"),
 	Laitages("Laitages"), 
-	Viandes("Viandes"),
+	Viandes("Viandes et Poissons"),
 	Autre("Autre"),
 	Epicerie("Epicerie");
 
