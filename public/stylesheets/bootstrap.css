@@ -781,10 +781,12 @@ h4 {
 
 h5 {
   font-size: 14px;
+  line-height: 10px;
 }
 
 h6 {
   font-size: 11.9px;
+  
 }
 
 h1 small {
