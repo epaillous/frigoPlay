@@ -68,14 +68,20 @@ body {
 }
 
 	/*Ajoutï¿½ par Maï¿½*/
+.masthead {
+	background-color: white;
+	position: fixed;
+	top: 0px;	
+	padding-top: 20px;
+}
 .wrap {
+	margin-top: 150px;
 	margin-left: 400px;
 }
 /*Gestion des sous-onglets*/
 .nav li {
 	float: left;
 }
-
 .nav #m1,#m2
 {	
 	position: absolute;
@@ -84,7 +90,6 @@ body {
 .nav #m1 a
 {	
 	display: block;
-	
 	font-style: normal;
 	color: grey;
 	text-align: left;
@@ -95,7 +100,6 @@ body {
 .nav #m2 a
 {	
 	display: block;
-	
 	font-style: normal;
 	color: grey;
 	text-align: left;
@@ -161,6 +165,7 @@ body {
 }
 /*Spï¿½cial historique*/
 #histo h2 {
+	margin-top: 150px;
    margin-left: 400px;
 }
 #histo .controls_center {
@@ -170,9 +175,9 @@ body {
 /*Déconnexion*/
 #deconnexion {
 	float: right;
-	margin: 1px 6px 6px 1px;
+	margin: 16px 6px 6px 1px;
 	padding: 2px;
-/* 	border-left: 1px solid rgba(255,255,255,.75); */
+	padding-top: 1px;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 3px;
 }
