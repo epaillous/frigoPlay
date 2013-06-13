@@ -22,8 +22,11 @@ GET 	/profil/								Application.profil
 GET 	/photo/								    Application.photo
 # Page ancienEtat
 GET		/ancienEtat/							Application.ancienEtat
+<<<<<<< HEAD
 # Page index2
 GET		/index2/							    Application.index2
+=======
+>>>>>>> 8f77b8ef780bd215c22261eb3f32a0dbb2c9e7af
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
