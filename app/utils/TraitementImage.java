@@ -12,6 +12,7 @@ import controllers.Secure;
 import controllers.Security;
 
 import models.Aliment;
+import models.AlimentConnu;
 import models.EtatFrigo;
 import models.Section;
 import models.User;
@@ -27,17 +28,7 @@ public class TraitementImage {
 		List<EtatFrigo> anciensEtats = user.etatFrigo;
 		EtatFrigo dernierEtat = anciensEtats.get(anciensEtats.size()-1);
 		
-//		/* Exemple de liste d'aliments générée  */
-//		Aliment carottes = new Aliment("Carottes", "200g",0, new Date(), new Date(), newFrigo, Section.FruitsLegumes);
-//		if ((dernierEtat.aliment != null) && (dernierEtat.aliment.contains(carottes))) {
-//			/* Le frigo contenait déjà des tomates */
-//			Date entree = dernierEtat.aliment.get(dernierEtat.aliment.lastIndexOf(carottes)).entreeFrigo;
-//			carottes.entreeFrigo = entree;
-//		} 
-//		/* On crée l'instance de la carotte */
-//		carottes.save();
-//		aliments.add(carottes);
-//		
+//		/* Exemple de liste d'aliments générée  */	
 		
 		ajoutAliments(aliments, "Carottes", "200g", 0, dernierEtat, newFrigo, Section.FruitsLegumes );
 		ajoutAliments(aliments, "Lait", "1L", 0, dernierEtat, newFrigo, Section.Laitages );
@@ -64,6 +55,7 @@ public class TraitementImage {
 		
 	}
 	
+	/* Fonction ajoutant un aliment dans la DB et dans la liste des aliments du frigo */
 	public static void ajoutAliments(List<Aliment> aliments, String nom, String quantite, int calories,EtatFrigo dernierEtat, EtatFrigo newFrigo, Section section){
 		Aliment aliment = new Aliment(nom, quantite,calories, new Date(), new Date(), newFrigo, section);
 		if ((dernierEtat.aliment != null) && (dernierEtat.aliment.contains(aliment))) {
@@ -71,6 +63,11 @@ public class TraitementImage {
 			Date entree = dernierEtat.aliment.get(dernierEtat.aliment.lastIndexOf(aliment)).entreeFrigo;
 			aliment.entreeFrigo = entree;
 		} 
+		/* Si on ne connaît pas l'aliment on le rajoute dans les aliments connus */
+		AlimentConnu present = AlimentConnu.find("ByNom", nom).first();
+		if (present == null) {
+			new AlimentConnu(nom, section).save();
+		}
 		/* On crée l'instance de la carotte */
 		aliment.save();
 		aliments.add(aliment);

@@ -1,7 +1,7 @@
 #{extends 'main.html' /}
 #{set 'moreStyles'}
         #{stylesheet 'sly/font-awesome.css' /}
-        
+        #{stylesheet 'profil.css' /}
 #{/set}
 #{set 'moreScripts'}
         #{script 'sly/vendor/modernizr.js' /}    
@@ -11,17 +11,46 @@
 
 <meta charset="UTF-8">
 
-<div class="wrap">
-	<h2>Votre profil </h2>
-	
-	<strong>Nom</strong> : ${user.nom} <br/>
-	<strong>Prénom</strong> : ${user.prenom}<br/>
-	<strong>Date de Naissance</strong> : ${user.dateDeNaissance.format('dd/MM/yyyy')}<br/>
-	<strong>Nombre de personne(s) dans le foyer</strong> : ${user.nbFoyer}<br/>
-	<strong>Adresse e-mail</strong> : ${user.email}<br/>
-	<strong>Préférence</strong> : ${user.preference}
+	<div class="wrap">
+		<h2>Votre profil </h2>
 		
-</div>
+		<strong>Nom</strong> : ${user.nom} <br/>
+		<strong>Prénom</strong> : ${user.prenom}<br/>
+		<strong>Date de Naissance</strong> : ${user.dateDeNaissance.format('dd/MM/yyyy')}<br/>
+		<strong>Nombre de personne(s) dans le foyer</strong> : ${user.nbFoyer}<br/>
+		<strong>Adresse e-mail</strong> : ${user.email}<br/>
+		<strong>Préférence</strong> : ${user.preference}<br/>
+			
+	</div>
+
+	<aside id="imageProfil">
+		#{if user.preference=='Aucune'}
+			<img src="/public/images/profil/userNull.svg" alt="imageProfil" />
+		#{/if}
+		#{elseif user.preference=='Dietetique'}
+			<img src="/public/images/profil/userDietetique.svg" alt="imageProfil" />
+		#{/elseif}
+		#{elseif user.preference=='Bio'}
+			<img src="/public/images/profil/userBio.svg" alt="imageProfil" />
+		#{/elseif}
+		#{elseif user.preference=='Sport'}
+			<img src="/public/images/profil/userSport.svg" alt="imageProfil" />
+		#{/elseif}
+		#{elseif user.preference=='Francais'}
+			<img src="/public/images/profil/userFrance.svg" alt="imageProfil" />
+		#{/elseif}
+		#{elseif user.preference=='Exotique'}
+			<img src="/public/images/profil/userExotique.svg" alt="imageProfil" />
+		#{/elseif}
+	</aside>
+	
+	<div class="wrap" id="stat">
+		<h2>Vos statistiques</h2>
+		<strong>Votre catégorie favorite</strong> : Fruits et légumes <br :>
+		<strong>Nombre moyen d'ouvertures du frigo par jour</strong> : 13<br />
+		<strong>Nombre moyen de remplissage de frigo par mois</strong> : 2<br />
+		<strong>Taux de remplissage moyen du frigo</strong> : 58%<br />
+	</div>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

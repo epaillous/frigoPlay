@@ -25,7 +25,6 @@ GET		/ancienEtat/							Application.ancienEtat
 # Page index2
 GET		/index2/							    Application.index2
 
-
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

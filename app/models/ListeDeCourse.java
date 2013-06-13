@@ -8,6 +8,7 @@ import play.db.jpa.Model;
 
 import javax.persistence.ManyToOne;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import javax.persistence.ManyToMany;
@@ -24,6 +25,18 @@ public class ListeDeCourse extends Model {
 
 	@ManyToMany(mappedBy="listeDeCourse" )
 	public List<Aliment> article;
-
-
+	
+	public ListeDeCourse addAliment(String aliment) {
+		AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
+		List<ListeDeCourse> listes = new ArrayList<ListeDeCourse>();
+		listes.add(this);
+		if (present == null) {			
+	    Aliment newAliment = new Aliment(aliment, listes, Section.Autre).save();
+	    this.article.add(newAliment);
+		} else {	
+			Aliment newAliment = new Aliment(aliment, listes, present.section).save();
+		}
+	    this.save();
+	    return this;
+	}
 }

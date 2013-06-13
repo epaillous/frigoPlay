@@ -282,3 +282,33 @@
    etatFrigo: 
    section: Autre
    listeDeCourse: liste1
+
+ AlimentConnu(icetea):
+   nom: Ice-Tea
+   section: Boissons
+   
+ AlimentConnu(poulet):
+   nom: Poulet
+   section: Viandes
+   
+ AlimentConnu(ananas):
+   nom: Ananas
+   section: FruitsLegumes
+
+ AlimentConnu(ciboulette):
+   nom: Ciboulette
+   section: Autre
+   
+ AlimentConnu(miel):
+   nom: Miel
+   section: Autre
+   
+ AlimentConnu(orange):
+   nom: Orange
+   section: FruitsLegumes
+   
+ AlimentConnu(saumon):
+   nom: Saumon
+   section: Viandes
+ 
+   

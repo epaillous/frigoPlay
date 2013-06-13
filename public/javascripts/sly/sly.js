@@ -212,7 +212,7 @@
 
 					// Add item object to items array
 					items.push(itemData);
-				});
+				});	
 
 				// Resize SLIDEE to fit all items
 				$slidee[0].style[o.horizontal ? 'width' : 'height'] = slideeSize + 'px';
