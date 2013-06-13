@@ -5969,6 +5969,12 @@ a.badge:focus {
   border-top: 1px solid #e5e5e5;
 }
 
+.accordion-inner img {
+  padding-left: 5px;
+	margin-bottom: 3px;
+	float: right;
+}
+
 .carousel {
   position: relative;
   margin-bottom: 20px;

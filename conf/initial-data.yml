@@ -81,14 +81,14 @@
    image: /public/img/2013-05-27-16.26.57.JPG  
     
  EtatFrigo(etatfrigo6):
-   date: 2013-06-11 12:37:40
+   date: 2013-06-11 16:26:57
    user: emilie
-   image: /public/img/Picture_11-06-2013-12.37.40.JPG    
+   image: /public/img/2013-05-27-16.26.57.JPG 
  
  EtatFrigo(etatfrigo7):
-   date: 2013-06-11 12:37:40
+   date: 2013-05-27 16:26:57
    user: alice
-   image: /public/img/Picture_11-06-2013-12.37.40.JPG  
+   image: /public/img/2013-05-27-16.26.57.JPG  
      
  Recette(recette1):
    nom: Gratin de tomates
