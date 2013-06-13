@@ -2,11 +2,12 @@
 #{set 'moreStyles'}
         #{stylesheet 'sly/font-awesome.css' /}
         #{stylesheet 'sly/normalize.css' /}
-        
+        #{stylesheet '/coverflow.css' /}
 #{/set}
 #{set 'moreScripts'}
         #{script 'sly/vendor/modernizr.js' /}         
         #{script 'reflex.js' /}   
+        #{script 'coverflow.js' /}
 #{/set}
 
 #{set historiqueActif:'active'/}
@@ -14,7 +15,7 @@
 <meta charset="UTF-8">
 
 <div id="histo">
-			<h2>Votre historique : </h2>
+	<h2>Votre historique : </h2>
 			<div class="scrollbar">
 				<div class="handle">
 					<div class="mousearea"></div>
@@ -22,19 +23,33 @@
 			</div>
 			<div class="frame effects" id="effects">
 				<ul class="clearfix">
-			#{list items:user.etatFrigo, as:'var'}					
-					<a href="@{Application.ancienEtat(var.id)}"><img src=${var.image} height="352" width="470"></img></a>
-	#{/list}
-				</ul>
+			#{list items:user.etatFrigo, as:'var'}		
+					<img src=${var.image} height="352" width="470"></img>
+			#{/list}
 			</div>
+			
+<!-- 	<div class="ContentFlow"> -->
+<!--     	<div class="loadIndicator"><div class="indicator"></div></div> -->
+<!--         <div class="flow"> -->
+<!--             #{list items:user.etatFrigo, as:'var'}	 -->
+<!--                 <img class="item" src=${var.image} height="352" width="470" title="Your_Image_Title"/> -->
+<!--             #{/list}  -->
+<!--         </div> -->
+<!--         <div class="globalCaption"></div> -->
+<!--         <div class="scrollbar"> -->
+<!--             <div class="slider"> -->
+<!--             	<div class="position"></div> -->
+<!--         </div></div> -->
+<!--      </div>  -->
 
 			<div class="controls_center">
 				<button class="btn prev"><!-- <i class="icon-chevron-left"></i>-->< avant</button>
 				<button class="btn next">après ><!-- <i class="icon-chevron-right"></i>--></button>
 			</div>
-		</div>
+</div>
 		
 		<!-- Scripts -->
+<!-- 	script coverflow <script language="JavaScript" type="text/javascript" src="@{'/public/javascripts/coverflow.js'}"></script> -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="@{'/public/javascripts/sly/vendor/plugins.js'}"></script>
 	<script src="@{'/public/javascripts/sly/sly.js'}"></script>
