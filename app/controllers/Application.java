@@ -9,7 +9,6 @@ import java.util.*;
 import org.apache.commons.io.FileUtils;
 
 import models.Aliment;
-import models.Courante;
 import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.Recette;
@@ -37,6 +36,8 @@ public class Application extends Controller {
 		if(Security.isConnected()) {
 			User user = User.find("byEmail", Security.connected()).first();
 			renderArgs.put("user", user);
+			EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
+			renderArgs.put("etatFrigo", etatFrigo);
 		}
 	}
 
@@ -68,7 +69,6 @@ public class Application extends Controller {
 	}
 
 	public static void index() {	
-		System.out.println("je suis dans index");
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();	
 		
@@ -95,7 +95,8 @@ public class Application extends Controller {
 	}
 
 	public static void ancienEtat(Long id) {
-		
+		if (id == null){
+		}
 		/* On recupère l'état frigo correspondant à l'id */
 		EtatFrigo etatFrigo = EtatFrigo.findById(id);	
 		
@@ -155,6 +156,11 @@ public class Application extends Controller {
 		
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
+		
+		if (id == null){
+			String idS = session.get("idfrigo");
+			id = Long.parseLong(idS);
+		}
 
 		/* On recupère sa liste courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
@@ -169,11 +175,20 @@ public class Application extends Controller {
 			ancienEtat(id);
 			break;
 			default:
-				break;
-				
+				break;	
 		}
-
 	}
+	
+//	public static void ajoutAlimentContenu(String aliment, Long id) {
+//		System.out.println("entrée dans ajoutAlimentContenu");
+//		/* On recupère l'utilisateur en session */
+//		User user = User.find("byEmail", Security.connected()).first();
+//
+//		/* On recupère sa liste courante (non nulle) */
+//		EtatFrigo etatCourant = user.etatFrigo.get(0);
+//		etatCourant.addAliment(aliment);
+//		index();
+//	}
 
 	public static void supprimeAlimentListe(Long id, Long idfrigo) {
 

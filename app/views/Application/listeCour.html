@@ -14,7 +14,7 @@
 		<ul class="sous">
 			#{list items:artFruitsLegumes, as:'article'}
 			<li>${article.nom} <a
-				href='@{Application.supprimeAlimentListe(article.id)}'> <img
+				href='@{Application.supprimeAlimentListe(article.id, etatFrigo.id)}'> <img
 					src="/public/images/round_delete.png" width=15px />
 			</a></li> #{/list}
 		</ul>
@@ -23,7 +23,7 @@
 			#{list items:artViandes, as:'article'}
 
 			<li>${article.nom} <a
-				href='@{Application.supprimeAlimentListe(article.id)}'> <img
+				href='@{Application.supprimeAlimentListe(article.id, etatFrigo.id)}'> <img
 					src="/public/images/round_delete.png" width=15px /></a>
 
 			</li> #{/list}
@@ -33,7 +33,7 @@
 			#{list items:artLaitages, as:'article'}
 
 			<li>${article.nom} <a
-				href='@{Application.supprimeAlimentListe(article.id)}'> <img
+				href='@{Application.supprimeAlimentListe(article.id, etatFrigo.id)}'> <img
 					src="/public/images/round_delete.png" width=15px /></a>
 
 			</li> #{/list}
@@ -43,7 +43,7 @@
 			#{list items:artBoissons, as:'article'}
 
 			<li>${article.nom} <a
-				href='@{Application.supprimeAlimentListe(article.id)}'> <img
+				href='@{Application.supprimeAlimentListe(article.id, etatFrigo.id)}'> <img
 					src="/public/images/round_delete.png" width=15px /></a>
 
 			</li> #{/list}
@@ -54,7 +54,7 @@
 			#{list items:artEpicerie, as:'article'}
 
 			<li>${article.nom} <a
-				href='@{Application.supprimeAlimentListe(article.id)}'> <img
+				href='@{Application.supprimeAlimentListe(article.id, etatFrigo.id)}'> <img
 					src="/public/images/round_delete.png" width=15px /></a>
 
 			</li> #{/list}
@@ -64,14 +64,14 @@
 			#{list items:artAutre, as:'article'}
 
 			<li>${article.nom} <a
-				href='@{Application.supprimeAlimentListe(article.id)}'> <img
+				href='@{Application.supprimeAlimentListe(article.id, etatFrigo.id)}'> <img
 					src="/public/images/round_delete.png" width=15px /></a>
 			</li> #{/list}
 		</ul>
 
 	</ul>
 
-	<form method="post" action=@{Application.ajoutAlimentListe}>
+	<form method="post" action='@{Application.ajoutAlimentListe}'>
 		<input type="text" placeholder="Ajouter un aliment à votre liste"
 			name="aliment" /> <input type="submit" value="Ajouter">
 	</form>

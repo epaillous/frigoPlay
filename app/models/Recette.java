@@ -28,7 +28,7 @@ public class Recette extends Model {
 	public String lien;
 
 	@ManyToMany(mappedBy="recette" )
-	public Set<Aliment> ingredient;
+	public List<Aliment> ingredient;
 	
 	@ManyToMany
 	public List<User> user;

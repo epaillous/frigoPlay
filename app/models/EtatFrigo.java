@@ -34,5 +34,15 @@ public class EtatFrigo extends Model {
 		this.image = image;
 		this.aliment = aliment;
 	}
+	
+//	public EtatFrigo addAliment(String aliment) {
+//		AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
+//		if (present == null) {			
+//			Aliment newAliment = new Aliment(aliment, this, Section.Autre).save();
+//			this.aliment.add(newAliment);
+//		}
+//	    this.save();
+//	    return this;
+//	}
 
 }
