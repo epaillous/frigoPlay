@@ -21,7 +21,6 @@ import notifiers.*;
 public class Alerte extends Job {
     
     public void doJob() throws EmailException {
-    	System.out.println("je suis dans alerte!");
 		/* On verifie les dates de péremption de tous les aliments contenus dans le dernier etat Frigo pour tous les utilisateurs */
     	List<User> users = User.findAll();
     	Calendar date=new GregorianCalendar();
@@ -30,13 +29,11 @@ public class Alerte extends Job {
     	Iterator iter = users.iterator();	
     	while (iter.hasNext()) {
     		User usercour = (User) iter.next();
-    		System.out.println(usercour.prenom);
         	EtatFrigo dernierEtat = EtatFrigo.find("user like ? order by date desc", usercour).first();
         	List<Aliment> aliments = dernierEtat.aliment;
         	Iterator iter2 = aliments.iterator();
         	while (iter2.hasNext()) {
         		Aliment aliment = (Aliment) iter2.next();
-        		System.out.println(aliment.nom);
         		if ((date.getTime().getDay() == aliment.peremption.getDay()) 
         				&& (date.getTime().getMonth() == aliment.peremption.getMonth()) 
         				&& (date.getTime().getYear() == aliment.peremption.getYear())) {   

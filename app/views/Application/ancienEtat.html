@@ -25,7 +25,7 @@
 	      <div class="accordion-inner">
 
 							#{list items:fruitsLegumes, as:'aliment'} 
-							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom, "ancienEtat", etatFrigo.id)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 							<aside class="dates">
 								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
@@ -40,7 +40,7 @@
 	      <div class="accordion-inner"> 
 
 							#{list items:boissons, as:'aliment'} 
-							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste">
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom, "ancienEtat", etatFrigo.id)}' title = "ajouter cet élément à ma liste">
 							 <img src="/public/images/icon-add-grey.png" width=15px />
 							</a>
 							<aside class="dates">
@@ -57,7 +57,7 @@
 	      <div class="accordion-inner"> 
 
 	      					#{list items:viandes, as:'aliment'} 
-	      					<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
+	      					<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom, "ancienEtat", etatFrigo.id)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 							<aside class="dates">
 								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
@@ -71,7 +71,7 @@
 	    <div id="item4" class="collapse">
 	    <div class="accordion-inner">
 							#{list items:laitages, as:'aliment'} 
-							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom, "ancienEtat", etatFrigo.id)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 
 							<aside class="dates">
 								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
@@ -86,7 +86,7 @@
 	    <div id="item5" class="collapse">
 	      <div class="accordion-inner">
 							#{list items:epicerie, as:'aliment'} 
-							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom, "ancienEtat", etatFrigo.id)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 
 							<aside class="dates">
 								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
@@ -101,7 +101,7 @@
 	    <div id="item6" class="collapse">
 	      <div class="accordion-inner">
 							#{list items:autre, as:'aliment'} 
-							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
+							<strong>${aliment.nom} </strong><a href='@{Application.ajoutAlimentListe(aliment.nom, "ancienEtat", etatFrigo.id)}' title = "ajouter cet élément à ma liste"><img src="/public/images/icon-add-grey.png" width=15px /></a>
 							<aside class="dates">
 								<h5><small>Dans le frigo depuis le : ${aliment.entreeFrigo.format('dd/MM/yy')} </small></h5>
 								<h5><small>Périme le : ${aliment.peremption.format('dd/MM/yy')}</small></h5>
