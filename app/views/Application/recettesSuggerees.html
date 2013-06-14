@@ -1,0 +1,20 @@
+#{extends 'Application/listeCour.html' /} #{set 'moreStyles'}
+#{stylesheet 'sly/font-awesome.css' /} #{stylesheet 'recettes.css' /}
+#{/set} #{set 'moreScripts'} #{script 'sly/vendor/modernizr.js' /}
+#{/set} #{set mesRecettesActif:'active'/}
+
+<meta charset="UTF-8">
+<!-- Titre -->
+<div class="container">
+	<div class="row show-grid">
+		<div class="span12 offset1">
+			<h3>Suggestion de recettes</h3>
+		</div>
+	</div>
+
+<!-- Scripts -->
+<!-- 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+<!-- 	<script src="@{'/public/javascripts/sly/vendor/plugins.js'}"></script> -->
+<!-- 	<script src="@{'/public/javascripts/sly/sly.js'}"></script> -->
+<!-- 	<script src="@{'/public/javascripts/sly/horizontal.js'}"></script> -->
+<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
