@@ -2,16 +2,17 @@
 #{set 'moreStyles'}
         #{stylesheet 'sly/font-awesome.css' /}
         #{stylesheet 'sly/normalize.css' /} 
-        #{stylesheet '/coverflow.css' /}
+        #{stylesheet '/coverflow.css' /}    
+        #{stylesheet '/contentflow.css' /}
 #{/set}
 #{set 'moreScripts'}
         #{script 'sly/vendor/modernizr.js' /}         
         #{script 'reflex.js' /}   
-        #{script 'coverflow.js' /}
+        #{script 'coverflow.js' /}       
+        #{script 'contentflow.js' /}
 #{/set}
 
 #{set historiqueActif:'active'/}
-
 
 <meta charset="UTF-8">
 <!-- Titre -->
@@ -21,19 +22,37 @@
 			<h3>Historique</h3>
 		</div>
 	</div>
+	<div class="ContentFlow">
+	<div class="loadIndicator">
+		<div class="indicator"></div>
+	</div>
+	<div class="flow">
+		   #{list items:user.etatFrigo, as:'var'}	
+                <img class="item" href='@{Application.ancienEtat(var.id)}' src=${var.image} height="352" width="470" title=${var.date}/>
+            #{/list} 
+	</div>	
+	<div class="globalCaption"></div>
+	<div class="scrollbar">
+		<div class="slider">
+			<div class="position"></div>
+		</div>
+	</div>
+</div>
+	
+	<!--  ancienne version  -->
 
-<div id="histo">
-			<div class="scrollbar">
-				<div class="handle">
-					<div class="mousearea"></div>
-				</div>
-			</div>
-			<div class="frame effects" id="effects">
-				<ul class="clearfix">
-			#{list items:user.etatFrigo, as:'var'}		
-					<a href='@{Application.ancienEtat(var.id)}'><img src=${var.image} height="352" width="470"></img></a>
-			#{/list}
-			</div>
+<!-- <div id="histo"> -->
+<!-- 			<div class="scrollbar"> -->
+<!-- 				<div class="handle"> -->
+<!-- 					<div class="mousearea"></div> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 			<div class="frame effects" id="effects"> -->
+<!-- 				<ul class="clearfix"> -->
+<!-- 			#{list items:user.etatFrigo, as:'var'}		 -->
+<!-- 					<a href='@{Application.ancienEtat(var.id)}'><img src=${var.image} height="352" width="470"></img></a> -->
+<!-- 			#{/list} -->
+<!-- 			</div> -->
 			
 <!-- 	<div class="ContentFlow"> -->
 <!--     	<div class="loadIndicator"><div class="indicator"></div></div> -->
@@ -49,15 +68,15 @@
 <!--         </div></div> -->
 <!--      </div>  -->
 
-			<div class="controls_center">
-				<button class="btn prev"><!-- <i class="icon-chevron-left"></i>-->< avant</button>
-				<button class="btn next">après ><!-- <i class="icon-chevron-right"></i>--></button>
-			</div>
-</div>
+<!-- 			<div class="controls_center"> -->
+<!-- 				<button class="btn prev"><i class="icon-chevron-left"></i>< avant</button> -->
+<!-- 				<button class="btn next">après ><i class="icon-chevron-right"></i></button> -->
+<!-- 			</div> -->
+<!-- </div> -->
 		
 		<!-- Scripts -->
 <!-- 	script coverflow <script language="JavaScript" type="text/javascript" src="@{'/public/javascripts/coverflow.js'}"></script> -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="@{'/public/javascripts/sly/vendor/plugins.js'}"></script>
-	<script src="@{'/public/javascripts/sly/sly.js'}"></script>
-	<script src="@{'/public/javascripts/sly/horizontal.js'}"></script>
+<!-- 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+<!-- 	<script src="@{'/public/javascripts/sly/vendor/plugins.js'}"></script> -->
+<!-- 	<script src="@{'/public/javascripts/sly/sly.js'}"></script> -->
+<!-- 	<script src="@{'/public/javascripts/sly/horizontal.js'}"></script> -->

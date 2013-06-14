@@ -150,6 +150,10 @@ public class Application extends Controller {
 		render();
 	}   
 
+	public static void coverFlow() {
+		render();
+	}   
+
 	
 	public static void ajoutAlimentListe(String aliment, Long id) {
 		
