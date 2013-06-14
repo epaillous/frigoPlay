@@ -1,15 +1,18 @@
 #{extends 'main.html' /}
 <meta charset="UTF-8">
 
+
 #{doLayout /}
- 
-<aside class="listeCour offset12">
-		<h4> Liste de courses courante </h4>
+
+<!-- version quasi identique à celle de mailys sauf que les croix sont pas alignées ...  -->
+</br></br></br>
+<div class="liste_courses span2">
+
+		<h4> <center> Liste de courses courante </center></h4>
 		<ul class="liste">
 			<li>Fruits et Légumes</li>
 				<ul class="sous">
 				#{list items:artFruitsLegumes, as:'article'}
-
 					<li>${article.nom}
 						<a href='@{Application.supprimeAlimentListe(article.id)}'>
 							<img src="/public/images/round_delete.png" width=15px />
@@ -87,4 +90,97 @@
 					<img src="/public/images/icon-add-grey.png" width=15px /></a></li>
            	</ul>
        </div>
-</aside>
+</div>
+
+
+<!-- version qui bouge pas quand on scroll  -->
+<!-- #{extends 'main.html' /} -->
+<!-- <meta charset="UTF-8"> -->
+
+<!-- #{doLayout /} -->
+ 
+<!-- <aside class="listeCour offset12"> -->
+<!-- 		<h4> Liste de courses courante </h4> -->
+<!-- 		<ul class="liste"> -->
+<!-- 			<li>Fruits et Légumes</li> -->
+<!-- 				<ul class="sous"> -->
+<!-- 				#{list items:artFruitsLegumes, as:'article'} -->
+
+<!-- 					<li>${article.nom} -->
+<!-- 						<a href='@{Application.supprimeAlimentListe(article.id)}'> -->
+<!-- 							<img src="/public/images/round_delete.png" width=15px /> -->
+<!-- 						</a></li> -->
+<!-- 						#{/list} -->
+<!-- 				</ul> -->
+<!--            	<li>Viandes et Poissons</li> -->
+<!--            	 	<ul class="sous"> -->
+<!--                	#{list items:artViandes, as:'article'} -->
+
+<!--                 	<li>${article.nom} -->
+<!--                 		<a href='@{Application.supprimeAlimentListe(article.id)}'> -->
+<!--                 		<img src="/public/images/round_delete.png" width=15px /></a> -->
+
+<!--                 	</li> -->
+<!--                 	#{/list} -->
+<!--                 </ul> -->
+<!--             <li>Laitages</li> -->
+<!--                	<ul class="sous"> -->
+<!--                	#{list items:artLaitages, as:'article'} -->
+
+<!--                 	<li>${article.nom} -->
+<!--                 		<a href='@{Application.supprimeAlimentListe(article.id)}'> -->
+<!--                 			<img src="/public/images/round_delete.png" width=15px /></a> -->
+
+<!--                 	</li> -->
+<!--                 	#{/list} -->
+<!--                 </ul> -->
+<!--             <li>Boisson</li> -->
+<!--              	<ul class="sous"> -->
+<!--                	#{list items:artBoissons, as:'article'} -->
+
+<!--                 	<li>${article.nom} -->
+<!--                 		<a href='@{Application.supprimeAlimentListe(article.id)}'> -->
+<!--                 			<img src="/public/images/round_delete.png" width=15px /></a> -->
+
+<!--                 	</li> -->
+<!--                 	#{/list} -->
+<!--                 </ul> -->
+                
+<!--                 <li>Epicerie</li> -->
+<!--              	<ul class="sous"> -->
+<!--                	#{list items:artEpicerie, as:'article'} -->
+
+<!--                 	<li>${article.nom} -->
+<!--                 		<a href='@{Application.supprimeAlimentListe(article.id)}'> -->
+<!--                 			<img src="/public/images/round_delete.png" width=15px /></a> -->
+
+<!--                 	</li> -->
+<!--                 	#{/list} -->
+<!--                 </ul> -->
+<!--             <li>Autre</li> -->
+<!--              	<ul class="sous"> -->
+<!--                	#{list items:artAutre, as:'article'} -->
+
+<!--                 	<li>${article.nom} -->
+<!--                 		<a href='@{Application.supprimeAlimentListe(article.id)}'> -->
+<!--                 			<img src="/public/images/round_delete.png" width=15px /></a> -->
+<!--                 	</li> -->
+<!--                 	#{/list} -->
+<!--                 </ul> -->
+                
+<!--        </ul> -->
+       
+<!--        <form method="post" action=@{Application.ajoutAlimentListe}> -->
+<!--        		<input type="text" placeholder="Ajouter un aliment à votre liste" name="aliment"/> -->
+<!--        		<input type="submit" value="Ajouter"> -->
+<!--        </form> -->
+       
+<!--        <div class="postit"> -->
+<!--            	<h4>Avez-vous pensé à...?</h4> -->
+<!--            	<ul> -->
+<!--            		<li>Coca -->
+<!--            		<a href='#'> -->
+<!-- 					<img src="/public/images/icon-add-grey.png" width=15px /></a></li> -->
+<!--            	</ul> -->
+<!--        </div> -->
+<!-- </aside> -->

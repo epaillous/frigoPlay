@@ -1,7 +1,6 @@
-#{extends 'main.html' /}
-#{extends 'Application/listeCour.html' /} 
+#{extends 'Application/listeCour.html' /}
 
-<script src="/public/javascripts/jquery-1.10.1.js"></script> 
+<script src="/public/javascripts/jquery-1.10.1.js"></script>
 <script src="/public/bootstrap/js/bootstrap.min.js"></script>
 
 #{set accueilActif:'active'/}
@@ -12,13 +11,10 @@
    	<!-- Titre -->
     <div class="span12 offset4"><h3>Voici l'état actuel de votre frigo  </h3> </div>
 
-        
-
 	   	<!-- affichage des éléments présents dans le frigo -->
 		<section>	
-		<div class="span4 liste_aliments offset3"> <br>
+		<div class="span4 liste_aliments offset3"> 
 	    <h4> <center> Contenu de votre frigo </center></h4>
-	    </br>
 	    
 	    <!-- Fruits et légumes --> 	
 	    <div class="accordion-heading"> <a class="accordion-toggle" href="#item1" data-toggle="collapse"><img src="/public/images/carotte.svg" width=20px /> Fruits et Légumes</a> </div>
@@ -117,9 +113,10 @@
 		<img src="${etatFrigo.image}" height="352" width="470"></img>
 		<p>Date de la prise : ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</p>
 
-	</article>
-</section>
+		</div>
+		</article>
+	</section>
 </div>
 
 
-    
+
