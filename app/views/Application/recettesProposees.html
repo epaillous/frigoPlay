@@ -1,16 +1,23 @@
-#{extends 'Application/listeCour.html' /} #{set 'moreStyles'}
-#{stylesheet 'sly/font-awesome.css' /} #{stylesheet 'recettes.css' /}
-#{/set} #{set 'moreScripts'} #{script 'sly/vendor/modernizr.js' /}
-#{/set} #{set mesRecettesActif:'active'/}
+#{extends 'Application/listeCour.html' /} 
+#{set 'moreStyles'}
+	#{stylesheet 'sly/font-awesome.css' /} 
+	#{stylesheet 'recettes.css' /}
+#{/set} 
+
+#{set 'moreScripts'} #{script 'sly/vendor/modernizr.js' /}
+#{/set} 
+
+#{set mesRecettesActif:'active'/}
 
 <meta charset="UTF-8">
 
 <div class="span10 offset2">
-
 			<center>
 				<h3>Suggestions de recettes</h3>
 			</center>
+			
 </div>
+
 <!-- Scripts -->
 <!-- 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 <!-- 	<script src="@{'/public/javascripts/sly/vendor/plugins.js'}"></script> -->
