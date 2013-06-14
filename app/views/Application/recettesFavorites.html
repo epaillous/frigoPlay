@@ -1,12 +1,18 @@
-#{extends 'Application/listeCour.html' /} #{set 'moreStyles'}
-#{stylesheet 'sly/font-awesome.css' /} #{stylesheet 'recettes.css' /}
-#{/set} #{set 'moreScripts'} #{script 'sly/vendor/modernizr.js' /}
-#{/set} #{set mesRecettesActif:'active'/}
+#{extends 'Application/listeCour.html' /} 
+#{set 'moreStyles'}
+	#{stylesheet 'sly/font-awesome.css' /} 
+	#{stylesheet 'recettes.css' /}
+#{/set} 
+
+#{set 'moreScripts'} #{script 'sly/vendor/modernizr.js' /}
+#{/set} 
+
+#{set mesRecettesActif:'active'/}
 
 <meta charset="UTF-8">
 
 <div class="span10 offset2">
-	<section>
+<!-- 	<section> -->
 
 		<div>
 			<center>
@@ -55,7 +61,7 @@
 				</li> #{/list}
 			</ul>
 		</div>
-	</section>
+<!-- 	</section> -->
 </div>
 
 
