@@ -127,7 +127,7 @@
    nom: Coca-Cola
    quantite: 1.5L
    calories: 3000
-   peremption: 2013-06-15
+   peremption: 2013-06-17
    entreeFrigo: 2013-06-11
    etatFrigo: etatfrigo6
    section: Boissons
@@ -207,7 +207,7 @@
    quantite: 12
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2013-06-15
+   peremption: 2013-06-17
    recette: recette2
    etatFrigo: etatfrigo5.2
    section: Autre
@@ -221,7 +221,7 @@
    quantite: 1L
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2013-06-15
+   peremption: 2013-06-17
    etatFrigo: etatfrigo5
    section: Autre
   

@@ -21,7 +21,7 @@ GET 	/profil/								Application.profil
 # Page photo
 GET 	/photo/								    Application.photo
 # Page ancienEtat
-GET		/ancienEtat/							Application.ancienEtat
+GET		/ancienEtat/ 							Application.ancienEtat
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

@@ -26,6 +26,11 @@ import utils.ApplicationUtils;
 
 @With(Secure.class)
 public class Application extends Controller {
+	
+//	@Before
+//    static void checkAuthentification() {
+//        if(session.get("user") == null) login();
+//    }
 
 	@Before
 	static void setConnectedUser() {
@@ -63,11 +68,15 @@ public class Application extends Controller {
 	}
 
 	public static void index() {	
+		System.out.println("je suis dans index");
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();	
 		
 		/* On recupère le dernier etat */
 		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
+	
+		
+		/* on génère la liste correspondante */
 		List<Aliment> aliments = etatFrigo.aliment;
 		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
 		List<Aliment> viandes = new ArrayList<Aliment>();
@@ -78,13 +87,35 @@ public class Application extends Controller {
 
 		/* tri par section */
 		ApplicationUtils.misAJourListes(aliments, fruitsLegumes, viandes, laitages, boissons, autre, epicerie);
-		render(fruitsLegumes, viandes, laitages, boissons, autre, epicerie, etatFrigo);
-
+		
+		/* On passe en paramètre la page dans laquelle on était */
+		session.put("page", "index");	
+		
+		renderTemplate("Application/afficheEtat.html",fruitsLegumes, viandes, laitages, boissons, autre, epicerie, etatFrigo);
 	}
 
 	public static void ancienEtat(Long id) {
-		EtatFrigo etatFrigo = EtatFrigo.findById(id);
-		render(etatFrigo);
+		
+		/* On recupère l'état frigo correspondant à l'id */
+		EtatFrigo etatFrigo = EtatFrigo.findById(id);	
+		
+		/* on génère la liste correspondante */
+		List<Aliment> aliments = etatFrigo.aliment;
+		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
+		List<Aliment> viandes = new ArrayList<Aliment>();
+		List<Aliment> laitages = new ArrayList<Aliment>();
+		List<Aliment> boissons= new ArrayList<Aliment>() ;
+		List<Aliment> autre = new ArrayList<Aliment>();
+		List<Aliment> epicerie = new ArrayList<Aliment>();
+		
+		/* tri par section */
+		ApplicationUtils.misAJourListes(aliments, fruitsLegumes, viandes, laitages, boissons, autre, epicerie);
+		
+		/* On passe en paramètre la page dans laquelle on était */
+		session.put("page", "ancienEtat");
+		session.put("idfrigo", etatFrigo.id);
+		renderArgs.put("etatFrigo", etatFrigo);
+		renderTemplate("Application/afficheEtat.html",fruitsLegumes, viandes, laitages, boissons, autre, epicerie, etatFrigo);
 	}
 	
 	public static void historique() {
@@ -119,7 +150,8 @@ public class Application extends Controller {
 		render();
 	}   
 
-	public static void ajoutAlimentListe(String aliment) {
+	
+	public static void ajoutAlimentListe(String aliment, Long id) {
 		
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
@@ -127,33 +159,39 @@ public class Application extends Controller {
 		/* On recupère sa liste courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
 		listeCourante.addAliment(aliment);
+		String page = session.get("page");
 		
-		/* on trie à nouveau les listes pour ajouter l'aliment dans la bonne section */
-		List<Aliment> articles = listeCourante.article;
-		List<Aliment> artFruitsLegumes = new ArrayList<Aliment>();
-		List<Aliment> artViandes = new ArrayList<Aliment>();
-		List<Aliment> artLaitages = new ArrayList<Aliment>();
-		List<Aliment> artBoissons= new ArrayList<Aliment>() ;
-		List<Aliment> artAutre = new ArrayList<Aliment>();
-		List<Aliment> artEpicerie = new ArrayList<Aliment>();
+		switch (page){
+		case "index":
+			index();
+			break;
+		case "ancienEtat":
+			ancienEtat(id);
+			break;
+			default:
+				break;
+				
+		}
 
-		/* tri par section */
-		ApplicationUtils.misAJourListes(articles, artFruitsLegumes, artViandes, artLaitages, artBoissons, artAutre, artEpicerie);
-
-		renderArgs.put("artFruitsLegumes", artFruitsLegumes);
-		renderArgs.put("artLaitages", artLaitages);
-		renderArgs.put("artViandes", artViandes);
-		renderArgs.put("artBoissons", artBoissons);
-		renderArgs.put("artAutre", artAutre);
-		renderArgs.put("artEpicerie", artEpicerie);
-		index();
 	}
-	
-	public static void supprimeAlimentListe(Long id) {
-		
+
+	public static void supprimeAlimentListe(Long id, Long idfrigo) {
+
 		Aliment aliment = Aliment.findById(id);
 		aliment.delete();
-		index();
+		String page = session.get("page");
+
+		switch (page){
+		case "index":
+			index();
+			break;
+		case "ancienEtat":
+			ancienEtat(idfrigo);
+			break;
+		default:
+			break;
+
+		}
 	}
 
 }
