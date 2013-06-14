@@ -36,6 +36,8 @@ public class Application extends Controller {
 		if(Security.isConnected()) {
 			User user = User.find("byEmail", Security.connected()).first();
 			renderArgs.put("user", user);
+			EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
+			renderArgs.put("etatFrigo", etatFrigo);
 		}
 	}
 
