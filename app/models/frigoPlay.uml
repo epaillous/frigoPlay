@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_36cGAM4QEeKQjafdhR-xKw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_36cGAc4QEeKQjafdhR-xKw" source="codegen">
         <details xmi:id="_36cGAs4QEeKQjafdhR-xKw" key="codegenDirectory" value="/frigoPlay/app"/>
-        <details xmi:id="_4H7vcM4QEeKQjafdhR-xKw" key="AssociatedSourceCode" value="/frigoPlay/app/models/Aliment.java;175905330/1;/frigoPlay/app/models/Archive.java;1183085457/1;/frigoPlay/app/models/Courante.java;3290396326/1;/frigoPlay/app/models/EtatFrigo.java;843546226/1;/frigoPlay/app/models/ListeDeCourse.java;2498283871/1;/frigoPlay/app/models/Recette.java;2590372805/1;/frigoPlay/app/models/Type.java;283535523/1;/frigoPlay/app/models/User.java;778393286/1;"/>
+        <details xmi:id="_4H7vcM4QEeKQjafdhR-xKw" key="AssociatedSourceCode" value="/frigoPlay/app/models/Aliment.java;175905330/1;/frigoPlay/app/models/Archive.java;2736252318/1;/frigoPlay/app/models/EtatFrigo.java;843546226/1;/frigoPlay/app/models/ListeDeCourse.java;2498283871/1;/frigoPlay/app/models/Recette.java;2771975431/1;/frigoPlay/app/models/User.java;3890655400/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_flakcM4nEeKJ_JMRIAJ8YQ" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_flakcc4nEeKJ_JMRIAJ8YQ" source="com.yattasolutions.codegen.reverse">
@@ -215,9 +215,8 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4BP4oM4QEeKQjafdhR-xKw" name="Archive">
         <generalization xmi:id="_4CUPoM4QEeKQjafdhR-xKw" general="_4BX0cM4QEeKQjafdhR-xKw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4BRt0M4QEeKQjafdhR-xKw" name="Courante">
-        <generalization xmi:id="_4CUPoc4QEeKQjafdhR-xKw" general="_4BX0cM4QEeKQjafdhR-xKw"/>
+        <ownedAttribute xmi:id="_6dQG0NT8EeKl1uVp6glJIQ" name="dateArchivage" type="_4CxioM4QEeKQjafdhR-xKw"/>
+        <ownedAttribute xmi:id="_Ns1AcNUFEeKl1uVp6glJIQ" name="user" type="_4Bd7EM4QEeKQjafdhR-xKw" association="_Ns4DwNUFEeKl1uVp6glJIQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4BTjAM4QEeKQjafdhR-xKw" name="EtatFrigo">
         <generalization xmi:id="_4C-W8M4QEeKQjafdhR-xKw" general="_4COwEc4QEeKQjafdhR-xKw"/>
@@ -265,7 +264,10 @@
         <ownedAttribute xmi:id="_4DJWFM4QEeKQjafdhR-xKw" name="nom">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4DKkMM4QEeKQjafdhR-xKw" name="user" type="_4Bd7EM4QEeKQjafdhR-xKw" association="_4DvzAc4QEeKQjafdhR-xKw"/>
+        <ownedAttribute xmi:id="_4DKkMM4QEeKQjafdhR-xKw" name="user" type="_4Bd7EM4QEeKQjafdhR-xKw" association="_4DvzAc4QEeKQjafdhR-xKw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k05o4NT9EeKl1uVp6glJIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k03zsNT9EeKl1uVp6glJIQ" value="1"/>
+        </ownedAttribute>
         <ownedAttribute xmi:id="_4DLLQM4QEeKQjafdhR-xKw" name="article" type="_4BGusM4QEeKQjafdhR-xKw" isOrdered="true" association="_4D0rgM4QEeKQjafdhR-xKw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XLL80NT7EeKl1uVp6glJIQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DLLQc4QEeKQjafdhR-xKw" value="*"/>
@@ -315,11 +317,12 @@
         <ownedAttribute xmi:id="_4DNngc4QEeKQjafdhR-xKw" name="lien" association="_4D4V4c4QEeKQjafdhR-xKw">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4DNng84QEeKQjafdhR-xKw" name="ingredient" type="_4BGusM4QEeKQjafdhR-xKw" association="_4D9OYM4QEeKQjafdhR-xKw">
+        <ownedAttribute xmi:id="_4DNng84QEeKQjafdhR-xKw" name="ingredient" type="_4BGusM4QEeKQjafdhR-xKw" isOrdered="true" association="_4D9OYM4QEeKQjafdhR-xKw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U1Nj8NT7EeKl1uVp6glJIQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DOOkM4QEeKQjafdhR-xKw" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_yyFc0NT6EeKl1uVp6glJIQ" name="user" type="_4Bd7EM4QEeKQjafdhR-xKw" isOrdered="true" association="_yytu8NT6EeKl1uVp6glJIQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sCVf8NT9EeKl1uVp6glJIQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yyGD4NT6EeKl1uVp6glJIQ" value="*"/>
         </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8Di3IM4VEeKQjafdhR-xKw" name="toString" specification="_8Dga4M4VEeKQjafdhR-xKw">
@@ -336,9 +339,6 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
         </ownedOperation>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4BdUAM4QEeKQjafdhR-xKw" name="Type">
-        <generalization xmi:id="_4Cw7kM4QEeKQjafdhR-xKw" general="_4BX0cM4QEeKQjafdhR-xKw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4Bd7EM4QEeKQjafdhR-xKw" name="User">
         <generalization xmi:id="_4DAzMM4QEeKQjafdhR-xKw" general="_4COwEc4QEeKQjafdhR-xKw"/>
@@ -371,6 +371,10 @@
         <ownedAttribute xmi:id="_yyIgINT6EeKl1uVp6glJIQ" name="recettesFavorites" type="_4BaQsM4QEeKQjafdhR-xKw" isOrdered="true" association="_yyzOgdT6EeKl1uVp6glJIQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yyJHMNT6EeKl1uVp6glJIQ" value="*"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_pIHnANT8EeKl1uVp6glJIQ" name="archives" type="_4BP4oM4QEeKQjafdhR-xKw" isOrdered="true" association="_pINGkNT8EeKl1uVp6glJIQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_zbENT9EeKl1uVp6glJIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pIIOENT8EeKl1uVp6glJIQ" value="*"/>
+        </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_K8AAgM4TEeKQjafdhR-xKw" name="toString" specification="_K789MM4TEeKQjafdhR-xKw">
           <ownedParameter xmi:id="_K8AAgc4TEeKQjafdhR-xKw" direction="return">
             <name xsi:nil="true"/>
@@ -387,7 +391,9 @@
           <ownedParameter xmi:id="_yyUGUdT6EeKl1uVp6glJIQ" name="password">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_yyUGUtT6EeKl1uVp6glJIQ" type="_4Bd7EM4QEeKQjafdhR-xKw" direction="return"/>
+          <ownedParameter xmi:id="_yyUGUtT6EeKl1uVp6glJIQ" type="_4Bd7EM4QEeKQjafdhR-xKw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>return find(&quot;byEmailAndMotDePasse&quot;, email, password).first();&#xD;
 	</body>
@@ -431,8 +437,11 @@
       <packagedElement xmi:type="uml:Association" xmi:id="_4Dsvsc4QEeKQjafdhR-xKw" name="" memberEnd="_4Dsvss4QEeKQjafdhR-xKw _4DIvAs4QEeKQjafdhR-xKw">
         <ownedEnd xmi:id="_4Dsvss4QEeKQjafdhR-xKw" name="" type="_4BTjAM4QEeKQjafdhR-xKw" association="_4Dsvsc4QEeKQjafdhR-xKw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_4DvzAc4QEeKQjafdhR-xKw" name="" memberEnd="_4DvzAs4QEeKQjafdhR-xKw _4DKkMM4QEeKQjafdhR-xKw">
-        <ownedEnd xmi:id="_4DvzAs4QEeKQjafdhR-xKw" name="" type="_4BX0cM4QEeKQjafdhR-xKw" association="_4DvzAc4QEeKQjafdhR-xKw"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4DvzAc4QEeKQjafdhR-xKw" name="a pour utilisateur" memberEnd="_4DvzAs4QEeKQjafdhR-xKw _4DKkMM4QEeKQjafdhR-xKw">
+        <ownedEnd xmi:id="_4DvzAs4QEeKQjafdhR-xKw" name="" type="_4BX0cM4QEeKQjafdhR-xKw" association="_4DvzAc4QEeKQjafdhR-xKw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k063ANT9EeKl1uVp6glJIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k05B0NT9EeKl1uVp6glJIQ" value="1"/>
+        </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_4D0rgM4QEeKQjafdhR-xKw" name="a pour article" memberEnd="_4D0rgc4QEeKQjafdhR-xKw _4DLLQM4QEeKQjafdhR-xKw">
         <ownedEnd xmi:id="_4D0rgc4QEeKQjafdhR-xKw" name="" type="_4BX0cM4QEeKQjafdhR-xKw" association="_4D0rgM4QEeKQjafdhR-xKw">
@@ -457,11 +466,23 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_yvsQINT6EeKl1uVp6glJIQ" name="Section"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_yx0-INT6EeKl1uVp6glJIQ" name="Preference"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_yytu8NT6EeKl1uVp6glJIQ" name="" memberEnd="_yytu8dT6EeKl1uVp6glJIQ _yyFc0NT6EeKl1uVp6glJIQ">
-        <ownedEnd xmi:id="_yytu8dT6EeKl1uVp6glJIQ" name="" type="_4BaQsM4QEeKQjafdhR-xKw" association="_yytu8NT6EeKl1uVp6glJIQ"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_yytu8NT6EeKl1uVp6glJIQ" name="a pour utilisateur" memberEnd="_yytu8dT6EeKl1uVp6glJIQ _yyFc0NT6EeKl1uVp6glJIQ">
+        <ownedEnd xmi:id="_yytu8dT6EeKl1uVp6glJIQ" name="" type="_4BaQsM4QEeKQjafdhR-xKw" association="_yytu8NT6EeKl1uVp6glJIQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sCWuENT9EeKl1uVp6glJIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sCUR0NT9EeKl1uVp6glJIQ" value="1"/>
+        </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_yyzOgdT6EeKl1uVp6glJIQ" name="" memberEnd="_yyzOgtT6EeKl1uVp6glJIQ _yyIgINT6EeKl1uVp6glJIQ">
         <ownedEnd xmi:id="_yyzOgtT6EeKl1uVp6glJIQ" name="" type="_4Bd7EM4QEeKQjafdhR-xKw" association="_yyzOgdT6EeKl1uVp6glJIQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_pINGkNT8EeKl1uVp6glJIQ" name="a pour commande" memberEnd="_pINGkdT8EeKl1uVp6glJIQ _pIHnANT8EeKl1uVp6glJIQ">
+        <ownedEnd xmi:id="_pINGkdT8EeKl1uVp6glJIQ" name="" type="_4Bd7EM4QEeKQjafdhR-xKw" association="_pINGkNT8EeKl1uVp6glJIQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_0pMNT9EeKl1uVp6glJIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_yM8NT9EeKl1uVp6glJIQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ns4DwNUFEeKl1uVp6glJIQ" name="" memberEnd="_Ns4DwdUFEeKl1uVp6glJIQ _Ns1AcNUFEeKl1uVp6glJIQ">
+        <ownedEnd xmi:id="_Ns4DwdUFEeKl1uVp6glJIQ" name="" type="_4BP4oM4QEeKQjafdhR-xKw" association="_Ns4DwNUFEeKl1uVp6glJIQ"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_4AtGEM4QEeKQjafdhR-xKw" name="org">
@@ -494,7 +515,6 @@
   <Persistency:JPA1StyledElement xmi:id="_4BUxIM4QEeKQjafdhR-xKw" base_Element="_4BTjAM4QEeKQjafdhR-xKw"/>
   <Persistency:JPA1StyledElement xmi:id="_4BYbgM4QEeKQjafdhR-xKw" base_Element="_4BX0cM4QEeKQjafdhR-xKw"/>
   <Persistency:JPA1StyledElement xmi:id="_4Ba3wM4QEeKQjafdhR-xKw" base_Element="_4BaQsM4QEeKQjafdhR-xKw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_4BdUAc4QEeKQjafdhR-xKw" base_Element="_4BdUAM4QEeKQjafdhR-xKw"/>
   <Persistency:JPA1StyledElement xmi:id="_4BeiIM4QEeKQjafdhR-xKw" base_Element="_4Bd7EM4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Reference xmi:id="_4CHbUM4QEeKQjafdhR-xKw" base_Element="_4CB7wM4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:Reference xmi:id="_4CLFsM4QEeKQjafdhR-xKw" base_Element="_4CHbUc4QEeKQjafdhR-xKw"/>
@@ -618,6 +638,11 @@
   <UMLLabProfile:Annotations xmi:id="_4DTuIs4QEeKQjafdhR-xKw" base_Element="_4DTHE84QEeKQjafdhR-xKw">
     <annotations xmi:id="_4DTuI84QEeKQjafdhR-xKw" name="ManyToMany">
       <annotationParameters xmi:id="_4DUVMM4QEeKQjafdhR-xKw" name="mappedBy" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_pIKqUdT8EeKl1uVp6glJIQ" value="&quot;user&quot;"/>
+      </annotationParameters>
+    </annotations>
+    <annotations xmi:id="_pH_rMNT8EeKl1uVp6glJIQ" name="OneToMany">
+      <annotationParameters xmi:id="_pIASQNT8EeKl1uVp6glJIQ" name="mappedBy" skipArray="true">
         <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_yya0ANT6EeKl1uVp6glJIQ" value="&quot;user&quot;"/>
       </annotationParameters>
     </annotations>
@@ -649,7 +674,6 @@
   <UMLLabProfile:Annotations xmi:id="__LwlQM4VEeKQjafdhR-xKw" base_Element="_4DNngc4QEeKQjafdhR-xKw">
     <annotations xmi:id="__LwlQc4VEeKQjafdhR-xKw" name="Required"/>
   </UMLLabProfile:Annotations>
-  <Persistency:JPA1StyledElement xmi:id="_yoteYNT6EeKl1uVp6glJIQ" base_Element="_4BRt0M4QEeKQjafdhR-xKw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_yrcpUNT6EeKl1uVp6glJIQ" base_Element="_yomJoNT6EeKl1uVp6glJIQ"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_ysubsNT6EeKl1uVp6glJIQ" base_Element="_yssmgNT6EeKl1uVp6glJIQ"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_ytAvkNT6EeKl1uVp6glJIQ" base_Element="_ys-TUNT6EeKl1uVp6glJIQ"/>
@@ -679,4 +703,21 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_yyJuQNT6EeKl1uVp6glJIQ" base_Element="_yyIgINT6EeKl1uVp6glJIQ"/>
   <UMLLabProfile:Reference xmi:id="_yyzOgNT6EeKl1uVp6glJIQ" base_Element="_yytu8NT6EeKl1uVp6glJIQ"/>
   <UMLLabProfile:Reference xmi:id="_yy4uENT6EeKl1uVp6glJIQ" base_Element="_yyzOgdT6EeKl1uVp6glJIQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_pII1INT8EeKl1uVp6glJIQ" base_Element="_pIHnANT8EeKl1uVp6glJIQ"/>
+  <UMLLabProfile:Annotations xmi:id="_pII1IdT8EeKl1uVp6glJIQ" base_Element="_pIHnANT8EeKl1uVp6glJIQ">
+    <annotations xmi:id="_pII1ItT8EeKl1uVp6glJIQ" name="OneToMany">
+      <annotationParameters xmi:id="_pII1I9T8EeKl1uVp6glJIQ" name="mappedBy" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_pIKqUNT8EeKl1uVp6glJIQ" value="&quot;user&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_pIR_ENT8EeKl1uVp6glJIQ" base_Element="_pINGkNT8EeKl1uVp6glJIQ"/>
+  <UMLLabProfile:Annotations xmi:id="_Ns2OkNUFEeKl1uVp6glJIQ" base_Element="_Ns1AcNUFEeKl1uVp6glJIQ">
+    <annotations xmi:id="_Ns2OkdUFEeKl1uVp6glJIQ" name="ManyToOne">
+      <annotationParameters xmi:id="_Ns2OktUFEeKl1uVp6glJIQ" name="optional" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_Ns21oNUFEeKl1uVp6glJIQ" value="false"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_Ns_YgNUFEeKl1uVp6glJIQ" base_Element="_Ns4DwNUFEeKl1uVp6glJIQ"/>
 </xmi:XMI>

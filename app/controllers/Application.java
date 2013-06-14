@@ -9,7 +9,6 @@ import java.util.*;
 import org.apache.commons.io.FileUtils;
 
 import models.Aliment;
-import models.Courante;
 import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.Recette;
