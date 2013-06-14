@@ -94,7 +94,8 @@ public class Application extends Controller {
 	}
 
 	public static void ancienEtat(Long id) {
-		
+		if (id == null){
+		}
 		/* On recupère l'état frigo correspondant à l'id */
 		EtatFrigo etatFrigo = EtatFrigo.findById(id);	
 		
@@ -154,6 +155,11 @@ public class Application extends Controller {
 		
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
+		
+		if (id == null){
+			String idS = session.get("idfrigo");
+			id = Long.parseLong(idS);
+		}
 
 		/* On recupère sa liste courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
