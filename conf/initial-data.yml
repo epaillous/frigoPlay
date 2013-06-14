@@ -81,12 +81,12 @@
    image: /public/img/2013-05-27-16.26.57.JPG  
     
  EtatFrigo(etatfrigo6):
-   date: 2013-06-11 16:26:57
+   date: 2013-06-13 23:08:07
    user: emilie
    image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
  
  EtatFrigo(etatfrigo7):
-   date: 2013-05-27 16:26:57
+   date: 2013-06-13 23:08:07
    user: alice
    image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
      
@@ -127,9 +127,13 @@
    nom: Coca-Cola
    quantite: 1.5L
    calories: 3000
-   peremption: 2013-09-20
+   peremption: 2013-06-15
    entreeFrigo: 2013-06-11
    etatFrigo: etatfrigo6
+   section: Boissons
+   
+ AlimentConnu(cocacola):
+   nom: Coca-Cola
    section: Boissons
    
  Aliment(tomates):
@@ -141,6 +145,10 @@
    recette: recette1
    etatFrigo: etatfrigo6
    section: FruitsLegumes
+  
+ AlimentConnu(tomates):
+   nom: Tomates
+   section: FruitsLegumes
    
  Aliment(cordonbleu):
    nom: Cordon Bleu
@@ -149,6 +157,10 @@
    entreeFrigo: 2013-06-11
    peremption: 2013-06-21
    etatFrigo: etatfrigo6
+   section: Viandes
+
+ AlimentConnu(cordonbleu):
+   nom: Cordon Bleu
    section: Viandes
 
  Aliment(yaourtfruits):
@@ -160,6 +172,10 @@
    etatFrigo: etatfrigo6
    section: Laitages
 
+ AlimentConnu(yaourtfruits):
+   nom: Yaourts aux Fruits
+   section: Laitages
+
  Aliment(emmental):
    nom: Emmental
    quantite: 500g
@@ -167,6 +183,10 @@
    entreeFrigo: 2013-06-11
    peremption: 2013-08-02
    etatFrigo: etatfrigo6
+   section: Laitages
+   
+ AlimentConnu(emmental):
+   nom: Emmental
    section: Laitages
 
  Aliment(compotes):
@@ -177,6 +197,10 @@
    peremption: 2013-09-10
    etatFrigo: etatfrigo6
    section: Autre
+
+ AlimentConnu(compotes):
+   nom: Compotes
+   section: Autre
  
  Aliment(oeufs):
    nom: Oeufs
@@ -186,7 +210,11 @@
    peremption: 2013-06-24
    recette: recette2
    etatFrigo: etatfrigo6
-   section: Laitages
+   section: Autre
+
+ AlimentConnu(oeufs):
+   nom: Oeufs
+   section: Autre
 
  Aliment(soupe):
    nom: Soupe
@@ -195,6 +223,10 @@
    entreeFrigo: 2013-06-11
    peremption: 2014-01-26
    etatFrigo: etatfrigo6
+   section: Autre
+
+ AlimentConnu(soupe):
+   nom: Soupe
    section: Autre
    
  Courante(liste1):
