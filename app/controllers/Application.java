@@ -67,7 +67,6 @@ public class Application extends Controller {
 	}
 
 	public static void index() {	
-		System.out.println("je suis dans index");
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();	
 		

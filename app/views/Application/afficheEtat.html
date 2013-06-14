@@ -13,15 +13,10 @@
 <!-- Titre -->
 <div class="container">
 	<div class="row show-grid">
-			#{if page =='index'}
-			<div class="span12 offset1">
-			<h2>Voici l'état actuel de votre frigo</h2>
-			</div>
-			#{/if} #{elseif page =='ancienEtat'}
 			<div class="span12 offset1">
 			<h2>Voici l'état de votre frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h2>
 			</div>
-			#{/elseif}	
+
 	</div>
 	
 	<!-- affichage des éléments présents dans le frigo -->
