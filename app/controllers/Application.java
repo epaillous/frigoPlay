@@ -68,7 +68,6 @@ public class Application extends Controller {
 	}
 
 	public static void index() {	
-		System.out.println("je suis dans index");
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();	
 		
@@ -169,11 +168,20 @@ public class Application extends Controller {
 			ancienEtat(id);
 			break;
 			default:
-				break;
-				
+				break;	
 		}
-
 	}
+	
+//	public static void ajoutAlimentContenu(String aliment, Long id) {
+//		System.out.println("entrée dans ajoutAlimentContenu");
+//		/* On recupère l'utilisateur en session */
+//		User user = User.find("byEmail", Security.connected()).first();
+//
+//		/* On recupère sa liste courante (non nulle) */
+//		EtatFrigo etatCourant = user.etatFrigo.get(0);
+//		etatCourant.addAliment(aliment);
+//		index();
+//	}
 
 	public static void supprimeAlimentListe(Long id, Long idfrigo) {
 

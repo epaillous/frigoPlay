@@ -5,3 +5,8 @@
 	color: black;
 	text-decoration: none;
 }
+.ajout {
+	position: absolute;
+	visibility: hidden;
+	display: block;
+}

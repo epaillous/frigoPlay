@@ -2,9 +2,15 @@
 
 <script src="/public/javascripts/jquery-1.10.1.js"></script>
 <script src="/public/bootstrap/js/bootstrap.min.js"></script>
-#{set 'moreStyles'} #{stylesheet '/index.css' /} #{/set}
-#{if session.page =='index'} #{set accueilActif:'active'/} #{/if}
-#{elseif session.page =='ancienEtat'} #{set historiqueActif:'active'/}
+<script src="/public/javascripts/ajoutAliment.js"></script>
+
+#{set 'moreStyles'} 
+	#{stylesheet '/index.css' /} 
+#{/set}
+#{if session.page =='index'} 
+	#{set accueilActif:'active'/} #{/if}
+#{elseif session.page =='ancienEtat'} 
+	#{set historiqueActif:'active'/}
 #{/elseif}
 
 <meta charset="UTF-8">
@@ -189,10 +195,23 @@
 				#{/list}
 			</div>
 		</div>
-</div>
+	</div>
+	
 		<div class="span4">
 			<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
-			<img src="${etatFrigo.image}" height="352" width="470"></img>
+			<a href="#"
+				onclick="ajoutAliment()">
+				<img src="${etatFrigo.image}" height="352" width="470" />
+			</a>
+<!-- 			#{if ajout=='true'} -->
+<!-- 				<form class="ajout" method="post" action=@{Application.ajoutAlimentContenu}> -->
+<!-- 					<input type="text" placeholder="Ajouter un aliment à votre contenu"  -->
+<!-- 					name="aliment" />  -->
+<!-- 					<input type="text" placeholder="Catégorie de cet aliment"  -->
+<!-- 					name="section" />  -->
+<!-- 					<input type="submit" value="Ajouter"> -->
+<!-- 				</form> -->
+<!-- 			#{/if} -->
 			<p>Date de la prise : ${etatFrigo.date.format('dd MMMM yyyy	HH:mm')}</p>
 		</div>
 

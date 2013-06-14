@@ -42,7 +42,15 @@ public class Aliment extends Model {
 		this.listeDeCourse = listeDeCourse;
 		this.section = section;
 	}
-
+	
+	
+//	/* Constructeur pour les aliments ajoutés dans le contenu du frigo */
+//	public Aliment(String nom, EtatFrigo etatFrigo, Section section) {
+//		super();
+//		this.nom = nom;
+//		this.etatFrigo=etatFrigo;
+//		this.section = section;
+//	}
 
 
 	@ManyToMany
