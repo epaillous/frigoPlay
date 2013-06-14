@@ -97,6 +97,7 @@ body {
 .nav #m1,#m2 {
 	position: absolute;
 	visibility: hidden;
+	background: white;
 }
 
 .nav #m1 a {
