@@ -1,0 +1,2 @@
+Bonjour ${user.prenom}, 
+Le produit ${aliment} perime demain, merci de le manger rapidement !
