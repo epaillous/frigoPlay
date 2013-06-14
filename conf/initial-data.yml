@@ -207,9 +207,9 @@
    quantite: 12
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2013-06-24
+   peremption: 2013-06-15
    recette: recette2
-   etatFrigo: etatfrigo6
+   etatFrigo: etatfrigo5.2
    section: Autre
 
  AlimentConnu(oeufs):
@@ -221,10 +221,10 @@
    quantite: 1L
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2014-01-26
-   etatFrigo: etatfrigo6
+   peremption: 2013-06-15
+   etatFrigo: etatfrigo5
    section: Autre
-
+  
  AlimentConnu(soupe):
    nom: Soupe
    section: Autre

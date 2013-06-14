@@ -13,7 +13,7 @@ public class Mails extends Mailer {
    public static void alerte(User user, String aliment) {
       setSubject("Alerte sur le produit %s", aliment);
       addRecipient(user.email);
-      setFrom("MonFrigo <emilie.paillous@gmail.com>");
+      setFrom("MonFrigo <frigotimemachine@gmail.com>");
       send(user);
    }
  
