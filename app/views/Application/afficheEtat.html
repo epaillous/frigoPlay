@@ -19,15 +19,10 @@
 <!-- Titre -->
 <div class="container">
 	<div class="row show-grid">
-			#{if page =='index'}
-			<div class="span12 offset1">
-			<h2>Voici l'état actuel de votre frigo</h2>
-			</div>
-			#{/if} #{elseif page =='ancienEtat'}
 			<div class="span12 offset1">
 			<h2>Voici l'état de votre frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h2>
 			</div>
-			#{/elseif}	
+
 	</div>
 	
 	<!-- affichage des éléments présents dans le frigo -->
@@ -45,7 +40,7 @@
 			<div class="accordion-inner">
 
 				#{list items:fruitsLegumes, as:'aliment'} <strong>${aliment.nom}
-				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}'
+				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
 				<aside class="dates">
@@ -72,7 +67,7 @@
 			<div class="accordion-inner">
 
 				#{list items:boissons, as:'aliment'} <strong>${aliment.nom}</strong><a
-					href='@{Application.ajoutAlimentListe(aliment.nom)}'
+					href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"> <img
 					src="/public/images/icon-add-grey.png" width=15px />
 				</a>
@@ -100,7 +95,7 @@
 			<div class="accordion-inner">
 
 				#{list items:viandes, as:'aliment'} <strong>${aliment.nom}
-				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}'
+				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
 				<aside class="dates">
@@ -125,7 +120,7 @@
 		<div id="item4" class="collapse">
 			<div class="accordion-inner">
 				#{list items:laitages, as:'aliment'} <strong>${aliment.nom}
-				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}'
+				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
 
@@ -152,7 +147,7 @@
 		<div id="item5" class="collapse">
 			<div class="accordion-inner">
 				#{list items:epicerie, as:'aliment'} <strong>${aliment.nom}
-				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom)}'
+				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
 
@@ -179,7 +174,7 @@
 		<div id="item6" class="collapse">
 			<div class="accordion-inner">
 				#{list items:autre, as:'aliment'} <strong>${aliment.nom} </strong><a
-					href='@{Application.ajoutAlimentListe(aliment.nom)}'
+					href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
 				<aside class="dates">

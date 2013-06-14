@@ -9,7 +9,6 @@ import java.util.*;
 import org.apache.commons.io.FileUtils;
 
 import models.Aliment;
-import models.Courante;
 import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.Recette;
@@ -37,6 +36,8 @@ public class Application extends Controller {
 		if(Security.isConnected()) {
 			User user = User.find("byEmail", Security.connected()).first();
 			renderArgs.put("user", user);
+			EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
+			renderArgs.put("etatFrigo", etatFrigo);
 		}
 	}
 
@@ -94,7 +95,8 @@ public class Application extends Controller {
 	}
 
 	public static void ancienEtat(Long id) {
-		
+		if (id == null){
+		}
 		/* On recupère l'état frigo correspondant à l'id */
 		EtatFrigo etatFrigo = EtatFrigo.findById(id);	
 		
@@ -154,6 +156,11 @@ public class Application extends Controller {
 		
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
+		
+		if (id == null){
+			String idS = session.get("idfrigo");
+			id = Long.parseLong(idS);
+		}
 
 		/* On recupère sa liste courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);

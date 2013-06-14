@@ -229,19 +229,19 @@
    nom: Soupe
    section: Autre
    
- Courante(liste1):
+ ListeDeCourse(liste1):
    nom: Liste Courante
    user: emilie
 
- Courante(liste2):
+ ListeDeCourse(liste2):
    nom: Liste Courante
    user: mailys
 
- Courante(liste3):
+ ListeDeCourse(liste3):
    nom: Liste Courante
    user: alexis
 
- Courante(liste4):
+ ListeDeCourse(liste4):
    nom: Liste Courante
    user: alice  
  
