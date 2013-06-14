@@ -22,8 +22,6 @@ GET 	/profil/								Application.profil
 GET 	/photo/								    Application.photo
 # Page ancienEtat
 GET		/ancienEtat/ 							Application.ancienEtat
-# Page coverFlow
-GET		/coverflow/ 							Application.coverFlow
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
