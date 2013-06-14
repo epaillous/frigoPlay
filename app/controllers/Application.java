@@ -121,7 +121,7 @@ public class Application extends Controller {
 		render();
 	}
 
-	public static void recettesProposees() {
+	public static void recettesSuggerees() {
 		render();
 	}
 	public static void recettesFavorites() {
@@ -131,11 +131,11 @@ public class Application extends Controller {
 		render();
 	}
 
-	public static void listesCourses() {
+	public static void listesArchivees() {
 		render();
 	}
 
-	public static void archives() {
+	public static void listesFavorites() {
 		render();
 	}
 

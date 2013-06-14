@@ -1,73 +1,91 @@
 body {
-  padding-top: 20px;
-  padding-bottom: 60px;
+	padding-top: 20px;
+	padding-bottom: 60px;
 }
 
 /* Custom container */
 .container {
-  margin: 0 auto;
-  max-width: 1000px;
+	margin: 0 auto;
+	max-width: 1000px;
 }
-.container > hr {
-  margin: 60px 0;
+
+.container>hr {
+	margin: 60px 0;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  margin: 80px 0;
-  text-align: center;
+	margin: 80px 0;
+	text-align: center;
 }
+
 .jumbotron h1 {
-  font-size: 100px;
-  line-height: 1;
+	font-size: 100px;
+	line-height: 1;
 }
+
 .jumbotron .lead {
-  font-size: 24px;
-  line-height: 1.25;
+	font-size: 24px;
+	line-height: 1.25;
 }
+
 .jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+	font-size: 21px;
+	padding: 14px 24px;
 }
 
 /* Supporting marketing content */
 .marketing {
-  margin: 60px 0;
+	margin: 60px 0;
 }
-.marketing p + h4 {
-  margin-top: 28px;
+
+.marketing p+h4 {
+	margin-top: 28px;
 }
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
 .navbar .navbar-inner {
-  padding: 0;
-}
-.navbar .nav {
-  margin: 0;
-  display: table;
-  width: 100%;
-}
-.navbar .nav li {
-  display: table-cell;
-  width: 1%;
-  float: none;
-}
-.navbar .nav li a {
-  font-weight: bold;
-  text-align: center;
-  border-left: 1px solid rgba(255,255,255,.75);
-  border-right: 1px solid rgba(0,0,0,.1);
-}
-.navbar .nav li:first-child a {
-  border-left: 0;
-  border-radius: 3px 0 0 3px;
-}
-.navbar .nav li:last-child a {
-  border-right: 0;
-  border-radius: 0 3px 3px 0;
+	padding: 0;
 }
 
-	/*Ajout� par Ma� */
+.navbar .nav {
+	margin: 0;
+	display: table;
+	width: 100%;
+}
+
+.navbar .nav li {
+	display: table-cell;
+	width: 1%;
+	float: none;
+}
+
+.navbar .nav li a {
+	font-weight: bold;
+	text-align: center;
+	border-left: 1px solid rgba(255, 255, 255, .75);
+	border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.navbar .nav li:first-child a {
+	border-left: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+	border-right: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+
+/*Ajout� par Ma� */
+/* .masthead { */
+/* 	background-color: white; */
+/* 	position: fixed; */
+/* 	top: 0px;	 */
+/* 	padding-top: 20px; */
+/* } */
+
 .wrap {
 	margin-left: 400px;
 }
@@ -75,35 +93,37 @@ body {
 .nav li {
 	float: left;
 }
-.nav #m1,#m2
-{	
+
+.nav #m1,#m2 {
 	position: absolute;
 	visibility: hidden;
-}	
-.nav #m1 a
-{	
+}
+
+.nav #m1 a {
 	display: block;
 	font-style: normal;
 	color: grey;
 	text-align: left;
-  	border: 1px solid rgba(0,0,0,.1);
-  	padding-left: 10px;
-  	padding-right: 20px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	padding-left: 10px;
+	padding-right: 20px;
 }
-.nav #m2 a
-{	
+
+.nav #m2 a {
 	display: block;
 	font-style: normal;
 	color: grey;
 	text-align: left;
-  	border: 1px solid rgba(0,0,0,.1);
-  	padding-left: 10px;
-  	padding-right: 20px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	padding-left: 10px;
+	padding-right: 20px;
 }
+
 .nav #m1 a:hover {
 	color: black;
 	text-decoration: none;
 }
+
 .nav #m2 a:hover {
 	color: black;
 	text-decoration: none;
@@ -111,18 +131,21 @@ body {
 
 /* liste Aliments */
 .liste_aliments {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #fafafa;
-  border: 1px solid  #d4d4d4;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	display: inline-block;
+	vertical-align: top;
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: #fafafa;
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+
 
 /*Gestion de la liste courante*/
 .liste_courses  {
@@ -152,41 +175,56 @@ body {
     vertical-align: top;
     text-align: justify;
 }
+
 .contenuFrigo {
-    margin-left: 40px;
-    position: fixed;
-    top: 140px;
-    left: 360px;
+	margin-left: 40px;
+	position: fixed;
+	top: 140px;
+	left: 360px;
 }
-.listeCour
-{
-    position: fixed;
-    top: 150px;
-    left: 40px;
-    width: 235px;
-    background-color: #706b64;
-    box-shadow: 0px 2px 5px #1c1a19;
-    border-radius: 5px;
-    padding: 15px;
-    color: white;
-    font-size: 0.9em;
+
+.listeCour {
+	position: fixed;
+	top: 150px;
+	left: 40px;
+	width: 235px;
+	background-color: #706b64;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 15px;
+	color: white;
+	font-size: 0.9em;
 }
+
+.left_content {
+	*position: relative;
+	*z-index: 2;
+	overflow: visible;
+	min-height: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
 .sous {
-/* 	list-style-type: none; */
+	/* 	list-style-type: none; */
+	
 }
+
 .liste_courses img {
 	padding-left: 5px;
 	margin-bottom: 3px;
 	float: right;
 }
+
 .listeContenu {
 	position: fixed;
 	width: 500px;
 	top: 250px;
 	left: 900px;
 }
+
 .postit {
-	background-color: white/*#FFFF66*/;
+	background-color: white /*#FFFF66*/;
 	color: grey;
 	padding: 5%;
 	
@@ -203,8 +241,9 @@ body {
 	margin-top: 150px;
 	margin-left: 400px;
 }
+
 #histo .controls_center {
-   margin-left: 400px;
+	margin-left: 400px;
 }
 
 /*D�connexion*/
@@ -213,6 +252,6 @@ body {
 	margin: 6px 6px 6px 1px;
 	padding: 2px;
 	padding-top: 1px;
-	border: 1px solid rgba(0,0,0,.2);
+	border: 1px solid rgba(0, 0, 0, .2);
 	border-radius: 3px;
 }
