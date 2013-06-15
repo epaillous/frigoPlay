@@ -1,29 +1,28 @@
 .repereRecette {
-	margin-left: 10%;	
+/* 	margin-left: 10%;	 */
 }
-.favorie {
+#recetteFav {
 	font-weight: bold;
 	font-size: medium;
+	color: grey;
 }
-.recettesFav {
-	margin: 20px;
+#recetteFav:hover {
+	text-decoration: none;
+	color: black;
 }
 .caract {
+	display: inline-block;
 	color: grey;
 	list-style-type: none;
 	padding: 5px;
 }
-/* #(cara+'${recette.nom}') { */
-/* 	position: absolute; */
-/* 	visibility: hidden; */
-/* } */
-/* .espace:hover { */
-/* 	padding-bottom: 75px; */
-/* } */
+.sousCaract {
+	padding-left: 5%;
+	padding-bottom: 2%;
+}
+.sousCaract p {
+	margin: 1%;
+}
 .lien {
 	margin-top: 7px;
 }
-/* #(cara+'${recette.nom}') li { */
-/* 	float: left; */
-/* 	display: block; */
-/* } */
