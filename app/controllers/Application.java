@@ -184,17 +184,28 @@ public class Application extends Controller {
 		List<Recette> recettes ; 
 		EntityManager em = JPA.em();
 		/* requete qui fonctionne */
-//		Query q3 = em.createQuery("select r from Recette r where r.prix=?1");
-//		q3.setParameter(1, 1);
-		
 		Query q3 = em.createQuery("select r from Recette r, User u where" +
-				" r.prix=?1 and u=?2 ");
+				" r.prix=?1 and u=?2 " );
 		q3.setParameter(1, 3).setParameter(2, user);
-		recettes = (List<Recette>) q3.getResultList();
-
 		
-	//	recettes = Recette.find("select * from Recette").fetch();//exists (SELECT Recette FROM Recette WHERE aliment = tomate )").fetch();
-	//	recettes = em.createQuery("from Recette where user=?", user).getResultList();
+		/* ingrédients dans toutes les recettes */
+		Query q4 = em.createQuery("select r.ingredient from Recette r ");
+
+		List<Aliment> ingredients = q4.getResultList();
+		Iterator<Aliment> i = ingredients.iterator();
+		while(i.hasNext()){
+			System.out.println(i.next().nom);
+		}
+		
+		/* recettes contenant l'ingrédient Oeuf */
+		Query qroeuf = em.createQuery("select a.nom from Aliment a where a in (select r.ingredient from Recette r)" );
+		//List<String> ingredients_nom = qroeuf.getResultList();
+		//Recette r = Recette.find("ingredient like oeuf");
+		//System.out.println(r.nom);
+		
+		recettes = (List<Recette>) q3.getResultList();
+		
+		
 		renderArgs.put("liste", recettes);
 		renderTemplate("Application/recettes.html", recettes);
 		
@@ -256,8 +267,10 @@ public class Application extends Controller {
 		User user = User.find("byEmail", Security.connected()).first();
 
 		/* On recupère le dernier etat Frigo (non nulle) */
-		EtatFrigo etatCourant = user.etatFrigo.get(0);
+		// EtatFrigo etatCourant = user.etatFrigo.get(0);
+		EtatFrigo etatCourant = EtatFrigo.find("user like ? order by date desc", user).first(); 
 		etatCourant.addAliment(aliment);
+		System.out.println("on a ajouté un aliment");
 		index();
 	}
 
