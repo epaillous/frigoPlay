@@ -48,10 +48,10 @@ public class EtatFrigo extends Model {
 	public EtatFrigo addAliment(String aliment) {
 		AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
 		if (present == null) {			
-	    Aliment newAliment = new Aliment(aliment, this, Section.Autre).save();
+	    Aliment newAliment = new Aliment(aliment, new Date(), new Date(), this, Section.Autre).save();
 	    this.aliment.add(newAliment);
 		} else {	
-			new Aliment(aliment, this, present.section).save();
+			new Aliment(aliment,new Date(), new Date(), this, present.section).save();
 		}
 	    this.save();
 	    return this;
