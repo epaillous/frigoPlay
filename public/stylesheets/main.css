@@ -206,11 +206,6 @@ body {
 	padding-left: 20px;
 }
 
-.sous {
-	/* 	list-style-type: none; */
-	
-}
-
 .liste_courses img {
 	padding-left: 5px;
 	margin-bottom: 3px;
@@ -255,4 +250,25 @@ body {
 	padding-top: 1px;
 	border: 1px solid rgba(0, 0, 0, .2);
 	border-radius: 3px;
+}
+.ajoutContenu {
+	margin-top: 10%;
+}
+/*pied de page*/
+footer {
+	font-size: x-small;
+ 	margin-top: 10%;
+}
+footer p {
+	display: inline-block;
+	text-decoration: overline;
+	width: 100%;
+}
+#contact {
+	margin-left: 2%;
+	color: grey;
+}
+#contact:hover {
+	color: black;
+	text-decoration: none;
 }

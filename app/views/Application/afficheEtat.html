@@ -190,6 +190,15 @@
 				#{/list}
 			</div>
 		</div>
+		
+		#{if session.page =='index'} 
+		<div>
+			<form class="ajoutContenu" method="post" action='@{Application.ajoutAlimentContenu}'>
+				<input type="text" placeholder="Ajouter un aliment au contenu"
+				name="aliment"/> <input type="submit" value="Ajouter">
+			</form>
+		</div>
+		#{/if}
 	</div>
 	
 		<div class="span4">
