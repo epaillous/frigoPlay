@@ -21,7 +21,7 @@
 
     /* ----- styling of items ----- */
         .ContentFlowAddOn_white .flow .item .caption {
-            background: url(/public/images/img_coverflow/1x1_0.5_white.png);
+            background: url('/public/images/img_coverflow/1x1_0.5_white.png');
         }
         * html .ContentFlowAddOn_white .flow .item .caption {
             background-image: none;
@@ -36,11 +36,11 @@
             }
 	    /* ----- scrollbar ----- */
 	    .ContentFlowAddOn_white .scrollbar {
-	        background: url(/public/images/img_coverflow/scrollbar_black.png) left center repeat-x;
+	        background: url('/public/images/img_coverflow/scrollbar_black.png') left center repeat-x;
 	    }
 
         .ContentFlowAddOn_white .scrollbar .slider {
-            background: url(/public/images/img_coverflow/slider_black.png) center center no-repeat;
+            background: url("/public/images/img_coverflow/slider_black.png") center center no-repeat;
         }
         
         /* only for IE <= 6 and a alphatransparent slider image */
@@ -67,14 +67,14 @@
 
     /* ----- load indicator ----- */
     .ContentFlowAddOn_white .loadIndicator {
-        background: url(/public/images/img_coverflow/1x1_0.5_white.png);
+        background: url('/public/images/img_coverflow/1x1_0.5_white.png');
     }
     * html .ContentFlowAddOn_white .loadIndicator {
         background-image: none;
         filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/public/images/img_coverflow/1x1_0.5_white.png');
     }
         .ContentFlowAddOn_white .loadIndicator .indicator {
-            background: url(/public/images/img_coverflow/loader_white.gif) center center no-repeat;
+            background: url('/public/images/img_coverflow/loader_white.gif') center center no-repeat;
         }
 
 /* ================================= */
