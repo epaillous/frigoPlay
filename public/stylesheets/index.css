@@ -16,7 +16,8 @@
 }
 
 .ajoutContListe {
-	margin-left: 65%;
+/* 	display: inline-block; */
+	margin-left: 30px;
 	color: grey;
 	border: solid 1px grey;
 	border-radius: 20px;
@@ -37,4 +38,8 @@
 /* } */
 .ajoutContListe img {
 	padding-top: 2px;
+	font-weight: none;
+}
+strong {
+	display: inline-block;
 }
