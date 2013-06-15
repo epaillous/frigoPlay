@@ -1,7 +1,16 @@
-#{extends 'Application/listeCour.html' /} #{set 'moreStyles'}
-#{stylesheet 'sly/font-awesome.css' /} #{stylesheet 'recettes.css' /}
-#{/set} #{set 'moreScripts'} #{script 'sly/vendor/modernizr.js' /}
-#{/set} #{set mesRecettesActif:'active'/}
+#{extends 'Application/listeCour.html' /} 
+
+#{set 'moreStyles'}
+	#{stylesheet 'sly/font-awesome.css' /} 
+	#{stylesheet 'recettes.css' /}
+#{/set} 
+
+#{set 'moreScripts'} 
+	#{script 'sly/vendor/modernizr.js' /}
+#{/set} 
+
+#{set mesRecettesActif:'active'/}
+
 <script src="/public/javascripts/jquery-1.10.1.js"></script>
 <script src="/public/bootstrap/js/bootstrap.min.js"></script>
 <script src="/public/javascripts/ajoutAliment.js"></script>
