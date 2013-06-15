@@ -2,6 +2,8 @@ package models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+
 import org.hibernate.validator.constraints.NotEmpty;
 
 import play.data.validation.Required;
@@ -11,8 +13,10 @@ import java.net.URL;
 import java.util.List;
 import java.util.Set;
 import javax.persistence.ManyToMany;
+import javax.persistence.*;
 
 @javax.persistence.Entity
+
 public class Recette extends Model {
 
 	@Required

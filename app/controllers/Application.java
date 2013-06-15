@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.util.*;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 import org.apache.commons.io.FileUtils;
 
@@ -169,15 +170,31 @@ public class Application extends Controller {
 //		renderArgs.put("liste", recettes);
 //		renderTemplate("Application/recettes.html", recettes);		
 //	}
-	
+
 	public static void recettesSuggerees() {
 		session.put("page", "recettesSuggerees");
+		/* On recupère l'utilisateur en session */
+		User user = User.find("byEmail", Security.connected()).first();
+		/* On recupère le dernier état du frigo */
+		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
 		/* définition des recettes suggérées :
 		 * Si l'utilisateur a dans son frigo au moins un aliment de la recette
 		 * alors la recette est suggérée
 		 */	
+		List<Recette> recettes ; 
 		EntityManager em = JPA.em();
-		List<Recette> recettes= Recette.find("prix like 3").fetch();
+		/* requete qui fonctionne */
+//		Query q3 = em.createQuery("select r from Recette r where r.prix=?1");
+//		q3.setParameter(1, 1);
+		
+		Query q3 = em.createQuery("select r from Recette r, User u where" +
+				" r.prix=?1 and u=?2 ");
+		q3.setParameter(1, 3).setParameter(2, user);
+		recettes = (List<Recette>) q3.getResultList();
+
+		
+	//	recettes = Recette.find("select * from Recette").fetch();//exists (SELECT Recette FROM Recette WHERE aliment = tomate )").fetch();
+	//	recettes = em.createQuery("from Recette where user=?", user).getResultList();
 		renderArgs.put("liste", recettes);
 		renderTemplate("Application/recettes.html", recettes);
 		
