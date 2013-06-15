@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
+import javax.persistence.EntityManager;
+
 import org.apache.commons.io.FileUtils;
 
 import models.Aliment;
@@ -16,6 +18,7 @@ import models.User;
 
 
 import play.Play;
+import play.db.jpa.JPA;
 import play.mvc.Before;
 import play.mvc.Controller;
 import play.mvc.Http;
@@ -123,6 +126,35 @@ public class Application extends Controller {
 		render();
 	}
 
+	public static void recettes(Long id){
+		/* id = 1 ssi on veut accéder à recettes favorites 
+		 * id = 2 ssi on veut accéder à recettes suggérées
+		 */
+		/* On recupère l'utilisateur en session */
+		User user = User.find("byEmail", Security.connected()).first();
+		/* On recupère le dernier état du frigo */
+		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
+		/* On recupère la liste correspondante */
+		List<Recette> recettes= user.recettesFavorites;
+		List<Recette> recettesfav = user.recettesFavorites;
+		List<Recette> recettesSugg = null ;
+		if (id == 1){
+			/* la liste de recettes à afficher est la liste de recettes favorites */
+			recettes = recettesfav;
+		} else {
+			/* définition des recettes suggérées :
+			 * Si l'utilisateur a dans son frigo au moins un aliment de la recette
+			 * alors la recette est suggérée
+			 */	
+			EntityManager em = JPA.em();
+			recettesSugg = Recette.find("prix like 3").fetch();
+			//	recettes = Recettes.find("user like ?", user);
+			recettes = recettesSugg;
+		}
+		renderArgs.put("liste", recettes);
+		renderTemplate("Application/recettes.html", recettes);		
+	}
+	
 	public static void recettesSuggerees() {
 		render();
 	}
