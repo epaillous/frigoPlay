@@ -88,7 +88,7 @@
 		<!-- Viande & Poisson -->
 		<div class="accordion-heading">
 			<a class="accordion-toggle" href="#item3" data-toggle="collapse">
-				<img src="/public/images/steak.svg" width=20px /> Viandes
+				<img src="/public/images/steak.svg" width=20px /> Viandes et Poissons
 			</a>
 		</div>
 		<div id="item3" class="collapse">
@@ -190,6 +190,19 @@
 				#{/list}
 			</div>
 		</div>
+		
+		
+		#{if session.page=='index'}
+			<div>
+				<form class="ajoutContenu" method="post" action='@{Application.ajoutAlimentContenu}'>
+					<input type="text" placeholder="Ajouter un aliment à votre contenu" 
+					name="aliment" /> 
+<!-- 					<input type="text" placeholder="Catégorie de cet aliment"  -->
+<!-- 					name="section" />  -->
+					<input type="submit" value="Ajouter">
+				</form>
+			</div>
+		#{/if}
 	</div>
 	
 		<div class="span4">
@@ -198,15 +211,6 @@
 				onclick="ajoutAliment()">
 				<img src="${etatFrigo.image}" height="352" width="470" />
 			</a>
-<!-- 			#{if ajout=='true'} -->
-<!-- 				<form class="ajout" method="post" action=@{Application.ajoutAlimentContenu}> -->
-<!-- 					<input type="text" placeholder="Ajouter un aliment à votre contenu"  -->
-<!-- 					name="aliment" />  -->
-<!-- 					<input type="text" placeholder="Catégorie de cet aliment"  -->
-<!-- 					name="section" />  -->
-<!-- 					<input type="submit" value="Ajouter"> -->
-<!-- 				</form> -->
-<!-- 			#{/if} -->
 			<p>Date de la prise : ${etatFrigo.date.format('dd MMMM yyyy	HH:mm')}</p>
 		</div>
 

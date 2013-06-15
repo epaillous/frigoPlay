@@ -44,5 +44,17 @@ public class EtatFrigo extends Model {
 //	    this.save();
 //	    return this;
 //	}
+	
+	public EtatFrigo addAliment(String aliment) {
+		AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
+		if (present == null) {			
+	    Aliment newAliment = new Aliment(aliment, new Date(), new Date(), this, Section.Autre).save();
+	    this.aliment.add(newAliment);
+		} else {	
+			new Aliment(aliment,new Date(), new Date(), this, present.section).save();
+		}
+	    this.save();
+	    return this;
+	}
 
 }

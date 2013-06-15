@@ -251,16 +251,15 @@ public class Application extends Controller {
 		}
 	}
 	
-//	public static void ajoutAlimentContenu(String aliment, Long id) {
-//		System.out.println("entrée dans ajoutAlimentContenu");
-//		/* On recupère l'utilisateur en session */
-//		User user = User.find("byEmail", Security.connected()).first();
-//
-//		/* On recupère sa liste courante (non nulle) */
-//		EtatFrigo etatCourant = user.etatFrigo.get(0);
-//		etatCourant.addAliment(aliment);
-//		index();
-//	}
+	public static void ajoutAlimentContenu(String aliment) {
+		/* On recupère l'utilisateur en session */
+		User user = User.find("byEmail", Security.connected()).first();
+
+		/* On recupère le dernier etat Frigo (non nulle) */
+		EtatFrigo etatCourant = user.etatFrigo.get(0);
+		etatCourant.addAliment(aliment);
+		index();
+	}
 
 	public static void supprimeAlimentListe(Long id, Long idfrigo) {
 
