@@ -10,8 +10,7 @@ import play.db.jpa.Model;
 public class Image extends Model {
 
 	@Required 
-	public String lien;
-	
+	public String lien;	
 	@ManyToOne
 	public AlimentConnu aliment;
 }
