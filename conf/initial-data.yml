@@ -302,7 +302,7 @@
    
  AlimentConnu(brie):
    nom: Brie
-   section: Laitage
+   section: Laitages
    
  Aliment(danettes):
    nom: Danettes au Chocolat
@@ -316,7 +316,7 @@
    
  AlimentConnu(danettes):
    nom: Danettes
-   section: Laitage
+   section: Laitages
    
  Aliment(huile):
    nom : Huile d'olive
