@@ -96,8 +96,7 @@
    prix: 1
    calories: 2
    lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
-   user: emilie
-
+   user: mailys
 
  Recette(recette2):
    nom: Gâteau aux noix et au citron
@@ -245,6 +244,38 @@
    nom: Liste Courante
    user: alice  
  
+ ListeDeCourse(liste5):
+   nom: Liste Soirée
+   user: mailys
+   
+ Aliment(bieres):
+   nom: Bières
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   etatFrigo: 
+   section: Boissons
+   listeDeCourse: liste5
+   
+ AlimentConnu(bieres):
+   nom: Bières
+   section: Boissons
+   
+ Aliment(juspomme):
+   nom: Jus de Pomme
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   etatFrigo: 
+   section: Boissons
+   listeDeCourse: liste5
+   
+ AlimentConnu(juspomme):
+   nom: Jus de Pomme
+   section: Boissons
+ 
  Aliment(cereales):
    nom: Céréales
    quantite: 0
@@ -254,6 +285,10 @@
    etatFrigo: 
    section: Epicerie
    listeDeCourse: liste1
+   
+ AlimentConnu(cereales):
+   nom: Céréales
+   section: Epicerie
       
  Aliment(brie):
    nom: Brie
@@ -265,6 +300,10 @@
    section: Laitages
    listeDeCourse: liste1
    
+ AlimentConnu(brie):
+   nom: Brie
+   section: Laitage
+   
  Aliment(danettes):
    nom: Danettes au Chocolat
    quantite: 0
@@ -274,6 +313,10 @@
    etatFrigo: 
    section: Laitages
    listeDeCourse: liste1
+   
+ AlimentConnu(danettes):
+   nom: Danettes
+   section: Laitage
    
  Aliment(huile):
    nom : Huile d'olive
@@ -285,6 +328,10 @@
    section: Epicerie
    listeDeCourse: liste1
    
+ AlimentConnu(huile):
+   nom: Huile d'olive
+   section: Epicerie
+   
  Aliment(cafe):
    nom : Café
    quantite: 0
@@ -295,6 +342,10 @@
    section: Epicerie
    listeDeCourse: liste1
    
+ AlimentConnu(cafe):
+   nom: Café
+   section: Epicerie
+   
  Aliment(jambon):
    nom : Jambon
    quantite: 0
@@ -304,6 +355,10 @@
    etatFrigo: 
    section: Viandes
    listeDeCourse: liste1
+   
+ AlimentConnu(jambon):
+   nom: Jambon
+   section: Viandes
    
  Aliment(pizzas):
    nom : Pizzas
@@ -342,5 +397,3 @@
  AlimentConnu(saumon):
    nom: Saumon
    section: Viandes
- 
-   

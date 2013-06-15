@@ -1,14 +1,21 @@
 #{extends 'Application/listeCour.html' /}
+
 #{set 'moreStyles'}
         #{stylesheet 'sly/font-awesome.css' /}
+        #{stylesheet 'listes.css' /}
 #{/set}
+
 #{set 'moreScripts'}
         #{script 'sly/vendor/modernizr.js' /}    
 #{/set}
 
 #{set listesActif :'active'/}
 
+<script src="/public/javascripts/jquery-1.10.1.js"></script>
+<script src="/public/bootstrap/js/bootstrap.min.js"></script>
+
 <meta charset="UTF-8">
+
 <!-- Titre -->
 <div class="container">
 	<div class="row show-grid">
@@ -17,8 +24,49 @@
 		</div>
 	</div>
 
+	<div class="span7">
+		<!-- Listes favorites -->
+		#{list items:user.listeDeCourse, as:'liste'}
+		
+			#{if liste.nom!='Liste Courante'}
+				<div class="accordion-heading">
+					<a id="nomListe" class="accordion-toggle" href="#${liste.id}"
+						data-toggle="collapse"> ${liste.nom}</a>
+				</div>
+				
+				<div id="${liste.id}" class="collapse">
+					<div class="accordion-inner surContenu">
+						<div class="contenuListe">
+							<div 
+								onmouseover="mcancelclosetime()"
+								onmouseout="mclosetime()">
+									#{list items:liste.article, as:'article'} 
+										<li>${article.nom} <a href="#">
+											<img src="/public/images/icon-add-grey.png" /></a></li>
+									#{/list}
+									<form method="post" action='@{Application.ajoutAlimentListe}'>
+										<input type="text" placeholder="Ajouter un aliment à votre liste" name="aliment" /><br />
+										<input type="submit" value="Ajouter" />
+									</form>
+							</div>
+		
+						</div>
+					</div>
+				</div>
+			#{/if}
+		#{/list}	
+			
+<!-- 	</div> -->
+	
+<!-- 	<div class="row"></div> -->
+	<div class="span7 ajout">
+		 <a id="boutonAjout" href="#" onclick="self.location.href='#''"> Ajouter une liste type
+      </a>
+	</div>
+</div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
+
 
 
 

@@ -1,0 +1,32 @@
+#nomListe {
+	color: grey;
+	font-weight: bold;
+}
+#nomListe:hover {
+	color: black;
+	text-decoration: none;
+}
+.contenuListe {
+	color: grey;
+}
+.surContenu {
+	width: 60%;
+}
+form {
+	margin-top: 10%;
+}
+.ajout {
+	margin-top: 10%;
+}
+#boutonAjout {
+	color: black;
+	margin: 6px 6px 6px 1px;
+	padding: 2px;
+	padding-top: 1px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 3px;
+}
+#boutonAjout:hover {
+	color: black;
+	text-decoration: none;
+}

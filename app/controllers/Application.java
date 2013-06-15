@@ -182,10 +182,7 @@ public class Application extends Controller {
 		renderTemplate("Application/recettes.html", recettes);
 		
 	}
-	public static void carottesRapees() {
-		render();
-	}
-
+	
 	public static void listesArchivees() {
 		render();
 	}

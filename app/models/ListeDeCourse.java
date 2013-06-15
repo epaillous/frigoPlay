@@ -33,9 +33,7 @@ public class ListeDeCourse extends Model {
 	    Aliment newAliment = new Aliment(aliment, listes, Section.Autre).save();
 	    this.article.add(newAliment);
 		} else {	
-
 			new Aliment(aliment, listes, present.section).save();
-
 		}
 	    this.save();
 	    return this;
