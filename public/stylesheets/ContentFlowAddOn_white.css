@@ -21,11 +21,11 @@
 
     /* ----- styling of items ----- */
         .ContentFlowAddOn_white .flow .item .caption {
-            background: url(img/1x1_0.5_white.png);
+            background: url(/public/images/img_coverflow/1x1_0.5_white.png);
         }
         * html .ContentFlowAddOn_white .flow .item .caption {
             background-image: none;
-            filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='img/1x1_0.5_white.png');
+            filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/public/images/img_coverflow/1x1_0.5_white.png');
         }
             .ContentFlowAddOn_white .flow .item .caption a,
             .ContentFlowAddOn_white .flow .item .caption a:link,
@@ -34,19 +34,19 @@
             .ContentFlowAddOn_white .flow .item .caption a:hover {
                 color: black;
             }
-    /* ----- scrollbar ----- */
-    .ContentFlowAddOn_white .scrollbar {
-        background: url(img/scrollbar_black.png) left center repeat-x;
-    }
+	    /* ----- scrollbar ----- */
+	    .ContentFlowAddOn_white .scrollbar {
+	        background: url(/public/images/img_coverflow/scrollbar_black.png) left center repeat-x;
+	    }
 
         .ContentFlowAddOn_white .scrollbar .slider {
-            background: url(img/slider_black.png) center center no-repeat;
+            background: url(/public/images/img_coverflow/slider_black.png) center center no-repeat;
         }
         
         /* only for IE <= 6 and a alphatransparent slider image */
         * html .ContentFlowAddOn_white .scrollbar .slider { background-image: none; }
         * html .ContentFlowAddOn_white .scrollbar .slider .virtualSlider {
-            filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src='img/slider_black.png');
+            filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src='/public/images/img_coverflow/slider_black.png');
         }
             .ContentFlowAddOn_white .scrollbar .slider .position {
                 color:gray; 
@@ -67,14 +67,14 @@
 
     /* ----- load indicator ----- */
     .ContentFlowAddOn_white .loadIndicator {
-        background: url(img/1x1_0.5_white.png);
+        background: url(/public/images/img_coverflow/1x1_0.5_white.png);
     }
     * html .ContentFlowAddOn_white .loadIndicator {
         background-image: none;
-        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='img/1x1_0.5_white.png');
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/public/images/img_coverflow/1x1_0.5_white.png');
     }
         .ContentFlowAddOn_white .loadIndicator .indicator {
-            background: url(img/loader_white.gif) center center no-repeat;
+            background: url(/public/images/img_coverflow/loader_white.gif) center center no-repeat;
         }
 
 /* ================================= */
