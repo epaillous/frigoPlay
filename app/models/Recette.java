@@ -12,9 +12,8 @@ import java.util.List;
 import java.util.Set;
 import javax.persistence.ManyToMany;
 
-@Entity
+@javax.persistence.Entity
 public class Recette extends Model {
-
 
 	@Required
 	public String nom;
