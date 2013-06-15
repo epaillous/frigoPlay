@@ -15,6 +15,10 @@
 #{set historiqueActif:'active'/}
 
  <script language="JavaScript" type="text/javascript" src="/public/javascripts/contentflow.js"  load="white"></script>
+   <script>
+            var myNewFlow = new ContentFlow('myFantasicFlow', {flowSpeedFactor: 0.8, circularFlow: false } ) ;
+        </script>
+        
 <meta charset="UTF-8">
 <!-- Titre -->
 
@@ -24,14 +28,16 @@
 			<h3>Historique</h3>
 		</div>
 	</div>
-	<div class="ContentFlow">
+	<div class="ContentFlow" id="myFantasicFlow">
 		<div class="loadIndicator">
 			<div class="indicator"></div>
 		</div>
 		<div class="flow">
-			#{list items:user.etatFrigo, as:'var'} <img class=item
+			#{list items:user.etatFrigo, as:'var'} 
+				<img class=item
 				href='@{Application.ancienEtat(var.id)}' src=${var.image}
-				title=${var.date}> #{/list}
+				title=${var.date.format('dd/MM/yy')}> 
+			#{/list}
 		</div>
 		
 		<div class="globalCaption"></div>

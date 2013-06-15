@@ -129,10 +129,7 @@ public class Application extends Controller {
 	public static void recettesFavorites() {
 		render();
 	}
-	public static void carottesRapees() {
-		render();
-	}
-
+	
 	public static void listesArchivees() {
 		render();
 	}

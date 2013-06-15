@@ -16,12 +16,14 @@
    {font-size:100%;
    font-weight:700;
    text-align:center;
-   color:#FFF;max-height:30%;
+   color: #FFF;
+   max-height:30%;
    bottom:10%;
    background:url(img/1x1_0.5_black.png);
    width:100%;
    position:absolute;
-   display:none}
+   display:none
+   }
    
    
    * html 
@@ -44,17 +46,24 @@
    {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src='img/slider_white.png');height:100%}
    
    .ContentFlow .scrollbar .slider .position
-   {top:120%;font-size:16px;font-weight:700;color:black;position:absolute;text-align:center}
-   
-   .ContentFlow .globalCaption
-   {text-align:center;
+   {top:120%;
+   font-size:16px;
    font-weight:700;
-   color:#000;
+   color:/*black*/grey;
+   position:absolute;
+   text-align:center
+   }
+   
+   .ContentFlow .globalCaption{
+   text-align:center;
+   font-weight:700;
+   color:grey/*#000*/;
    font-size:14px;
    height:20px;
    position:relative;
    z-index:1;
-   margin:2em auto}
+   margin:2em auto
+   }
    
    .ContentFlow .loadIndicator
    {width:100%;
