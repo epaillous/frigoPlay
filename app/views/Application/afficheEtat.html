@@ -39,10 +39,12 @@
 		<div id="item1" class="collapse">
 			<div class="accordion-inner">
 
-				#{list items:fruitsLegumes, as:'aliment'} <strong>${aliment.nom}
-				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
-					title="ajouter cet élément à ma liste"><img
-					src="/public/images/icon-add-grey.png" width=15px /></a>
+				#{list items:fruitsLegumes, as:'aliment'} 
+				<a href="#" class="suppr"
+					title="retirer cet élément de mon contenu"><img
+					src="/public/images/delete.png" width=15px /></a>
+				<strong>${aliment.nom}
+				</strong>
 				<aside class="dates">
 					<h5>
 						<small>Dans le frigo depuis le :
@@ -53,6 +55,10 @@
 							${aliment.peremption.format('dd/MM/yy')}</small>
 					</h5>
 				</aside>
+				<a class="ajoutContListe" href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
+					title="ajouter cet élément à ma liste">
+					Ajout
+					<img src="/public/images/icon-add-grey.png" width=15px /></a>
 				#{/list}
 			</div>
 		</div>
@@ -66,7 +72,11 @@
 		<div id="item2" class="collapse">
 			<div class="accordion-inner">
 
-				#{list items:boissons, as:'aliment'} <strong>${aliment.nom}</strong><a
+				#{list items:boissons, as:'aliment'} 
+				<a href="#" class="suppr"
+					title="retirer cet élément de mon contenu"><img
+					src="/public/images/delete.png" width=15px /></a>
+				<strong>${aliment.nom}</strong><a
 					href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"> <img
 					src="/public/images/icon-add-grey.png" width=15px />
@@ -94,7 +104,10 @@
 		<div id="item3" class="collapse">
 			<div class="accordion-inner">
 
-				#{list items:viandes, as:'aliment'} <strong>${aliment.nom}
+				#{list items:viandes, as:'aliment'}<a href="#" class="suppr"
+					title="retirer cet élément de mon contenu"><img
+					src="/public/images/delete.png" width=15px /></a> 
+				<strong>${aliment.nom}
 				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
@@ -119,7 +132,10 @@
 		</div>
 		<div id="item4" class="collapse">
 			<div class="accordion-inner">
-				#{list items:laitages, as:'aliment'} <strong>${aliment.nom}
+				#{list items:laitages, as:'aliment'}<a href="#" class="suppr"
+					title="retirer cet élément de mon contenu"><img
+					src="/public/images/delete.png" width=15px /></a> 
+				<strong>${aliment.nom}
 				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
@@ -146,7 +162,10 @@
 		</div>
 		<div id="item5" class="collapse">
 			<div class="accordion-inner">
-				#{list items:epicerie, as:'aliment'} <strong>${aliment.nom}
+				#{list items:epicerie, as:'aliment'}<a href="#" class="suppr"
+					title="retirer cet élément de mon contenu"><img
+					src="/public/images/delete.png" width=15px /></a> 
+				<strong>${aliment.nom}
 				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
@@ -173,7 +192,11 @@
 		</div>
 		<div id="item6" class="collapse">
 			<div class="accordion-inner">
-				#{list items:autre, as:'aliment'} <strong>${aliment.nom} </strong><a
+				#{list items:autre, as:'aliment'} 
+				<a href="#" class="suppr"
+					title="retirer cet élément de mon contenu"><img
+					src="/public/images/delete.png" width=15px /></a>
+				<strong>${aliment.nom} </strong><a
 					href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
 					title="ajouter cet élément à ma liste"><img
 					src="/public/images/icon-add-grey.png" width=15px /></a>
