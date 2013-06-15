@@ -4,9 +4,8 @@
         #{stylesheet 'sly/font-awesome.css' /}
         #{stylesheet 'listes.css' /}
 #{/set}
-
 #{set 'moreScripts'}
-        #{script 'sly/vendor/modernizr.js' /}    
+        #{script 'sly/vendor/modernizr.js' /}  
 #{/set}
 
 #{set listesActif :'active'/}
@@ -44,7 +43,7 @@
 										<li>${article.nom} <a href="#">
 											<img src="/public/images/icon-add-grey.png" /></a></li>
 									#{/list}
-									<form method="post" action='@{Application.ajoutAlimentListe}'>
+									<form >
 										<input type="text" placeholder="Ajouter un aliment à votre liste" name="aliment" /><br />
 										<input type="submit" value="Ajouter" />
 									</form>
@@ -66,7 +65,7 @@
 	</div>
 </div>
 
-		<script src="@{'/public/javascripts/ajoutListe.js'}"></script>
+		<script src="/public/javascripts/ajoutListe.js"></script>
 		<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
 
 

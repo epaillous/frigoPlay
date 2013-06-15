@@ -1,4 +1,4 @@
 
-function ajoutListe() {
-	var nomListe=promt('Quel est le nom de votre nouvelle liste type ?');
+function ajoutListe(){
+	var nomListe=prompt('Quel est le nom de votre nouvelle liste type ?');
 }
