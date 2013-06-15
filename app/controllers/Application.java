@@ -190,8 +190,9 @@ public class Application extends Controller {
 		
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
+		String page = session.get("page");
 		
-		if (id == null){
+		if ((id == null) && (page == "ancienEtat")){
 			String idS = session.get("idfrigo");
 			id = Long.parseLong(idS);
 		}
@@ -199,7 +200,7 @@ public class Application extends Controller {
 		/* On recupère sa liste courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
 		listeCourante.addAliment(aliment);
-		String page = session.get("page");
+		
 		
 		switch (page){
 		case "index":
