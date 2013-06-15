@@ -45,12 +45,12 @@ public class Aliment extends Model {
 	
 	
 //	/* Constructeur pour les aliments ajoutés dans le contenu du frigo */
-//	public Aliment(String nom, EtatFrigo etatFrigo, Section section) {
-//		super();
-//		this.nom = nom;
-//		this.etatFrigo=etatFrigo;
-//		this.section = section;
-//	}
+	public Aliment(String nom, EtatFrigo etatFrigo, Section section) {
+		super();
+		this.nom = nom;
+		this.etatFrigo = etatFrigo;
+		this.section = section;
+	}
 
 
 	@ManyToMany

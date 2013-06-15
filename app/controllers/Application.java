@@ -126,42 +126,61 @@ public class Application extends Controller {
 		render();
 	}
 
-	public static void recettes(Long id){
-		/* id = 1 ssi on veut accéder à recettes favorites 
-		 * id = 2 ssi on veut accéder à recettes suggérées
-		 */
+	public static void recettesFavorites() {
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
 		/* On recupère le dernier état du frigo */
 		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
 		/* On recupère la liste correspondante */
 		List<Recette> recettes= user.recettesFavorites;
-		List<Recette> recettesfav = user.recettesFavorites;
-		List<Recette> recettesSugg = null ;
-		if (id == 1){
-			session.put("page", "recettesFavorites");
-			/* la liste de recettes à afficher est la liste de recettes favorites */
-			recettes = recettesfav;
-		} else {
-			session.put("page", "recettesSuggerees");
-			/* définition des recettes suggérées :
-			 * Si l'utilisateur a dans son frigo au moins un aliment de la recette
-			 * alors la recette est suggérée
-			 */	
-			EntityManager em = JPA.em();
-			recettesSugg = Recette.find("prix like 3").fetch();
-			//	recettes = Recettes.find("user like ?", user);
-			recettes = recettesSugg;
-		}
+		session.put("page", "recettesFavorites");
 		renderArgs.put("liste", recettes);
-		renderTemplate("Application/recettes.html", recettes);		
+		renderTemplate("Application/recettes.html", recettes);
+		
 	}
 	
+//	public static void recettes(Long id){
+//		/* id = 1 ssi on veut accéder à recettes favorites 
+//		 * id = 2 ssi on veut accéder à recettes suggérées
+//		 */
+//		/* On recupère l'utilisateur en session */
+//		User user = User.find("byEmail", Security.connected()).first();
+//		/* On recupère le dernier état du frigo */
+//		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
+//		/* On recupère la liste correspondante */
+//		List<Recette> recettes= user.recettesFavorites;
+//		List<Recette> recettesfav = user.recettesFavorites;
+//		List<Recette> recettesSugg = null ;
+//		if (id == 1){
+//			session.put("page", "recettesFavorites");
+//			/* la liste de recettes à afficher est la liste de recettes favorites */
+//			recettes = recettesfav;
+//		} else {
+//			session.put("page", "recettesSuggerees");
+//			/* définition des recettes suggérées :
+//			 * Si l'utilisateur a dans son frigo au moins un aliment de la recette
+//			 * alors la recette est suggérée
+//			 */	
+//			EntityManager em = JPA.em();
+//			recettesSugg = Recette.find("prix like 3").fetch();
+//			//	recettes = Recettes.find("user like ?", user);
+//			recettes = recettesSugg;
+//		}
+//		renderArgs.put("liste", recettes);
+//		renderTemplate("Application/recettes.html", recettes);		
+//	}
+	
 	public static void recettesSuggerees() {
-		render();
-	}
-	public static void recettesFavorites() {
-		render();
+		session.put("page", "recettesSuggerees");
+		/* définition des recettes suggérées :
+		 * Si l'utilisateur a dans son frigo au moins un aliment de la recette
+		 * alors la recette est suggérée
+		 */	
+		EntityManager em = JPA.em();
+		List<Recette> recettes= Recette.find("prix like 3").fetch();
+		renderArgs.put("liste", recettes);
+		renderTemplate("Application/recettes.html", recettes);
+		
 	}
 	
 	public static void listesArchivees() {
@@ -207,26 +226,23 @@ public class Application extends Controller {
 			ancienEtat(id);
 			break;
 		case "recettesFavorites":
-			System.out.println("je redirige sur recettes Favorites");
-			recettes((long)1);
+			recettesFavorites();
 		case "recettesSuggerees":
-			recettes((long)2);
+			recettesSuggerees();
 			default:
-				System.out.println("je suis dans default");
 				break;	
 		}
 	}
 	
-//	public static void ajoutAlimentContenu(String aliment, Long id) {
-//		System.out.println("entrée dans ajoutAlimentContenu");
-//		/* On recupère l'utilisateur en session */
-//		User user = User.find("byEmail", Security.connected()).first();
-//
-//		/* On recupère sa liste courante (non nulle) */
-//		EtatFrigo etatCourant = user.etatFrigo.get(0);
-//		etatCourant.addAliment(aliment);
-//		index();
-//	}
+	public static void ajoutAlimentContenu(String aliment) {
+		/* On recupère l'utilisateur en session */
+		User user = User.find("byEmail", Security.connected()).first();
+
+		/* On recupère le dernier etat Frigo (non nulle) */
+		EtatFrigo etatCourant = user.etatFrigo.get(0);
+		etatCourant.addAliment(aliment);
+		index();
+	}
 
 	public static void supprimeAlimentListe(Long id, Long idfrigo) {
 
@@ -242,10 +258,9 @@ public class Application extends Controller {
 			ancienEtat(idfrigo);
 			break;
 		case "recettesFavorites":
-			System.out.println("je redirige sur recettes Favorites");
-			recettes((long)1);
+			recettesFavorites();
 		case "recettesSuggerees":
-			recettes((long)2);
+			recettesSuggerees();
 		default:
 			break;
 
