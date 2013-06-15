@@ -29,7 +29,294 @@
    dateDeNaissance: 1991-02-10
    nbFoyer: 3
    email: mailalesci@gmail.com
+
+ Aliment(noix):
+   nom: Noix
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+
+ Aliment(spaghetti):
+   nom: Spaghetti
+
+ Aliment(ricotta):
+   nom: Ricotta
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   section: Laitages
+
+ Aliment(citron):
+   nom: Citron
+   section: FruitsLegumes
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+
+ Aliment(moule):
+   nom: Moule
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+
+ Aliment(melon):
+   nom: Melon
+   section: FruitsLegumes
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+
+ Aliment(cocacola):
+   nom: Coca-Cola
+   quantite: 1.5L
+   calories: 3000
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+ # etatFrigo: etatfrigo6
+   section: Boissons
+   
+ AlimentConnu(cocacola):
+   nom: Coca-Cola
+   section: Boissons
+   
+ Aliment(tomate):
+   nom: Tomate
+   quantite: 250g
+   calories: 
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   #recette: recette1
+#  etatFrigo: etatfrigo6
+   section: FruitsLegumes
   
+ AlimentConnu(tomate):
+   nom: Tomate
+   section: FruitsLegumes
+   
+ Aliment(cordonbleu):
+   nom: Cordon Bleu
+   quantite: 4
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-21
+   #etatFrigo: etatfrigo6
+   section: Viandes
+
+ AlimentConnu(cordonbleu):
+   nom: Cordon Bleu
+   section: Viandes
+
+ Aliment(yaourtfruits):
+   nom: Yaourts aux Fruits
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-24
+   #etatFrigo: etatfrigo6
+   section: Laitages
+
+ AlimentConnu(yaourtfruits):
+   nom: Yaourts aux Fruits
+   section: Laitages
+
+ Aliment(emmental):
+   nom: Emmental
+   quantite: 500g
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-08-02
+   #etatFrigo: etatfrigo6
+   section: Laitages
+   
+ AlimentConnu(emmental):
+   nom: Emmental
+   section: Laitages
+
+ Aliment(compotes):
+   nom: Compotes
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-09-10
+   #etatFrigo: etatfrigo6
+   section: Autre
+
+ AlimentConnu(compotes):
+   nom: Compotes
+   section: Autre
+ 
+ Aliment(oeufs):
+   nom: Oeufs
+   quantite: 12
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-17
+  # recette: recette2
+   #etatFrigo: etatfrigo5.2
+   section: Autre
+
+ AlimentConnu(oeufs):
+   nom: Oeufs
+   section: Autre
+
+ Aliment(soupe):
+   nom: Soupe
+   quantite: 1L
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-17
+   #etatFrigo: etatfrigo5
+   section: Autre
+  
+ AlimentConnu(soupe):
+   nom: Soupe
+   section: Autre
+      
+ Aliment(bieres):
+   nom: Bières
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Boissons
+   #listeDeCourse: liste5
+   
+ AlimentConnu(bieres):
+   nom: Bières
+   section: Boissons
+   
+ Aliment(juspomme):
+   nom: Jus de Pomme
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Boissons
+   #listeDeCourse: liste5
+   
+ AlimentConnu(juspomme):
+   nom: Jus de Pomme
+   section: Boissons
+ 
+ Aliment(cereales):
+   nom: Céréales
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Epicerie
+   #listeDeCourse: liste1
+   
+ AlimentConnu(cereales):
+   nom: Céréales
+   section: Epicerie
+      
+ Aliment(brie):
+   nom: Brie
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Laitages
+   #listeDeCourse: liste1
+   
+ AlimentConnu(brie):
+   nom: Brie
+   section: Laitages
+   
+ Aliment(danettes):
+   nom: Danettes au Chocolat
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Laitages
+   #listeDeCourse: liste1
+   
+ AlimentConnu(danettes):
+   nom: Danettes
+   section: Laitages
+   
+ Aliment(huile):
+   nom : Huile d'olive
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Epicerie
+   #listeDeCourse: liste1
+   
+ AlimentConnu(huile):
+   nom: Huile d'olive
+   section: Epicerie
+   
+ Aliment(cafe):
+   nom : Café
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Epicerie
+   #listeDeCourse: liste1
+   
+ AlimentConnu(cafe):
+   nom: Café
+   section: Epicerie
+   
+ Aliment(jambon):
+   nom : Jambon
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Viandes
+   #listeDeCourse: liste1
+   
+ AlimentConnu(jambon):
+   nom: Jambon
+   section: Viandes
+   
+ Aliment(pizzas):
+   nom : Pizzas
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   section: Autre
+   #listeDeCourse: liste1
+
+ AlimentConnu(icetea):
+   nom: Ice-Tea
+   section: Boissons
+   
+ AlimentConnu(poulet):
+   nom: Poulet
+   section: Viandes
+   
+ AlimentConnu(ananas):
+   nom: Ananas
+   section: FruitsLegumes
+
+ AlimentConnu(ciboulette):
+   nom: Ciboulette
+   section: Autre
+   
+ AlimentConnu(miel):
+   nom: Miel
+   section: Autre
+   
+ AlimentConnu(orange):
+   nom: Orange
+   section: FruitsLegumes
+   
+ AlimentConnu(saumon):
+   nom: Saumon
+   section: Viandes
+ 
  EtatFrigo(etatfrigo1):
    date: 2013-05-25 08:52:20
    user: alexis
@@ -84,7 +371,8 @@
    date: 2013-06-13 23:08:07
    user: emilie
    image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
- 
+   aliment: [melon, citron, cocacola]
+
  EtatFrigo(etatfrigo7):
    date: 2013-06-13 23:08:07
    user: alice
@@ -96,7 +384,9 @@
    prix: 1
    calories: 2
    lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
-   user: mailys
+   user: [mailys, emilie]
+   ingredient: [tomate]
+   
 
  Recette(recette2):
    nom: Gâteau aux noix et au citron
@@ -105,6 +395,7 @@
    calories: 3
    lien: http://www.marmiton.org/recettes/recette_gateau-aux-noix-et-au-citron_231083.aspx
    user: emilie
+   ingredient: [noix, citron]
 
  Recette(recette3):
    nom: Spaghetti aux boulettes et à la ricotta
@@ -113,6 +404,7 @@
    calories: 2
    lien: http://www.marmiton.org/recettes/recette_spaghetti-aux-boulettes-et-a-la-ricotta_71318.aspx
    user: emilie
+   ingredient: [spaghetti, ricotta]
 
  Recette(recette4):
    nom: Salade de moules au melon
@@ -121,113 +413,8 @@
    calories: 1
    lien: http://www.marmiton.org/recettes/recette_salade-de-moules-au-melon_14132.aspx
    user: emilie
+   ingredient: [melon, moule]
 
- Aliment(cocacola):
-   nom: Coca-Cola
-   quantite: 1.5L
-   calories: 3000
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
-   etatFrigo: etatfrigo6
-   section: Boissons
-   
- AlimentConnu(cocacola):
-   nom: Coca-Cola
-   section: Boissons
-   
- Aliment(tomates):
-   nom: Tomates
-   quantite: 250g
-   calories: 
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
-   recette: recette1
-   etatFrigo: etatfrigo6
-   section: FruitsLegumes
-  
- AlimentConnu(tomates):
-   nom: Tomates
-   section: FruitsLegumes
-   
- Aliment(cordonbleu):
-   nom: Cordon Bleu
-   quantite: 4
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-21
-   etatFrigo: etatfrigo6
-   section: Viandes
-
- AlimentConnu(cordonbleu):
-   nom: Cordon Bleu
-   section: Viandes
-
- Aliment(yaourtfruits):
-   nom: Yaourts aux Fruits
-   quantite: 8
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-24
-   etatFrigo: etatfrigo6
-   section: Laitages
-
- AlimentConnu(yaourtfruits):
-   nom: Yaourts aux Fruits
-   section: Laitages
-
- Aliment(emmental):
-   nom: Emmental
-   quantite: 500g
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-08-02
-   etatFrigo: etatfrigo6
-   section: Laitages
-   
- AlimentConnu(emmental):
-   nom: Emmental
-   section: Laitages
-
- Aliment(compotes):
-   nom: Compotes
-   quantite: 8
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-09-10
-   etatFrigo: etatfrigo6
-   section: Autre
-
- AlimentConnu(compotes):
-   nom: Compotes
-   section: Autre
- 
- Aliment(oeufs):
-   nom: Oeufs
-   quantite: 12
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-17
-   recette: recette2
-   etatFrigo: etatfrigo5.2
-   section: Autre
-
- AlimentConnu(oeufs):
-   nom: Oeufs
-   section: Autre
-
- Aliment(soupe):
-   nom: Soupe
-   quantite: 1L
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-17
-   etatFrigo: etatfrigo5
-   section: Autre
-  
- AlimentConnu(soupe):
-   nom: Soupe
-   section: Autre
-   
  ListeDeCourse(liste1):
    nom: Liste Courante
    user: emilie
@@ -247,153 +434,3 @@
  ListeDeCourse(liste5):
    nom: Liste Soirée
    user: mailys
-   
- Aliment(bieres):
-   nom: Bières
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Boissons
-   listeDeCourse: liste5
-   
- AlimentConnu(bieres):
-   nom: Bières
-   section: Boissons
-   
- Aliment(juspomme):
-   nom: Jus de Pomme
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Boissons
-   listeDeCourse: liste5
-   
- AlimentConnu(juspomme):
-   nom: Jus de Pomme
-   section: Boissons
- 
- Aliment(cereales):
-   nom: Céréales
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Epicerie
-   listeDeCourse: liste1
-   
- AlimentConnu(cereales):
-   nom: Céréales
-   section: Epicerie
-      
- Aliment(brie):
-   nom: Brie
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Laitages
-   listeDeCourse: liste1
-   
- AlimentConnu(brie):
-   nom: Brie
-   section: Laitages
-   
- Aliment(danettes):
-   nom: Danettes au Chocolat
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Laitages
-   listeDeCourse: liste1
-   
- AlimentConnu(danettes):
-   nom: Danettes
-   section: Laitages
-   
- Aliment(huile):
-   nom : Huile d'olive
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Epicerie
-   listeDeCourse: liste1
-   
- AlimentConnu(huile):
-   nom: Huile d'olive
-   section: Epicerie
-   
- Aliment(cafe):
-   nom : Café
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Epicerie
-   listeDeCourse: liste1
-   
- AlimentConnu(cafe):
-   nom: Café
-   section: Epicerie
-   
- Aliment(jambon):
-   nom : Jambon
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Viandes
-   listeDeCourse: liste1
-   
- AlimentConnu(jambon):
-   nom: Jambon
-   section: Viandes
-   
- Aliment(pizzas):
-   nom : Pizzas
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   etatFrigo: 
-   section: Autre
-   listeDeCourse: liste1
-
- AlimentConnu(icetea):
-   nom: Ice-Tea
-   section: Boissons
-   
- AlimentConnu(poulet):
-   nom: Poulet
-   section: Viandes
-   
- AlimentConnu(ananas):
-   nom: Ananas
-   section: FruitsLegumes
-
- AlimentConnu(ciboulette):
-   nom: Ciboulette
-   section: Autre
-   
- AlimentConnu(miel):
-   nom: Miel
-   section: Autre
-   
- AlimentConnu(orange):
-   nom: Orange
-   section: FruitsLegumes
-   
- AlimentConnu(saumon):
-   nom: Saumon
-   section: Viandes

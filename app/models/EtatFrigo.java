@@ -23,7 +23,7 @@ public class EtatFrigo extends Model {
 
 	public String image;
 
-	@OneToMany(mappedBy="etatFrigo" )
+	@OneToMany //(mappedBy="etatFrigo" )
 	public List<Aliment> aliment;
 
 	public EtatFrigo(Date date, User user, String image,

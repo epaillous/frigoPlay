@@ -185,25 +185,71 @@ public class Application extends Controller {
 		EntityManager em = JPA.em();
 		/* requete qui fonctionne */
 		Query q3 = em.createQuery("select r from Recette r, User u where" +
-				" r.prix=?1 and u=?2 " );
+				" r.prix=?1 and u=?2" );
 		q3.setParameter(1, 3).setParameter(2, user);
 		
 		/* ingrédients dans toutes les recettes */
 		Query q4 = em.createQuery("select r.ingredient from Recette r ");
-
 		List<Aliment> ingredients = q4.getResultList();
+		System.out.println("ingrédients recettes");
 		Iterator<Aliment> i = ingredients.iterator();
 		while(i.hasNext()){
 			System.out.println(i.next().nom);
 		}
 		
-		/* recettes contenant l'ingrédient Oeuf */
-		Query qroeuf = em.createQuery("select a.nom from Aliment a where a in (select r.ingredient from Recette r)" );
-		//List<String> ingredients_nom = qroeuf.getResultList();
-		//Recette r = Recette.find("ingredient like oeuf");
-		//System.out.println(r.nom);
+		Query q4bis = em.createQuery("select distinct ig.id from Recette r, IN(r.ingredient) AS ig");
+		List<Aliment> ingredientsbis = q4bis.getResultList();
+		System.out.println("id ingrédients recettes");
+		Iterator<Aliment> ibis = ingredientsbis.iterator();
+		while(ibis.hasNext()){
+			System.out.println(ibis.next());
+		}
 		
-		recettes = (List<Recette>) q3.getResultList();
+		/* ingrédients contenus dans le frigo de l'utilisateur */
+		
+		Query q5 = em.createQuery("select f.aliment from EtatFrigo f where f=?1 ");
+		q5.setParameter(1, etatFrigo);//setParameter(2, ingredients);
+		List<Aliment> alimentsContenus = q5.getResultList();
+		System.out.println("\n\n aliments contenus frigo \n");
+		Iterator<Aliment> a = alimentsContenus.iterator();
+		while(a.hasNext()){
+			System.out.println(a.next().nom);
+		}
+		
+		Query q5bis = em.createQuery("select al.id from EtatFrigo f, IN(f.aliment) AS al where f=?1 ");
+		q5bis.setParameter(1, etatFrigo);//setParameter(2, ingredients);
+		List<Aliment> alimentsContenusbis = q5bis.getResultList();
+		System.out.println("\n\n id aliments contenus frigo \n");
+		Iterator<Aliment> abis = alimentsContenusbis.iterator();
+		while(abis.hasNext()){
+			System.out.println(abis.next());
+		}
+
+	
+		/* ingrédients des recettes qui sont dans le frigo */
+		Query ingdsfrig = em.createQuery("select ig from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
+				"f=?1 and ig.id = al.id)");
+		ingdsfrig.setParameter(1, etatFrigo);
+		List<Aliment> alimentsRecCont = ingdsfrig.getResultList();
+		System.out.println("aliments des recettes contenus dans le frigo");
+		Iterator<Aliment> idf = alimentsRecCont.iterator();
+		while(idf.hasNext()){
+			System.out.println(idf.next().nom);
+		}
+				
+		/* recettes contenant des aliments présents dans le contenu de l'utilisateur */
+		Query qRecSug = em.createQuery("select r from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
+				"f=?1 and ig.id = al.id)");
+		qRecSug.setParameter(1, etatFrigo);
+		List<Recette> recettesSugg = qRecSug.getResultList();
+		System.out.println("recettes ");
+		Iterator<Recette> r = recettesSugg.iterator();
+		while(r.hasNext()){
+			System.out.println(r.next().nom);
+		}
+		
+
+		recettes = (List<Recette>) qRecSug.getResultList();
 		
 		
 		renderArgs.put("liste", recettes);
