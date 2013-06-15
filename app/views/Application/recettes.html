@@ -58,7 +58,7 @@
 						Les aliments dont vous aurez besoin sont les suivants :
 						<ul>
 							#{list items:recette.ingredient, as:'aliment'}
-							<li>${aliment.nom} <a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'>
+							<li>${aliment.nom} <a href="#">
 								<img src="/public/images/icon-add-grey.png" /></a>
 							</li> #{/list}
 						</ul>

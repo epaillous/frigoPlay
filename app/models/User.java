@@ -43,8 +43,7 @@ public class User extends Model {
 
 	@OneToMany(mappedBy="user")
 	public List<ListeDeCourse> listeDeCourse;
-	
-	
+		
 	@ManyToMany(mappedBy="user")
 	public List<Recette> recettesFavorites;
 	
