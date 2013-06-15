@@ -3,6 +3,7 @@ package models;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 
 import play.data.validation.Required;
 import play.db.jpa.Model;
@@ -14,7 +15,9 @@ public class AlimentConnu extends Model {
 	public String nom;
 	public Section section;
 	/* lien vers les images */
-	public List<String> images;
+	
+//	@OneToMany(mappedBy="alimentConnu")
+//	public List<Image> images;
 	
 	public AlimentConnu(String nom, Section section) {
 		super();
