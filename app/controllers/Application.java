@@ -139,9 +139,11 @@ public class Application extends Controller {
 		List<Recette> recettesfav = user.recettesFavorites;
 		List<Recette> recettesSugg = null ;
 		if (id == 1){
+			session.put("page", "recettesFavorites");
 			/* la liste de recettes à afficher est la liste de recettes favorites */
 			recettes = recettesfav;
 		} else {
+			session.put("page", "recettesSuggerees");
 			/* définition des recettes suggérées :
 			 * Si l'utilisateur a dans son frigo au moins un aliment de la recette
 			 * alors la recette est suggérée
@@ -206,7 +208,13 @@ public class Application extends Controller {
 		case "ancienEtat":
 			ancienEtat(id);
 			break;
+		case "recettesFavorites":
+			System.out.println("je redirige sur recettes Favorites");
+			recettes((long)1);
+		case "recettesSuggerees":
+			recettes((long)2);
 			default:
+				System.out.println("je suis dans default");
 				break;	
 		}
 	}
@@ -235,6 +243,11 @@ public class Application extends Controller {
 		case "ancienEtat":
 			ancienEtat(idfrigo);
 			break;
+		case "recettesFavorites":
+			System.out.println("je redirige sur recettes Favorites");
+			recettes((long)1);
+		case "recettesSuggerees":
+			recettes((long)2);
 		default:
 			break;
 
