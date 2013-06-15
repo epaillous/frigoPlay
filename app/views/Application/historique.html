@@ -4,34 +4,37 @@
 #{stylesheet 'sly/normalize.css' /}
 #{stylesheet 'coverflow.css' /} 
 #{stylesheet 'contentflow.css' /}
+#{stylesheet 'contentflowAddOn_white.css' /}
 #{/set} 
 
 #{set 'moreScripts'} 
 #{script 'sly/vendor/modernizr.js' /}
 #{script 'reflex.js' /} 
 #{script 'coverflow.js' /} 
-#{script 'contentflow.js' /} 
+#{script 'contentflowAddOn_white.js' /} 
+<!-- #{script 'contentflow.js' /}  -->
+#{/set} 
+#{set historiqueActif:'active'/}
 
-#{/set} #{set historiqueActif:'active'/}
-
+ <script language="JavaScript" type="text/javascript" src="/public/javascripts/contentflow.js"  load="white"></script>
 <meta charset="UTF-8">
 <!-- Titre -->
 
+<div class="container">
 	<div class="row show-grid">
 		<div class="span12 offset1">
 			<h3>Historique</h3>
 		</div>
 	</div>
-
 	<div class="ContentFlow">
-		<div class="loadIndicator"> <div class="indicator"></div>
+		<div class="loadIndicator">
+			<div class="indicator"></div>
 		</div>
 		<div class="flow">
-			#{list items:user.etatFrigo, as:'var'}
-			 <img class=item href='@{Application.ancienEtat(var.id)}' src=${var.image} title=${var.date}> 
-				#{/list}
+			#{list items:user.etatFrigo, as:'var'} <img class=item
+				href='@{Application.ancienEtat(var.id)}' src=${var.image}
+				title=${var.date}> #{/list}
 		</div>
-		
 		
 		<div class="globalCaption"></div>
 		<div class="scrollbar">
@@ -40,7 +43,7 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 
 
 <!-- 	<div id="histo"> -->
