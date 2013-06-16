@@ -271,7 +271,15 @@
 				<input type="submit" value="Ajouter">
 			</form>
 			</div>
-		#{/if}
+		#{/if} #{elseif session.page =='ancienEtat'}
+		<div>
+			<form class="ajoutContenu" method="post"
+				action='@{Application.ajoutContenuListe(etatFrigo.id)}'>
+				 <input type="submit" value="Ajouter ce contenu à ma liste de course ">
+			</form>
+		</div>
+		#{/elseif}
+
 	</div>
 	
 		<div class="span4">

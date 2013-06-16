@@ -284,5 +284,19 @@ public class Application extends Controller {
 
 		}
 	}
+	
+	public static void ajoutContenuListe(Long id){
+		EtatFrigo etatFrigo = EtatFrigo.findById(id);
+		User user = User.find("byEmail", Security.connected()).first();
+		List<Aliment> aliments = etatFrigo.aliment;
+		Iterator iter = aliments.iterator();	
+		/* On recupère sa liste courante (non nulle) */
+		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
+		while (iter.hasNext()) {
+			Aliment cour = (Aliment) iter.next();
+		listeCourante.addAliment(cour.nom);
+		}
+		ancienEtat(id);
+	}
 
 }
