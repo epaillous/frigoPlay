@@ -3,6 +3,7 @@
 <script src="/public/javascripts/jquery-1.10.1.js"></script>
 <script src="/public/bootstrap/js/bootstrap.min.js"></script>
 <script src="/public/javascripts/ajoutAliment.js"></script>
+<script src="/public/javascripts/chevron.js"></script>
 
 #{set 'moreStyles'} 
 	#{stylesheet '/index.css' /} 
@@ -33,9 +34,16 @@
 
 		<!-- Fruits et légumes -->
 		<div class="accordion-heading">
-			<a class="accordion-toggle" href="#item1" data-toggle="collapse"><img
-				src="/public/images/carotte.svg" width=20px /> Fruits et Légumes</a>
+			<a class="accordion-toggle" href="#item1" data-toggle="collapse"
+				onclick="changeChevron()">
+				<img src="/public/images/carotte.svg" width=20px /> Fruits et Légumes
+					<script>
+						document.write('<img class="chevron" src="'+srcChevron+'" width=20px />'); 
+ 					</script> 
+			
+			</a>
 		</div>
+		
 		<div id="item1" class="collapse">
 			<div class="accordion-inner">
 
