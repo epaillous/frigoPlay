@@ -53,7 +53,7 @@
 			<div class="accordion-inner">
 
 				#{list items:fruitsLegumes, as:'aliment'} 
-				<strong><a href="#" class="suppr"
+				<strong><a href='@{Application.supprimeAlimentFrigo(aliment.id, etatFrigo.id)}' class="suppr"
 					title="retirer cet élément de mon contenu"><img
 					src="/public/images/delete.png" width=15px /></a>
 				${aliment.nom}
