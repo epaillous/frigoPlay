@@ -23,18 +23,21 @@ public class ListeDeCourse extends Model {
 	public User user;
 
 	@ManyToMany(mappedBy="listeDeCourse" )
-	public List<Aliment> article;
+	public List<AlimentConnu> article;
 	
-	public ListeDeCourse addAliment(String aliment) {
-		AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
+	public ListeDeCourse addAliment(String nom) {
+		/* on recherche si l'aliment est connu */
+		AlimentConnu present = AlimentConnu.find("byNom", nom).first();
 		List<ListeDeCourse> listes = new ArrayList<ListeDeCourse>();
-		listes.add(this);
-		if (present == null) {			
-	    Aliment newAliment = new Aliment(aliment, listes, Section.Autre).save();
-	    this.article.add(newAliment);
+		AlimentConnu newAliment = null ;
+		if (present == null) {	
+			/* si il n'était pas connu on crée un aliment de section Autre */
+			 newAliment = new AlimentConnu(nom, listes, Section.Autre).save();
 		} else {	
-			new Aliment(aliment, listes, present.section).save();
+			 newAliment = present;
 		}
+    	this.article.add(newAliment);
+		listes.add(this);
 	    this.save();
 	    return this;
 	}

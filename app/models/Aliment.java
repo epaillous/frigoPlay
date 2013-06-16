@@ -10,9 +10,6 @@ import play.db.jpa.Model;
 
 @Entity
 public class Aliment extends AlimentConnu {
-	
-// 	@Enumerated(EnumType.STRING)
-//	public Section section ;
 
 	public String quantite;
 
@@ -32,23 +29,27 @@ public class Aliment extends AlimentConnu {
 	}
 
 	
-
-	
-	
-//	/* Constructeur pour les aliments ajoutés dans le contenu du frigo */
-//	public Aliment(String nom, Date peremption, Date entreeFrigo, EtatFrigo etatFrigo, Section section) {
+//	/* Constructeur pour les aliments ajoutés en liste de courses */
+//	public Aliment(String nom, List<ListeDeCourse> listeDeCourse, Section section) {
 //		super();
 //		this.nom = nom;
-//		this.peremption = peremption;
-//		this.entreeFrigo = entreeFrigo;
-//		this.etatFrigo = etatFrigo;
+//		this.listeDeCourse = listeDeCourse;
 //		this.section = section;
 //	}
 	
-	// constructeur ajout dans le frigo Alice
-	public Aliment(String nom, String quantite, Date peremption, Date entreeFrigo, EtatFrigo etatFrigo, String section) {
+	
+//	/* Constructeur pour les aliments ajoutés dans le contenu du frigo */
+	public Aliment(String nom, Date peremption, Date entreeFrigo, EtatFrigo etatFrigo, Section section) {
 		super(nom, section);
-		this.quantite = quantite;
+		this.peremption = peremption;
+		this.entreeFrigo = entreeFrigo;
+		this.etatFrigo = etatFrigo;
+		
+	}
+	
+	// constructeur ajout dans le frigo Alice
+	public Aliment(String nom, Date peremption, Date entreeFrigo, EtatFrigo etatFrigo, String section) {
+		super(nom, section);
 		this.peremption = peremption;
 		this.entreeFrigo = entreeFrigo;
 		this.etatFrigo = etatFrigo;
@@ -69,11 +70,15 @@ public class Aliment extends AlimentConnu {
 //				this.section = Section.Epicerie;
 //		}else if (section.equals("Autre")){
 //		this.section = Section.Autre;
-//	}
-}
+	}
 
 
 
+//	@ManyToMany
+//	public List<ListeDeCourse> listeDeCourse;
+//
+//	@OneToMany	
+//	public Set<Recette> recette;
 
  	@ManyToOne
  	public EtatFrigo etatFrigo;

@@ -12,6 +12,7 @@ import javax.persistence.Query;
 import org.apache.commons.io.FileUtils;
 
 import models.Aliment;
+import models.AlimentConnu;
 import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.Recette;
@@ -53,16 +54,16 @@ public class Application extends Controller {
 
 		/* On recupère sa liste de course courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
-		List<Aliment> articles = listeCourante.article;
-		List<Aliment> artFruitsLegumes = new ArrayList<Aliment>();
-		List<Aliment> artViandes = new ArrayList<Aliment>();
-		List<Aliment> artLaitages = new ArrayList<Aliment>();
-		List<Aliment> artBoissons= new ArrayList<Aliment>() ;
-		List<Aliment> artAutre = new ArrayList<Aliment>();
-		List<Aliment> artEpicerie = new ArrayList<Aliment>();
+		List<AlimentConnu> articles = listeCourante.article;
+		List<AlimentConnu> artFruitsLegumes = new ArrayList<AlimentConnu>();
+		List<AlimentConnu> artViandes = new ArrayList<AlimentConnu>();
+		List<AlimentConnu> artLaitages = new ArrayList<AlimentConnu>();
+		List<AlimentConnu> artBoissons= new ArrayList<AlimentConnu>() ;
+		List<AlimentConnu> artAutre = new ArrayList<AlimentConnu>();
+		List<AlimentConnu> artEpicerie = new ArrayList<AlimentConnu>();
 
 		/* tri par section */
-		ApplicationUtils.misAJourListes(articles, artFruitsLegumes, artViandes, artLaitages, artBoissons, artAutre, artEpicerie);
+		ApplicationUtils.misAJourListesConnus(articles, artFruitsLegumes, artViandes, artLaitages, artBoissons, artAutre, artEpicerie);
 
 		renderArgs.put("artFruitsLegumes", artFruitsLegumes);
 		renderArgs.put("artLaitages", artLaitages);
