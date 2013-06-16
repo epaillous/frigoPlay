@@ -15,6 +15,7 @@ import models.Aliment;
 import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.Recette;
+import models.Section;
 import models.User;
 
 import play.Play;
@@ -165,8 +166,7 @@ public class Application extends Controller {
 		}
 		
 		recettes = (List<Recette>) q_RecSug.getResultList();
-		
-		
+
 		renderArgs.put("liste", recettes);
 		renderArgs.put("type_recette", "Suggestions de recettes");
 		renderTemplate("Application/recettes.html", recettes);
@@ -223,20 +223,47 @@ public class Application extends Controller {
 		}
 	}
 	
-	public static void ajoutAlimentContenu(String aliment) {
+	
+	public static void ajoutAlimentContenu(String aliment, String section) {
 		/* On recupère l'utilisateur en session */
+		System.out.println("section = " + section);
 		User user = User.find("byEmail", Security.connected()).first();
-
 		/* On recupère le dernier etat Frigo (non nulle) */
-		// EtatFrigo etatCourant = user.etatFrigo.get(0);
 		EtatFrigo etatCourant = EtatFrigo.find("user like ? order by date desc", user).first(); 
-		etatCourant.addAliment(aliment);
+		/* Si l'instance d'aliment n'existe pas, la créer */
+		/* ajouter l'instance dans le frigo */
+		//etatCourant.addAliment(aliment);
+		etatCourant.addAliment(aliment, section);
 		System.out.println("on a ajouté un aliment");
 		index();
 	}
 
 	public static void supprimeAlimentListe(Long id, Long idfrigo) {
+		/* Supprimer l'aliment de la liste */
+		Aliment aliment = Aliment.findById(id);
+		/* On récupère la liste cour */
+		/* .. */
+		aliment.delete();
+		String page = session.get("page");
 
+		switch (page){
+		case "index":
+			index();
+			break;
+		case "ancienEtat":
+			ancienEtat(idfrigo);
+			break;
+		case "recettesFavorites":
+			recettesFavorites();
+		case "recettesSuggerees":
+			recettesSuggerees();
+		default:
+			break;
+		}
+	}
+	
+	public static void supprimeAlimentFrigo(Long id, Long idfrigo) {
+		/* Supprimer l'aliment du contenu du frigo */
 		Aliment aliment = Aliment.findById(id);
 		aliment.delete();
 		String page = session.get("page");

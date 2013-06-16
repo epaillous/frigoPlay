@@ -231,16 +231,11 @@
 				<form class="ajoutContenu" method="post" action='@{Application.ajoutAlimentContenu}'>
 					<input type="text" placeholder="Ajouter un aliment présent" 
 					name="aliment" /> 
-				<div id=menuderoulant>
-					<select name=xxx>
+					<select name="section">
 					#{list models.Section, as:'sec'}
-						<option value=1>${sec}</option>
+						<option name="item">${sec.name}</option>
 					#{/list}
 					</select>
-				</div>
-				
-
-
 				<input type="submit" value="Ajouter">
 			</form>
 			</div>
