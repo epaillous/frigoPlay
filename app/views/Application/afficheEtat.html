@@ -26,7 +26,7 @@
 	</div>
 	
 	<!-- affichage des éléments présents dans le frigo -->
-	<div class="span3 liste_aliments">
+	<div class="span3 liste_bloc">
 		<h4>
 			<center>Contenu de votre frigo</center>
 		</h4>
@@ -231,10 +231,18 @@
 				<form class="ajoutContenu" method="post" action='@{Application.ajoutAlimentContenu}'>
 					<input type="text" placeholder="Ajouter un aliment présent" 
 					name="aliment" /> 
-<!-- 					<input type="text" placeholder="Catégorie de cet aliment"  -->
-<!-- 					name="section" />  -->
-					<input type="submit" value="Ajouter">
-				</form>
+				<div id=menuderoulant>
+					<select name=xxx>
+					#{list models.Section, as:'sec'}
+						<option value=1>${sec}</option>
+					#{/list}
+					</select>
+				</div>
+				
+
+
+				<input type="submit" value="Ajouter">
+			</form>
 			</div>
 		#{/if}
 	</div>

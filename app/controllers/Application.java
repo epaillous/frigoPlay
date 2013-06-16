@@ -17,7 +17,6 @@ import models.ListeDeCourse;
 import models.Recette;
 import models.User;
 
-
 import play.Play;
 import play.db.jpa.JPA;
 import play.mvc.Before;
@@ -136,41 +135,11 @@ public class Application extends Controller {
 		List<Recette> recettes= user.recettesFavorites;
 		session.put("page", "recettesFavorites");
 		renderArgs.put("liste", recettes);
+		renderArgs.put("type_recette", "Vos recettes favorites");
 		renderTemplate("Application/recettes.html", recettes);
 		
 	}
 	
-//	public static void recettes(Long id){
-//		/* id = 1 ssi on veut accéder à recettes favorites 
-//		 * id = 2 ssi on veut accéder à recettes suggérées
-//		 */
-//		/* On recupère l'utilisateur en session */
-//		User user = User.find("byEmail", Security.connected()).first();
-//		/* On recupère le dernier état du frigo */
-//		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
-//		/* On recupère la liste correspondante */
-//		List<Recette> recettes= user.recettesFavorites;
-//		List<Recette> recettesfav = user.recettesFavorites;
-//		List<Recette> recettesSugg = null ;
-//		if (id == 1){
-//			session.put("page", "recettesFavorites");
-//			/* la liste de recettes à afficher est la liste de recettes favorites */
-//			recettes = recettesfav;
-//		} else {
-//			session.put("page", "recettesSuggerees");
-//			/* définition des recettes suggérées :
-//			 * Si l'utilisateur a dans son frigo au moins un aliment de la recette
-//			 * alors la recette est suggérée
-//			 */	
-//			EntityManager em = JPA.em();
-//			recettesSugg = Recette.find("prix like 3").fetch();
-//			//	recettes = Recettes.find("user like ?", user);
-//			recettes = recettesSugg;
-//		}
-//		renderArgs.put("liste", recettes);
-//		renderTemplate("Application/recettes.html", recettes);		
-//	}
-
 	public static void recettesSuggerees() {
 		session.put("page", "recettesSuggerees");
 		/* On recupère l'utilisateur en session */
@@ -183,76 +152,23 @@ public class Application extends Controller {
 		 */	
 		List<Recette> recettes ; 
 		EntityManager em = JPA.em();
-		/* requete qui fonctionne */
-		Query q3 = em.createQuery("select r from Recette r, User u where" +
-				" r.prix=?1 and u=?2" );
-		q3.setParameter(1, 3).setParameter(2, user);
-		
-		/* ingrédients dans toutes les recettes */
-		Query q4 = em.createQuery("select r.ingredient from Recette r ");
-		List<Aliment> ingredients = q4.getResultList();
-		System.out.println("ingrédients recettes");
-		Iterator<Aliment> i = ingredients.iterator();
-		while(i.hasNext()){
-			System.out.println(i.next().nom);
-		}
-		
-		Query q4bis = em.createQuery("select distinct ig.id from Recette r, IN(r.ingredient) AS ig");
-		List<Aliment> ingredientsbis = q4bis.getResultList();
-		System.out.println("id ingrédients recettes");
-		Iterator<Aliment> ibis = ingredientsbis.iterator();
-		while(ibis.hasNext()){
-			System.out.println(ibis.next());
-		}
-		
-		/* ingrédients contenus dans le frigo de l'utilisateur */
-		
-		Query q5 = em.createQuery("select f.aliment from EtatFrigo f where f=?1 ");
-		q5.setParameter(1, etatFrigo);//setParameter(2, ingredients);
-		List<Aliment> alimentsContenus = q5.getResultList();
-		System.out.println("\n\n aliments contenus frigo \n");
-		Iterator<Aliment> a = alimentsContenus.iterator();
-		while(a.hasNext()){
-			System.out.println(a.next().nom);
-		}
-		
-		Query q5bis = em.createQuery("select al.id from EtatFrigo f, IN(f.aliment) AS al where f=?1 ");
-		q5bis.setParameter(1, etatFrigo);//setParameter(2, ingredients);
-		List<Aliment> alimentsContenusbis = q5bis.getResultList();
-		System.out.println("\n\n id aliments contenus frigo \n");
-		Iterator<Aliment> abis = alimentsContenusbis.iterator();
-		while(abis.hasNext()){
-			System.out.println(abis.next());
-		}
-
-	
-		/* ingrédients des recettes qui sont dans le frigo */
-		Query ingdsfrig = em.createQuery("select ig from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
-				"f=?1 and ig.id = al.id)");
-		ingdsfrig.setParameter(1, etatFrigo);
-		List<Aliment> alimentsRecCont = ingdsfrig.getResultList();
-		System.out.println("aliments des recettes contenus dans le frigo");
-		Iterator<Aliment> idf = alimentsRecCont.iterator();
-		while(idf.hasNext()){
-			System.out.println(idf.next().nom);
-		}
-				
+			
 		/* recettes contenant des aliments présents dans le contenu de l'utilisateur */
-		Query qRecSug = em.createQuery("select r from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
+		Query q_RecSug = em.createQuery("select r from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
 				"f=?1 and ig.id = al.id)");
-		qRecSug.setParameter(1, etatFrigo);
-		List<Recette> recettesSugg = qRecSug.getResultList();
+		q_RecSug.setParameter(1, etatFrigo);
+		List<Recette> recettesSugg = q_RecSug.getResultList();
 		System.out.println("recettes ");
 		Iterator<Recette> r = recettesSugg.iterator();
 		while(r.hasNext()){
 			System.out.println(r.next().nom);
 		}
 		
-
-		recettes = (List<Recette>) qRecSug.getResultList();
+		recettes = (List<Recette>) q_RecSug.getResultList();
 		
 		
 		renderArgs.put("liste", recettes);
+		renderArgs.put("type_recette", "Suggestions de recettes");
 		renderTemplate("Application/recettes.html", recettes);
 		
 	}
@@ -275,7 +191,6 @@ public class Application extends Controller {
 		render();
 	}   
 
-	
 	public static void ajoutAlimentListe(String aliment, Long id) {
 		
 		/* On recupère l'utilisateur en session */
