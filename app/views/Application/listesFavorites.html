@@ -15,6 +15,7 @@
 
 <meta charset="UTF-8">
 
+
 <!-- Titre -->
 <div class="container">
 	<div class="row show-grid">
@@ -27,7 +28,8 @@
 		<!-- Listes favorites -->
 		#{list items:user.listeDeCourse, as:'liste'}
 		
-			#{if liste.nom!='Liste Courante'}
+			<!-- Toutes les liste de l'utilisateur qui ne sont pas sa liste courante sont des listes favorites -->
+			#{if liste.nom!='Liste Courante'} 
 				<div class="accordion-heading">
 					<a id="nomListe" class="accordion-toggle" href="#${liste.id}"
 						data-toggle="collapse"> ${liste.nom}</a>
