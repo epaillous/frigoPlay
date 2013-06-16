@@ -78,7 +78,8 @@ Chaque fichier .html correspond à une vue différente.
 Le contrôleur permet de faire le lien entre le modèle et les vues, principalement via la classe Application.
 Cette classe contient une méthode par page qui renvoie à chaque fois les informations nécéssaires pour la visualisation de la page en question.
 Pour que le contrôleur soit bien appelé lors du chargement d'une page, il ne faut pas oublier d'ajouter le lien dans le fichier "routes" situé dans le dossier conf/.
-A AJOUTER: explications sur les autres dossiers
+La classe Upload permet de réceptionner les images envoyées par le smartphone Androïd. 
+Enfin, la classe Security se charge de gérer les connexions des utilisateurs à leur compte (il s'agit d'un module fourni par Play!).
 
   **D/ Les autres dossiers de app/**
 
