@@ -8,7 +8,7 @@ Ce dépôt suit donc l'architecture fournie par Play!, et est ainsi constitué d
    * app  : contient le modèle MVC au coeur du projet
    * conf  : contient les fichiers de configuration 
    * public  : contient les fichiers nécéssaires à l'exécution du code principal du dossier app (notamment les scripts, les fichiers .css et les images)
-   * test
+   * test : contient des tests basiques générés par Play!
 
 
 ## 1. Présentation globale du projet
@@ -29,8 +29,8 @@ Pour utiliser ce dépôt, vous devez au préalable avoir installé
    * Eclipse (http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/junosr2) 
    * Play! 1.2.5 (http://www.playframework.com/download) sur votre machine sous Windows 7
    * l'application GitHub (http://windows.github.com/)
-Nous avons choisi cette version car elle permet l'utilisation du CRUD contrairement aux versions plus récentes. 
-Cet outil s'est révélé assez délicat à aborder (voir les tutoriels http://www.playframework.com/documentation/2.1.1/Home), mais précieux une fois sa prise en main terminée.
+Nous avons choisi la version 1.2.5 de Play! car elle permet l'utilisation du module CRUD contrairement aux versions plus récentes. 
+Cet outil s'est révélé assez délicat à aborder (voir les tutoriels http://www.playframework.com/documentation/1.2.5/Home), mais précieux une fois sa prise en main terminée.
 
 Une fois ces logiciels installés, voici la démarche à suivre :
    * Ouvrez l'application GitHub sur votre ordinateur. Ajouter frigoPlay à vos Repositories.
@@ -69,7 +69,9 @@ Le modèle contient toutes les classes nécéssaires au bon fonctionnement du si
 Chaque fichier .html correspond à une vue différente. 
 * Le fichier main.html est contenu dans toutes les autres pages : c'est lui qui permet d'afficher la barre de navigation et ainsi de poser le décor global du site.
 * Toutes les autres pages sont contenues dans le dossier Application/
-* A AJOUTER: explications pour les autres dossiers 
+* Le dossier Mails contient les vues correspondants aux e-mails envoyés en cas d'alert de date de péremption sur un aliment.
+* Le dossier errors contient les vues des erreurs types (page non trouvée, etc.) 
+* Le dossier Users correspond à l'affichage de la liste des utilisateurs en base de données en utilisant le module CRUD.
   
   **C/ Le contrôleur**
 
@@ -80,7 +82,12 @@ A AJOUTER: explications sur les autres dossiers
 
   **D/ Les autres dossiers de app/**
 
-A FAIRE
+Le package job permet de gérer la vérification des dates de péremption des aliments de manière régulière (toutes les 24 heures). En cas de détection d'un aliment périmé, 
+ce job envoie une alerte e-mail à l'utilisateur à l'aide des fonctions du package Notifiers. 
+Le package utils contient les fonctions utiles à l'ensemble du projet, notamment dans le controlleur (ApplicationUtil.java). Il contient également la classe TraitementImage.java qui, à terme, 
+se chargera de l'analyse de l'image une fois receptionnée sur la plateforme Web. 
+Le package par défaut contient la classe Bootstrap.java qui permet de charger des données (via le fichier conf/initial-data.yml) dans la base de données au lancement du serveur.
+
 
 
 ## 4. Annexe : le dossier public/
