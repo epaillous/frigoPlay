@@ -21,7 +21,11 @@
 <div class="container">
 	<div class="row show-grid">
 			<div class="span12 offset1">
-			<h3>Voici l'état de votre frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h3>
+			<c:choose>
+    <c:when test="${session.page == index}"><h3>Voici l'état actuel de votre frigo</h3></c:when>
+    <c:otherwise><h3>Voici l'état de votre frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h3></c:otherwise>
+</c:choose>
+			
 			</div>
 
 	</div>

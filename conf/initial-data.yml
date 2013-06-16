@@ -141,15 +141,13 @@
    nom: Compotes
    section: Autre
 
- #################### Aliments du frigo d'alice #################################
- 
-  Aliment(cocacola):
+ Aliment(cocacola):
    nom: Coca-Cola
    quantite: 1.5L
    calories: 3000
    peremption: 2013-06-17
    entreeFrigo: 2013-06-11
-   etatFrigo: etatfrigo7
+   #etatFrigo: etatfrigo7
    section: Boissons
    
  Aliment(tomates):
@@ -158,8 +156,8 @@
    calories: 
    peremption: 2013-06-17
    entreeFrigo: 2013-06-11
-   recette: recette1
-   etatFrigo: etatfrigo7
+   #recette: recette1
+   #etatFrigo: etatfrigo7
    section: FruitsLegumes
    
  Aliment(cordonbleu):
@@ -168,7 +166,7 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-21
-   etatFrigo: etatfrigo7
+   #etatFrigo: etatfrigo7
    section: Viandes
 
  Aliment(yaourtfruits):
@@ -177,7 +175,7 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-24
-   etatFrigo: etatfrigo7
+   #etatFrigo: etatfrigo7
    section: Laitages
 
  Aliment(emmental):
@@ -186,7 +184,7 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-08-02
-   etatFrigo: etatfrigo7
+   #etatFrigo: etatfrigo7
    section: Laitages
 
  Aliment(compotes):
@@ -195,10 +193,8 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-09-10
-   etatFrigo: etatfrigo7
+   #etatFrigo: etatfrigo7
    section: Autre
-   
- #################### Aliments du dernier frigo de mailys #######################
  
  Aliment(oeufs):
    nom: Oeufs
@@ -214,7 +210,6 @@
    nom: Oeufs
    section: Autre
 
-##################### Aliments du dernier frigo d'alexis #######################
  Aliment(soupe):
    nom: Soupe
    quantite: 1L
@@ -255,9 +250,7 @@
  AlimentConnu(juspomme):
    nom: Jus de Pomme
    section: Boissons
-  
-  ########################### Aliments liste courante Emilie ##################
- 
+
  Aliment(cereales):
    nom: Céréales
    quantite: 0
@@ -351,8 +344,6 @@
    #etatFrigo: 
    section: Autre
    #listeDeCourse: liste1
-
-################# Aliments connus en base de données ###################
 
  AlimentConnu(icetea):
    nom: Ice-Tea
