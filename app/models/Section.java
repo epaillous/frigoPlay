@@ -13,18 +13,20 @@ import play.db.jpa.Model;
 
 
 public enum Section {
-	FruitsLegumes("Fruits et Légumes"), 
-	Boissons("Boissons"),
-	Laitages("Laitages"), 
-	Viandes("Viandes et Poissons"),
-	Autre("Autre"),
-	Epicerie("Epicerie");
+	FruitsLegumes("Fruits et Légumes","/public/images/carotte.svg"),
+	Boissons("Boissons","/public/images/boissons.svg"),
+	Laitages("Laitages", "/public/images/lait.svg"), 
+	Viandes("Viandes et Poissons", "/public/images/steak.svg"),
+	Autre("Autre", "/public/images/condiments.svg"),
+	Epicerie("Epicerie", "/public/images/confiture.svg");
 
 	private String name = "";
-
+	private String icone = "";
 	//Constructeur
-	Section(String name){
+	
+	Section(String name, String icone){
 		this.name = name;
+		this.icone = icone;
 	}
 
 	public String toString(){

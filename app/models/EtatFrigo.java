@@ -36,23 +36,27 @@ public class EtatFrigo extends Model {
 	}
 	
 //	public EtatFrigo addAliment(String aliment) {
-//		AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
-//		if (present == null) {			
-//			Aliment newAliment = new Aliment(aliment, this, Section.Autre).save();
-//			this.aliment.add(newAliment);
-//		}
-//	    this.save();
-//	    return this;
+//	AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
+//	if (present == null) {			
+//		Aliment newAliment = new Aliment(aliment, this, Section.Autre).save();
+//		this.aliment.add(newAliment);
+//	} else {	
+//	new Aliment(aliment,new Date(), new Date(), this, present.section).save();
+//	this.aliment.add(newAliment);
 //	}
+//    this.save();
+//    return this;
+// }
 	
-	public EtatFrigo addAliment(String aliment) {
-		AlimentConnu present = AlimentConnu.find("byNom", aliment).first();
-		if (present == null) {			
-	    Aliment newAliment = new Aliment(aliment, new Date(), new Date(), this, Section.Autre).save();
-	    this.aliment.add(newAliment);
-		} else {	
-			new Aliment(aliment,new Date(), new Date(), this, present.section).save();
+	public EtatFrigo addAliment(String aliment, String section) {
+		Aliment newAliment;
+		if ((newAliment = Aliment.find("byNom", aliment).first()) == null ){
+			/* cet Aliment n'existe pas */
+			System.out.println("l'aliment n'existe pas");
+			newAliment = new Aliment(aliment, new Date(), new Date(), this, section).save();
+			System.out.println("section = " + section);
 		}
+	    this.aliment.add(newAliment);
 	    this.save();
 	    return this;
 	}
