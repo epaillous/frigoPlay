@@ -21,11 +21,12 @@
 <div class="container">
 	<div class="row show-grid">
 			<div class="span12 offset1">
-			<c:choose>
-    <c:when test="${session.page == index}"><h3>Voici l'état actuel de votre frigo</h3></c:when>
-    <c:otherwise><h3>Voici l'état de votre frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h3></c:otherwise>
-</c:choose>
-			
+			#{if session.page == 'index'}
+    <h3>Voici l'état actuel de votre frigo</h3>
+    #{/if}
+    #{elseif session.page =='ancienEtat'} 
+    <h3>Voici l'état de votre frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h3>
+	#{/elseif}		
 			</div>
 
 	</div>
@@ -69,7 +70,11 @@
 					<h5>
 						<small>Périme le :
 							${aliment.peremption.format('dd/MM/yy')}</small>
+					#{if aliment.peremption.format('dd/MM/yy') < new Date().format("dd/MM/yy")}
+					<img src="/public/images/warning.png" width=15px title="aliment périmé !" />
+					#{/if}
 					</h5>
+					
 				</aside>
 				
 				#{/list}
