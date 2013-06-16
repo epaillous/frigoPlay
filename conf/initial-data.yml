@@ -29,136 +29,64 @@
    dateDeNaissance: 1991-02-10
    nbFoyer: 3
    email: mailalesci@gmail.com
-  
-################### Etat frigo d'alexis #######################
 
- EtatFrigo(etatfrigo1):
-   date: 2013-05-25 08:52:20
-   user: alexis
-   image: /public/img/2013-05-25-08.52.20.JPG
-
- EtatFrigo(etatfrigo2):
-   date: 2013-05-25 08:52:24
-   user: alexis
-   image: /public/img/2013-05-25-08.52.24.JPG
- 
- EtatFrigo(etatfrigo3):
-   date: 2013-05-25 12:59:50
-   user: alexis
-   image: /public/img/2013-05-25-12.59.50.JPG
-
- EtatFrigo(etatfrigo4):
-   date: 2013-05-25 12:59:59
-   user: alexis
-   image: /public/img/2013-05-25-12.59.59.JPG
+ Aliment(noix):
+   nom: Noix
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
    
- EtatFrigo(etatfrigo5):
-   date: 2013-05-27 16:26:57
-   user: alexis
-   image: /public/img/2013-05-27-16.26.57.JPG   
-   
-################ Etat frigo de mailys #############################
+ Aliment(spaghetti):
+   nom: Spaghetti
 
- EtatFrigo(etatfrigo1.2):
-   date: 2013-05-25 08:52:20
-   user: mailys
-   image: /public/img/2013-05-25-08.52.20.JPG
 
- EtatFrigo(etatfrigo2.2):
-   date: 2013-05-25 08:52:24
-   user: mailys
-   image: /public/img/2013-05-25-08.52.24.JPG
- 
- EtatFrigo(etatfrigo3.2):
-   date: 2013-05-25 12:59:50
-   user: mailys
-   image: /public/img/2013-05-25-12.59.50.JPG
+ Aliment(ricotta):
+   nom: Ricotta
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   section: Laitages
 
- EtatFrigo(etatfrigo4.2):
-   date: 2013-05-25 12:59:59
-   user: mailys
-   image: /public/img/2013-05-25-12.59.59.JPG
-   
- EtatFrigo(etatfrigo5.2):
-   date: 2013-05-27 16:26:57
-   user: mailys
-   image: /public/img/2013-05-27-16.26.57.JPG  
-    
-  ################## Etat frigo d'emilie ########################
-  
- EtatFrigo(etatfrigo6):
-   date: 2013-06-13 23:08:07
-   user: emilie
-   image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
- 
- #################### Etat frigo d'alice ##########################
- 
- EtatFrigo(etatfrigo7):
-   date: 2013-06-13 23:08:07
-   user: alice
-   image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
-   
- ######################### Recettes favorites de mailys #############
-     
- Recette(recette1):
-   nom: Gratin de tomates
-   difficulté : 3
-   prix: 1
-   calories: 2
-   lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
-   user: mailys
-   
-   ####################### Recettes favorites d'emilie ################
+ Aliment(citron):
+   nom: Citron
+   section: FruitsLegumes
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
 
- Recette(recette2):
-   nom: Gâteau aux noix et au citron
-   difficulté : 3
-   prix: 1
-   calories: 3
-   lien: http://www.marmiton.org/recettes/recette_gateau-aux-noix-et-au-citron_231083.aspx
-   user: emilie
+ Aliment(moule):
+   nom: Moule
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
 
- Recette(recette3):
-   nom: Spaghetti aux boulettes et à la ricotta
-   difficulté : 2
-   prix: 2
-   calories: 2
-   lien: http://www.marmiton.org/recettes/recette_spaghetti-aux-boulettes-et-a-la-ricotta_71318.aspx
-   user: emilie
+ Aliment(melon):
+   nom: Melon
+   section: FruitsLegumes
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
 
- Recette(recette4):
-   nom: Salade de moules au melon
-   difficulté : 1
-   prix: 3
-   calories: 1
-   lien: http://www.marmiton.org/recettes/recette_salade-de-moules-au-melon_14132.aspx
-   user: emilie
-   
  Aliment(cocacola):
    nom: Coca-Cola
    quantite: 1.5L
    calories: 3000
    peremption: 2013-06-17
    entreeFrigo: 2013-06-11
-   etatFrigo: etatfrigo6
+ # etatFrigo: etatfrigo6
    section: Boissons
    
  AlimentConnu(cocacola):
    nom: Coca-Cola
    section: Boissons
    
- Aliment(tomates):
-   nom: Tomates
+ Aliment(tomate):
+   nom: Tomate
    quantite: 250g
    calories: 
    peremption: 2013-06-17
    entreeFrigo: 2013-06-11
-   recette: recette1
-   etatFrigo: etatfrigo6
+   #recette: recette1
+#  etatFrigo: etatfrigo6
    section: FruitsLegumes
   
- AlimentConnu(tomates):
-   nom: Tomates
+ AlimentConnu(tomate):
+   nom: Tomate
    section: FruitsLegumes
    
  Aliment(cordonbleu):
@@ -167,7 +95,7 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-21
-   etatFrigo: etatfrigo6
+   #etatFrigo: etatfrigo6
    section: Viandes
 
  AlimentConnu(cordonbleu):
@@ -180,7 +108,7 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-24
-   etatFrigo: etatfrigo6
+   #etatFrigo: etatfrigo6
    section: Laitages
 
  AlimentConnu(yaourtfruits):
@@ -193,7 +121,7 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-08-02
-   etatFrigo: etatfrigo6
+   #etatFrigo: etatfrigo6
    section: Laitages
    
  AlimentConnu(emmental):
@@ -206,7 +134,7 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-09-10
-   etatFrigo: etatfrigo6
+   #etatFrigo: etatfrigo6
    section: Autre
 
  AlimentConnu(compotes):
@@ -278,8 +206,8 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-17
-   recette: recette2
-   etatFrigo: etatfrigo5.2
+  # recette: recette2
+   #etatFrigo: etatfrigo5.2
    section: Autre
 
  AlimentConnu(oeufs):
@@ -293,48 +221,22 @@
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-17
-   etatFrigo: etatfrigo5
+   #etatFrigo: etatfrigo5
    section: Autre
   
  AlimentConnu(soupe):
    nom: Soupe
    section: Autre
-   
-############################### Liste courante des utilisateurs ################
 
- ListeDeCourse(liste1):
-   nom: Liste Courante
-   user: emilie
-
- ListeDeCourse(liste2):
-   nom: Liste Courante
-   user: mailys
-
- ListeDeCourse(liste3):
-   nom: Liste Courante
-   user: alexis
-
- ListeDeCourse(liste4):
-   nom: Liste Courante
-   user: alice  
-   
- ######################### Liste favorite mailys ###############################
- 
- ListeDeCourse(liste5):
-   nom: Liste Soirée
-   user: mailys
- 
- ######################## Aliments liste soirée mailys ######################### 
-   
  Aliment(bieres):
    nom: Bières
    quantite: 0
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Boissons
-   listeDeCourse: liste5
+   #listeDeCourse: liste5
    
  AlimentConnu(bieres):
    nom: Bières
@@ -346,9 +248,9 @@
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Boissons
-   listeDeCourse: liste5
+   #listeDeCourse: liste5
    
  AlimentConnu(juspomme):
    nom: Jus de Pomme
@@ -362,9 +264,9 @@
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Epicerie
-   listeDeCourse: liste1
+   #listeDeCourse: liste1
    
  AlimentConnu(cereales):
    nom: Céréales
@@ -376,9 +278,9 @@
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Laitages
-   listeDeCourse: liste1
+   #listeDeCourse: liste1
    
  AlimentConnu(brie):
    nom: Brie
@@ -390,9 +292,9 @@
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Laitages
-   listeDeCourse: liste1
+   #listeDeCourse: liste1
    
  AlimentConnu(danettes):
    nom: Danettes
@@ -404,9 +306,9 @@
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Epicerie
-   listeDeCourse: liste1
+   #listeDeCourse: liste1
    
  AlimentConnu(huile):
    nom: Huile d'olive
@@ -418,9 +320,9 @@
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Epicerie
-   listeDeCourse: liste1
+   #listeDeCourse: liste1
    
  AlimentConnu(cafe):
    nom: Café
@@ -432,9 +334,9 @@
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Viandes
-   listeDeCourse: liste1
+   #listeDeCourse: liste1
    
  AlimentConnu(jambon):
    nom: Jambon
@@ -446,9 +348,9 @@
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   etatFrigo: 
+   #etatFrigo: 
    section: Autre
-   listeDeCourse: liste1
+   #listeDeCourse: liste1
 
 ################# Aliments connus en base de données ###################
 
@@ -479,12 +381,121 @@
  AlimentConnu(saumon):
    nom: Saumon
    section: Viandes
-   
- AlimentConnu(concombre):
-   nom: Concombre
-   section: FruitsLegumes
  
- AlimentConnu(framboises):
-   nom: Framboises
-   section : FruitsLegumes
+ EtatFrigo(etatfrigo1):
+   date: 2013-05-25 08:52:20
+   user: alexis
+   image: /public/img/2013-05-25-08.52.20.JPG
+
+ EtatFrigo(etatfrigo2):
+   date: 2013-05-25 08:52:24
+   user: alexis
+   image: /public/img/2013-05-25-08.52.24.JPG
+ 
+ EtatFrigo(etatfrigo3):
+   date: 2013-05-25 12:59:50
+   user: alexis
+   image: /public/img/2013-05-25-12.59.50.JPG
+
+ EtatFrigo(etatfrigo4):
+   date: 2013-05-25 12:59:59
+   user: alexis
+   image: /public/img/2013-05-25-12.59.59.JPG
    
+ EtatFrigo(etatfrigo5):
+   date: 2013-05-27 16:26:57
+   user: alexis
+   image: /public/img/2013-05-27-16.26.57.JPG   
+
+ EtatFrigo(etatfrigo1.2):
+   date: 2013-05-25 08:52:20
+   user: mailys
+   image: /public/img/2013-05-25-08.52.20.JPG
+
+ EtatFrigo(etatfrigo2.2):
+   date: 2013-05-25 08:52:24
+   user: mailys
+   image: /public/img/2013-05-25-08.52.24.JPG
+ 
+ EtatFrigo(etatfrigo3.2):
+   date: 2013-05-25 12:59:50
+   user: mailys
+   image: /public/img/2013-05-25-12.59.50.JPG
+
+ EtatFrigo(etatfrigo4.2):
+   date: 2013-05-25 12:59:59
+   user: mailys
+   image: /public/img/2013-05-25-12.59.59.JPG
+   
+ EtatFrigo(etatfrigo5.2):
+   date: 2013-05-27 16:26:57
+   user: mailys
+   image: /public/img/2013-05-27-16.26.57.JPG  
+    
+ EtatFrigo(etatfrigo6):
+   date: 2013-06-13 23:08:07
+   user: emilie
+   image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
+   aliment: [melon, citron, cocacola, tomate]
+
+ EtatFrigo(etatfrigo7):
+   date: 2013-06-13 23:08:07
+   user: alice
+   image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
+     
+ Recette(recette1):
+   nom: Gratin de tomates
+   difficulté : 3
+   prix: 1
+   calories: 2
+   lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
+   user: [mailys, emilie]
+   ingredient: [tomate]
+   
+
+ Recette(recette2):
+   nom: Gâteau aux noix et au citron
+   difficulté : 3
+   prix: 1
+   calories: 3
+   lien: http://www.marmiton.org/recettes/recette_gateau-aux-noix-et-au-citron_231083.aspx
+   user: emilie
+   ingredient: [noix, citron]
+
+ Recette(recette3):
+   nom: Spaghetti aux boulettes et à la ricotta
+   difficulté : 2
+   prix: 2
+   calories: 2
+   lien: http://www.marmiton.org/recettes/recette_spaghetti-aux-boulettes-et-a-la-ricotta_71318.aspx
+   user: emilie
+   ingredient: [spaghetti, ricotta]
+
+ Recette(recette4):
+   nom: Salade de moules au melon
+   difficulté : 1
+   prix: 3
+   calories: 1
+   lien: http://www.marmiton.org/recettes/recette_salade-de-moules-au-melon_14132.aspx
+   user: emilie
+   ingredient: [melon, moule]
+
+ ListeDeCourse(liste1):
+   nom: Liste Courante
+   user: emilie
+
+ ListeDeCourse(liste2):
+   nom: Liste Courante
+   user: mailys
+
+ ListeDeCourse(liste3):
+   nom: Liste Courante
+   user: alexis
+
+ ListeDeCourse(liste4):
+   nom: Liste Courante
+   user: alice  
+ 
+ ListeDeCourse(liste5):
+   nom: Liste Soirée
+   user: mailys

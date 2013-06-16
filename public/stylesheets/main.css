@@ -131,7 +131,7 @@ body {
 }
 
 /* liste Aliments */
-.liste_aliments {
+.liste_bloc {
 	display: inline-block;
 	vertical-align: top;
 	min-height: 20px;

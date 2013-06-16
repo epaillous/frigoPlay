@@ -15,8 +15,8 @@ import models.Aliment;
 import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.Recette;
+import models.Section;
 import models.User;
-
 
 import play.Play;
 import play.db.jpa.JPA;
@@ -136,41 +136,11 @@ public class Application extends Controller {
 		List<Recette> recettes= user.recettesFavorites;
 		session.put("page", "recettesFavorites");
 		renderArgs.put("liste", recettes);
+		renderArgs.put("type_recette", "Vos recettes favorites");
 		renderTemplate("Application/recettes.html", recettes);
 		
 	}
 	
-//	public static void recettes(Long id){
-//		/* id = 1 ssi on veut accéder à recettes favorites 
-//		 * id = 2 ssi on veut accéder à recettes suggérées
-//		 */
-//		/* On recupère l'utilisateur en session */
-//		User user = User.find("byEmail", Security.connected()).first();
-//		/* On recupère le dernier état du frigo */
-//		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
-//		/* On recupère la liste correspondante */
-//		List<Recette> recettes= user.recettesFavorites;
-//		List<Recette> recettesfav = user.recettesFavorites;
-//		List<Recette> recettesSugg = null ;
-//		if (id == 1){
-//			session.put("page", "recettesFavorites");
-//			/* la liste de recettes à afficher est la liste de recettes favorites */
-//			recettes = recettesfav;
-//		} else {
-//			session.put("page", "recettesSuggerees");
-//			/* définition des recettes suggérées :
-//			 * Si l'utilisateur a dans son frigo au moins un aliment de la recette
-//			 * alors la recette est suggérée
-//			 */	
-//			EntityManager em = JPA.em();
-//			recettesSugg = Recette.find("prix like 3").fetch();
-//			//	recettes = Recettes.find("user like ?", user);
-//			recettes = recettesSugg;
-//		}
-//		renderArgs.put("liste", recettes);
-//		renderTemplate("Application/recettes.html", recettes);		
-//	}
-
 	public static void recettesSuggerees() {
 		session.put("page", "recettesSuggerees");
 		/* On recupère l'utilisateur en session */
@@ -183,30 +153,22 @@ public class Application extends Controller {
 		 */	
 		List<Recette> recettes ; 
 		EntityManager em = JPA.em();
-		/* requete qui fonctionne */
-		Query q3 = em.createQuery("select r from Recette r, User u where" +
-				" r.prix=?1 and u=?2 " );
-		q3.setParameter(1, 3).setParameter(2, user);
-		
-		/* ingrédients dans toutes les recettes */
-		Query q4 = em.createQuery("select r.ingredient from Recette r ");
-
-		List<Aliment> ingredients = q4.getResultList();
-		Iterator<Aliment> i = ingredients.iterator();
-		while(i.hasNext()){
-			System.out.println(i.next().nom);
+			
+		/* recettes contenant des aliments présents dans le contenu de l'utilisateur */
+		Query q_RecSug = em.createQuery("select r from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
+				"f=?1 and ig.id = al.id)");
+		q_RecSug.setParameter(1, etatFrigo);
+		List<Recette> recettesSugg = q_RecSug.getResultList();
+		System.out.println("recettes ");
+		Iterator<Recette> r = recettesSugg.iterator();
+		while(r.hasNext()){
+			System.out.println(r.next().nom);
 		}
 		
-		/* recettes contenant l'ingrédient Oeuf */
-		Query qroeuf = em.createQuery("select a.nom from Aliment a where a in (select r.ingredient from Recette r)" );
-		//List<String> ingredients_nom = qroeuf.getResultList();
-		//Recette r = Recette.find("ingredient like oeuf");
-		//System.out.println(r.nom);
-		
-		recettes = (List<Recette>) q3.getResultList();
-		
-		
+		recettes = (List<Recette>) q_RecSug.getResultList();
+
 		renderArgs.put("liste", recettes);
+		renderArgs.put("type_recette", "Suggestions de recettes");
 		renderTemplate("Application/recettes.html", recettes);
 		
 	}
@@ -229,7 +191,6 @@ public class Application extends Controller {
 		render();
 	}   
 
-	
 	public static void ajoutAlimentListe(String aliment, Long id) {
 		
 		/* On recupère l'utilisateur en session */
@@ -262,20 +223,47 @@ public class Application extends Controller {
 		}
 	}
 	
-	public static void ajoutAlimentContenu(String aliment) {
+	
+	public static void ajoutAlimentContenu(String aliment, String section) {
 		/* On recupère l'utilisateur en session */
+		System.out.println("section = " + section);
 		User user = User.find("byEmail", Security.connected()).first();
-
 		/* On recupère le dernier etat Frigo (non nulle) */
-		// EtatFrigo etatCourant = user.etatFrigo.get(0);
 		EtatFrigo etatCourant = EtatFrigo.find("user like ? order by date desc", user).first(); 
-		etatCourant.addAliment(aliment);
+		/* Si l'instance d'aliment n'existe pas, la créer */
+		/* ajouter l'instance dans le frigo */
+		//etatCourant.addAliment(aliment);
+		etatCourant.addAliment(aliment, section);
 		System.out.println("on a ajouté un aliment");
 		index();
 	}
 
 	public static void supprimeAlimentListe(Long id, Long idfrigo) {
+		/* Supprimer l'aliment de la liste */
+		Aliment aliment = Aliment.findById(id);
+		/* On récupère la liste cour */
+		/* .. */
+		aliment.delete();
+		String page = session.get("page");
 
+		switch (page){
+		case "index":
+			index();
+			break;
+		case "ancienEtat":
+			ancienEtat(idfrigo);
+			break;
+		case "recettesFavorites":
+			recettesFavorites();
+		case "recettesSuggerees":
+			recettesSuggerees();
+		default:
+			break;
+		}
+	}
+	
+	public static void supprimeAlimentFrigo(Long id, Long idfrigo) {
+		/* Supprimer l'aliment du contenu du frigo */
 		Aliment aliment = Aliment.findById(id);
 		aliment.delete();
 		String page = session.get("page");

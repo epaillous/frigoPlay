@@ -30,7 +30,7 @@ public class Recette extends Model {
 	@Required
 	public String lien;
 
-	@ManyToMany(mappedBy="recette" )
+	@ManyToMany //(mappedBy="recette")
 	public List<Aliment> ingredient;
 	
 	@ManyToMany

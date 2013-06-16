@@ -3,6 +3,7 @@
 <script src="/public/javascripts/jquery-1.10.1.js"></script>
 <script src="/public/bootstrap/js/bootstrap.min.js"></script>
 <script src="/public/javascripts/ajoutAliment.js"></script>
+<script src="/public/javascripts/chevron.js"></script>
 
 #{set 'moreStyles'} 
 	#{stylesheet '/index.css' /} 
@@ -26,24 +27,35 @@
 	</div>
 	
 	<!-- affichage des éléments présents dans le frigo -->
-	<div class="span3 liste_aliments">
+	<div class="span3 liste_bloc">
 		<h4>
 			<center>Contenu de votre frigo</center>
 		</h4>
 
 		<!-- Fruits et légumes -->
 		<div class="accordion-heading">
-			<a class="accordion-toggle" href="#item1" data-toggle="collapse"><img
-				src="/public/images/carotte.svg" width=20px /> Fruits et Légumes</a>
+			<a class="accordion-toggle" href="#item1" data-toggle="collapse"
+				onclick="changeChevron()">
+				<img src="/public/images/categories/carotte.svg" width=20px /> Fruits et Légumes
+					<script>
+						document.write('<img class="chevron" src="'+srcChevron+'" width=20px />'); 
+ 					</script> 
+			
+			</a>
 		</div>
+		
 		<div id="item1" class="collapse">
 			<div class="accordion-inner">
 
 				#{list items:fruitsLegumes, as:'aliment'} 
-				<a href="#" class="suppr"
+				<strong><a href="#" class="suppr"
 					title="retirer cet élément de mon contenu"><img
 					src="/public/images/delete.png" width=15px /></a>
-				<strong>${aliment.nom}
+				${aliment.nom}
+				<a class="ajoutContListe" href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
+					title="ajouter cet élément à ma liste">
+<!-- 					Ajout -->
+					<img src="/public/images/icon-add-grey.png" width=15px /></a>
 				</strong>
 				<aside class="dates">
 					<h5>
@@ -55,10 +67,7 @@
 							${aliment.peremption.format('dd/MM/yy')}</small>
 					</h5>
 				</aside>
-				<a class="ajoutContListe" href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
-					title="ajouter cet élément à ma liste">
-					Ajout
-					<img src="/public/images/icon-add-grey.png" width=15px /></a>
+				
 				#{/list}
 			</div>
 		</div>
@@ -66,21 +75,22 @@
 		<!-- Boissons -->
 		<div class="accordion-heading">
 			<a class="accordion-toggle" href="#item2" data-toggle="collapse">
-				<img src="/public/images/boisson.svg" width=20px /> Boissons
+				<img src="/public/images/categories/boisson.svg" width=20px /> Boissons
 			</a>
 		</div>
 		<div id="item2" class="collapse">
 			<div class="accordion-inner">
 
 				#{list items:boissons, as:'aliment'} 
-				<a href="#" class="suppr"
+				<strong><a href="#" class="suppr"
 					title="retirer cet élément de mon contenu"><img
 					src="/public/images/delete.png" width=15px /></a>
-				<strong>${aliment.nom}</strong><a
-					href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
-					title="ajouter cet élément à ma liste"> <img
-					src="/public/images/icon-add-grey.png" width=15px />
-				</a>
+				${aliment.nom}
+				<a class="ajoutContListe" href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
+					title="ajouter cet élément à ma liste">
+<!-- 					Ajout -->
+					<img src="/public/images/icon-add-grey.png" width=15px /></a>
+				</strong>
 				<aside class="dates">
 					<h5>
 						<small>Dans le frigo depuis le :
@@ -98,19 +108,22 @@
 		<!-- Viande & Poisson -->
 		<div class="accordion-heading">
 			<a class="accordion-toggle" href="#item3" data-toggle="collapse">
-				<img src="/public/images/steak.svg" width=20px /> Viandes et Poissons
+				<img src="/public/images/categories/steak.svg" width=20px /> Viandes et Poissons
 			</a>
 		</div>
 		<div id="item3" class="collapse">
 			<div class="accordion-inner">
 
-				#{list items:viandes, as:'aliment'}<a href="#" class="suppr"
+				#{list items:viandes, as:'aliment'}
+				<strong><a href="#" class="suppr"
 					title="retirer cet élément de mon contenu"><img
 					src="/public/images/delete.png" width=15px /></a> 
-				<strong>${aliment.nom}
-				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
-					title="ajouter cet élément à ma liste"><img
-					src="/public/images/icon-add-grey.png" width=15px /></a>
+				${aliment.nom}
+				<a class="ajoutContListe" href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
+					title="ajouter cet élément à ma liste">
+<!-- 					Ajout -->
+					<img src="/public/images/icon-add-grey.png" width=15px /></a>
+				</strong>
 				<aside class="dates">
 					<h5>
 						<small>Dans le frigo depuis le :
@@ -128,18 +141,20 @@
 		<!-- Laitages -->
 		<div class="accordion-heading">
 			<a class="accordion-toggle" href="#item4" data-toggle="collapse"><img
-				src="/public/images/lait.svg" width=20px /> Laitages </a>
+				src="/public/images/categories/lait.svg" width=20px /> Laitages </a>
 		</div>
 		<div id="item4" class="collapse">
 			<div class="accordion-inner">
-				#{list items:laitages, as:'aliment'}<a href="#" class="suppr"
+				#{list items:laitages, as:'aliment'}
+				<strong><a href="#" class="suppr"
 					title="retirer cet élément de mon contenu"><img
 					src="/public/images/delete.png" width=15px /></a> 
-				<strong>${aliment.nom}
-				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
-					title="ajouter cet élément à ma liste"><img
-					src="/public/images/icon-add-grey.png" width=15px /></a>
-
+				${aliment.nom}
+				<a class="ajoutContListe" href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
+					title="ajouter cet élément à ma liste">
+<!-- 					Ajout -->
+					<img src="/public/images/icon-add-grey.png" width=15px /></a>
+				</strong>
 				<aside class="dates">
 					<h5>
 						<small>Dans le frigo depuis le :
@@ -157,19 +172,21 @@
 		<!-- Epicerie -->
 		<div class="accordion-heading">
 			<a class="accordion-toggle" href="#item5" data-toggle="collapse">
-				<img src="/public/images/condiments.svg" width=20px /> Epicerie
+				<img src="/public/images/categories/condiments.svg" width=20px /> Epicerie
 			</a>
 		</div>
 		<div id="item5" class="collapse">
 			<div class="accordion-inner">
-				#{list items:epicerie, as:'aliment'}<a href="#" class="suppr"
+				#{list items:epicerie, as:'aliment'}
+				<strong><a href="#" class="suppr"
 					title="retirer cet élément de mon contenu"><img
 					src="/public/images/delete.png" width=15px /></a> 
-				<strong>${aliment.nom}
-				</strong><a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
-					title="ajouter cet élément à ma liste"><img
-					src="/public/images/icon-add-grey.png" width=15px /></a>
-
+				${aliment.nom}
+				<a class="ajoutContListe" href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
+					title="ajouter cet élément à ma liste">
+<!-- 					Ajout -->
+					<img src="/public/images/icon-add-grey.png" width=15px /></a>
+				</strong>
 				<aside class="dates">
 					<h5>
 						<small>Dans le frigo depuis le :
@@ -187,19 +204,21 @@
 		<!-- Autres -->
 		<div class="accordion-heading">
 			<a class="accordion-toggle" href="#item6" data-toggle="collapse">
-				<img src="/public/images/confiture.svg" width=20px /> Autres
+				<img src="/public/images/categories/confiture.svg" width=20px /> Autres
 			</a>
 		</div>
 		<div id="item6" class="collapse">
 			<div class="accordion-inner">
 				#{list items:autre, as:'aliment'} 
-				<a href="#" class="suppr"
+				<strong><a href="#" class="suppr"
 					title="retirer cet élément de mon contenu"><img
 					src="/public/images/delete.png" width=15px /></a>
-				<strong>${aliment.nom} </strong><a
-					href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
-					title="ajouter cet élément à ma liste"><img
-					src="/public/images/icon-add-grey.png" width=15px /></a>
+				${aliment.nom} 
+				<a class="ajoutContListe" href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'
+					title="ajouter cet élément à ma liste">
+<!-- 					<b>Ajout</b> -->
+					<img src="/public/images/icon-add-grey.png" width=15px /></a>
+				</strong>
 				<aside class="dates">
 					<h5>
 						<small>Dans le frigo depuis le :
@@ -220,10 +239,13 @@
 				<form class="ajoutContenu" method="post" action='@{Application.ajoutAlimentContenu}'>
 					<input type="text" placeholder="Ajouter un aliment présent" 
 					name="aliment" /> 
-<!-- 					<input type="text" placeholder="Catégorie de cet aliment"  -->
-<!-- 					name="section" />  -->
-					<input type="submit" value="Ajouter">
-				</form>
+					<select name="section">
+					#{list models.Section, as:'sec'}
+						<option name="item">${sec.name}</option>
+					#{/list}
+					</select>
+				<input type="submit" value="Ajouter">
+			</form>
 			</div>
 		#{/if}
 	</div>

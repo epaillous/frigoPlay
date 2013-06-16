@@ -22,17 +22,16 @@
 <div class="container">
 	<div class="row show-grid">
 		<div class="span12 offset1">
-			<h3>Vos recettes favorites</h3>
-
+				<h3>${type_recette}</h3>
 		</div>
 	</div>
 
 
-	<div class="span7 repereRecette">
+	<div class="span5 repereRecette liste_bloc">
 		<!-- Liste des recettes -->
 		#{list items:recettes, as:'recette'}
 		<div class="accordion-heading">
-			<a id=recetteFav class="accordion-toggle" href="#${recette.id}"
+			<a id="recetteFav" class="accordion-toggle" href="#${recette.id}"
 				data-toggle="collapse">
 						${recette.nom}
 			</a>
@@ -44,13 +43,13 @@
 						onmouseover="mcancelclosetime()"
 						onmouseout="mclosetime()">
 							<p>Difficulté : #{list items:0..recette.difficulte, as:'i'} 
-								<img src="/public/images/chapeau.svg" alt="dur" width=20px />
+								<img src="/public/images/caraRecettes/chapeau.svg" alt="dur" width=20px />
 							#{/list} </p> 
 							<p>Prix : #{list items:0..recette.prix, as:'i'} 
-								<img src="/public/images/monnaie.svg" alt="cher" width=20px />
+								<img src="/public/images/caraRecettes/monnaie.svg" alt="cher" width=20px />
 							#{/list}</p> 
 							<p>Calories : #{list items:0..recette.calories, as:'i'} 
-								<img src="/public/images/balance.svg" alt="calorique" width=20px /> 
+								<img src="/public/images/caraRecettes/balance.svg" alt="calorique" width=20px /> 
 							#{/list}</p>
 					</div>
 

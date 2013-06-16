@@ -20,15 +20,8 @@ form {
 }
 #boutonAjout {
 	color: black;
-	margin: 6px 6px 6px 1px;
-	padding: 2px;
-	padding-top: 1px;
-	border-bottom: 1px solid rgb(100, 100, 100);
-	border-right: 1px solid rgb(100, 100, 100);
-	border-top: rgb(0,0,0);
-	border-left: rgb(0,0,0);
-	border-radius: 3px;
-	background: #EEEEEE;
+	padding: 3px;
+	-webkit-appearance: button;
 }
 #boutonAjout:hover {
 	color: black;
