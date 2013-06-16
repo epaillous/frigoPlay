@@ -44,6 +44,8 @@ Celle-ci va alors permettre à l'utilisateur à l'aide de ces clichés de conna�
 dans le passé. 
 Elle va aussi lui permettre de générer des listes de courses, de consulter des recettes (favorites ou suggérées à partir 
 du contenu du frigo) ou encore de recevoir des alertes lorsqu'un aliment du frigo arrive à sa date de péremption. 
+Pour plus de précisions, rendez-vous sur la page http://fablab.ensimag.fr/index.php/Frigo_Time_Machine qui décrit 
+le projet et sa réalisation plus en détail.
 
 
 ## 3. L'architecture MVC
