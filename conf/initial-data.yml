@@ -30,6 +30,8 @@
    nbFoyer: 3
    email: mailalesci@gmail.com
   
+################### Etat frigo d'alexis #######################
+
  EtatFrigo(etatfrigo1):
    date: 2013-05-25 08:52:20
    user: alexis
@@ -54,6 +56,8 @@
    date: 2013-05-27 16:26:57
    user: alexis
    image: /public/img/2013-05-27-16.26.57.JPG   
+   
+################ Etat frigo de mailys #############################
 
  EtatFrigo(etatfrigo1.2):
    date: 2013-05-25 08:52:20
@@ -80,15 +84,21 @@
    user: mailys
    image: /public/img/2013-05-27-16.26.57.JPG  
     
+  ################## Etat frigo d'emilie ########################
+  
  EtatFrigo(etatfrigo6):
    date: 2013-06-13 23:08:07
    user: emilie
    image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
  
+ #################### Etat frigo d'alice ##########################
+ 
  EtatFrigo(etatfrigo7):
    date: 2013-06-13 23:08:07
    user: alice
    image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
+   
+ ######################### Recettes favorites de mailys #############
      
  Recette(recette1):
    nom: Gratin de tomates
@@ -97,6 +107,8 @@
    calories: 2
    lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
    user: mailys
+   
+   ####################### Recettes favorites d'emilie ################
 
  Recette(recette2):
    nom: Gâteau aux noix et au citron
@@ -121,7 +133,7 @@
    calories: 1
    lien: http://www.marmiton.org/recettes/recette_salade-de-moules-au-melon_14132.aspx
    user: emilie
-
+   
  Aliment(cocacola):
    nom: Coca-Cola
    quantite: 1.5L
@@ -200,6 +212,65 @@
  AlimentConnu(compotes):
    nom: Compotes
    section: Autre
+
+ #################### Aliments du frigo d'alice #################################
+ 
+  Aliment(cocacola):
+   nom: Coca-Cola
+   quantite: 1.5L
+   calories: 3000
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   etatFrigo: etatfrigo7
+   section: Boissons
+   
+ Aliment(tomates):
+   nom: Tomates
+   quantite: 250g
+   calories: 
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   recette: recette1
+   etatFrigo: etatfrigo7
+   section: FruitsLegumes
+   
+ Aliment(cordonbleu):
+   nom: Cordon Bleu
+   quantite: 4
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-21
+   etatFrigo: etatfrigo7
+   section: Viandes
+
+ Aliment(yaourtfruits):
+   nom: Yaourts aux Fruits
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-24
+   etatFrigo: etatfrigo7
+   section: Laitages
+
+ Aliment(emmental):
+   nom: Emmental
+   quantite: 500g
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-08-02
+   etatFrigo: etatfrigo7
+   section: Laitages
+
+ Aliment(compotes):
+   nom: Compotes
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-09-10
+   etatFrigo: etatfrigo7
+   section: Autre
+   
+ #################### Aliments du dernier frigo de mailys #######################
  
  Aliment(oeufs):
    nom: Oeufs
@@ -215,6 +286,7 @@
    nom: Oeufs
    section: Autre
 
+##################### Aliments du dernier frigo d'alexis #######################
  Aliment(soupe):
    nom: Soupe
    quantite: 1L
@@ -228,6 +300,8 @@
    nom: Soupe
    section: Autre
    
+############################### Liste courante des utilisateurs ################
+
  ListeDeCourse(liste1):
    nom: Liste Courante
    user: emilie
@@ -243,10 +317,14 @@
  ListeDeCourse(liste4):
    nom: Liste Courante
    user: alice  
+   
+ ######################### Liste favorite mailys ###############################
  
  ListeDeCourse(liste5):
    nom: Liste Soirée
    user: mailys
+ 
+ ######################## Aliments liste soirée mailys ######################### 
    
  Aliment(bieres):
    nom: Bières
@@ -275,6 +353,8 @@
  AlimentConnu(juspomme):
    nom: Jus de Pomme
    section: Boissons
+  
+  ########################### Aliments liste courante Emilie ##################
  
  Aliment(cereales):
    nom: Céréales
@@ -370,6 +450,8 @@
    section: Autre
    listeDeCourse: liste1
 
+################# Aliments connus en base de données ###################
+
  AlimentConnu(icetea):
    nom: Ice-Tea
    section: Boissons
@@ -397,3 +479,12 @@
  AlimentConnu(saumon):
    nom: Saumon
    section: Viandes
+   
+ AlimentConnu(concombre):
+   nom: Concombre
+   section: FruitsLegumes
+ 
+ AlimentConnu(framboises):
+   nom: Framboises
+   section : FruitsLegumes
+   
