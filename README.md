@@ -50,17 +50,40 @@ du contenu du frigo) ou encore de recevoir des alertes lorsqu'un aliment du frig
 Pour réaliser ce site, l'utilisation du framework Play! invite à utiliser une architecture Modèle-Vue-Contrôleur. 
 Le modèle est implémenté dans le dossier app/models, les vues dans le dossier app/views, et le contrôleur dans app/controllers.
 
-  ### A/ Le modèle
+
+  **A/ Le modèle**
+Le modèle contient toutes les classes nécéssaires au bon fonctionnement du site.
+* La classe User permet d'instancier des utlisateurs, qui auront donc chacun un compte propre avec les états de frigo correspondants. 
+* La classe AlimentConnu permet simplement d'ajouter un aliment dans la base de données. Il s'agit d'un aliment fictif dans le sens qu'il n'existe pas nécéssairement dans le frigo de l'utilisateur.
+* La classe Aliment elle permet d'instancier un aliment réellement présent dans le frigo de l'utilisateur. Cet aliment a donc une date d'entrée dans le frigo et une date de péremption
+* La classe EtatFrigo permet d'instancier un nouvel objet à chaque reception de cliché depuis l'application Android.
+* La classe Recette correspond aux recettes qui peuvent soient être enregistrées en tant que favorites par l'utilisateur, soit lui être suggérées par la plateforme.
+* La classe ListeDeCourse correspond aux listes de courses de l'utilisateur (liste courante ou listes types)
+
+  **B/ Les vues**  
+Chaque fichier .html correspond à une vue différente. 
+* Le fichier main.html est contenu dans toutes les autres pages : c'est lui qui permet d'afficher la barre de navigation et ainsi de poser le décor global du site.
+* Toutes les autres pages sont contenues dans le dossier Application/
+* A AJOUTER: explications pour les autres dossiers 
+  
+  **C/ Le contrôleur**
+Le contrôleur permet de faire le lien entre le modèle et les vues, principalement via la classe Application.
+Cette classe contient une méthode par page qui renvoie à chaque fois les informations nécéssaires pour la visualisation de la page en question.
+Pour que le contrôleur soit bien appelé lors du chargement d'une page, il ne faut pas oublier d'ajouter le lien dans le fichier "routes" situé dans le dossier conf/.
+A AJOUTER: explications sur les autres dossiers
+
+  **D/ Les autres dossiers de app/**
+A FAIRE
 
 
-  ### B/ Les vues
-  
-  
-  ### C/ Le contrôleur
-  
-  
-  ### D/ Les uatres dossiers de app/
-  
+## 4. Annexe : le dossier public/
+Ce dossier contient tous les fichiers nécéssaires à l'affichage des différentes pages.
+* bootstrap/ contient les fihciers nécéssaires pour réaliser notre site à partir de cette base.
+* images/ contient toutes les images utilisées au sein de notre plateforme (logos, boutons...)
+* img/ contient les clichés reçus depuis l'application Android
+* img_coverflow/ contient les images nécéssaires pour le bon fonctionnement du coverflow de la page Historique
+* javascripts/ contient tous les scripts utilisés dans les différentes pages (menus déroulants, sous-onglets, ...)
+* stylesheets/ contient tous les fichiers .css qui permettent de donner du style à notre site.
   
 
 
