@@ -20,6 +20,7 @@ Celle-ci va alors permettre à l'utilisateur à l'aide de ces clichés de conna�
 dans le passé. 
 Elle va aussi lui permettre de générer des listes de courses, de consulter des recettes (favorites ou suggérées à partir 
 du contenu du frigo) ou encore de recevoir des alertes lorsqu'un aliment du frigo arrive à sa date de péremption. 
+
 Pour plus de précisions, rendez-vous sur la page http://fablab.ensimag.fr/index.php/Frigo_Time_Machine qui décrit 
 le projet et sa réalisation plus en détail.
 
@@ -54,7 +55,7 @@ Pour réaliser ce site, l'utilisation du framework Play! invite à utiliser une 
 Le modèle est implémenté dans le dossier app/models, les vues dans le dossier app/views, et le contrôleur dans app/controllers.
 
 
-  **A/ Le modèle**
+**A/ Le modèle**
 
 Le modèle contient toutes les classes nécéssaires au bon fonctionnement du site.
 * La classe User permet d'instancier des utlisateurs, qui auront donc chacun un compte propre avec les états de frigo correspondants. 
@@ -64,7 +65,8 @@ Le modèle contient toutes les classes nécéssaires au bon fonctionnement du si
 * La classe Recette correspond aux recettes qui peuvent soient être enregistrées en tant que favorites par l'utilisateur, soit lui être suggérées par la plateforme.
 * La classe ListeDeCourse correspond aux listes de courses de l'utilisateur (liste courante ou listes types)
 
-  **B/ Les vues**  
+
+**B/ Les vues**  
 
 Chaque fichier .html correspond à une vue différente. 
 * Le fichier main.html est contenu dans toutes les autres pages : c'est lui qui permet d'afficher la barre de navigation et ainsi de poser le décor global du site.
@@ -73,7 +75,8 @@ Chaque fichier .html correspond à une vue différente.
 * Le dossier errors contient les vues des erreurs types (page non trouvée, etc.) 
 * Le dossier Users correspond à l'affichage de la liste des utilisateurs en base de données en utilisant le module CRUD.
   
-  **C/ Le contrôleur**
+
+**C/ Le contrôleur**
 
 Le contrôleur permet de faire le lien entre le modèle et les vues, principalement via la classe Application.
 Cette classe contient une méthode par page qui renvoie à chaque fois les informations nécéssaires pour la visualisation de la page en question.
@@ -81,7 +84,8 @@ Pour que le contrôleur soit bien appelé lors du chargement d'une page, il ne f
 La classe Upload permet de réceptionner les images envoyées par le smartphone Androïd. 
 Enfin, la classe Security se charge de gérer les connexions des utilisateurs à leur compte (il s'agit d'un module fourni par Play!).
 
-  **D/ Les autres dossiers de app/**
+
+**D/ Les autres dossiers de app/**
 
 Le package job permet de gérer la vérification des dates de péremption des aliments de manière régulière (toutes les 24 heures). En cas de détection d'un aliment périmé, 
 ce job envoie une alerte e-mail à l'utilisateur à l'aide des fonctions du package Notifiers. 
