@@ -2,7 +2,9 @@ package utils;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import play.mvc.Controller;
@@ -58,6 +60,8 @@ public class TraitementImage {
 	/* Fonction ajoutant un aliment dans la DB et dans la liste des aliments du frigo */
 	public static void ajoutAliments(List<Aliment> aliments, String nom, String quantite, int calories,EtatFrigo dernierEtat, EtatFrigo newFrigo, Section section){
 		Date peremption = new Date();
+		//Calendar date=new GregorianCalendar();
+		//date.add(Calendar.DATE, 7);
 		Aliment aliment = new Aliment(nom, quantite,calories, new Date(),peremption, newFrigo, section);
 		if ((dernierEtat.aliment != null) && (dernierEtat.aliment.contains(aliment))) {
 			/* Le frigo contenait déjà l'aliment */

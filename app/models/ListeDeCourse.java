@@ -38,4 +38,11 @@ public class ListeDeCourse extends Model {
 	    this.save();
 	    return this;
 	}
+
+	public ListeDeCourse(String nom, User user) {
+		super();
+		this.nom = nom;
+		this.user = user;
+	}
+	
 }

@@ -5,22 +5,7 @@
    dateDeNaissance: 1992-05-26
    nbFoyer: 2
    email: emilie.paillous@gmail.com
-   
- User(alice):
-   nom: Millour
-   prenom: Alice
-   motDePasse: alice
-   dateDeNaissance: 1991-09-13
-   nbFoyer: 2
-   email: alice.millour@gmail.com
-
- User(mailys):
-   nom: Reneaume
-   prenom: Mailys
-   motDePasse: mailys
-   dateDeNaissance: 1991-07-22
-   nbFoyer: 3
-   email: mailys.reneaume@gmail.com
+   preference: Aucune
    
  User(alexis):
    nom: Sciau
@@ -29,322 +14,8 @@
    dateDeNaissance: 1991-02-10
    nbFoyer: 3
    email: mailalesci@gmail.com
-
- Aliment(noix):
-   nom: Noix
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
+   preference: Aucune
    
- Aliment(spaghetti):
-   nom: Spaghetti
-
-
- Aliment(ricotta):
-   nom: Ricotta
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
-   section: Laitages
-
- Aliment(citron):
-   nom: Citron
-   section: FruitsLegumes
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
-
- Aliment(moule):
-   nom: Moule
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
-
- Aliment(melon):
-   nom: Melon
-   section: FruitsLegumes
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
-
- Aliment(cocacola):
-   nom: Coca-Cola
-   quantite: 1.5L
-   calories: 3000
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
- # etatFrigo: etatfrigo6
-   section: Boissons
-   
- AlimentConnu(cocacola):
-   nom: Coca-Cola
-   section: Boissons
-   
- Aliment(tomate):
-   nom: Tomate
-   quantite: 250g
-   calories: 
-   peremption: 2013-06-15
-   entreeFrigo: 2013-06-11
-   #recette: recette1
-#  etatFrigo: etatfrigo6
-   section: FruitsLegumes
-  
- AlimentConnu(tomate):
-   nom: Tomate
-   section: FruitsLegumes
-   
- Aliment(cordonbleu):
-   nom: Cordon Bleu
-   quantite: 4
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-21
-   #etatFrigo: etatfrigo6
-   section: Viandes
-
- AlimentConnu(cordonbleu):
-   nom: Cordon Bleu
-   section: Viandes
-
- Aliment(yaourtfruits):
-   nom: Yaourts aux Fruits
-   quantite: 8
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-24
-   #etatFrigo: etatfrigo6
-   section: Laitages
-
- AlimentConnu(yaourtfruits):
-   nom: Yaourts aux Fruits
-   section: Laitages
-
- Aliment(emmental):
-   nom: Emmental
-   quantite: 500g
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-08-02
-   #etatFrigo: etatfrigo6
-   section: Laitages
-   
- AlimentConnu(emmental):
-   nom: Emmental
-   section: Laitages
-
- Aliment(compotes):
-   nom: Compotes
-   quantite: 8
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-09-10
-   #etatFrigo: etatfrigo6
-   section: Autre
-
- AlimentConnu(compotes):
-   nom: Compotes
-   section: Autre
-
- Aliment(cocacola):
-   nom: Coca-Cola
-   quantite: 1.5L
-   calories: 3000
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
-   #etatFrigo: etatfrigo7
-   section: Boissons
-   
- Aliment(tomates):
-   nom: Tomates
-   quantite: 250g
-   calories: 
-   peremption: 2013-06-17
-   entreeFrigo: 2013-06-11
-   #recette: recette1
-   #etatFrigo: etatfrigo7
-   section: FruitsLegumes
-   
- Aliment(cordonbleu):
-   nom: Cordon Bleu
-   quantite: 4
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-21
-   #etatFrigo: etatfrigo7
-   section: Viandes
-
- Aliment(yaourtfruits):
-   nom: Yaourts aux Fruits
-   quantite: 8
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-24
-   #etatFrigo: etatfrigo7
-   section: Laitages
-
- Aliment(emmental):
-   nom: Emmental
-   quantite: 500g
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-08-02
-   #etatFrigo: etatfrigo7
-   section: Laitages
-
- Aliment(compotes):
-   nom: Compotes
-   quantite: 8
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-09-10
-   #etatFrigo: etatfrigo7
-   section: Autre
- 
- Aliment(oeufs):
-   nom: Oeufs
-   quantite: 12
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-17
-  # recette: recette2
-   #etatFrigo: etatfrigo5.2
-   section: Autre
-
- AlimentConnu(oeufs):
-   nom: Oeufs
-   section: Autre
-
- Aliment(soupe):
-   nom: Soupe
-   quantite: 1L
-   calories: 
-   entreeFrigo: 2013-06-11
-   peremption: 2013-06-17
-   #etatFrigo: etatfrigo5
-   section: Autre
-  
- AlimentConnu(soupe):
-   nom: Soupe
-   section: Autre
-
- Aliment(bieres):
-   nom: Bières
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Boissons
-   #listeDeCourse: liste5
-   
- AlimentConnu(bieres):
-   nom: Bières
-   section: Boissons
-   
- Aliment(juspomme):
-   nom: Jus de Pomme
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Boissons
-   #listeDeCourse: liste5
-   
- AlimentConnu(juspomme):
-   nom: Jus de Pomme
-   section: Boissons
-
- Aliment(cereales):
-   nom: Céréales
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Epicerie
-   #listeDeCourse: liste1
-   
- AlimentConnu(cereales):
-   nom: Céréales
-   section: Epicerie
-      
- Aliment(brie):
-   nom: Brie
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Laitages
-   #listeDeCourse: liste1
-   
- AlimentConnu(brie):
-   nom: Brie
-   section: Laitages
-   
- Aliment(danettes):
-   nom: Danettes au Chocolat
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Laitages
-   #listeDeCourse: liste1
-   
- AlimentConnu(danettes):
-   nom: Danettes
-   section: Laitages
-   
- Aliment(huile):
-   nom : Huile d'olive
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Epicerie
-   #listeDeCourse: liste1
-   
- AlimentConnu(huile):
-   nom: Huile d'olive
-   section: Epicerie
-   
- Aliment(cafe):
-   nom : Café
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Epicerie
-   #listeDeCourse: liste1
-   
- AlimentConnu(cafe):
-   nom: Café
-   section: Epicerie
-   
- Aliment(jambon):
-   nom : Jambon
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Viandes
-   #listeDeCourse: liste1
-   
- AlimentConnu(jambon):
-   nom: Jambon
-   section: Viandes
-   
- Aliment(pizzas):
-   nom : Pizzas
-   quantite: 0
-   calories: 
-   entreeFrigo: 0000-00-00
-   peremption: 0000-00-00
-   #etatFrigo: 
-   section: Autre
-   #listeDeCourse: liste1
-
  AlimentConnu(icetea):
    nom: Ice-Tea
    section: Boissons
@@ -372,67 +43,416 @@
  AlimentConnu(saumon):
    nom: Saumon
    section: Viandes
+   
+ AlimentConnu(noix):
+   nom: Noix
+   section: Autre
+   
+ AlimentConnu(spaghetti):
+   nom: Spaghetti
+   section: Epicerie  
+ 
+ AlimentConnu(ricotta):
+   nom: Ricotta
+   section: Epicerie  
+ 
+ AlimentConnu(citron):
+   nom: Citron
+   section: FruitsLegumes 
+ 
+ AlimentConnu(moule):
+   nom: Moule
+   section: Viandes
+ 
+ AlimentConnu(melon):
+   nom: Melon
+   section: FruitsLegumes
+ 
+ AlimentConnu(cocacola):
+   nom: Coca-Cola
+   section: Boissons
+
+ AlimentConnu(tomate):
+   nom: Tomate
+   section: FruitsLegumes
+  
+ AlimentConnu(cordonbleu):
+   nom: Cordon Bleu
+   section: Viandes
+ 
+ AlimentConnu(yaourtfruits):
+   nom: Yaourts aux Fruits
+   section: Laitages
+ 
+ AlimentConnu(emmental):
+   nom: Emmental
+   section: Laitages
+ 
+ AlimentConnu(compotes):
+   nom: Compotes
+   section: Autre
+  
+ AlimentConnu(oeufs):
+   nom: Oeufs
+   section: Autre
+ 
+ AlimentConnu(soupe):
+   nom: Soupe
+   section: Autre
+ 
+ AlimentConnu(bieres):
+   nom: Bières
+   section: Boissons
+ 
+ AlimentConnu(juspomme):
+   nom: Jus de Pomme
+   section: Boissons
+ 
+ AlimentConnu(cereales):
+   nom: Céréales
+   section: Epicerie
+
+ AlimentConnu(huile):
+   nom: Huile d'olive
+   section: Epicerie
+    
+ AlimentConnu(brie):
+   nom: Brie
+   section: Laitages
+
+ AlimentConnu(danettes):
+   nom: Danettes
+   section: Laitages
+      
+ AlimentConnu(jambon):
+   nom: Jambon
+   section: Viandes
+   
+ AlimentConnu(cafe):
+   nom: Café
+   section: Epicerie
+  
+ Aliment(spaghetti):
+   nom: Spaghetti
+   peremption: 2013-09-20
+   entreeFrigo: 2013-06-11
+   section: Epicerie
+
+ Aliment(ricotta):
+   nom: Ricotta
+   peremption: 2013-10-20
+   entreeFrigo: 2013-06-11
+   section: Laitages
+  
+ Aliment(moule):
+   nom: Moule
+   peremption: 2013-06-20
+   entreeFrigo: 2013-06-11
+   section: Viandes
+   
+ Aliment(melon):
+   nom: Melon
+   section: FruitsLegumes
+   peremption: 2013-06-16
+   entreeFrigo: 2013-06-11
+      
+ Aliment(cocacola):
+   nom: Coca-Cola
+   quantite: 1.5L
+   calories: 3000
+   peremption: 2013-11-17
+   entreeFrigo: 2013-06-11
+   section: Boissons
+     
+ Aliment(tomate):
+   nom: Tomate
+   quantite: 250g
+   calories: 
+   peremption: 2013-06-19
+   entreeFrigo: 2013-06-11
+   section: FruitsLegumes
+     
+ Aliment(cordonbleu):
+   nom: Cordon Bleu
+   quantite: 4
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-21
+   section: Viandes
+
+ Aliment(yaourtfruits):
+   nom: Yaourts aux Fruits
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-18
+   section: Laitages
+
+ Aliment(emmental):
+   nom: Emmental
+   quantite: 500g
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-08-02
+   section: Laitages
+   
+ Aliment(compotes):
+   nom: Compotes
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-09-10
+   section: Autre
+ 
+ Aliment(oeufs):
+   nom: Oeufs
+   quantite: 12
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-17
+   section: Autre
+   
+ Aliment(soupe):
+   nom: Soupe
+   quantite: 1L
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-17
+   section: Autre
+  
+ Aliment(bieres):
+   nom: Bières
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Boissons
+   
+ Aliment(citron):
+   nom: Citron
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: FruitsLegumes  
+   
+ Aliment(noix):
+   nom: Noix
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Autre
+   
+ Aliment(juspomme):
+   nom: Jus de Pomme
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Boissons
+   
+ Aliment(cereales):
+   nom: Céréales
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Epicerie
+         
+ Aliment(brie):
+   nom: Brie
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Laitages
+   
+ Aliment(danettes):
+   nom: Danettes au Chocolat
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Laitages
+     
+ Aliment(huile):
+   nom : Huile d'olive
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Epicerie
+     
+ Aliment(cafe):
+   nom : Café
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Epicerie
+    
+ Aliment(jambon):
+   nom : Jambon
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Viandes
+   
+ Aliment(pizzas):
+   nom : Pizzas
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Autre
  
  EtatFrigo(etatfrigo1):
    date: 2013-05-25 08:52:20
-   user: alexis
-   image: /public/img/2013-05-25-08.52.20.JPG
+   user: emilie
+   image: /public/img/PictureCV_25-05-2013-08.52.20.jpg
 
  EtatFrigo(etatfrigo2):
-   date: 2013-05-25 08:52:24
-   user: alexis
-   image: /public/img/2013-05-25-08.52.24.JPG
+   date: 2013-05-26 12:45:23
+   user: emilie
+   image: /public/img/PictureCV_26-05-2013-12.45.23.jpg
  
  EtatFrigo(etatfrigo3):
-   date: 2013-05-25 12:59:50
-   user: alexis
-   image: /public/img/2013-05-25-12.59.50.JPG
+   date: 2013-05-27 13:00:07
+   user: emilie
+   image: /public/img/PictureCV_27-05-2013-13.00.07.jpg
 
  EtatFrigo(etatfrigo4):
-   date: 2013-05-25 12:59:59
-   user: alexis
-   image: /public/img/2013-05-25-12.59.59.JPG
+   date: 2013-05-28 11:59:14
+   user: emilie
+   image: /public/img/PictureCV_28-05-2013-11.59.14.jpg
    
  EtatFrigo(etatfrigo5):
-   date: 2013-05-27 16:26:57
-   user: alexis
-   image: /public/img/2013-05-27-16.26.57.JPG   
-
- EtatFrigo(etatfrigo1.2):
-   date: 2013-05-25 08:52:20
-   user: mailys
-   image: /public/img/2013-05-25-08.52.20.JPG
-
- EtatFrigo(etatfrigo2.2):
-   date: 2013-05-25 08:52:24
-   user: mailys
-   image: /public/img/2013-05-25-08.52.24.JPG
- 
- EtatFrigo(etatfrigo3.2):
-   date: 2013-05-25 12:59:50
-   user: mailys
-   image: /public/img/2013-05-25-12.59.50.JPG
-
- EtatFrigo(etatfrigo4.2):
-   date: 2013-05-25 12:59:59
-   user: mailys
-   image: /public/img/2013-05-25-12.59.59.JPG
-   
- EtatFrigo(etatfrigo5.2):
-   date: 2013-05-27 16:26:57
-   user: mailys
-   image: /public/img/2013-05-27-16.26.57.JPG  
-    
- EtatFrigo(etatfrigo6):
-   date: 2013-06-13 23:08:07
+   date: 2013-05-30 11:58:38
    user: emilie
-   image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
-   aliment: [melon, citron, cocacola, tomate]
+   image: /public/img/PictureCV_30-05-2013-11.58.38.jpg   
+   
+ Aliment(spaghetti2):
+   nom: Spaghetti
+   peremption: 2013-09-17
+   entreeFrigo: 2013-06-11
+   section: Epicerie
+
+ Aliment(ricotta2):
+   nom: Ricotta
+   peremption: 2013-10-17
+   entreeFrigo: 2013-06-11
+   section: Laitages
+  
+ Aliment(moule2):
+   nom: Moule
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   section: Viandes
+   
+ Aliment(melon2):
+   nom: Melon
+   section: FruitsLegumes
+   peremption: 2013-06-16
+   entreeFrigo: 2013-06-11
+      
+ Aliment(cocacola2):
+   nom: Coca-Cola
+   quantite: 1.5L
+   calories: 3000
+   peremption: 2013-11-17
+   entreeFrigo: 2013-06-11
+   section: Boissons
+     
+ Aliment(tomate2):
+   nom: Tomate
+   quantite: 250g
+   calories: 
+   peremption: 2013-06-19
+   entreeFrigo: 2013-06-11
+   section: FruitsLegumes
+     
+ Aliment(cordonbleu):
+   nom: Cordon Bleu
+   quantite: 4
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-21
+   section: Viandes
+
+ Aliment(yaourtfruits2):
+   nom: Yaourts aux Fruits
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-24
+   section: Laitages
+
+ Aliment(emmental):
+   nom: Emmental
+   quantite: 500g
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-08-02
+   section: Laitages
+
+ EtatFrigo(etatfrigo6):
+   date: 2013-06-11 11:57:41
+   user: emilie
+   image: /public/img/PictureCV_11-06-2013-11.57.41.jpg
+   aliment: [melon2, cocacola2, tomate2, spaghetti2, ricotta2, moule2, yaourtfruits2, cordonbleu, emmental]
 
  EtatFrigo(etatfrigo7):
-   date: 2013-06-13 23:08:07
-   user: alice
-   image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
+   date: 2013-06-17 07:56:58
+   user: emilie
+   image: /public/img/PictureCV_17-06-2013-11.56.58.JPG
+   aliment: [melon, cocacola, tomate, spaghetti, ricotta, moule, yaourtfruits]
+      
+ EtatFrigo(etatfrigoalxis3):
+   date: 2013-05-28 16:26:57
+   user: alexis
+   image: /public/img/2013-05-28-11.48.22.jpg
+
+ EtatFrigo(etatfrigoalxis2):
+   date: 2013-05-30 16:26:57
+   user: alexis
+   image: /public/img/2013-05-30-11.48.32.jpg
+
+ EtatFrigo(etatfrigoalexis1):
+   date: 2013-06-11 16:26:57
+   user: alexis
+   image: /public/img/2013-06-11-12.10.00.jpg  
+
+ Aliment(ketchup):
+   nom: Ketchup
+   peremption: 2013-06-13
+   entreeFrigo: 2013-06-11
+   section: Epicerie
+
+ Aliment(oeuf):
+   nom: Oeuf
+   peremption: 2013-06-13
+   entreeFrigo: 2013-06-11
+   section: Autre
+
+ Aliment(lait):
+   nom: Lait
+   peremption: 2013-06-13
+   entreeFrigo: 2013-06-11
+   section: Laitages
+
+ Aliment(saucetomate):
+   nom: Sauce Tomate
+   peremption: 2013-06-13
+   entreeFrigo: 2013-06-11
+   section: Autre
+
+ EtatFrigo(etatfrigoalxis4):
+   date: 2013-06-15 16:26:57
+   user: alexis
+   image: /public/img/2013-06-15-12.10.13.jpg
+   aliment: [ketchup, oeuf, saucetomate, lait]
      
  Recette(recette1):
    nom: Gratin de tomates
@@ -440,17 +460,14 @@
    prix: 1
    calories: 2
    lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
-   user: [mailys, emilie]
    ingredient: [tomate]
    
-
  Recette(recette2):
    nom: Gâteau aux noix et au citron
    difficulté : 3
    prix: 1
    calories: 3
    lien: http://www.marmiton.org/recettes/recette_gateau-aux-noix-et-au-citron_231083.aspx
-   user: emilie
    ingredient: [noix, citron]
 
  Recette(recette3):
@@ -459,7 +476,6 @@
    prix: 2
    calories: 2
    lien: http://www.marmiton.org/recettes/recette_spaghetti-aux-boulettes-et-a-la-ricotta_71318.aspx
-   user: emilie
    ingredient: [spaghetti, ricotta]
 
  Recette(recette4):
@@ -468,25 +484,64 @@
    prix: 3
    calories: 1
    lien: http://www.marmiton.org/recettes/recette_salade-de-moules-au-melon_14132.aspx
-   user: emilie
    ingredient: [melon, moule]
 
+ Aliment(miel):
+   nom : Miel
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Epicerie
+   
+ Aliment(creme):
+   nom : Crème
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Laitages
+   
+ Aliment(raisinsecs):
+   nom : Raisins Secs
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: Epicerie
+   
+ Recette(recette5):
+   nom: Gourmandises d'Automne
+   difficulté : 0
+   prix : 1
+   calories : 3
+   lien : http://www.marmiton.org/recettes/recette_gourmandises-d-automne_95115.aspx
+   user : alexis
+   ingredient : [miel, creme, raisinsecs]
+
+ Aliment(orange):
+   nom : Orange
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   section: FruitsLegumes
+
+ Recette(recette6):
+   nom: Gateaux pralinoises et écorces d'oranges
+   difficulté : 1
+   prix : 2
+   calories : 2
+   lien : http://www.marmiton.org/recettes/recette_gateau-pralinoise-et-ecorces-d-oranges_20319.aspx
+   user : emilie
+   ingredient : [orange]
+    
+      
  ListeDeCourse(liste1):
    nom: Liste Courante
    user: emilie
-
- ListeDeCourse(liste2):
-   nom: Liste Courante
-   user: mailys
 
  ListeDeCourse(liste3):
    nom: Liste Courante
    user: alexis
 
- ListeDeCourse(liste4):
-   nom: Liste Courante
-   user: alice  
- 
- ListeDeCourse(liste5):
-   nom: Liste Soirée
-   user: mailys

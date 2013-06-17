@@ -53,6 +53,16 @@ public class User extends Model {
 	
 	public static User connect(String email, String password) {
 	    return find("byEmailAndMotDePasse", email, password).first();
-	}   
+	}
+
+	public User(String nom, String prenom, String motDePasse, String email) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.motDePasse = motDePasse;
+		this.email = email;
+	} 
+	
+	
       
 }

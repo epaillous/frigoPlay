@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="0" errors="1" skipped="0" tests="0" name="ApplicationTest">
+  <testcase classname="ApplicationTest" name="initializationError" time="0">
+                        <error type="" message="A java.lang.Exception has been caught, No runnable methods">
+        <![CDATA[
+          
+          
+               :
+          
+        ]]>
+        </error>
+                  <system-err>
+            java.lang.Exception: No runnable methods
+	at org.junit.runners.BlockJUnit4ClassRunner.validateInstanceMethods(BlockJUnit4ClassRunner.java:166)
+	at org.junit.runners.BlockJUnit4ClassRunner.collectInitializationErrors(BlockJUnit4ClassRunner.java:102)
+	at org.junit.runners.ParentRunner.validate(ParentRunner.java:344)
+	at org.junit.runners.ParentRunner.&lt;init&gt;(ParentRunner.java:74)
+	at org.junit.runners.BlockJUnit4ClassRunner.&lt;init&gt;(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.JUnit4.&lt;init&gt;(JUnit4.java:20)
+	at play.test.PlayJUnitRunner.&lt;init&gt;(PlayJUnitRunner.java:39)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:31)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:24)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:29)
+	at org.junit.runner.Computer.getRunner(Computer.java:38)
+	at org.junit.runner.Computer$1.runnerForClass(Computer.java:29)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)
+	at org.junit.runners.model.RunnerBuilder.runners(RunnerBuilder.java:98)
+	at org.junit.runners.model.RunnerBuilder.runners(RunnerBuilder.java:84)
+	at org.junit.runners.Suite.&lt;init&gt;(Suite.java:79)
+	at org.junit.runner.Computer.getSuite(Computer.java:26)
+	at org.junit.runner.Request.classes(Request.java:69)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at play.test.TestEngine.run(TestEngine.java:112)
+	at controllers.TestRunner.run(TestRunner.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at play.server.PlayHandler$NettyInvocation.execute(PlayHandler.java:251)
+	at play.Invoker$Invocation.run(Invoker.java:278)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+          </system-err>  
+        }
+            </testcase>
+</testsuite>

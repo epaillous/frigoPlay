@@ -30,10 +30,11 @@ import utils.ApplicationUtils;
 @With(Secure.class)
 public class Application extends Controller {
 	
-//	@Before
-//    static void checkAuthentification() {
-//        if(session.get("user") == null) login();
-//    }
+	
+	@Before
+    static void checkAuthentification() throws Throwable {
+        if(User.find("byEmail", Security.connected()).first() == null) Secure.login();
+    }
 
 	@Before
 	static void setConnectedUser() {
@@ -50,7 +51,14 @@ public class Application extends Controller {
 		
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
-
+		if(User.find("byEmail", Security.connected()).first() == null)
+			try {
+				Secure.login();
+			} catch (Throwable e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
 		/* On recupère sa liste de course courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
 		List<Aliment> articles = listeCourante.article;
@@ -75,7 +83,7 @@ public class Application extends Controller {
 	public static void index() {	
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();	
-		
+
 		/* On recupère le dernier etat */
 		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
 	
@@ -155,15 +163,11 @@ public class Application extends Controller {
 		EntityManager em = JPA.em();
 			
 		/* recettes contenant des aliments présents dans le contenu de l'utilisateur */
-		Query q_RecSug = em.createQuery("select r from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
+		Query q_RecSug = em.createQuery("select DISTINCT r from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
 				"f=?1 and ig.id = al.id)");
 		q_RecSug.setParameter(1, etatFrigo);
 		List<Recette> recettesSugg = q_RecSug.getResultList();
-		System.out.println("recettes ");
 		Iterator<Recette> r = recettesSugg.iterator();
-		while(r.hasNext()){
-			System.out.println(r.next().nom);
-		}
 		
 		recettes = (List<Recette>) q_RecSug.getResultList();
 
@@ -226,7 +230,6 @@ public class Application extends Controller {
 	
 	public static void ajoutAlimentContenu(String aliment, String section) {
 		/* On recupère l'utilisateur en session */
-		System.out.println("section = " + section);
 		User user = User.find("byEmail", Security.connected()).first();
 		/* On recupère le dernier etat Frigo (non nulle) */
 		EtatFrigo etatCourant = EtatFrigo.find("user like ? order by date desc", user).first(); 
@@ -234,7 +237,6 @@ public class Application extends Controller {
 		/* ajouter l'instance dans le frigo */
 		//etatCourant.addAliment(aliment);
 		etatCourant.addAliment(aliment, section);
-		System.out.println("on a ajouté un aliment");
 		index();
 	}
 
