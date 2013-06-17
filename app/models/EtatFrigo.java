@@ -50,12 +50,15 @@ public class EtatFrigo extends Model {
 	
 	public EtatFrigo addAliment(String aliment, String section) {
 		Aliment newAliment;
-		if ((newAliment = Aliment.find("byNom", aliment).first()) == null ){
+		AlimentConnu newAlimentConnu;
+		if ((newAlimentConnu = AlimentConnu.find("byNom", aliment).first()) == null ){
 			/* cet Aliment n'existe pas */
 			System.out.println("l'aliment n'existe pas");
-			newAliment = new Aliment(aliment, new Date(), new Date(), this, section).save();
-			System.out.println("section = " + section);
+			newAlimentConnu = new AlimentConnu(aliment, section).save();
 		}
+		/* dans tous les cas on rajoute l'aliment dans le frigo */
+		newAliment = new Aliment(aliment, new Date(), new Date(), this, section).save();
+		System.out.println("section = " + section);	
 	    this.aliment.add(newAliment);
 	    this.save();
 	    return this;
