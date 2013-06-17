@@ -22,16 +22,16 @@ import models.User;
 public class TraitementImage {
 
 	public static List<Aliment> imageToAliments(File data, User user, EtatFrigo newFrigo){
-		
+
 		/* Analyse de l'image non implémentée dans ce projet */
-		
+
 		/* Instance des aliments */
 		List<Aliment> aliments = new ArrayList<Aliment>();
 		List<EtatFrigo> anciensEtats = user.etatFrigo;
 		EtatFrigo dernierEtat = anciensEtats.get(anciensEtats.size()-1);
-		
+
 //		/* Exemple de liste d'aliments générée  */	
-		
+
 		ajoutAliments(aliments, "Carottes", "200g", 0, dernierEtat, newFrigo, Section.FruitsLegumes );
 		ajoutAliments(aliments, "Lait", "1L", 0, dernierEtat, newFrigo, Section.Laitages );
 		ajoutAliments(aliments, "Brocolis", "100g", 0, dernierEtat, newFrigo, Section.FruitsLegumes );
@@ -51,12 +51,12 @@ public class TraitementImage {
 		ajoutAliments(aliments, "Lardons", "200g", 0, dernierEtat, newFrigo, Section.Viandes );
 		ajoutAliments(aliments, "Cornichons", "100g", 0, dernierEtat, newFrigo, Section.Epicerie);
 		ajoutAliments(aliments, "Brocolis", "100g", 0, dernierEtat, newFrigo, Section.FruitsLegumes );
-		
-		
+
+
 		return aliments;
-		
+
 	}
-	
+
 	/* Fonction ajoutant un aliment dans la DB et dans la liste des aliments du frigo */
 	public static void ajoutAliments(List<Aliment> aliments, String nom, String quantite, int calories,EtatFrigo dernierEtat, EtatFrigo newFrigo, Section section){
 		Date peremption = new Date();

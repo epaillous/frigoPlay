@@ -14,23 +14,20 @@
 
 #{set historiqueActif:'active'/}
 
-<!-- Options du coverflow (sur fond blanc+pas de rotation dernier<->premier -->
  <script language="JavaScript" type="text/javascript" src="/public/javascripts/contentflow.js"  load="white"></script>
  <script type="text/javascript">
- 	var myNewFlow = new ContentFlow('myFantasicFlow', {flowSpeedFactor: 0.8, circularFlow: false});
+ 	var myNewFlow = new ContentFlow('myFantasicFlow', {flowSpeedFactor: 0.8, circularFlow: false } ) ;
  </script>
         
 <meta charset="UTF-8">
+<!-- Titre -->
 
 <div class="container">
-	<!-- Titre -->
 	<div class="row show-grid">
 		<div class="span12 offset1">
 			<h3>Historique</h3>
 		</div>
 	</div>
-	
-	<!-- Le coverflow :  -->
 	<div class="ContentFlow" id="myFantasicFlow">
 		<div class="loadIndicator">
 			<div class="indicator"></div>
@@ -42,7 +39,7 @@
 				title=${var.date.format('dd/MM/yy')}> 
 			#{/list}
 		</div>
-		
+
 		<div class="globalCaption"></div>
 		<div class="scrollbar">
 			<!--<div class="slider">
@@ -50,8 +47,4 @@
 			</div> -->
 		</div>
 	</div>
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f

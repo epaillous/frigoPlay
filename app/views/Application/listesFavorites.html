@@ -15,7 +15,6 @@
 
 <meta charset="UTF-8">
 
-
 <!-- Titre -->
 <div class="container">
 	<div class="row show-grid">
@@ -27,14 +26,13 @@
 	<div class="span7 ">
 		<!-- Listes favorites -->
 		#{list items:user.listeDeCourse, as:'liste'}
-		
-			<!-- Toutes les liste de l'utilisateur qui ne sont pas sa liste courante sont des listes favorites -->
-			#{if liste.nom!='Liste Courante'} 
+
+			#{if liste.nom!='Liste Courante'}
 				<div class="accordion-heading">
 					<a id="nomListe" class="accordion-toggle" href="#${liste.id}"
 						data-toggle="collapse"> ${liste.nom}</a>
 				</div>
-				
+
 				<div id="${liste.id}" class="collapse">
 					<div class="accordion-inner surContenu">
 						<div class="contenuListe">
@@ -50,15 +48,15 @@
 <!-- 										<input type="submit" value="Ajouter" /> -->
 <!-- 									</form> -->
 							</div>
-		
+
 						</div>
 					</div>
 				</div>
 			#{/if}
 		#{/list}	
-			
+
 <!-- 	</div> -->
-	
+
 <!-- 	<div class="row"></div> -->
 <!-- 	<div class="span7 ajout"> -->
 <!-- 		 <a href="#" id="boutonAjout"  -->
@@ -69,6 +67,8 @@
 
 		<script src="/public/javascripts/ajoutListe.js"></script>
 		<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
+
+
 
 
 

@@ -34,27 +34,16 @@ public class EtatFrigo extends Model {
 		this.image = image;
 		this.aliment = aliment;
 	}
-	
-	
+
+
 	public EtatFrigo addAliment(String aliment, String section) {
 		Aliment newAliment;
-		AlimentConnu newAlimentConnu;
-		if ((newAlimentConnu = AlimentConnu.find("byNom", aliment).first()) == null ){
+		if ((newAliment = Aliment.find("byNom", aliment).first()) == null ){
 			/* cet Aliment n'existe pas */
-<<<<<<< HEAD
 			newAliment = new Aliment(aliment, new Date(), new Date(), this, section).save();
 			new AlimentConnu(aliment, section).save();
 		}
 		this.aliment.add(newAliment);
-=======
-			System.out.println("l'aliment n'existe pas");
-			newAlimentConnu = new AlimentConnu(aliment, section).save();
-		}
-		/* dans tous les cas on rajoute l'aliment dans le frigo */
-		newAliment = new Aliment(aliment, new Date(), new Date(), this, section).save();
-		System.out.println("section = " + section);	
-	    this.aliment.add(newAliment);
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 	    this.save();
 	    return this;
 	}

@@ -21,7 +21,7 @@ public class Recette extends Model {
 
 	@Required
 	public String nom;
-	
+
 	//Les 3 indicateurs suivants ont une valeur comprise entre 0 et 4
 	public int difficulte;
 	public int prix;
@@ -30,12 +30,12 @@ public class Recette extends Model {
 	@Required
 	public String lien;
 
-	@ManyToMany (mappedBy="recette")
-	public List<AlimentConnu> ingredient;
-	
+	@ManyToMany //(mappedBy="recette")
+	public List<Aliment> ingredient;
+
 	@ManyToMany
 	public List<User> user;
-	
+
 	public String toString() {
 	    return nom;
 	}

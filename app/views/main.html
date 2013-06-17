@@ -12,31 +12,27 @@
 <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
 
-#{get 'moreStyles' /}
+	#{get 'moreStyles' /}
+
+	<script src="@{'/public/bootstrap/js/bootstrap.min.js'}"></script>
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- Ajout script pour les sous-onglets -->
+	<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
+
+	#{get 'moreScripts' /} 
 
 
-<script src="@{'/public/bootstrap/js/bootstrap.min.js'}"></script>
-<script src="http://code.jquery.com/jquery.js"></script>
-
-<script src="@{'/public/javascripts/sousOnglets.js'}"></script><!-- script pour les sous-onglets -->
-	
-#{get 'moreScripts' /} 
-	
-	
 </head>
 <body>
 <div class="container">
       <div class="masthead">
       
-      <!-- Bouton de déconnexion -->
       <a id="deconnexion" href="/logout" onclick="self.location.href='/logout/''">
-      	<img src="/public/images/logout.svg" alt="Déconnexion" width=20/>  
+      	<img src="/public/images/logout.svg" alt="Déconnexion" width=20/>
       </a> 
         
-        <!-- Message de bienvenue -->
         <h3 class="muted"> Bienvenue ${user.prenom} !</h3>
-        
-        <!-- Barre de navigation -->
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">
@@ -44,7 +40,6 @@
                 <li class="#{get 'accueilActif' /}"><a href="/">Accueil</a></li>
                 <li class="#{get 'historiqueActif' /}"><a href="/historique/">Historique</a></li>
                 <li class="#{get 'mesRecettesActif' /}">
-                	<!-- Gestion des sous-onglets -->
                 	<a href="#"
                 		onmouseover="mopen('m2')"
                 		onmouseout="mclosetime()">Vos recettes</a>
@@ -76,23 +71,14 @@
       </div>
     </div> <!-- /container -->
      
-    <!-- Affichage du reste de la page -->
+    
     #{doLayout /}
     
-<<<<<<< HEAD
 <!--     <div class="offset4 span12" id="piedDePage"> -->
 <!--     <footer> -->
 <!--     	<p>FrigoTimeMachine <a id="contact" href="#">Nous contacter</a></p>  -->
 <!--     </footer> -->
 <!--     </div> -->
-=======
-    <!-- Pied de page -->
-    <div class="offset4 span12" id="piedDePage">
-    <footer>
-    	<p>FrigoTimeMachine <a id="contact" href="#">Nous contacter</a></p> 
-    </footer>
-    </div>
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
     
 </body>
 </html>

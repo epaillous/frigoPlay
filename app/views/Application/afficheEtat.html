@@ -11,18 +11,12 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 
 <meta charset="UTF-8">
 
-<!-- Affichage de la photo d'un état du frigo -->
-<!-- il peut s'agir de l'état actuel (page Accueil) -->
-<!-- ou d'un état antérieur (accessible depuis l'historique -->
-
-
+<!-- affichage de la photo de l'état actuel du frigo -->
+<!-- Titre -->
 <div class="container">
-
-	<!-- Titre -->
 	<div class="row show-grid">
 		<div class="span12 offset1">
 			#{if session.page == 'index'}
-<<<<<<< HEAD
 			<h3>Voici l'état actuel de votre frigo</h3>
 			#{/if} #{elseif session.page =='ancienEtat'}
 			<h3>Voici l'état de votre frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h3>
@@ -31,17 +25,6 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 
 	</div>
 
-=======
-    			<h3>Voici l'état actuel de votre frigo</h3>
-    		#{/if}
-    		#{elseif session.page =='ancienEtat'} 
-    			<h3>Voici l'état de votre frigo le ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</h3>
-			#{/elseif}		
-		</div>
-	</div>
-	
-	
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 	<!-- affichage des éléments présents dans le frigo -->
 	<div class="span3 liste_bloc">
 		<h4>
@@ -64,7 +47,7 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 			<div class="accordion-inner">
 
 				#{list items:fruitsLegumes, as:'aliment'} <strong><a
-					href='@{Application.supprimeAlimentFrigo(aliment.id, etatFrigo.id)}'
+					href="#"
 					class="suppr" title="retirer cet élément de mon contenu"><img
 						src="/public/images/delete.png" width=15px /></a> ${aliment.nom} <a
 					class="ajoutContListe"
@@ -78,17 +61,10 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 					</h5>
 					<h5>
 						<small>Périme le :
-<<<<<<< HEAD
 							${aliment.peremption.format('dd/MM/yy')}</small> #{if
 						aliment.peremption.format('dd/MM/yy') <= new
 						Date().format("dd/MM/yy")} <img src="/public/images/warning.png"
 							width=15px title="aliment périmé !" /> #{/if}
-=======
-							${aliment.peremption.format('dd/MM/yy')}</small>
-					#{if aliment.peremption.format('dd/MM/yy') < new Date().format("dd/MM/yy")}
-					<img src="/public/images/alerte.svg" width=15px title="aliment périmé !" />
-					#{/if}
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 					</h5>
 
 				</aside>
@@ -123,17 +99,10 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 					</h5>
 					<h5>
 						<small>Périme le :
-<<<<<<< HEAD
 							${aliment.peremption.format('dd/MM/yy')}</small> #{if
 						aliment.peremption.format('dd/MM/yy') <= new
 						Date().format("dd/MM/yy")} <img src="/public/images/warning.png"
 							width=15px title="aliment périmé !" /> #{/if}
-=======
-							${aliment.peremption.format('dd/MM/yy')}</small>
-							#{if aliment.peremption.format('dd/MM/yy') < new Date().format("dd/MM/yy")}
-					<img src="/public/images/alerte.svg" width=15px title="aliment périmé !" />
-					#{/if}
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 					</h5>
 				</aside>
 				#{/list}
@@ -166,17 +135,10 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 					</h5>
 					<h5>
 						<small>Périme le :
-<<<<<<< HEAD
 							${aliment.peremption.format('dd/MM/yy')}</small> #{if
 						aliment.peremption.format('dd/MM/yy') <= new
 						Date().format("dd/MM/yy")} <img src="/public/images/warning.png"
 							width=15px title="aliment périmé !" /> #{/if}
-=======
-							${aliment.peremption.format('dd/MM/yy')}</small>
-							#{if aliment.peremption.format('dd/MM/yy') < new Date().format("dd/MM/yy")}
-					<img src="/public/images/alerte.svg" width=15px title="aliment périmé !" />
-					#{/if}
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 					</h5>
 				</aside>
 				#{/list}
@@ -206,17 +168,10 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 					</h5>
 					<h5>
 						<small>Périme le :
-<<<<<<< HEAD
 							${aliment.peremption.format('dd/MM/yy')}</small> #{if
 						aliment.peremption.format('dd/MM/yy') <= new
 						Date().format("dd/MM/yy")} <img src="/public/images/warning.png"
 							width=15px title="aliment périmé !" /> #{/if}
-=======
-							${aliment.peremption.format('dd/MM/yy')}</small>
-							#{if aliment.peremption.format('dd/MM/yy') < new Date().format("dd/MM/yy")}
-					<img src="/public/images/alerte.svg" width=15px title="aliment périmé !" />
-					#{/if}
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 					</h5>
 				</aside>
 				#{/list}
@@ -248,17 +203,10 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 					</h5>
 					<h5>
 						<small>Périme le :
-<<<<<<< HEAD
 							${aliment.peremption.format('dd/MM/yy')}</small> #{if
 						aliment.peremption.format('dd/MM/yy') <= new
 						Date().format("dd/MM/yy")} <img src="/public/images/warning.png"
 							width=15px title="aliment périmé !" /> #{/if}
-=======
-							${aliment.peremption.format('dd/MM/yy')}</small>
-							#{if aliment.peremption.format('dd/MM/yy') < new Date().format("dd/MM/yy")}
-					<img src="/public/images/alerte.svg" width=15px title="aliment périmé !" />
-					#{/if}
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 					</h5>
 				</aside>
 				#{/list}
@@ -290,17 +238,10 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 					</h5>
 					<h5>
 						<small>Périme le :
-<<<<<<< HEAD
 							${aliment.peremption.format('dd/MM/yy')}</small> #{if
 						aliment.peremption.format('dd/MM/yy') <= new
 						Date().format("dd/MM/yy")} <img src="/public/images/warning.png"
 							width=15px title="aliment périmé !" /> #{/if}
-=======
-							${aliment.peremption.format('dd/MM/yy')}</small>
-							#{if aliment.peremption.format('dd/MM/yy') < new Date().format("dd/MM/yy")}
-					<img src="/public/images/alerte.svg" width=15px title="aliment périmé !" />
-					#{/if}
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 					</h5>
 				</aside>
 				#{/list}
@@ -330,7 +271,6 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 		#{/elseif}
 
 	</div>
-<<<<<<< HEAD
 
 	<div class="span4">
 		<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
@@ -339,16 +279,3 @@ session.page =='ancienEtat'} #{set historiqueActif:'active'/} #{/elseif}
 		</a>
 		<p>Date de la prise : ${etatFrigo.date.format('dd MMMM yyyy HH:mm')}</p>
 	</div>
-=======
-	
-		<div class="span4">
-			<!-- l'état actuel du frigo est le plus récent des états frigos de l'utilisateur -->
-			<a href="#"
-				onclick="ajoutAliment()">
-				<img src="${etatFrigo.image}" height="352" width="470" />
-			</a>
-			<p>Date de la prise : ${etatFrigo.date.format('dd MMMM yyyy	HH:mm')}</p>
-		</div>
-
-<!-- Rq : on ne ferme pas le container, il est fermé dans listeCour.html ! -->
->>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f

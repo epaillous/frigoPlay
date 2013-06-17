@@ -14,13 +14,12 @@
 <script src="/public/javascripts/jquery-1.10.1.js"></script>
 <script src="/public/bootstrap/js/bootstrap.min.js"></script>
 <script src="/public/javascripts/ajoutAliment.js"></script>
-<script src="@{'/public/javascripts/sousOnglets.js'}"></script>
 
 <meta charset="UTF-8">
 
 
+<!-- Titre -->
 <div class="container">
-	<!-- Titre -->
 	<div class="row show-grid">
 		<div class="span12 offset1">
 				<h3>${type_recette}</h3>
@@ -43,17 +42,13 @@
 					<div class="sousCaract"
 						onmouseover="mcancelclosetime()"
 						onmouseout="mclosetime()">
-						<!-- Caractéristique de la recette -->
 							<p>Difficulté : #{list items:0..recette.difficulte, as:'i'} 
-								<!-- 1 chapeau/niveau de difficulté -->
 								<img src="/public/images/caraRecettes/chapeau.svg" alt="dur" width=20px />
 							#{/list} </p> 
 							<p>Prix : #{list items:0..recette.prix, as:'i'} 
-								<!-- 1 logo monnaie/niveau de prix -->
 								<img src="/public/images/caraRecettes/monnaie.svg" alt="cher" width=20px />
 							#{/list}</p> 
 							<p>Calories : #{list items:0..recette.calories, as:'i'} 
-								<!-- 1 balance/niveau de calories -->
 								<img src="/public/images/caraRecettes/balance.svg" alt="calorique" width=20px /> 
 							#{/list}</p>
 					</div>
@@ -61,7 +56,6 @@
 					<div>
 						Les aliments dont vous aurez besoin sont les suivants :
 						<ul>
-						<!-- Liste des aliments nécessaires pour la recette -->
 							#{list items:recette.ingredient, as:'aliment'}
 							<li>${aliment.nom} <a href='@{Application.ajoutAlimentListe(aliment.nom, etatFrigo.id)}'>
 								<img src="/public/images/icon-add-grey.png" /></a>
@@ -76,3 +70,7 @@
 				</div>
 				#{/list}
 			</div>
+
+
+
+		<script src="@{'/public/javascripts/sousOnglets.js'}"></script>

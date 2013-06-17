@@ -10,7 +10,6 @@ import java.util.List;
 import controllers.Security;
 
 import models.Aliment;
-import models.AlimentConnu;
 import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.User;
@@ -24,7 +23,6 @@ public class ApplicationUtils {
 		Iterator iter = listeAliment.iterator();	
 		while (iter.hasNext()) {
 			Aliment cour = (Aliment) iter.next();
-			System.out.println(cour.nom);
 			switch (cour.section.name()) {
 			case "FruitsLegumes":
 				listeFruits.add(cour);
@@ -44,47 +42,14 @@ public class ApplicationUtils {
 			case "Epicerie":
 				listeEpicerie.add(cour);
 				break;
-			
+
 			default:
 				break;
 			}
 		}
 	}
-	
-	/* Fonction permettant le tri des aliments connus par sections */
-	public static void misAJourListesConnus(List<AlimentConnu> listeAliment, List<AlimentConnu> listeFruits, List<AlimentConnu> listeViandes, 
-			List<AlimentConnu> listeLaitages, List<AlimentConnu> listeBoissons, List<AlimentConnu> listeAutre, List<AlimentConnu> listeEpicerie){
-		
-		Iterator iter = listeAliment.iterator();	
-		while (iter.hasNext()) {
-			AlimentConnu cour = (AlimentConnu) iter.next();
-			switch (cour.section.name()) {
-			case "FruitsLegumes":
-				listeFruits.add(cour);
-				break;
-			case "Laitages":
-				listeLaitages.add(cour);
-				break;	
-			case "Viandes":
-				listeViandes.add(cour);
-				break;	
-			case "Boissons":
-				listeBoissons.add(cour);
-				break;
-			case "Autre":
-				listeAutre.add(cour);
-				break;	
-			case "Epicerie":
-				listeEpicerie.add(cour);
-				break;
-			
-			default:
-				break;
-			}
-		}
-	}
-	
-	
+
+
 	public static long nombreOuvertureFrigoParJour(Date jour){
 		/* Bizarre, jour.getMonth renvoie 5 au lieu de 6 .. */
 		return EtatFrigo.count("DAY(date) = ?1 AND MONTH(date) = ?2", jour.getDate(), jour.getMonth()+1);

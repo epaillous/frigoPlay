@@ -12,7 +12,6 @@ import javax.persistence.Query;
 import org.apache.commons.io.FileUtils;
 
 import models.Aliment;
-import models.AlimentConnu;
 import models.EtatFrigo;
 import models.ListeDeCourse;
 import models.Recette;
@@ -30,8 +29,8 @@ import utils.ApplicationUtils;
 
 @With(Secure.class)
 public class Application extends Controller {
-	
-	
+
+
 	@Before
     static void checkAuthentification() throws Throwable {
         if(User.find("byEmail", Security.connected()).first() == null) Secure.login();
@@ -49,7 +48,7 @@ public class Application extends Controller {
 
 	@Before
 	static void listeCourante() {
-		
+
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
 		if(User.find("byEmail", Security.connected()).first() == null)
@@ -62,16 +61,16 @@ public class Application extends Controller {
 		
 		/* On recupère sa liste de course courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
-		List<AlimentConnu> articles = listeCourante.article;
-		List<AlimentConnu> artFruitsLegumes = new ArrayList<AlimentConnu>();
-		List<AlimentConnu> artViandes = new ArrayList<AlimentConnu>();
-		List<AlimentConnu> artLaitages = new ArrayList<AlimentConnu>();
-		List<AlimentConnu> artBoissons= new ArrayList<AlimentConnu>() ;
-		List<AlimentConnu> artAutre = new ArrayList<AlimentConnu>();
-		List<AlimentConnu> artEpicerie = new ArrayList<AlimentConnu>();
+		List<Aliment> articles = listeCourante.article;
+		List<Aliment> artFruitsLegumes = new ArrayList<Aliment>();
+		List<Aliment> artViandes = new ArrayList<Aliment>();
+		List<Aliment> artLaitages = new ArrayList<Aliment>();
+		List<Aliment> artBoissons= new ArrayList<Aliment>() ;
+		List<Aliment> artAutre = new ArrayList<Aliment>();
+		List<Aliment> artEpicerie = new ArrayList<Aliment>();
 
 		/* tri par section */
-		ApplicationUtils.misAJourListesConnus(articles, artFruitsLegumes, artViandes, artLaitages, artBoissons, artAutre, artEpicerie);
+		ApplicationUtils.misAJourListes(articles, artFruitsLegumes, artViandes, artLaitages, artBoissons, artAutre, artEpicerie);
 
 		renderArgs.put("artFruitsLegumes", artFruitsLegumes);
 		renderArgs.put("artLaitages", artLaitages);
@@ -87,9 +86,8 @@ public class Application extends Controller {
 
 		/* On recupère le dernier etat */
 		EtatFrigo etatFrigo = EtatFrigo.find("user like ? order by date desc", user).first();
-		long id = 0;
-		Aliment Al = Aliment.findById(id);
-		//System.out.println("aliment connu " + Al.nom);
+
+
 		/* on génère la liste correspondante */
 		List<Aliment> aliments = etatFrigo.aliment;
 		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
@@ -98,13 +96,13 @@ public class Application extends Controller {
 		List<Aliment> boissons= new ArrayList<Aliment>() ;
 		List<Aliment> autre = new ArrayList<Aliment>();
 		List<Aliment> epicerie = new ArrayList<Aliment>();
-		//System.out.println(aliments.get(0).nom);
+
 		/* tri par section */
 		ApplicationUtils.misAJourListes(aliments, fruitsLegumes, viandes, laitages, boissons, autre, epicerie);
-		
+
 		/* On passe en paramètre la page dans laquelle on était */
 		session.put("page", "index");	
-		
+
 		renderTemplate("Application/afficheEtat.html",fruitsLegumes, viandes, laitages, boissons, autre, epicerie, etatFrigo);
 	}
 
@@ -113,7 +111,7 @@ public class Application extends Controller {
 		}
 		/* On recupère l'état frigo correspondant à l'id */
 		EtatFrigo etatFrigo = EtatFrigo.findById(id);	
-		
+
 		/* on génère la liste correspondante */
 		List<Aliment> aliments = etatFrigo.aliment;
 		List<Aliment> fruitsLegumes = new ArrayList<Aliment>();
@@ -122,17 +120,17 @@ public class Application extends Controller {
 		List<Aliment> boissons= new ArrayList<Aliment>() ;
 		List<Aliment> autre = new ArrayList<Aliment>();
 		List<Aliment> epicerie = new ArrayList<Aliment>();
-		
+
 		/* tri par section */
 		ApplicationUtils.misAJourListes(aliments, fruitsLegumes, viandes, laitages, boissons, autre, epicerie);
-		
+
 		/* On passe en paramètre la page dans laquelle on était */
 		session.put("page", "ancienEtat");
 		session.put("idfrigo", etatFrigo.id);
 		renderArgs.put("etatFrigo", etatFrigo);
 		renderTemplate("Application/afficheEtat.html",fruitsLegumes, viandes, laitages, boissons, autre, epicerie, etatFrigo);
 	}
-	
+
 	public static void historique() {
 		render();
 	}
@@ -148,9 +146,9 @@ public class Application extends Controller {
 		renderArgs.put("liste", recettes);
 		renderArgs.put("type_recette", "Vos recettes favorites");
 		renderTemplate("Application/recettes.html", recettes);
-		
+
 	}
-	
+
 	public static void recettesSuggerees() {
 		session.put("page", "recettesSuggerees");
 		/* On recupère l'utilisateur en session */
@@ -163,22 +161,22 @@ public class Application extends Controller {
 		 */	
 		List<Recette> recettes ; 
 		EntityManager em = JPA.em();
-			
+
 		/* recettes contenant des aliments présents dans le contenu de l'utilisateur */
 		Query q_RecSug = em.createQuery("select DISTINCT r from Recette r, EtatFrigo f, IN(r.ingredient) AS ig, IN(f.aliment) AS al where " +
 				"f=?1 and ig.id = al.id)");
 		q_RecSug.setParameter(1, etatFrigo);
 		List<Recette> recettesSugg = q_RecSug.getResultList();
 		Iterator<Recette> r = recettesSugg.iterator();
-		
+
 		recettes = (List<Recette>) q_RecSug.getResultList();
 
 		renderArgs.put("liste", recettes);
 		renderArgs.put("type_recette", "Suggestions de recettes");
 		renderTemplate("Application/recettes.html", recettes);
-		
+
 	}
-	
+
 	public static void listesArchivees() {
 		render();
 	}
@@ -198,11 +196,11 @@ public class Application extends Controller {
 	}   
 
 	public static void ajoutAlimentListe(String aliment, Long id) {
-		
+
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
 		String page = session.get("page");
-		
+
 		if ((id == null) && (page == "ancienEtat")){
 			String idS = session.get("idfrigo");
 			id = Long.parseLong(idS);
@@ -211,8 +209,8 @@ public class Application extends Controller {
 		/* On recupère sa liste courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
 		listeCourante.addAliment(aliment);
-		
-		
+
+
 		switch (page){
 		case "index":
 			index();
@@ -228,14 +226,16 @@ public class Application extends Controller {
 				break;	
 		}
 	}
-	
-	
+
+
 	public static void ajoutAlimentContenu(String aliment, String section) {
 		/* On recupère l'utilisateur en session */
 		User user = User.find("byEmail", Security.connected()).first();
 		/* On recupère le dernier etat Frigo (non nulle) */
-		EtatFrigo etatCourant = EtatFrigo.find("user like ? order by date desc", user).first();	
+		EtatFrigo etatCourant = EtatFrigo.find("user like ? order by date desc", user).first(); 
+		/* Si l'instance d'aliment n'existe pas, la créer */
 		/* ajouter l'instance dans le frigo */
+		//etatCourant.addAliment(aliment);
 		etatCourant.addAliment(aliment, section);
 		index();
 	}
@@ -263,7 +263,7 @@ public class Application extends Controller {
 			break;
 		}
 	}
-	
+
 	public static void supprimeAlimentFrigo(Long id, Long idfrigo) {
 		/* Supprimer l'aliment du contenu du frigo */
 		Aliment aliment = Aliment.findById(id);
@@ -286,7 +286,7 @@ public class Application extends Controller {
 
 		}
 	}
-	
+
 	public static void ajoutContenuListe(Long id){
 		EtatFrigo etatFrigo = EtatFrigo.findById(id);
 		User user = User.find("byEmail", Security.connected()).first();

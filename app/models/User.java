@@ -43,14 +43,14 @@ public class User extends Model {
 
 	@OneToMany(mappedBy="user")
 	public List<ListeDeCourse> listeDeCourse;
-		
+
 	@ManyToMany(mappedBy="user")
 	public List<Recette> recettesFavorites;
-	
+
 	public String toString() {
 	    return email;
 	}
-	
+
 	public static User connect(String email, String password) {
 	    return find("byEmailAndMotDePasse", email, password).first();
 	}
@@ -62,7 +62,7 @@ public class User extends Model {
 		this.motDePasse = motDePasse;
 		this.email = email;
 	} 
-	
-	
+
+
       
 }
