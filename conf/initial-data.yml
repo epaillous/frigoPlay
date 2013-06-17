@@ -28,6 +28,7 @@
    nom: Ananas
    section: FruitsLegumes
 
+<<<<<<< HEAD
  AlimentConnu(ciboulette):
    nom: Ciboulette
    section: Autre
@@ -75,10 +76,76 @@
  AlimentConnu(tomate):
    nom: Tomate
    section: FruitsLegumes
+=======
+ AlimentConnu(noix):
+   nom: Noix
+   section: Autre
+
+ Aliment(noix):
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+
+ Aliment(spaghetti):
+   nom: Spaghetti
+
+ Aliment(ricotta):
+   nom: Ricotta
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   section: Laitages
+
+ AlimentConnu(citron):
+   nom: Citron
+   Section: FruitsLegumes
+<<<<<<< HEAD
+=======
+
+ Aliment(citron):
+>>>>>>> d233ea3db78b12b68f878325256a4cad1a25148c
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   entreeFrigo: 2013-06-11
+
+ Aliment(moule):
+   #nom: Moule
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+
+ Aliment(melon):
+   nom: Melon
+   section: FruitsLegumes
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+   
+ AlimentConnu(cocacola):
+   nom: Coca-Cola
+   section: Boissons
+   
+ Aliment(cocacola):
+   nom: Coca-Cola
+   quantite: 1.5L
+   calories: 3000
+   peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
+ # etatFrigo: etatfrigo6
+   
+ AlimentConnu(tomate):
+   nom: Tomate
+   section: FruitsLegumes
+   
+ Aliment(tomate):
+   quantite: 250g
+   calories: 
+   peremption: 2013-06-15
+   entreeFrigo: 2013-06-11
+   #recette: recette1
+#  etatFrigo: etatfrigo6
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
   
  AlimentConnu(cordonbleu):
    nom: Cordon Bleu
    section: Viandes
+<<<<<<< HEAD
  
  AlimentConnu(yaourtfruits):
    nom: Yaourts aux Fruits
@@ -166,6 +233,52 @@
      
  Aliment(tomate):
    nom: Tomate
+=======
+   
+ Aliment(cordonbleu):
+   quantite: 4
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-21
+   #etatFrigo: etatfrigo6
+
+ AlimentConnu(yaourtfruits):
+   nom: Yaourts aux Fruits
+   section: Laitages
+ 
+ Aliment(yaourtfruits):
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-06-24
+   #etatFrigo: etatfrigo6
+
+ AlimentConnu(emmental):
+   nom: Emmental
+   section: Laitages
+
+ Aliment(emmental):
+   quantite: 500g
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-08-02
+   #etatFrigo: etatfrigo6
+
+ AlimentConnu(compotes):
+   nom: Compotes
+   section: Autre   
+
+ Aliment(compotes):
+   quantite: 8
+   calories: 
+   entreeFrigo: 2013-06-11
+   peremption: 2013-09-10
+   #etatFrigo: etatfrigo6
+
+ 
+ Aliment(tomates):
+   nom: Tomates
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    quantite: 250g
    calories: 
    peremption: 2013-06-19
@@ -203,21 +316,36 @@
    entreeFrigo: 2013-06-11
    peremption: 2013-09-10
    section: Autre
+
+ AlimentConnu(oeufs):
+   nom: Oeufs
+   section: Autre
  
  Aliment(oeufs):
-   nom: Oeufs
    quantite: 12
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-17
+<<<<<<< HEAD
    section: Autre
    
  Aliment(soupe):
+=======
+  # recette: recette2
+   #etatFrigo: etatfrigo5.2
+
+
+ AlimentConnu(soupe):
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    nom: Soupe
+   section: Autre
+   
+ Aliment(soupe):
    quantite: 1L
    calories: 
    entreeFrigo: 2013-06-11
    peremption: 2013-06-17
+<<<<<<< HEAD
    section: Autre
   
  Aliment(bieres):
@@ -243,62 +371,148 @@
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
    section: Autre
+=======
+   #etatFrigo: etatfrigo5
+  
+ AlimentConnu(bieres):
+   nom: BiÃ¨res
+   section: Boissons
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    
- Aliment(juspomme):
-   nom: Jus de Pomme
+ Aliment(bieres):
    quantite: 0
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
+<<<<<<< HEAD
    section: Boissons
    
  Aliment(cereales):
    nom: Céréales
+=======
+   #etatFrigo: 
+   #listeDeCourse: liste5
+
+ AlimentConnu(juspomme):
+   nom: Jus de Pomme
+   section: Boissons
+      
+ Aliment(juspomme):
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    quantite: 0
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
+<<<<<<< HEAD
    section: Epicerie
          
  Aliment(brie):
    nom: Brie
+=======
+   #etatFrigo: 
+   #listeDeCourse: liste5
+
+ AlimentConnu(cereales):
+   nom: CÃ©rÃ©ales
+   section: Epicerie
+ 
+
+ Aliment(cereales):
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    quantite: 0
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
-   section: Laitages
+<<<<<<< HEAD
+=======
+   #etatFrigo: 
+   #listeDeCourse: liste1
    
- Aliment(danettes):
-   nom: Danettes au Chocolat
+ AlimentConnu(brie):
+   nom: Brie
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
+   section: Laitages
+      
+ Aliment(brie):
    quantite: 0
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
+<<<<<<< HEAD
    section: Laitages
      
  Aliment(huile):
    nom : Huile d'olive
+=======
+   #etatFrigo: 
+   #listeDeCourse: liste1
+   
+ AlimentConnu(danettes):
+   nom: Danettes
+   section: Laitages
+   
+ Aliment(danettes):
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    quantite: 0
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
+<<<<<<< HEAD
    section: Epicerie
      
  Aliment(cafe):
    nom : Café
+=======
+   #etatFrigo: 
+   #listeDeCourse: liste1
+   
+ AlimentConnu(huile):
+   nom: Huile d'olive
+   section: Epicerie
+   
+ Aliment(huile):
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    quantite: 0
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
+<<<<<<< HEAD
    section: Epicerie
     
  Aliment(jambon):
    nom : Jambon
+=======
+   #etatFrigo: 
+   #listeDeCourse: liste1
+   
+ AlimentConnu(cafe):
+   nom: CafÃ©
+   section: Epicerie
+   
+ Aliment(cafe):
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    quantite: 0
    calories: 
    entreeFrigo: 0000-00-00
    peremption: 0000-00-00
+<<<<<<< HEAD
+=======
+   #etatFrigo: 
+   #listeDeCourse: liste1
+   
+ AlimentConnu(jambon):
+   nom: Jambon
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
    section: Viandes
+   
+ Aliment(jambon):
+   quantite: 0
+   calories: 
+   entreeFrigo: 0000-00-00
+   peremption: 0000-00-00
+   #etatFrigo: 
+   #listeDeCourse: liste1
+   
    
  Aliment(pizzas):
    nom : Pizzas
@@ -400,8 +614,17 @@
  EtatFrigo(etatfrigo6):
    date: 2013-06-11 11:57:41
    user: emilie
+<<<<<<< HEAD
    image: /public/img/PictureCV_11-06-2013-11.57.41.jpg
    aliment: [melon2, cocacola2, tomate2, spaghetti2, ricotta2, moule2, yaourtfruits2, cordonbleu, emmental]
+=======
+   image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
+<<<<<<< HEAD
+   aliment: [melon]
+=======
+   aliment: [melon, cocacola, tomate]
+>>>>>>> d233ea3db78b12b68f878325256a4cad1a25148c
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 
  EtatFrigo(etatfrigo7):
    date: 2013-06-17 07:56:58
@@ -456,23 +679,28 @@
      
  Recette(recette1):
    nom: Gratin de tomates
-   difficulté : 3
+   difficultÃ© : 3
    prix: 1
    calories: 2
    lien: http://www.marmiton.org/recettes/recette_gratin-de-tomates_71937.aspx
    ingredient: [tomate]
    
  Recette(recette2):
-   nom: Gâteau aux noix et au citron
-   difficulté : 3
+   nom: GÃ¢teau aux noix et au citron
+   difficultÃ© : 3
    prix: 1
    calories: 3
    lien: http://www.marmiton.org/recettes/recette_gateau-aux-noix-et-au-citron_231083.aspx
+<<<<<<< HEAD
    ingredient: [noix, citron]
+=======
+   user: emilie
+   ingredient: [noix]
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f
 
  Recette(recette3):
-   nom: Spaghetti aux boulettes et à la ricotta
-   difficulté : 2
+   nom: Spaghetti aux boulettes et Ã  la ricotta
+   difficultÃ© : 2
    prix: 2
    calories: 2
    lien: http://www.marmiton.org/recettes/recette_spaghetti-aux-boulettes-et-a-la-ricotta_71318.aspx
@@ -480,7 +708,7 @@
 
  Recette(recette4):
    nom: Salade de moules au melon
-   difficulté : 1
+   difficultÃ© : 1
    prix: 3
    calories: 1
    lien: http://www.marmiton.org/recettes/recette_salade-de-moules-au-melon_14132.aspx
@@ -545,3 +773,13 @@
    nom: Liste Courante
    user: alexis
 
+<<<<<<< HEAD
+=======
+ ListeDeCourse(liste4):
+   nom: Liste Courante
+   user: alice  
+ 
+ ListeDeCourse(liste5):
+   nom: Liste SoirÃ©e
+   user: mailys
+>>>>>>> 9f7b114e9424c0d6c8afe30e163c3a4010b5373f

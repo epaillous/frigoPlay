@@ -1,5 +1,4 @@
 .repereRecette {
-/* 	margin-left: 10%;	 */
 	margin-right: 200px;
 }
 #recetteFav {
@@ -11,6 +10,8 @@
 	text-decoration: none;
 	color: black;
 }
+
+/* Gestion des caracteristiques de la recette */
 .caract {
 	display: inline-block;
 	color: grey;
@@ -24,6 +25,7 @@
 .sousCaract p {
 	margin: 1%;
 }
+
 .lien {
 	margin-top: 7px;
 }
