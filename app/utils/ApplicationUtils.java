@@ -25,7 +25,6 @@ public class ApplicationUtils {
 		while (iter.hasNext()) {
 			Aliment cour = (Aliment) iter.next();
 			System.out.println(cour.nom);
-			System.out.println(cour.section == null);
 			switch (cour.section.name()) {
 			case "FruitsLegumes":
 				listeFruits.add(cour);

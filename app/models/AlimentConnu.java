@@ -31,10 +31,7 @@ public class AlimentConnu extends Model {
 	@ManyToMany
 	public Set<Recette> recette;
 
-	
-	public AlimentConnu(){
-		super();
-	}
+
 	/* Constructeur pour les aliments ajoutés en liste de courses */
 	public AlimentConnu(String nom, List<ListeDeCourse> listeDeCourse, Section section) {
 		super();

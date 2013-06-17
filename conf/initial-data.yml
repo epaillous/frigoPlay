@@ -47,10 +47,16 @@
    entreeFrigo: 2013-06-11
    section: Laitages
 
- Aliment(citron):
+ AlimentConnu(citron):
    nom: Citron
    Section: FruitsLegumes
+<<<<<<< HEAD
+=======
+
+ Aliment(citron):
+>>>>>>> d233ea3db78b12b68f878325256a4cad1a25148c
    peremption: 2013-06-17
+   entreeFrigo: 2013-06-11
    entreeFrigo: 2013-06-11
 
  Aliment(moule):
@@ -393,7 +399,11 @@
    date: 2013-06-13 23:08:07
    user: emilie
    image: /public/img/PictureSend_13-06-2013-23.08.07.jpg
+<<<<<<< HEAD
    aliment: [melon]
+=======
+   aliment: [melon, cocacola, tomate]
+>>>>>>> d233ea3db78b12b68f878325256a4cad1a25148c
 
  EtatFrigo(etatfrigo7):
    date: 2013-06-13 23:08:07

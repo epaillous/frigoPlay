@@ -89,10 +89,6 @@ public class Aliment extends AlimentConnu {
 	public String toString() {
 	    return nom;
 	}
-	
-	public Aliment(){
-		super();
-	}
 
 	public boolean equals(Aliment obj) {
 		// Vérification de l'égalité des références
