@@ -290,13 +290,32 @@ public class Application extends Controller {
 	public static void ajoutContenuListe(Long id){
 		EtatFrigo etatFrigo = EtatFrigo.findById(id);
 		User user = User.find("byEmail", Security.connected()).first();
+		EtatFrigo etatActuel = EtatFrigo.find("user like ? order by date desc", user).first();
 		List<Aliment> aliments = etatFrigo.aliment;
 		Iterator iter = aliments.iterator();	
 		/* On recupère sa liste courante (non nulle) */
 		ListeDeCourse listeCourante = user.listeDeCourse.get(0);
+		EntityManager em = JPA.em();
+		List<Aliment> alimentsPresents;
 		while (iter.hasNext()) {
+			alimentsPresents = null;
 			Aliment cour = (Aliment) iter.next();
-		listeCourante.addAliment(cour.nom);
+			/* cherche un aliment du même nom dans le contenu du frigo courant */
+			Query qAlimentPresent = em.createQuery("select DISTINCT al from EtatFrigo f, IN(f.aliment) AS al where " +
+					"f=?1 and al.nom = ?2)");
+			qAlimentPresent.setParameter(1, etatActuel);
+			qAlimentPresent.setParameter(2, cour.nom);
+			alimentsPresents = qAlimentPresent.getResultList();
+			Iterator<Aliment> ia = alimentsPresents.iterator();
+			Query qArticlePresent = em.createQuery("select DISTINCT ar from ListeDeCourse l, IN(l.article) AS ar where " +
+					"l=?1 and ar.nom = ?2)");
+			qArticlePresent.setParameter(1,listeCourante);
+			qArticlePresent.setParameter(2, cour.nom);
+			List<Aliment >articlesPresents = qArticlePresent.getResultList();
+			if (alimentsPresents.isEmpty() && articlesPresents.isEmpty()){
+				/* l'aliment n'est pas déjà dans le frigo, haha */	
+				listeCourante.addAliment(cour.nom);
+			}
 		}
 		ancienEtat(id);
 	}

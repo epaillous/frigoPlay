@@ -140,7 +140,7 @@
 
  Aliment(ricotta):
    nom: Ricotta
-   peremption: 2013-10-20
+   peremption: 2013-06-20
    entreeFrigo: 2013-06-11
    section: Laitages
   
@@ -153,14 +153,14 @@
  Aliment(melon):
    nom: Melon
    section: FruitsLegumes
-   peremption: 2013-06-16
+   peremption: 2013-06-23
    entreeFrigo: 2013-06-11
       
  Aliment(cocacola):
    nom: Coca-Cola
    quantite: 1.5L
    calories: 3000
-   peremption: 2013-11-17
+   peremption: 2013-11-30
    entreeFrigo: 2013-06-11
    section: Boissons
      
@@ -168,7 +168,7 @@
    nom: Tomate
    quantite: 250g
    calories: 
-   peremption: 2013-06-19
+   peremption: 2013-06-30
    entreeFrigo: 2013-06-11
    section: FruitsLegumes
      
@@ -177,7 +177,7 @@
    quantite: 4
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2013-06-21
+   peremption: 2013-06-30
    section: Viandes
 
  Aliment(yaourtfruits):
@@ -185,7 +185,7 @@
    quantite: 8
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2013-06-18
+   peremption: 2013-06-16
    section: Laitages
 
  Aliment(emmental):
@@ -193,7 +193,7 @@
    quantite: 500g
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2013-08-02
+   peremption: 2013-06-20
    section: Laitages
    
  Aliment(compotes):
@@ -209,7 +209,7 @@
    quantite: 12
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2013-06-17
+   peremption: 2013-06-30
    section: Autre
    
  Aliment(soupe):
@@ -217,7 +217,7 @@
    quantite: 1L
    calories: 
    entreeFrigo: 2013-06-11
-   peremption: 2013-06-17
+   peremption: 2013-06-30
    section: Autre
   
  Aliment(bieres):
